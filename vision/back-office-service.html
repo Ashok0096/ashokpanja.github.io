@@ -6,8 +6,9 @@
         <title>Medical Billing Services | Medical Transcription Services | Vinfonet.com</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" type="" href="img/favicon.png" />
+        <meta name="Description" content="Medical billing services with a proven record of increasing reimbursement, Experienced and economical medical transcription services delivering accurate reports in time.">
         <!-- Icon Font Stylesheet -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+        <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" /> -->
         <!-- Libraries Stylesheet -->
         <link href="lib/animate/animate.min.css" rel="stylesheet" />
         <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
@@ -17,8 +18,9 @@
         <!--  Stylesheet -->
         <link href="css/style.css" rel="stylesheet" />
         <link href="css/menu.css" rel="stylesheet" />
-        <link href="css/popinsfont.css" rel="stylesheet" />
+         <link href="css/font-awesome.css" rel="stylesheet" />
         <script src="js/main-jsmin.js"></script>
+         <link href="css/menu.css" rel="stylesheet" />
     </head>
 
     <body>
@@ -53,53 +55,52 @@
                 </div>
             </div>
         </div>
+
         <button class="quote-button action-btn open-side-btn">
             <span><i class="fa fa-quote-left"></i> Get a Quote</span>
         </button>
         <script>
-            // Open the sidebar
-            $(".open-side-btn").click(function (e) {
-                e.stopPropagation(); // Prevent this click from propagating to the document
-                $(".side-container .side-box").addClass("open-side");
-                $(".side-container .side-box").animate({
-                    width: 400,
+          $(document).ready(function () {
+        // Toggle sidebar when button is clicked
+        $(".open-side-btn").click(function (e) {
+            e.stopPropagation(); // Prevent triggering the document click
+            const $box = $(".side-container .side-box");
+
+            if ($box.hasClass("open-side")) {
+                $box.animate({ width: 0 }, 200, function () {
+                    $box.removeClass("open-side");
                 });
-            });
+            } else {
+                $box.addClass("open-side").animate({ width: 350 }, 200);
+            }
+        });
 
-            // Close the sidebar when the close button is clicked
-            $(".side-container .side-close-btn").click(function (e) {
-                $(".side-container .side-box").animate(
-                    {
-                        width: 0,
-                    },
-                    200,
-                    function () {
-                        $(".side-container .side-box").removeClass("open-side");
-                    }
-                );
-            });
-
-            // Close the sidebar when clicking outside of it
-            $(document).click(function (e) {
-                // Close the sidebar only if the click is outside the side-container
-                if (!$(e.target).closest(".side-container").length && !$(e.target).is(".open-side-btn")) {
-                    $(".side-container .side-box").animate(
-                        {
-                            width: 0,
-                        },
-                        200,
-                        function () {
-                            $(".side-container .side-box").removeClass("open-side");
-                        }
-                    );
+        // Close sidebar when clicking outside
+        $(document).click(function (e) {
+            if (
+                !$(e.target).closest(".side-container").length &&
+                !$(e.target).is(".open-side-btn")
+            ) {
+                const $box = $(".side-container .side-box");
+                if ($box.hasClass("open-side")) {
+                    $box.animate({ width: 0 }, 200, function () {
+                        $box.removeClass("open-side");
+                    });
                 }
-            });
+            }
+        });
+    });
 
             // Prevent clicks on the sidebar itself or its close button from triggering the document click handler
             $(".side-container").click(function (e) {
                 e.stopPropagation(); // Prevent the click from propagating to the document
             });
         </script>
+
+       
+        <div class="call-buton">
+            <a class="cc-calto-action-ripple" href="https://wa.link/mt8zfl" target="_blank" title="1-877-377-8999"><img src="img/wtsicon.png" class="w-100 img-fluid"> </a>
+        </div>
         <!--- quick quote end-->
         <!--- call  end-->
         <!-- Spinner Start -->
@@ -114,7 +115,7 @@
         <div class="container-fluid topbar px-0 d-none d-lg-block">
             <div class="container px-0">
                 <div class="row gx-0 align-items-center" style="height: 45px;">
-                    <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+                   <div class="col-lg-9 col-xl-8 text-center text-lg-start mb-lg-0">
                         <div class="d-flex flex-wrap">
                             <a href="https://maps.app.goo.gl/YBjoim3hf4eotT1SA" target="_blank" class="text-white me-4">
                                 <i class="fas fa-map-marker-alt text-primary me-2"></i>
@@ -124,7 +125,7 @@
                             <a href="mailto:info@vinfonet.com" class="text-white me-0"><i class="fas fa-envelope text-primary me-2"></i>info@vinfonet.com</a>
                         </div>
                     </div>
-                    <div class="col-lg-4 text-center text-lg-end">
+                   <div class="col-lg-3 col-xl-4 text-center text-lg-end">
                         <div class="d-flex align-items-center justify-content-end">
                             <a href="#" class="btn btn-primary btn-square rounded-circle nav-fill me-3"><i class="fab fa-facebook-f text-white"></i></a>
                             <a href="#" class="btn btn-primary btn-square rounded-circle nav-fill me-3"><i class="fab fa-twitter text-white"></i></a>
@@ -138,130 +139,132 @@
         <!-- Topbar End -->
 
         <!-- Navbar & Hero Start -->
-        <div class="container-fluid sticky-top">
-            <div class="container px-0">
-                <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                    <a class="navbar-brand col-lg-2 col-6" href="index.html">
-                        <img src="img/logo.png" alt="" class="d-inline-block align-text-top img-fluid w-100" />
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon d-flex justify-content-center align-items-center"><i class="fa fa-bars" aria-hidden="true"></i></span>
-                    </button>
-                    <div class="collapse navbar-collapse dlg-flex justify-content-end" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="about.html" class="nav-link">About Us</a>
-                            </li>
-
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-                                    Our Services
-                                </a>
-
-                                <ul class="dropdown-menu">
-                                    <li class="dropend">
-                                        <a class="dropdown-item dropdown-toggle py-2" href="medical-billing.html" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="location.href=this.href">
-                                            Medical Billing
-                                        </a>
-                                        <script>
-                                            document.addEventListener("DOMContentLoaded", function () {
-                                                // Check if it's a mobile device based on screen width
-                                                if (window.innerWidth <= 768) {
-                                                    // Select the link with the specific href
-                                                    const mobileBillingLink = document.querySelector('a[href="medical-billing.html"]');
-
-                                                    // If found, change its href to "#" and remove the onclick behavior
-                                                    if (mobileBillingLink) {
-                                                        mobileBillingLink.setAttribute("href", "#");
-                                                        mobileBillingLink.removeAttribute("onclick");
-                                                    }
-                                                }
-                                            });
-                                        </script>
-                                        <ul class="dropdown-menu">
-                                            <li class="nav-item"><a href="medical-billing-mobile.html" class="dropdown-item py-2 d-block d-lg-none"> Medical Billing</a></li>
-                                            <li class="nav-item"><a href="MB-Advantages.html" class="dropdown-item py-2">Advantages</a></li>
-                                            <li class="nav-item"><a href="MB-MedicalCoding.html" class="dropdown-item py-2">Medical Coding</a></li>
-                                            <li class="nav-item"><a href="MB-Revenue-Recovery.html" class="dropdown-item py-2">Revenue Recovery</a></li>
-                                            <li class="nav-item"><a href="MB-Billing-Cycle.html" class="dropdown-item py-2">Billing Cycle</a></li>
-                                            <li class="nav-item"><a href="MB-FAQs.html" class="dropdown-item py-2">FAQs</a></li>
-                                        </ul>
-                                    </li>
-
-                                    <li class="dropend">
-                                        <a class="dropdown-item dropdown-toggle py-2" href="Medical-Transcription.html" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="location.href=this.href">
-                                            Medical Transcription
-                                        </a>
-                                        <script>
-                                            document.addEventListener("DOMContentLoaded", function () {
-                                                if (window.innerWidth <= 768) {
-                                                    const linksToDisable = ["Medical-Transcription.html"];
-
-                                                    linksToDisable.forEach(function (href) {
-                                                        const link = document.querySelector('a[href="' + href + '"]');
-                                                        if (link) {
-                                                            link.setAttribute("href", "#");
-                                                            link.removeAttribute("onclick");
-                                                        }
-                                                    });
-                                                }
-                                            });
-                                        </script>
-                                        <ul class="dropdown-menu">
-                                            <li class="nav-item"><a href="MT-Advantages.html" class="dropdown-item py-2">Advantages</a></li>
-                                            <li class="nav-item"><a href="MT-How-it-works.html" class="dropdown-item py-2">How It Works</a></li>
-                                            <li class="nav-item"><a href="MT-iPhone-app.html" class="dropdown-item py-2">iPhone Dictation app</a></li>
-                                            <li class="nav-item"><a href="MT-DRTs.html" class="dropdown-item py-2">DRT</a></li>
-                                            <li class="nav-item"><a href="MT-FAQ.html" class="dropdown-item py-2">FAQs</a></li>
-                                        </ul>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a class="nav-link" aria-current="page" href="denial-management.html">denial-management</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="https://www.mdcare.com" class="nav-link">MDCare EMR/PMS</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a href="https://mdofficemail.com/" class="nav-link" target="_blank">HIPAA Email</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="hipaa.html" class="nav-link">HIPAA</a>
-                            </li>
-                            <li class="nav-item dropdown active">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-                                    Other Services
-                                </a>
-
-                                <ul class="dropdown-menu">
-                                    <li class="dropend active"><a href="back-office-service.html" class="nav-link">Back Office Service </a></li>
-                                    <li class="dropend"><a href="website-development.html" class="nav-link">Website Development </a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a href="contact.html" class="nav-link">Contact</a>
-                            </li>
-                            <li>
-                                <div class="d-flex align-items-center flex-nowrap pt-xl-0">
-                                    <a href="img/Vision-Infonet-Billing.pdf" class="btn btn-primary rounded-pill text-white py-2 px-4 ms-2 flex-wrap flex-sm-shrink-0" download="">Download Brochure</a>
-                                </div>
-                            </li>
+    <div class="container-fluid sticky-top">
+         <div class="container px-0">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+               <a class="navbar-brand col-lg-2 col-6" href="index.html">
+               <img src="img/logo.png" alt="" class="d-inline-block align-text-top img-fluid w-100" />
+               </a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon d-flex justify-content-center align-items-center"><i class="fa fa-bars" aria-hidden="true"></i></span>
+               </button>
+               <div class="collapse navbar-collapse dlg-flex justify-content-end" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                     <!-- <li class="nav-item active">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li> -->
+                     <li class="nav-item ">
+                        <a href="about.html" class="nav-link">About Us</a>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                        Our Services
+                        </a>
+                        <ul class="dropdown-menu">
+                           <li class="dropend">
+                              <a class="dropdown-item dropdown-toggle py-2" href="medical-billing.html" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="location.href=this.href">
+                              Medical Billing
+                              </a>
+                              <script>
+                                 document.addEventListener("DOMContentLoaded", function () {
+                                     // Check if it's a mobile device based on screen width
+                                     if (window.innerWidth <= 1023) {
+                                         // Select the link with the specific href
+                                         const mobileBillingLink = document.querySelector('a[href="medical-billing.html"]');
+                                 
+                                         // If found, change its href to "#" and remove the onclick behavior
+                                         if (mobileBillingLink) {
+                                             mobileBillingLink.setAttribute("href", "#");
+                                             mobileBillingLink.removeAttribute("onclick");
+                                         }
+                                     }
+                                 });
+                              </script>
+                              <ul class="dropdown-menu">
+                                 <li class="nav-item"><a href="medical-billing.html" class="dropdown-item py-2 d-block d-lg-none d-xl-none"> Medical Billing</a></li>
+                                 <li class="nav-item"><a href="MB-Advantages.html" class="dropdown-item py-2">Advantages</a></li>
+                                 <li class="nav-item"><a href="MB-MedicalCoding.html" class="dropdown-item py-2">Medical Coding</a></li>
+                                 <li class="nav-item"><a href="MB-Revenue-Recovery.html" class="dropdown-item py-2">Revenue Recovery</a></li>
+                                 <li class="nav-item"><a href="MB-Billing-Cycle.html" class="dropdown-item py-2">Billing Cycle</a></li>
+                                 <li class="nav-item "><a href="new-practice-setup.html" class="dropdown-item py-2">New Practice Setup</a></li>
+                                 <li class="nav-item"><a href="MB-FAQs.html" class="dropdown-item py-2">FAQs</a></li>
+                              </ul>
+                           </li>
+                           <li class="dropend">
+                              <a class="dropdown-item dropdown-toggle py-2" href="Medical-Transcription.html" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="location.href=this.href">
+                              Medical Transcription
+                              </a>
+                              <script>
+                                 document.addEventListener("DOMContentLoaded", function () {
+                                     if (window.innerWidth <= 1023) {
+                                         const linksToDisable = ["Medical-Transcription.html"];
+                                 
+                                         linksToDisable.forEach(function (href) {
+                                             const link = document.querySelector('a[href="' + href + '"]');
+                                             if (link) {
+                                                 link.setAttribute("href", "#");
+                                                 link.removeAttribute("onclick");
+                                             }
+                                         });
+                                     }
+                                 });
+                              </script>
+                              <ul class="dropdown-menu">
+                                <li class="nav-item"><a href="Medical-Transcription.html" class="dropdown-item py-2 d-block d-lg-none d-xl-none">  Medical Transcription</a></li>
+                                 <li class="nav-item"><a href="MT-Advantages.html" class="dropdown-item py-2">Advantages</a></li>
+                                 <li class="nav-item"><a href="MT-How-it-works.html" class="dropdown-item py-2">How It Works</a></li>
+                                 <li class="nav-item"><a href="MT-iPhone-app.html" class="dropdown-item py-2">iPhone Dictation app</a></li>
+                                 <li class="nav-item"><a href="MT-DRTs.html" class="dropdown-item py-2">DRT</a></li>
+                                 <li class="nav-item"><a href="MT-FAQ.html" class="dropdown-item py-2">FAQs</a></li>
+                              </ul>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" aria-current="page" href="denial-management.html">denial-management</a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="https://www.mdcare.com" target="_blank" class="nav-link">MDCare EMR/PMS</a>
+                           </li>
                         </ul>
-                    </div>
-                </nav>
-            </div>
-        </div>
-
+                     </li>
+                     <li class="nav-item">
+                        <a href="https://mdofficemail.com/" class="nav-link" target="_blank">HIPAA Email</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="hipaa.html" class="nav-link">HIPAA</a>
+                     </li>
+                     <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                        Other Services
+                        </a>
+                        <ul class="dropdown-menu">
+                           <li class="nav-item active"><a href="back-office-service.html" class="nav-link">Back Office Service </a></li>
+                           <li class="nav-item"><a href="website-development.html" class="nav-link">Website Development </a></li>
+                        </ul>
+                     </li>
+                     <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                     </li>
+                     <li class="download-btn-head">
+                        <div class="d-flex align-items-center flex-nowrap pt-xl-0">
+                           <a href="img/Vision-Infonet-Billing.pdf" target="_blank" class="btn btn-primary rounded-pill text-white py-2 px-4 ms-2 flex-wrap flex-sm-shrink-0" download="">Download Brochure</a>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+      </div>
         <!-- Navbar & Hero End -->
+         
+<div class="inner-p-bg">
+    <div class="header">
+        <!--Content before waves-->
+        <div class="inner-header flex">
+            <!--Just the logo.. Don't mind this-->
 
-        <div class="container-fluid bg-other-serveces">
+              <div class="container-fluid bg-other-serveces">
             <div class="bg-breadcrumb-single"></div>
-            <div class="container text-center py-5" style="max-width: 900px;">
+            <div class="container text-center py-5" >
                 <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Schedule Confirmation Other Back-office Services</h4>
                 <ol class="breadcrumb justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
@@ -270,8 +273,29 @@
                 </ol>
             </div>
         </div>
+        </div>
 
-        <div class="container-fluid Advantages bg-light py-5">
+        <!--Waves Container-->
+        <div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                </g>
+            </svg>
+        </div>
+        <!--Waves end-->
+    </div>
+</div>
+
+  
+
+        <div class="container-fluid Advantages py-5">
             <div class="container">
                 <div class="row g-5">
                     <div class="col-lg-12 fadeInDown wow" style="visibility: visible; animation-name: fadeInDown;">
@@ -393,6 +417,7 @@
 
         <!-- JavaScript Libraries -->
         
+          <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="lib/wow/wow.min.js"></script>
         <script src="lib/easing/easing.min.js"></script>
         <script src="lib/waypoints/waypoints.min.js"></script>
