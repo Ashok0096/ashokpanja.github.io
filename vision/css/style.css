@@ -941,7 +941,7 @@ button.quote-button.action-btn.open-side-btn {
 	border: none;
 	color: #fff;
 	position: fixed;
-	top: 20%;
+	top: 30%;
 	z-index: 9;
 	right: 0;
 
@@ -2995,7 +2995,8 @@ i.fas.fa-phone-alt.text-primary.me-2 {
 .side-container i.fa.fa-phone{
 	transform: rotate(48deg) !important;
 }
-
+.lb-nav {
+    position: relative;}
 
 
 
@@ -3212,6 +3213,13 @@ div#navbarNavDropdown {
     padding-bottom: 30px;
 }
 
+}
+@media (min-width: 576px) and (max-width: 599.98px) {
+    .Billing-Cycle-c .timeline ul li:nth-child(odd) div {
+        left: 20px !important; }
+		.Billing-Cycle-c .timeline ul li:nth-child(even) div {
+        left: 22px !important;
+    }
 }
 
 /* // Small devices (landscape phones, 576px and up) */
@@ -3770,6 +3778,24 @@ div#navbarNavDropdown {
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+
+
+	.read-more-slider {
+    position: absolute;
+    bottom: 4%;
+    left: 55%;
+    right: 30%;
+    font-size: 15px;
+    padding: 6px !important;
+}
+.right-custam {
+    position: absolute !important;
+    bottom: 14% !important;
+    left: 74% !important;
+    right: 15% !important;
+    font-size: 15px !important;
+}
+button.quote-button.action-btn.open-side-btn{ top: 22%;}
 	.list-main .off-size .box{ width: 45%; height: 100px;
 	display: flex;
         justify-content: flex-start;
