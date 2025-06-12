@@ -3053,8 +3053,10 @@ i.fas.fa-phone-alt.text-primary.me-2 {
 
 	.navbar-expand-lg .navbar-nav .nav-link,
 	.dropdown-item {
-		padding: 8px;
-		font-weight: bold;
+		        padding: 8px;
+        font-weight: bold;
+        font-size: 12px;
+        
 	}
 
 	.dropdown-toggle::after {
@@ -3212,7 +3214,8 @@ div#navbarNavDropdown {
     overflow-x: scroll;
     padding-bottom: 30px;
 }
-
+.btn{ padding: 4px 5px;
+    font-size: 12px;}
 }
 @media (min-width: 576px) and (max-width: 599.98px) {
     .Billing-Cycle-c .timeline ul li:nth-child(odd) div {
@@ -3224,6 +3227,8 @@ div#navbarNavDropdown {
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+	.btn{ padding: 4px 10px;
+    font-size: 12px;}
 	div#navbarNavDropdown {
     height: 350px;
     overflow-x: scroll;
@@ -3453,6 +3458,7 @@ div#navbarNavDropdown {
 	.dropdown-item {
 		padding: 8px;
 		font-weight: bold;
+		font-size: 12px;
 	}
 
 	.dropdown-toggle::after {
@@ -3504,6 +3510,7 @@ div#navbarNavDropdown {
 }
 
 @media (min-width: 540px) and (max-width: 720px) {
+	
 	.Billing-Cycle-c .timeline ul li:nth-child(odd) div, .Billing-Cycle-c .timeline ul li:nth-child(even) div
  {
         width: 440px;
@@ -3724,7 +3731,7 @@ div#navbarNavDropdown {
 	.navbar-expand-lg .navbar-nav .nav-link,
 	.dropdown-item {
 		padding: 8px;
-		font-weight: bold;
+		font-weight: bold; font-size: 14px;
 	}
 
 	.dropdown-toggle::after {
