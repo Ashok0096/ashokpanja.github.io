@@ -1044,120 +1044,6 @@ button.quote-button1.action-btn1.open-side-btn1 {
 	padding: 20px 0;
 }
 
-.Billing-Cycle-c .timeline ul {
-	background: #adadad;
-}
-
-.Billing-Cycle-c .timeline ul li {
-	list-style-type: none;
-	position: relative;
-	width: 6px;
-	margin: 0 auto;
-	padding-top: 50px;
-	background: #fff;
-}
-
-.Billing-Cycle-c .timeline ul li::after {
-	content: "";
-	position: absolute;
-	left: 50%;
-	bottom: 0;
-	transform: translateX(-50%);
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
-	background: inherit;
-	z-index: 1;
-}
-
-.Billing-Cycle-c .timeline ul li div {
-	position: relative;
-	bottom: 0;
-	width: 400px;
-	padding: 15px;
-	background: #ffca08;
-}
-
-.Billing-Cycle-c .timeline ul li div::before {
-	content: "";
-	position: absolute;
-	bottom: 7px;
-	width: 0;
-	height: 0;
-	border-style: solid;
-}
-
-.Billing-Cycle-c .timeline ul li:nth-child(odd) div {
-	left: 26px;
-	width: 379px;
-}
-
-.Billing-Cycle-c .timeline ul li:nth-child(odd) div::before {
-	left: 46%;
-	border-width: 23px 34px 21px 0px;
-	border-color: transparent #5ec2af transparent transparent;
-	transform: rotate(270deg);
-	top: 72px;
-
-}
-
-.Billing-Cycle-c .timeline ul li:nth-child(even) div {
-	left: -429px;
-	width: 410px;
-}
-
-.Billing-Cycle-c .timeline ul li:nth-child(even) div::before {
-
-	top: 50px;
-	right: 43%;
-	border-width: 22px 0 22px 34px;
-	border-color: transparent transparent transparent #ffca08;
-	transform: rotate(271deg);
-	top: -38px;
-}
-
-.Billing-Cycle-c time {
-	display: block;
-	font-size: 1.2rem;
-	font-weight: bold;
-	margin-bottom: 8px;
-}
-
-.Billing-Cycle-c .timeline ul li::after {
-	transition: background 0.5s ease-in-out;
-}
-
-.Billing-Cycle-c .timeline ul li.in-view::after {
-	background: #ffca08;
-}
-
-.Billing-Cycle-c .timeline ul li.left-bg-electronic::after {
-	background: #5ec2af;
-}
-
-.Billing-Cycle-c .timeline ul li div {
-	visibility: hidden;
-	opacity: 0;
-	transition: all 0.5s ease-in-out;
-}
-
-.Billing-Cycle-c .timeline ul li:nth-child(odd) div {
-	transform: translate3d(200px, 0, 0);
-}
-
-.Billing-Cycle-c .timeline ul li:nth-child(even) div {
-	transform: translate3d(-200px, 0, 0);
-}
-
-.Billing-Cycle-c .timeline ul li.in-view div {
-	transform: none;
-	text-align: center;
-	visibility: visible;
-	opacity: 1;
-	font-size: 16px;
-	font-weight: bold;
-}
-
 .dropdown-item.active,
 .dropdown-item:active {
 	color: #fff;
@@ -1299,9 +1185,7 @@ button.quote-button1.action-btn1.open-side-btn1 {
 	color: #000;
 }
 
-.Billing-Cycle-c .timeline ul li div {
-	width: 360px;
-}
+
 
 @keyframes colorChange {
 	0% {
@@ -1614,77 +1498,11 @@ h1,
 		width: 50%;
 	}
 
-	.Billing-Cycle-c .timeline ul li div {
-		width: 250px;
-	}
+	
 
-	.Billing-Cycle-c .timeline ul li:nth-child(even) div {
-		left: -289px;
-		/*250+45-6*/
-	}
+	
 }
 
-@media screen and (max-width: 600px) {
-	.Billing-Cycle-c .timeline ul li {
-		margin-left: 20px;
-	}
-
-	.Billing-Cycle-c .timeline ul li div {
-		width: calc(100vw - 91px);
-	}
-
-	.Billing-Cycle-c .timeline ul li:nth-child(even) div {
-		left: 45px;
-	}
-
-	.Billing-Cycle-c .timeline ul li:nth-child(even) div::before {
-		left: -15px;
-		border-width: 8px 16px 8px 0;
-		border-color: transparent #f45b69 transparent transparent;
-	}
-}
-
-.Billing-Cycle-c .timeline-clippy ul li::after {
-	width: 40px;
-	height: 40px;
-	border-radius: 0;
-}
-
-.Billing-Cycle-c .timeline-rhombus ul li::after {
-	clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-}
-
-.Billing-Cycle-c .timeline-rhombus ul li div::before {
-	bottom: 12px;
-}
-
-.Billing-Cycle-c .timeline-star ul li::after {
-	clip-path: polygon(50% 0%,
-			61% 35%,
-			98% 35%,
-			68% 57%,
-			79% 91%,
-			50% 70%,
-			21% 91%,
-			32% 57%,
-			2% 35%,
-			39% 35%);
-}
-
-.Billing-Cycle-c .timeline-heptagon ul li::after {
-	clip-path: polygon(50% 0%,
-			90% 20%,
-			100% 60%,
-			75% 100%,
-			25% 100%,
-			0% 60%,
-			10% 20%);
-
-}
-
-.Billing-Cycle-c .timeline-infinite ul li::after {
-	animation: scaleAnimation 2s infinite;
-}
 
 @keyframes scaleAnimation {
 	0% {
@@ -2997,10 +2815,15 @@ i.fas.fa-phone-alt.text-primary.me-2 {
 }
 .lb-nav {
     position: relative;}
+.carousel-indicators [data-bs-target]{background: #303289;
+    border-radius: 46px;
+    padding: 0px 0px;}
+h1 {
+    margin: 0;
+    margin-top: 3%;
+}
 
-
-
-
+.carousel-indicators{ margin-left: 30%;}
 
 
 
@@ -3170,16 +2993,7 @@ i.fas.fa-phone-alt.text-primary.me-2 {
 	}
 .right-menu-c ul i {
    width: 6%;}
-   .Billing-Cycle-c .timeline ul li:nth-child(odd) div::before{        top: 87px;
-        left: 80%;}
-   .Billing-Cycle-c .timeline ul li.in-view div{min-height: 82px;}
-  .Billing-Cycle-c .timeline ul li:nth-child(even) div::before {
-         left: -4px;
-        border-width: 23px 34px 21px 0px;
-        border-color: transparent #ffca08 transparent transparent;
-        transform: rotate(328deg);
-        top: -26px;
-}
+
 .dropdown-menu .nav-item:hover,
 .dropdown-menu li:hover {
 	border-radius: 0px !important;
@@ -3200,14 +3014,6 @@ li.download-btn-head {
 .counter-value img{ width: 20%;}
 .counter-value span , .count{ font-size: 28px;}
 .list-main .off-size .box {width: 100% !important;}
-.timeline ul{ padding: 0px;}
-.Billing-Cycle-c .timeline ul li:nth-child(odd) div , .Billing-Cycle-c .timeline ul li:nth-child(even) div{ width: 210px;}
-    .Billing-Cycle-c .timeline ul li:nth-child(even) div {
-        left: 24px;
-    }
-    .Billing-Cycle-c .timeline ul li.in-view div {
-        min-height: 96px;
-    }
 
 div#navbarNavDropdown {
     height: 350px;
@@ -3217,13 +3023,7 @@ div#navbarNavDropdown {
 .btn{ padding: 4px 5px;
     font-size: 12px;}
 }
-@media (min-width: 576px) and (max-width: 599.98px) {
-    .Billing-Cycle-c .timeline ul li:nth-child(odd) div {
-        left: 20px !important; }
-		.Billing-Cycle-c .timeline ul li:nth-child(even) div {
-        left: 22px !important;
-    }
-}
+
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -3241,11 +3041,7 @@ div#navbarNavDropdown {
     top: -2%;
 	background: #000;
 }  
-	.Billing-Cycle-c .timeline ul li:nth-child(odd) div {
-           left: -180px;
-        width: 409px;
-        top: 10px;
-}
+	
 	.list-main .off-size .box {width: 100%;}
 	.counter-value img{ width: 20%;}
 .testimonial-item i{ font-size: 12px;}
@@ -3291,15 +3087,7 @@ div#navbarNavDropdown {
 	}
 .right-menu-c ul i {
    width: 6%;}
-   .Billing-Cycle-c .timeline ul li:nth-child(odd) div::before{top: 67px; left: 90%;}
-   .Billing-Cycle-c .timeline ul li.in-view div{min-height: 82px;}
-  .Billing-Cycle-c .timeline ul li:nth-child(even) div::before {
-         left: -4px;
-        border-width: 23px 34px 21px 0px;
-        border-color: transparent #ffca08 transparent transparent;
-        transform: rotate(328deg);
-        top: -26px;
-}
+ 
 .dropdown-menu .nav-item:hover,
 .dropdown-menu li:hover {
 	border-radius: 0px !important;
@@ -3345,15 +3133,7 @@ div#navbarNavDropdown {
 	}
 .right-menu-c ul i {
    width: 6%;}
-   .Billing-Cycle-c .timeline ul li:nth-child(odd) div::before{top: 67px; left: 90%;}
-   .Billing-Cycle-c .timeline ul li.in-view div{min-height: 82px;}
-  .Billing-Cycle-c .timeline ul li:nth-child(even) div::before {
-         left: -4px;
-        border-width: 23px 34px 21px 0px;
-        border-color: transparent #ffca08 transparent transparent;
-        transform: rotate(328deg);
-        top: -26px;
-}
+  
 .dropdown-menu .nav-item:hover,
 .dropdown-menu li:hover {
 	border-radius: 0px !important;
@@ -3502,24 +3282,9 @@ div#navbarNavDropdown {
         align-items: center;}
 }
 
-@media (min-width: 412px) and (max-width: 415px)  {
-    .Billing-Cycle-c .timeline ul li:nth-child(odd) div, .Billing-Cycle-c .timeline ul li:nth-child(even) div {
-        width: 310px;
-    }
 
-}
 
-@media (min-width: 540px) and (max-width: 720px) {
-	
-	.Billing-Cycle-c .timeline ul li:nth-child(odd) div, .Billing-Cycle-c .timeline ul li:nth-child(even) div
- {
-        width: 440px;
-    }
-    .Billing-Cycle-c .timeline ul li:nth-child(odd) div::before {
-        top: 75px;
-        left: 91%;
-    }
-}
+
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
 	
@@ -3567,15 +3332,7 @@ div#navbarNavDropdown {
 	}
 .right-menu-c ul i {
    width: 6%;}
-   .Billing-Cycle-c .timeline ul li:nth-child(odd) div::before{top: 67px; left: 90%;}
-   .Billing-Cycle-c .timeline ul li.in-view div{min-height: 82px;}
-  .Billing-Cycle-c .timeline ul li:nth-child(even) div::before {
-         left: -4px;
-        border-width: 23px 34px 21px 0px;
-        border-color: transparent #ffca08 transparent transparent;
-        transform: rotate(328deg);
-        top: -26px;
-}
+  
 .dropdown-menu .nav-item:hover,
 .dropdown-menu li:hover {
 	border-radius: 0px !important;
@@ -3619,15 +3376,7 @@ div#navbarNavDropdown {
 	}
 .right-menu-c ul i {
    width: 6%;}
-   .Billing-Cycle-c .timeline ul li:nth-child(odd) div::before{top: 67px; left: 90%;}
-   .Billing-Cycle-c .timeline ul li.in-view div{min-height: 82px;}
-  .Billing-Cycle-c .timeline ul li:nth-child(even) div::before {
-         left: -4px;
-        border-width: 23px 34px 21px 0px;
-        border-color: transparent #ffca08 transparent transparent;
-        transform: rotate(328deg);
-        top: -26px;
-}
+  
 .dropdown-menu .nav-item:hover,
 .dropdown-menu li:hover {
 	border-radius: 0px !important;
@@ -3767,14 +3516,7 @@ div#navbarNavDropdown {
 	.container .card {
 		max-width: 100%;
 	}
-	.Billing-Cycle-c .timeline ul li:nth-child(odd) div {
-    left: 26px;
-    width: 299px;
-}
-    .Billing-Cycle-c .timeline ul li:nth-child(even) div {
-        left: -360px;
-        width: 340px;
-    }
+	
 	.list-main .off-size .box{ width: 45%; height: 100px;
 	display: flex;
         justify-content: flex-start;
@@ -3817,25 +3559,7 @@ button.quote-button.action-btn.open-side-btn{ top: 22%;}
         justify-content: flex-start;
         align-items: center;
 	}
-	.Billing-Cycle-c .timeline ul li:nth-child(odd) div {
-    left: 26px;
-    width: 379px;
-    min-height: 85px;
-    display: flex
-;
-    align-items: center;
-    justify-content: center;
-}
-
-
-	.Billing-Cycle-c .timeline ul li:nth-child(odd) div {
-    left: 26px;
-    width: 299px;
-}
-.Billing-Cycle-c .timeline ul li:nth-child(even) div {
-    left: -349px;
-    width: 330px;
-}
+	
 	
 .download-btn-head .navbar-nav>.nav-item {
     margin: 0px 0px !important;
@@ -3869,20 +3593,17 @@ a.navbar-brand img{ width: 100% !important;}
 	.shadow-sm a.navbar-brand img {
     width: 50% !important;
 }
-.Billing-Cycle-c .timeline ul li:nth-child(odd) div {
-    left: 26px;
-    width: 379px;
-    min-height: 85px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
 }
-.Billing-Cycle-c .timeline ul li:nth-child(even) div {
-  
-    min-height: 85px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 30px;
+.call-buton {
+    display: none;
 }
-}
+
+
+
+
+
+
+
+
+
