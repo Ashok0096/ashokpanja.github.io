@@ -1598,10 +1598,11 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-white.py-3.px-4 {
 /*** Navbar ***/
 .sticky-top,
 .sticky-top .container {
-	transition: 0.1s !important;
+	transition: 0.5s !important;
 	background: rgb(255 255 255 / 100%) !important; 
 
 }
+.sticky-top{ padding: 0px;}
 .sticky-top{ box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;}
 .navbar .navbar-nav .nav-item.nav-link,
 .navbar .navbar-nav .nav-link {
@@ -2826,7 +2827,9 @@ h1 {
 .carousel-indicators{ margin-left: 20%;}
 
 .w-90{width: 90% !important; }
-
+i.fa.fa-phone-alt.text-white {
+    transform: rotate(137deg);
+}
 
 
 
