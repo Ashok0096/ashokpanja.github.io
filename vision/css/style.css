@@ -2831,7 +2831,7 @@ i.fa.fa-phone-alt.text-white {
     transform: rotate(137deg);
 }
 p{ text-align: justify !important;}
-
+a.btn.btn-primary.btn-lg-square.back-to-top{ display: none  !important;}
 
 
 
@@ -3022,9 +3022,9 @@ li.download-btn-head {
 .list-main .off-size .box {width: 100% !important;}
 
 div#navbarNavDropdown {
-    height: 350px;
+    height: 300px;
     overflow-x: scroll;
-    padding-bottom: 30px;
+    padding-top: 20px;
 }
 
 	.btn-lg-square {
@@ -3039,12 +3039,13 @@ div#navbarNavDropdown {
 	width: 5px; height: 0px;
 }
 .carousel-indicators [data-bs-target]{ padding: 0px 5px;}
-
+ul.dropdown-menu.show{ border-radius: 0px;}
 }
 
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+	ul.dropdown-menu.show{ border-radius: 0px;}
 	.btn-lg-square {
     width: 35px;
     height: 35px;
@@ -3054,7 +3055,7 @@ div#navbarNavDropdown {
 	div#navbarNavDropdown {
     height: 350px;
     overflow-x: scroll;
-    padding-bottom: 30px;
+    padding-top: 20px;
 }
 	.MB-Medical-bil-s .pricing-card{ margin-top: 50px;}
 		.lb-closeContainer {
@@ -3626,3 +3627,12 @@ a.navbar-brand img{ width: 100% !important;}
 .call-buton {
     display: none;
 }
+
+
+
+
+
+
+
+
+

@@ -299,7 +299,7 @@
                            What are the initial setup costs for your services?
                            </button>
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" >
                            <div class="accordion-body">
                               Initial setup is absolutely Free!! This includes installing the required equipment at the Physician’s office.
                            </div>
@@ -311,7 +311,7 @@
                            Is there any termination fee?
                            </button>
                         </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" style="">
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" >
                            <div class="accordion-body">
                               There is no termination fee. All the data will be given to the client unconditionally.
                            </div>
@@ -323,7 +323,7 @@
                            Do the client needs to sign any contract to start utilizing your service?
                            </button>
                         </h2>
-                        <div id="three" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample" style="">
+                        <div id="three" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample" >
                            <div class="accordion-body">
                               No contract is necessary. However if the client wants discontinue utilizing our service within the first 12 months, the client need to pay the cost of the equipment that is installed in their office.
                            </div>
@@ -544,7 +544,7 @@
       <div class="container-fluid footer py-5 wow fadeIn pb-3" data-wow-delay="0.2s">
          <div class="container">
             <div class="row g-5">
-               <div class="col-md-6 col-lg-3 col-xl-3 ps-lg-0 pe-lg-0">
+               <div class="col-md-6 col-lg-3 col-xl-3 ps-lg-0">
                   <div class="footer-item d-flex flex-column">
                      <div class="footer-item">
                         <h4 class="text-white mb-4">About Us</h4>
@@ -619,6 +619,7 @@
       <!-- Copyright End -->
       <!-- Back to Top -->
       <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+       <div class="progressCounter"></div>
       <!-- JavaScript Libraries -->
       <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
       <script src="lib/wow/wow.min.js"></script>
@@ -628,5 +629,25 @@
       <script src="lib/owlcarousel/owl.carousel.min.js"></script>
       <script src="lib/lightbox/js/lightbox.min.js"></script>
       <script src="js/main.js"></script>
+      <script src="js/jquery.progressScrollmin.js"></script>
+        <script src="js/jquery.progressScroll.js"></script>
+        <script>
+            $(".progressCounter").progressScroll();
+        </script>
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(["_setAccount", "UA-36251023-1"]);
+            _gaq.push(["_setDomainName", "jqueryscript.net"]);
+            _gaq.push(["_trackPageview"]);
+
+            (function () {
+                var ga = document.createElement("script");
+                ga.type = "text/javascript";
+                ga.async = true;
+                ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
    </body>
 </html>
