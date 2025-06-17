@@ -2837,7 +2837,10 @@ a.btn.btn-primary.btn-lg-square.back-to-top{ display: none  !important;}
         border-radius: 0px;
     }
 
-
+.progressCounter.progressScroll
+ {
+    z-index: 9;
+}
 
 
 
@@ -3043,11 +3046,42 @@ div#navbarNavDropdown {
 }
 .carousel-indicators [data-bs-target]{ padding: 0px 5px;}
 ul.dropdown-menu.show{ border-radius: 0px;}
+.progressScroll-circle{
+    width: 60px !important;
+    height: 60px !important;
+}
+.progressScroll-border {
+    width: 70px !important;
+    height: 70px !important;
+}
+.progressCounter.progressScroll {
+    width: auto !important;
+    height: auto !important;
+}
+span.progressScroll-text {
+    font-size: 18px !important;
+}
+
 }
 
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+	span.progressScroll-text {
+    font-size: 18px !important;
+}
+	.progressCounter.progressScroll {
+    width: auto !important;
+    height: auto !important;
+}
+	.progressScroll-border {
+    width: 70px !important;
+    height: 70px !important;
+}
+	.progressScroll-circle{
+    width: 60px !important;
+    height: 60px !important;
+}
 	ul.dropdown-menu.show{ border-radius: 0px;}
 	.btn-lg-square {
     width: 35px;
