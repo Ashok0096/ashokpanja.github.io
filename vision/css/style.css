@@ -2901,11 +2901,14 @@ i.fa.fa-phone-alt.text-white {
 	.navbar .navbar-toggler {
 		padding: 2px 4px;
 		color: var(--bs-dark);
-		font-size: 17px;
+		font-size: 14px;
 		color: #fff;
 		border-radius: 3px;
 	}
-
+.shadow-sm nav {
+    padding: 0px 20px;
+    transition: .5s;
+}
 	.mail-buton .mail-calto-action-ripple i,
 	.call-buton .cc-calto-action-ripple i {
 		font-size: 16px;
@@ -2972,7 +2975,7 @@ i.fa.fa-phone-alt.text-white {
 	}
 
 	.sticky-top img {
-		width: 50% !important;
+		width: 60% !important;
 	}
 
 	.pricing-table,
@@ -3023,8 +3026,11 @@ div#navbarNavDropdown {
     overflow-x: scroll;
     padding-bottom: 30px;
 }
-.btn{ padding: 4px 5px;
-    font-size: 10px;}
+
+	.btn-lg-square {
+    width: 35px;
+    height: 35px;
+}
 	.carousel-indicators {
     margin-left: 15%;
     bottom: -31px;
@@ -3038,6 +3044,10 @@ div#navbarNavDropdown {
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+	.btn-lg-square {
+    width: 35px;
+    height: 35px;
+}
 	.btn{ padding: 4px 10px;
     font-size: 12px;}
 	div#navbarNavDropdown {
@@ -3542,6 +3552,7 @@ div#navbarNavDropdown {
     overflow: scroll;
 }
 .side-box .bg-white.p-3{ top: 0px; }
+.medc-links-section .card{ justify-content: start; align-items: start;}
 }
 
 
@@ -3579,7 +3590,7 @@ button.quote-button.action-btn.open-side-btn{ top: 22%;}
         padding: 7px !important} 
 .navbar .navbar-nav .nav-item.nav-link, .navbar .navbar-nav .nav-link {
     font-size: 14px;
-	        padding: 5px !important;
+	        
 }
 .topbar a{ font-size: 14px;}
 a.navbar-brand.col-lg-2.col-6 {
@@ -3593,9 +3604,14 @@ nav .active{ border-radius: 0px !important;}
     width: 100% !important;
 }
 a.navbar-brand img{ width: 100% !important;}
-.shadow-sm a.navbar-brand img {
+/* .shadow-sm a.navbar-brand img {
     width: 50% !important;
+} */
+ .service .service-item {
+   
+    min-height: 600px;
 }
+.medc-links-section .card{ justify-content: start; align-items: start;}
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
