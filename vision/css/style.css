@@ -2830,7 +2830,7 @@ h1 {
 i.fa.fa-phone-alt.text-white {
     transform: rotate(137deg);
 }
-
+p{ text-align: justify !important;}
 
 
 
@@ -3040,13 +3040,11 @@ div#navbarNavDropdown {
 }
 .carousel-indicators [data-bs-target]{ padding: 0px 5px;}
 
-p{ text-align: justify !important;}
 }
 
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-	p{ text-align: justify !important;}
 	.btn-lg-square {
     width: 35px;
     height: 35px;
@@ -3628,12 +3626,3 @@ a.navbar-brand img{ width: 100% !important;}
 .call-buton {
     display: none;
 }
-
-
-
-
-
-
-
-
-
