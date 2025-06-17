@@ -2906,7 +2906,7 @@ i.fa.fa-phone-alt.text-white {
 		border-radius: 3px;
 	}
 .shadow-sm nav {
-    padding: 0px 20px;
+    padding: 0px 0px;
     transition: .5s;
 }
 	.mail-buton .mail-calto-action-ripple i,
@@ -3039,11 +3039,14 @@ div#navbarNavDropdown {
 	width: 5px; height: 0px;
 }
 .carousel-indicators [data-bs-target]{ padding: 0px 5px;}
+
+p{ text-align: justify !important;}
 }
 
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+	p{ text-align: justify !important;}
 	.btn-lg-square {
     width: 35px;
     height: 35px;
