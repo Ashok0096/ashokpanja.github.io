@@ -6,8 +6,9 @@
       <title>Medical Billing Services | Medical Transcription Services | Vinfonet.com</title>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="icon" type="" href="img/favicon.png" />
-      <meta name="Description" content="Medical billing services with a proven record of increasing reimbursement, Experienced and economical medical transcription services delivering accurate reports in time.">
-      <!-- Icon Font Stylesheet -->
+       <meta name="Description" content="Medical billing services with a proven record of increasing reimbursement, Experienced and economical medical transcription services delivering accurate reports in time.">
+    <meta name="Keywords" content="medical billing services, medical billing service, medical transcription services, drt, Discrete Reportable Transcription, medical transcription service, Medical transcription free trial, medical billing for physicians, medical billing company, professional medical billing, economical medical billing company, medical billing software, transcription service providers, economical medical transcription, medical transcription Online, electronic medical billing, medical coding services, instant payment medical billing, HIPAA compliant transcription services">
+ <!-- Icon Font Stylesheet -->
       <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" /> -->
       <!-- Libraries Stylesheet -->
       <link href="lib/animate/animate.min.css" rel="stylesheet" />
@@ -20,6 +21,7 @@
        <link href="css/font-awesome.css" rel="stylesheet" />
       <script src="js/main-jsmin.js"></script>
       <link href="css/menu.css" rel="stylesheet" />
+       <script src="js/revenue-recovery.js"></script>
    </head>
    <body>
       <!--- quick quote start-->
@@ -284,59 +286,164 @@
       <!-- Revenue-Recovery Start -->
       <div class="container-fluid  py-5">
          <div class="container">
-            <div class="row g-5">
+            <div class="row">
                <div class="col-lg-9 fadeInDown wow">
                   <h2 class="text-primary">
-                     General Reasons for claim denial are as follows
+                   General Reasons for claim denial are as follows
                   </h2>
-                  <div class="col-xl-5 col-lg-12 col-md-12 float-start">
+                  <div class="col-xl-12 col-lg-12 col-md-12 float-start">
+                    
                      <ul class="text-start list-arrow">
                         <li>
-                           Under coding or Up coding medical claims.
+                           <h5 class="m-0">
+                              Lack of Coverage
+                           </h5>
+                           <p>
+                              The claim falls outside the scope of the insurance policy—like a procedure not included in your health plan or damage not covered by your homeowner’s policy.
+                           </p>
                         </li>
-                        <li>
-                           Improper usage/non-usage of Modifiers.
+                          <li>
+                           <h5 class="m-0">
+                            Incorrect or Incomplete Information
+                           </h5>
+                           <p>
+                              Errors on the claim form—wrong codes, missing documents, improper modifiers and pointers—can trigger an automatic denial.
+                           </p>
                         </li>
-                        <li>
-                           Not meeting medical necessity.
+                              <li>
+                           <h5 class="m-0">
+                            Missed Deadlines
+                           </h5>
+                           <p>
+                             Filing a claim after the deadline can lead to an outright denial. Timeliness is key.
+                           </p>
                         </li>
-                        <li>
-                           ABN Policies.
+                              <li>
+                           <h5 class="m-0">
+                           Payer Agreements
+                           </h5>
+                           <p>
+                             Especially in some types of health insurance, payer may not oblige to certain procedures for various reasons. Understanding and fulfilling is important. 
+                           </p>
                         </li>
-                        <li>
-                           Payer agreements.
+                              <li>
+                           <h5 class="m-0">
+                           Policy Lapses or Non-Payment
+                           </h5>
+                           <p>
+                           If premiums haven’t been paid or the policy has lapsed, the insurer won’t honor the claim, even if it’s legitimate. Could be because of many reasons.    
+                           </p>
                         </li>
-                        <li>
-                           Improper demographics.
+                           <li>
+                           <h5 class="m-0">
+                           Wrong Payer
+                           </h5>
+                           <p>
+                           Improper eligibility check good lead to claim submitted to the wrong payer. Its important to check before submission, or even before the patient visit.   
+                           </p>
                         </li>
-                        <li>
-                           Improper verification of eligibility and benefits etc.
-                        </li>
+
+                        
+                       
                      </ul>
                   </div>
-                  <div class="col-xl-12 col-lg-12 col-md-12 float-start">
-                     <img src="img/chart.png" class="img-fluid w-100" />
+                  <div class="col-xl-12 col-lg-12 col-md-12 float-start pb-3">
+                     <h2 class="text-primary">
+                  Common 
+Denial Reasons
+
+                  </h2>
+                  <img src="img/Revenue-Recovery-g-ne.png" class="img-fluid w-100  d-block d-lg-none" />
+                   <div class="position-relative oilChart-top d-none d-lg-block">
+  <canvas id="oilChart"></canvas>
+</div>
+
+  <script>
+    const oilCanvas = document.getElementById("oilChart");
+
+    const oilData = {
+      labels: [
+        "Lack of Coverage : 10%",
+        "Wrong Payer : 30%",
+        "Missed Deadlines : 15%",
+        "Payer Agreements : 15%",
+        "Coding Issue : 10%",
+        "Modifier Rules : 20%"
+
+      ],
+      datasets: [{
+        
+        data: [10, 30, 15, 15, 10, 20],
+        backgroundColor: [
+          "#4f81bd",
+          "#c0504d",
+          "#9bbb59",
+          "#7d629f",
+          "#48a5be",
+          "#f79646",
+          
+        ],
+        borderWidth: 1
+      }],
+    };
+const config = {
+  type: 'pie',
+  data: oilData,
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'right', // ✅ Move legend to right side of the chart
+        labels: {
+          font: {
+            size: 18
+          },
+          color: 'black'
+          
+        }
+      },
+   tooltip: {
+  callbacks: {
+    label: function (context) {
+      const value = context.raw;
+      const data = context.chart.data.datasets[0].data;
+      const total = data.reduce((a, b) => a + b, 0);
+      const percentage = ((value / total) * 100).toFixed(1);
+      return `${percentage}%`;
+    }
+  }
+}
+
+    }
+  }
+};
+
+
+
+    new Chart(oilCanvas, config);
+    
+  </script>
+                   
                   </div>
                   <p class="float-start">"Following diagram shows the general reasons for denials with approximate percentage of each reason."</p>
                   <div class="clearfix"></div>
                   <ul class="text-start list-arrow">
                      <li>
-                        Our staff has a good understanding of the above, contracts between payers and providers.
+                        	Our staff has a good understanding of the above, contracts between payers and providers.
                      </li>
                      <li>
-                        We interpret, analyze and identify systemic underpayments by payers at the individual claim level.
+                       We interpret, analyze and identify systemic underpayments by payers at the individual claim level.
                      </li>
                      <li>
-                        We do consistent, personalized, courteous follow-up on all accounts with outstanding balances.
+                        	We do consistent, personalized, courteous follow-up on all accounts with outstanding balances.
                      </li>
                      <li>
-                        We do have excellent AR follow-up skills to call upon payers, enquire about the correct reason for denial and work as per their clarification and getting the claim paid.
-                     </li>
+                        	We do have excellent AR follow-up skills to call upon payers, enquire about the correct reason for denial and work as per their clarification and getting the claim paid.
+                      </li>
                   </ul>
                   <div class="clearfix"></div>
                   <p>
-                     This entire process involves following up on underpaid claims, understanding the reasons for underpayment, and then recovering revenues from the payers by taking steps to address those issues (resubmitting
-                     claims, appeals, etc.)
+                     This entire process involves following up on underpaid claims, understanding the reasons for underpayment, and then recovering revenues from the payers by taking steps to address those issues (resubmitting claims, appeals, etc.)
                   </p>
                   <div class="clearfix"></div>
                   <h2 class="text-primary mt-4 mb-0">
@@ -345,19 +452,13 @@
                   <div class="col-xl-12 p-0 col-lg-12 col-md-12 float-start">
                      <ul class="text-start list-arrow">
                         <li>
-                           We have a system to time appeals submitted and ensure that no time is wasted in the appeal process. We also develop standard appeal letters that can be easily customized with information about the
-                           particular patient and situation involved in every denial.
+                        	We have a dedicated appeal work-flow developed, to ensure that no time is wasted in the appeal process. We also use standard appeal letters that can be easily customized with information about the particular patient and situation involved in every denial.
                         </li>
                         <li>
-                           If an insurer routinely down-codes claims, we appeal for the code that was submitted originally and include supporting documentation.
+                          	If an insurer routinely down-codes claims, we appeal for the code that was submitted originally and include supporting documentation.
                         </li>
                         <li>
-                           If an insurer consistently refuses payment for a certain code, we request the physicians to contact the insurer, discuss the situation and bring along supporting documentation instead of sending more
-                           appeals.
-                        </li>
-                        <li>
-                           Before signing any contract with a payer, we request the physicians to make sure that the claim appeal process is explained clearly. This helps us determine steps to be taken after a denial and consider
-                           steps for further action.
+                          	We ensure that the payers educate the billers about their appeal process. This helps us determine steps to be taken after a denial and consider further action.
                         </li>
                      </ul>
                   </div>
@@ -505,20 +606,6 @@
         <script>
             $(".progressCounter").progressScroll();
         </script>
-        <script type="text/javascript">
-            var _gaq = _gaq || [];
-            _gaq.push(["_setAccount", "UA-36251023-1"]);
-            _gaq.push(["_setDomainName", "jqueryscript.net"]);
-            _gaq.push(["_trackPageview"]);
-
-            (function () {
-                var ga = document.createElement("script");
-                ga.type = "text/javascript";
-                ga.async = true;
-                ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
-                var s = document.getElementsByTagName("script")[0];
-                s.parentNode.insertBefore(ga, s);
-            })();
-        </script>
+       
    </body>
 </html>

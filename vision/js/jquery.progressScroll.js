@@ -1,11 +1,3 @@
-/*
- * December 2014
- * progressScroll 1.0.0
- * @author Mario Vidov
- * @url http://vidov.it
- * @twitter MarioVidov
- * GPL license
- */
 
 $.fn.progressScroll = function(options) {
 
@@ -16,7 +8,7 @@ $.fn.progressScroll = function(options) {
         mainBgColor: "#E6F4F7",
         lightBorderColor: "#A2ECFB",
         darkBorderColor: "#39B4CC",
-        fontSize: "30px"
+        fontSize: "20px"
     }, options);
 
     var innerHeight, offsetHeight, netHeight,
