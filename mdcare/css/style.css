@@ -524,7 +524,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{font-family: Tahoma, sans-s
 }
 .bg-green{background-color:#5cb85c !important}
 .text-green{ color: #5cb85c !important;}
-
+/* 
 
 .bg-orange{background-color:#eb8a1d !important}
 .text-orange{ color: #eb8a1d !important;}
@@ -537,7 +537,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{font-family: Tahoma, sans-s
     transition: var(--transition);
 }
 .card__container-h .card__bx:hover .card__dataf .card__icon .card__icon-bx{ background: #eb8a1d;
-    color: #ffffff;}
+    color: #ffffff;} */
 
 
 
@@ -594,7 +594,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{font-family: Tahoma, sans-s
   transition: all .3s;
 
 }
-.frame-download .btn-12 span:nth-child(1) {
+/* .frame-download .btn-12 span:nth-child(1) {
  
   -webkit-transform: rotateX(90deg);
   -moz-transform: rotateX(90deg);
@@ -623,7 +623,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{font-family: Tahoma, sans-s
   -webkit-transform: rotateX(-90deg);
   -moz-transform: rotateX(-90deg);
   transform: rotateX(-90deg);
-}
+} */
 
     
 
