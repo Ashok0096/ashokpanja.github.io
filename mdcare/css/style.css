@@ -1,4 +1,4 @@
-@import url('../Inter/inter.css');
+@import url('../Roboto/Roboto.css');
 :root {
     --primary: #06A3DA;
     --secondary: #34AD54;
@@ -57,7 +57,7 @@
     opacity: 1;
 }
 
-body{ font-family:"Inter", sans-serif; color: #000; font-size: 16px; }
+body{ font-family:"Roboto", sans-serif; color: #000; font-size: 16px; }
 /*** Heading ***/
 h1,
 h2,
@@ -80,7 +80,7 @@ h6,
 
 /*** Button ***/
 .btn {
-    font-family: "Inter", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 600;
     transition: .5s;
 }
@@ -125,7 +125,7 @@ h6,
 
 /*** Navbar ***/
 .navbar-dark .navbar-nav .nav-link {
-    font-family: "Inter", sans-serif;
+    font-family: "Roboto", sans-serif;
     position: relative;
     margin-left: 25px;
     padding: 35px 0;
@@ -408,7 +408,10 @@ h6,
 .link-animated a:hover {
     padding-left: 10px;
 }
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{font-family: Tahoma, sans-serif;}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
+    /* font-family: Tahoma, sans-serif; */
+font-family:"Roboto", sans-serif;
+}
 .card__container.card__container-h {
     display: flex;
     flex-wrap: wrap;
@@ -553,7 +556,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{font-family: Tahoma, sans-s
   font-family: 'Lato', sans-serif;
   font-weight: 500;
   background: transparent;
-  cursor: pointer;
+  cursor: poRoboto;
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
