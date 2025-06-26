@@ -35,8 +35,8 @@
         loop: true,
         nav : true,
         navText : [
-            '<i class="bi bi-arrow-left"></i>',
-            '<i class="bi bi-arrow-right"></i>'
+            '<i class="fa fa-arrow-left"></i>',
+            '<i class="fa fa-arrow-right"></i>'
         ],
     });
 
@@ -68,8 +68,9 @@
         margin: 25,
         nav : true,
         navText : [
-            '<i class="fas fa-chevron-left"></i>',
-            '<i class="fas fa-chevron-right"></i>'
+            '<i class="fa fa-arrow-left"></i>',
+            '<i class="fa fa-arrow-right"></i>'
+            
         ],
         responsiveClass: true,
         responsive: {
@@ -100,8 +101,8 @@
         margin: 25,
         nav : true,
         navText : [
-            '<i class="fas fa-chevron-left"></i>',
-            '<i class="fas fa-chevron-right"></i>'
+            '<i class="fa fa-arrow-left"></i>',
+            '<i class="fa fa-arrow-right"></i>'
         ],
         responsiveClass: true,
         responsive: {
@@ -132,8 +133,8 @@
         margin: 25,
         nav : true,
         navText : [
-            '<i class="fas fa-chevron-left"></i>',
-            '<i class="fas fa-chevron-right"></i>'
+            '<i class="fa fa-arrow-left"></i>',
+            '<i class="fa fa-arrow-right"></i>'
         ],
         responsiveClass: true,
         responsive: {
@@ -165,8 +166,8 @@
         margin: 25,
         nav : true,
         navText : [
-            '<i class="fas fa-chevron-left"></i>',
-            '<i class="fas fa-chevron-right"></i>'
+            '<i class="fa fa-arrow-left"></i>',
+            '<i class="fa fa-arrow-right"></i>'
         ],
         responsiveClass: true,
         responsive: {
@@ -198,8 +199,8 @@
         margin: 25,
         nav : true,
         navText : [
-            '<i class="fas fa-chevron-left"></i>',
-            '<i class="fas fa-chevron-right"></i>'
+            '<i class="fa fa-arrow-left"></i>',
+            '<i class="fa fa-arrow-right"></i>'
         ],
         responsiveClass: true,
         responsive: {
@@ -225,7 +226,7 @@
     // Facts counter
     $('[data-toggle="counter-up"]').counterUp({
         delay: 5,
-        time: 2000
+        time: 20
     });
 
 
