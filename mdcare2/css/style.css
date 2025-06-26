@@ -145,7 +145,8 @@ p{ font-size: 18px; color: #000;}
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-    color: var(--bs-primary) !important;
+        color: #ffffff !important;
+    background: #1f2468;
 }
 
 .navbar-light .navbar-brand img {
@@ -799,7 +800,7 @@ a.btn.btn-primary.btn-lg-square.back-to-top{ color: #fff;}
 .owl-carousel h1{
    text-shadow: 1px 1px 2px rgb(255, 255, 255); text-shadow: #008fdc 1px 0 10px;}
 .header-carousel.owl-carousel.owl-loaded.owl-drag H1{ font-family: "Poppins";}
-
+.dropdown-item{     padding: 1rem;}
 
 
 
