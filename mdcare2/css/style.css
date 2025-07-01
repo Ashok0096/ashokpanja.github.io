@@ -1242,7 +1242,7 @@ a.btn.btn-primary.btn-lg-square.back-to-top{ color: #fff;}
 }
 .name-descripeion {
   position: relative;
-  z-index: 9999;
+  z-index: 8;
 }
 .btn-icon::after {
   content: "";
