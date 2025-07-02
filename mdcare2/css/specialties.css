@@ -91,7 +91,8 @@
   font-size: 13px;
   margin-left: 3px;
 }
-
 .leaderboard {
   box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.4);
-}/*# sourceMappingURL=specialties.css.map */
+}
+.leaderboard__name{ font-size: 18px;}
+/*# sourceMappingURL=specialties.css.map */
