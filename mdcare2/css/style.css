@@ -1196,6 +1196,98 @@ background: #fff;
 .table-main-cus .fl-table tr:nth-child(even) {
     background: #F8F8F8;
 }
+.innerpagebaner-text {
+    position: absolute;
+    top: 20%;
+    left: 48%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+	.bg-breadcrumb {
+		padding: 0px;
+	}
+	div#navbarCollapse a {
+		padding: 10px;
+	}
+	.header-carousel .owl-nav .owl-prev,
+	.header-carousel .owl-nav .owl-next {
+		top: 44%;
+		transition: 0.5s;
+	}
+	.header-carousel .header-carousel-item .carousel-caption .carousel-caption-content {
+		width: 95% !important;
+	}
+	.header-carousel .owl-nav .owl-next {
+		width: 30px;
+		height: 30px;
+		font-size: 10px;
+	}
+	.topbar {
+		display: none;
+	}
+	.header-carousel .owl-nav .owl-prev {
+		width: 30px;
+		height: 30px;
+		font-size: 10px;
+	}
+	.class-carousel .owl-nav .owl-prev {
+		left: 0 !important;
+		top: 210px;
+	}
+.class-carousel .owl-nav .owl-next{
+	right: 0 !important;
+		top: 210px;
+}
+.class-carousel .owl-stage-outer{ margin: 0px;}
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+	
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+/*  Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
 
 /* Responsive */
 
@@ -1262,23 +1354,6 @@ background: #fff;
         text-align: center;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
 @media (min-width: 1200px) {
 	.navbar .nav-item .dropdown-menu {
 		display: block;
@@ -1356,67 +1431,3 @@ background: #fff;
 		margin-bottom: 40px;
 	}}
 
-
-
-
-
-
-
-
-
-
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
-	.bg-breadcrumb {
-		padding: 0px;
-	}
-	div#navbarCollapse a {
-		padding: 10px;
-	}
-	.header-carousel .owl-nav .owl-prev,
-	.header-carousel .owl-nav .owl-next {
-		top: 44%;
-		transition: 0.5s;
-	}
-	.header-carousel .header-carousel-item .carousel-caption .carousel-caption-content {
-		width: 95% !important;
-	}
-	.header-carousel .owl-nav .owl-next {
-		width: 30px;
-		height: 30px;
-		font-size: 10px;
-	}
-	.topbar {
-		display: none;
-	}
-	.header-carousel .owl-nav .owl-prev {
-		width: 30px;
-		height: 30px;
-		font-size: 10px;
-	}
-	.class-carousel .owl-nav .owl-prev {
-		left: 0 !important;
-		top: 210px;
-	}
-.class-carousel .owl-nav .owl-next{
-	right: 0 !important;
-		top: 210px;
-}
-.class-carousel .owl-stage-outer{ margin: 0px;}
-
-}
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {
-	
-
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) {}
-
-/*  Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
