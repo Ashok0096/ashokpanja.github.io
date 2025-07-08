@@ -697,8 +697,21 @@ a.btn.btn-primary.btn-lg-square.back-to-top {
 
 	}
 
+	.bg-Meaningful-use{
+		background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/Meaningful-use.jpg);
+    background-size: cover;
+    background-position: 0px -210px;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+	}
+	.bg-Healthcare-Services{
+		background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/Healthcare-Services.jpg);
+	background-size: cover;   background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	}
 	.bg-breadcrumb-specialities-p{
-		background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/Specialities.png);
+		background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/x-ray-with-neon-colors.jpg);
 	background-size: cover;   background-position: center top;
     background-repeat: no-repeat;
     background-attachment: fixed;
