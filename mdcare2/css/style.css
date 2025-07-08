@@ -783,8 +783,9 @@ background-color: #292966;
 	width: 12px;
 	height: 12px;
 	border-radius: 50%;
-	background-color: #1f2468;
+	background-color: #008fdc;
 	animation: dot-keys var(--animation);}
+	.Download-s .button-body:hover .circle .dot{  background-color: #1f2468;}
 
   .Download-s .available-for-btn.active .circle,
 .Download-s .available-for-btn.active .available-for-btn:active{
