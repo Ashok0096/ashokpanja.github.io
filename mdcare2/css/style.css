@@ -711,7 +711,7 @@ a.btn.btn-primary.btn-lg-square.back-to-top {
     background-attachment: fixed;
 	}
 	.bg-breadcrumb-specialities-p{
-		background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/x-ray-with-neon-colors.jpg);
+		background: linear-gradient(rgba(0, 0, 0, 0.3), rgb(0 0 0 / 20%)), url(../img/x-ray-with-neon-colors.jpg);
 	background-size: cover;   background-position: center top;
     background-repeat: no-repeat;
     background-attachment: fixed;
