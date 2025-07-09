@@ -8,13 +8,13 @@
 }
 .home-list li:nth-child(odd) {
   text-align: center;
-  border-left: 10px solid #1488F3;
+  border-left: 5px solid #1488F3;
   padding-left: 4px;
   border-bottom: 10px solid #86bfff;
 }
 .home-list li:nth-child(even) {
   text-align: center;
-  border-right: 10px solid #1488F3;
+  border-right: 5px solid #1488F3;
   padding-right: 4px;
   border-bottom: 10px solid #86bfff;
 }/*# sourceMappingURL=list-style.css.map */
