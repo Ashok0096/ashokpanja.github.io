@@ -1342,7 +1342,9 @@ background: #fff;
 }
 /*// Border Animation END//*/
 .breadcrumb .text-primary{ color: #fff !important;}
-
+.card-content p:first-of-type {
+  min-height: 100px; margin-bottom: 0px;
+}
 
 
 
