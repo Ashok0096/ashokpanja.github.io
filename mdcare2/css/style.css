@@ -206,7 +206,7 @@ body{ text-transform: capitalize;  font-family: "Outfit", sans-serif;}
 	background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, 0.7)), url(../img/breadcrumb.jpg);
 	background-position: center top;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
+	 
 }
 
 /*** Single Page Hero Header End ***/
@@ -225,13 +225,13 @@ body{ text-transform: capitalize;  font-family: "Outfit", sans-serif;}
 	position: relative;
 	text-align: center;
 	width: 200px;
-	min-height: 215px;
+	min-height: 355px;
 	padding: 10px 15px;
 	margin: 0 auto;
 	border-radius: 100px;
 	box-shadow: 0 8px 5px rgba(0, 0, 0, 0.2);
 	background: var(--bs-white);
-	height: 100%;}
+	}
 .counter-facts .counter:before {
 	content: "";
 	position: absolute;
@@ -615,88 +615,88 @@ a.btn.btn-primary.btn-lg-square.back-to-top {
 	background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/aboutus.jpg);
 	background-size: cover;     background-position: center top;
     background-repeat: no-repeat;
-    background-attachment: fixed;}
+     }
 .bg-breadcrumb-contact {
 	background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/contact.jpg);
 	background-size: cover;  background-position: center top;
     background-repeat: no-repeat;
-    background-attachment: fixed;}
+     }
 .bg-breadcrumb-ePrescribing {
 	background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/ePrescribing.png);
 	background-size: cover;  background-position: center top;
     background-repeat: no-repeat;
-    background-attachment: fixed;}
+     }
 .bg-breadcrumb-bg {
 	background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/inner-p-bg.jpg);
 	background-size: contain;  background-position: center top;
     background-repeat: no-repeat;
-    background-attachment: fixed;}
+     }
 
 .bg-breadcrumb-schedule {
 	background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/schedule.jpg);     background-position-y: -310px;
 	background-size: cover;  background-position: center top;
     background-repeat: no-repeat;
-    background-attachment: fixed;}
+     }
 	.bg-breadcrumb-Clinical-Documentation {
 	background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/Clinical-Documentation.jpg);
 	background-size: cover;  background-position: center top;
     background-repeat: no-repeat;
-    background-attachment: fixed;}
+     }
 .bg-breadcrumb-pos {
 	background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/pos.jpg);
 	  
     background-repeat: no-repeat;
-    background-attachment: fixed;}
+     }
 	.bg-breadcrumb-EMCoding {
 	background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/EMCoding.jpg);
 	background-size: cover;  background-position: center top;
     background-repeat: no-repeat;
-    background-attachment: fixed;     background-position-y: -100px;}
+          background-position-y: -100px;}
 	.bg-breadcrumb-Patient-Education-Forms {
 	background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/Patient-Education-Forms.jpg);
 	background-size: cover;  background-position: center top;
     background-repeat: no-repeat;
-    background-attachment: fixed;}
+     }
 	.bg-breadcrumb-decisionmaking{
 			background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/decisionmaking.jpg);
 	background-size: cover;  background-position: center top;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+     
 	}
 	.bg-breadcrumb-HL7-Interface{
 			background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/HL7Interface.jpg);
 	background-size: cover;  background-position: center top;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+     
 	}
 	.bg-breadcrumb-integratedbillingmodule{
 			background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/integratedbillingmodule.jpg);
 	background-size: cover;   background-position: center top;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+     
 	}
 	.bg-breadcrumb-documentediting-management{
 		background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/documentediting-management.jpg);
 	background-size: cover;   background-position: center top;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+     
 	}
 	.bg-breadcrumb-denialmanagementmodule{
 			background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/denialmanagementmodule.png);
 	background-size: cover;   background-position: center top;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+     
 	}
 	.bg-breadcrumb-hipaa{
 			background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/hipaa.png);
 	background-size: cover;   background-position: center top;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+   
 	}
 	.bg-breadcrumb-Features{background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/Features-p.png);
 	background-size: cover;   background-position: center top;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    
 
 
 	}
@@ -706,19 +706,19 @@ a.btn.btn-primary.btn-lg-square.back-to-top {
     background-size: cover;
     background-position: 0px -210px;
     background-repeat: repeat-y;
-    background-attachment: fixed;
+  
 	}
 	.bg-Healthcare-Services{
 		background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/Healthcare-Services.jpg);
 	background-size: cover;   background-position: center top;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    
 	}
 	.bg-breadcrumb-specialities-p{
 		background: linear-gradient(rgba(0, 0, 0, 0.3), rgb(0 0 0 / 20%)), url(../img/x-ray-with-neon-colors.jpg);
 	background-size: cover;   background-position: center top;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    
 	}
 
 	.bg-breadcrumb > div{ margin-top: 5% ; }
@@ -1371,12 +1371,73 @@ background: #fff;
 
 
 
+/* Responsive start */
+
+
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-	.bg-breadcrumb {
-		padding: 0px;
+	
+	div#navbarCollapse a {
+		padding: 10px;
 	}
+	.header-carousel .owl-nav .owl-prev,
+	.header-carousel .owl-nav .owl-next {
+		top: 44%;
+		transition: 0.5s;
+	}
+	.header-carousel .header-carousel-item .carousel-caption .carousel-caption-content {
+		width: 95% !important;
+	}
+	.header-carousel .owl-nav .owl-next {
+		width: 30px;
+		height: 30px;
+		font-size: 10px;
+	}
+	.topbar {
+		display: none;
+	}
+	.header-carousel .owl-nav .owl-prev {
+		width: 30px;
+		height: 30px;
+		font-size: 10px;
+	}
+	.class-carousel .owl-nav .owl-prev {
+		left: 0 !important;
+		top: 210px;
+	}
+.class-carousel .owl-nav .owl-next{
+	right: 0 !important;
+		top: 210px;
+}
+.class-carousel .owl-stage-outer{ margin: 0px;}
+.counter-facts .counter{ width: 80%;         min-height: 100%;}
+#chartdiv{height: 350px;}
+.features-list .box .content .icon{      min-width: 40px;}
+.bg-breadcrumb > div{ margin-top: 0px;}
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link.active{ columns: var(--bs-white);}
+.bg-Meaningful-use{ background-position: 0px 0px;}
+.dedcription-btn .btn-icon{ width: 60px;}
+.btn-icon::after{left: -1px; top: -1px;}
+.btn-icon i{ right: 15px;}
+.dedcription-btn{ overflow: hidden;}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+	div#navbarCollapse {
+    height: 330px;
+    overflow-y: scroll;
+}
+	.dedcription-btn .btn-icon{ width: 60px;}
+.btn-icon::after{left: -1px; top: -1px;}
+.btn-icon i{ right: 15px;}
+.dedcription-btn{ overflow: hidden;}
+.bg-Meaningful-use{ background-position: 0px -90px;}
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link.active{ columns: var(--bs-white);}
+.bg-breadcrumb > div{ margin-top: 0px;}
+.features-list .box .content .icon{      min-width: 40px;}
+	
 	div#navbarCollapse a {
 		padding: 10px;
 	}
@@ -1411,24 +1472,42 @@ background: #fff;
 }
 .class-carousel .owl-stage-outer{ margin: 0px;}
 
-}
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {
-	
-
+#chartdiv{height: 350px;}
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {}
+@media (min-width: 768px) and (max-width: 991.98px) {
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link.active{ columns: var(--bs-white);}
+	.counter-facts .counter {
+        margin-bottom: 20px; width: 300px;
+    }
+	
+}
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) {}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.navbar-light .navbar-nav .nav-link{ padding: 20px 5px; font-size: 15px;}
+	.sticky-top.navbar-light .navbar-nav .nav-link {
+    padding: 20px 5px;
+    font-size: 16px !important;
+}
+.display-3 {
+    font-size: calc(.1rem + 3.3vw);
+    font-weight: 700;
+    line-height: 1.2;
+}
+.header-carousel .header-carousel-item, .header-carousel .header-carousel-item img{
+	margin-top: 64px;
+}
+
+}
 
 /*  Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+	
+}
 
-/* Responsive */
+/* Responsive end */
 
 @media (max-width: 767px) {
   .table-main-cus   .fl-table {
@@ -1508,22 +1587,27 @@ background: #fff;
 }
 
 @media (max-width: 991.98px) {
-	.sticky-top.navbar-light {
-		position: relative;
-		background: var(--bs-white);
-	}	.navbar.navbar-expand-lg .navbar-toggler {
+	    .sticky-top.navbar-light {
+        position: fixed;
+        background: var(--bs-white);
+        width: 100%;
+    } 
+	.navbar.navbar-expand-lg .navbar-toggler {
 		padding: 10px 20px;
 		border: 1px solid var(--bs-primary);
 		color: var(--bs-primary);
-	}	.navbar-light .navbar-collapse {
+	}	
+	.navbar-light .navbar-collapse {
 		margin-top: 15px;
 		border-top: 1px solid #DDDDDD;
-	}	.navbar-light .navbar-nav .nav-link,
+	}	
+	.navbar-light .navbar-nav .nav-link,
 	.sticky-top.navbar-light .navbar-nav .nav-link {
 		padding: 10px 0;
 		margin-left: 0;
-		color: var(--bs-dark) !important;
-	}	.navbar-light .navbar-brand img {
+		
+	}
+		.navbar-light .navbar-brand img {
 		max-height: 45px;
 	}
 }
@@ -1559,13 +1643,13 @@ background: #fff;
 	}
 }
 
-@media (max-width: 992px) {
+@media (min-width: 992px) {
 	.bg-breadcrumb {
 		padding-top: 50px;
 	}
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
 	.counter-facts .counter {
 		margin-bottom: 40px;
 	}}
