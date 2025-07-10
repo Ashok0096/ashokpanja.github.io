@@ -643,7 +643,7 @@ a.btn.btn-primary.btn-lg-square.back-to-top {
     background-repeat: no-repeat;
      }
 .bg-breadcrumb-pos {
-	background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/pos.jpg);
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/pos.jpg); background-size: cover;
 	  
     background-repeat: no-repeat;
      }
@@ -651,7 +651,7 @@ a.btn.btn-primary.btn-lg-square.back-to-top {
 	background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/EMCoding.jpg);
 	background-size: cover;  background-position: center top;
     background-repeat: no-repeat;
-          background-position-y: -100px;}
+        }
 	.bg-breadcrumb-Patient-Education-Forms {
 	background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/Patient-Education-Forms.jpg);
 	background-size: cover;  background-position: center top;
