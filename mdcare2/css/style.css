@@ -94,7 +94,8 @@ body{ text-transform: capitalize;  font-family: "Outfit", sans-serif;}
 	font-family: "Outfit", sans-serif;
 	position: relative;
 	margin-right: 1px;
-	padding: 35px 20px;
+	/* padding: 35px 20px; */
+	padding: 21px 20px;
 	color: var(--bs-dark) !important;
 	font-size: 18px;
 	font-weight: 400;
@@ -1423,6 +1424,10 @@ button.available-for-btn.active .dot{ background-color: #1f2468;
 .btn-icon i{ right: 15px;}
 .dedcription-btn{ overflow: hidden;}
 .bg-breadcrumb .display-3 { font-size: calc(1rem + 3.3vw);}
+.navbar-nav.ms-auto.py-0{
+	height: 250px;
+    overflow-y: scroll;
+}
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -1440,9 +1445,10 @@ button.available-for-btn.active .dot{ background-color: #1f2468;
 .bg-breadcrumb > div{ margin-top: 0px;}
 .features-list .box .content .icon{      min-width: 40px;}
 	
-	div#navbarCollapse a {
-		padding: 10px;
-	}
+    div#navbarCollapse a {
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+    }
 	.header-carousel .owl-nav .owl-prev,
 	.header-carousel .owl-nav .owl-next {
 		top: 44%;
