@@ -1434,10 +1434,18 @@ color: #00adef;
 	height: 250px;
     overflow-y: scroll;
 }
+.sub-title {
+    font-size: 16px;
+}
+
+
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+	.sub-title {
+    font-size: 16px;
+}
 	div#navbarCollapse {
     height: 330px;
     overflow-y: scroll;
@@ -1491,15 +1499,25 @@ color: #00adef;
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+	.sub-title {
+    font-size: 18px;
+}
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link.active{ columns: var(--bs-white);}
 	.counter-facts .counter {
-        margin-bottom: 20px; width: 300px;
+        margin-bottom: 20px; width: 300px; min-height: 275px;
+    }
+	    div#navbarCollapse a {
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
     }
 	
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+	.sub-title {
+    font-size: 18px;
+}
 	.navbar-light .navbar-nav .nav-link{ padding: 20px 5px; font-size: 15px;}
 	.sticky-top.navbar-light .navbar-nav .nav-link {
     padding: 20px 5px;
@@ -1513,7 +1531,9 @@ color: #00adef;
 .header-carousel .header-carousel-item, .header-carousel .header-carousel-item img{
 	margin-top: 64px;
 }
-
+    .dedcription-btn {
+        overflow: hidden;
+    }
 }
 
 /*  Extra large devices (large desktops, 1200px and up) */
