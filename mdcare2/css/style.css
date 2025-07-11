@@ -1350,9 +1350,15 @@ background: #fff;
 button.available-for-btn.active .dot{ background-color: #1f2468;
 	
 }
-
-
-
+.nav-item i {
+    color: #1f2468;
+}
+.navbar-light .navbar-nav .nav-link.active  i{
+	color: #00adef;
+ }
+.navbar-light .navbar-nav .nav-link:hover  i{
+color: #00adef;
+}
 
 
 
