@@ -1451,10 +1451,7 @@ color: #00adef;
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-	.navbar-nav.ms-auto{
-	height: 300px;
-    overflow-y: scroll;
-}
+	
 	.bg-breadcrumb > div {
     margin-top:auto;
 }
