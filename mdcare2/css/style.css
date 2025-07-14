@@ -1432,7 +1432,7 @@ color: #00adef;
 .btn-icon i{ right: 15px;}
 .dedcription-btn{ overflow: hidden;}
 .bg-breadcrumb .display-3 { font-size: calc(1rem + 3.3vw);}
-.navbar-nav.ms-auto.py-0{
+.navbar-nav.ms-auto{
 	height: 430px;
     overflow-y: scroll;
 }
@@ -1451,6 +1451,10 @@ color: #00adef;
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+	.navbar-nav.ms-auto{
+	height: 300px;
+    overflow-y: scroll;
+}
 	.bg-breadcrumb > div {
     margin-top:auto;
 }
