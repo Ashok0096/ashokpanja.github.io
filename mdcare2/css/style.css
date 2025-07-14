@@ -7,7 +7,9 @@ p {
 	color: #000;
 	    letter-spacing: 1px;
     
-    line-height: 30px; font-weight: 500;}
+    line-height: 30px;
+	 /* font-weight: 500; */
+	}
 	
 body{ text-transform: capitalize;  font-family: "Outfit", sans-serif;}
 	/*** Spinner Start ***/
@@ -1437,12 +1439,24 @@ color: #00adef;
 .sub-title {
     font-size: 16px;
 }
-
+    .display-3 {
+        font-size: calc(0.4rem + 2.7vw);
+    }
+		.bg-breadcrumb > div {
+    margin-top:auto;
+}
+	
 
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+	.bg-breadcrumb > div {
+    margin-top:auto;
+}
+	    .display-3 {
+        font-size: calc(0.4rem + 2.7vw);
+    }
 	.sub-title {
     font-size: 16px;
 }
@@ -1499,6 +1513,10 @@ color: #00adef;
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+		.bg-breadcrumb > div {
+    margin-top:auto;
+}
+	
 	.sub-title {
     font-size: 18px;
 }
@@ -1510,7 +1528,53 @@ color: #00adef;
         padding: 10px;
         border-bottom: 1px solid #ccc;
     }
-	
+
+	.Download-s .available-for-btn {
+  
+    column-gap: 0px;
+   
+    border-radius: 15px;
+   
+    font-size: 14px;
+}
+.available-for-btn a {
+    width: 100%;
+    text-align: left;
+    padding: 10px 0px;
+}
+p{ font-size: 14px;}	
+.navbar-nav i {
+    width: 30px !important;
+    padding-right: 5px;
+}
+.navbar-nav { height: 300px; overflow: scroll;}
+.features-list .box .content .icon{ 
+	min-width: 35px;
+}
+.features-list .box .content .icon i{
+	font-size: 16px !important;
+}
+.features-list .box  h5, .h5 {
+    font-size: 1rem !important;
+}
+.display-3 {
+    font-size: calc(0.4rem + 2.7vw);
+    
+}
+.fs-1 {
+    font-size: calc(1.2rem + 1.5vw) !important;
+}
+.leaderboard__name{ font-size: 14px !important;}
+.list-design-two .olcards li .content .text {
+    
+    font-size: 14px !important;
+}
+
+.dedcription-btn{ overflow: hidden;}
+
+
+
+
 }
 
 /* Large devices (desktops, 992px and up) */
