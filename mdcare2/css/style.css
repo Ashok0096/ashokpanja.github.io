@@ -1433,7 +1433,7 @@ color: #00adef;
 .dedcription-btn{ overflow: hidden;}
 .bg-breadcrumb .display-3 { font-size: calc(1rem + 3.3vw);}
 .navbar-nav.ms-auto.py-0{
-	height: 250px;
+	height: 430px;
     overflow-y: scroll;
 }
 .sub-title {
