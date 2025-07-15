@@ -1775,5 +1775,9 @@ p{ font-size: 14px;}
 @media screen and (min-width: 1200px) {
 	.counter-facts .counter {
 		margin-bottom: 40px;
-	}}
+	}
+	p{ font-size: 18px;}
+
+
+}
 
