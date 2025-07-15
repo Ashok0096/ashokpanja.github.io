@@ -1361,11 +1361,20 @@ button.available-for-btn.active .dot{ background-color: #1f2468;
 .navbar-light .navbar-nav .nav-link:hover  i{
 color: #00adef;
 }
-
-
-
-
-
+.table-main-cus-meaningful th , .table-main-cus-meaningful td{  color: #000;}
+.table-main-cus-meaningful tr:nth-child(even)
+ {
+    background: #F8F8F8;
+}
+.table-main-cus-meaningful tr:nth-child(even) td{
+	background: #fff; color: #000;
+}
+.table-main-cus-meaningful tr:nth-child(odd) td{
+	background: #fff; color: #000;
+}
+.table-main-cus-meaningful tr:last-child td{
+	    background: #f8941e;
+}
 
 
 
@@ -1445,13 +1454,22 @@ color: #00adef;
 		.bg-breadcrumb > div {
     margin-top:auto;
 }
-	
+	    .navbar-nav i {
+        width: 30px !important;
+        padding-right: 5px;
+    }
+.table-main-cus-meaningful{
+overflow-x: scroll;
 
+}
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-	
+	    .navbar-nav i {
+        width: 30px !important;
+        padding-right: 5px;
+    }
 	.bg-breadcrumb > div {
     margin-top:auto;
 }
@@ -1581,6 +1599,11 @@ p{ font-size: 14px;}
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+	.navbar-light .navbar-nav .nav-link{
+		padding: 21px 5px;
+	}
+	.navbar-light .navbar-brand img {
+    max-height: 40px;}
 	.sub-title {
     font-size: 18px;
 }
@@ -1595,7 +1618,7 @@ p{ font-size: 14px;}
     line-height: 1.2;
 }
 .header-carousel .header-carousel-item, .header-carousel .header-carousel-item img{
-	margin-top: 64px;
+	margin-top: 85px;
 }
     .dedcription-btn {
         overflow: hidden;
