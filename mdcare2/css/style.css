@@ -97,7 +97,7 @@ body{ text-transform: capitalize;  font-family: "Outfit", sans-serif;}
 	position: relative;
 	margin-right: 1px;
 	/* padding: 35px 20px; */
-	padding: 10px 20px;
+	padding: 21px 20px;
 	color: var(--bs-dark) !important;
 	font-size: 18px;
 	font-weight: 400;
@@ -179,7 +179,7 @@ body{ text-transform: capitalize;  font-family: "Outfit", sans-serif;}
 	position: relative;
 	width: 100%;
 	/* height: 620px; */
-	margin-top: 70px;
+	margin-top: 95px;
 	display: block;
 	object-fit: cover;
 	transition: 0.5s;
