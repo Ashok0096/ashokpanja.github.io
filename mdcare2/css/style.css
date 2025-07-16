@@ -1462,6 +1462,14 @@ color: #00adef;
 overflow-x: scroll;
 
 }
+    .navbar.navbar-expand-lg .navbar-toggler {
+      
+        right: 0;
+        position: fixed;
+        top: 15px;
+    }
+	.header-carousel .header-carousel-item, .header-carousel .header-carousel-item img{ margin-top: 0px !important;}
+.sticky-top.navbar-light{ top: -1px;}
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -1780,4 +1788,6 @@ p{ font-size: 14px;}
 
 
 }
-
+defs {
+    display: none;
+}
