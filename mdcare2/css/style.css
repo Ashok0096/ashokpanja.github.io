@@ -116,13 +116,14 @@ body{ text-transform: capitalize;  font-family: "Outfit", sans-serif;}
 	transition: .5s;}
 .sticky-top.navbar-light .navbar-brand img {
 	max-height: 45px;}
-.navbar .dropdown-toggle::after {
+/* .navbar .dropdown-toggle::after {
 	border: none;
 	content: "\f107";
 	font-family: "Font Awesome 5 Free";
 	font-weight: 600;
 	vertical-align: middle;
-	margin-left: 8px;}
+	margin-left: 8px;} */
+	.dropdown-toggle::after{display: none;}
 
 .dropdown .dropdown-menu a:hover {
 	background: var(--bs-primary);
