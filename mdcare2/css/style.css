@@ -1448,9 +1448,7 @@ color: #00adef;
 .sub-title {
     font-size: 16px;
 }
-    .display-3 {
-        font-size: calc(0.4rem + 2.7vw);
-    }
+    
 		.bg-breadcrumb > div {
     margin-top:auto;
 }
