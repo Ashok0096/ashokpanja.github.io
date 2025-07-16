@@ -1479,9 +1479,7 @@ overflow-x: scroll;
 	.bg-breadcrumb > div {
     margin-top:auto;
 }
-	    .display-3 {
-        font-size: calc(0.4rem + 2.7vw);
-    }
+	    
 	.sub-title {
     font-size: 16px;
 }
@@ -1583,13 +1581,8 @@ p{ font-size: 14px;}
 .features-list .box  h5, .h5 {
     font-size: 1rem !important;
 }
-.display-3 {
-    font-size: calc(0.4rem + 2.7vw);
-    
-}
-.fs-1 {
-    font-size: calc(1.2rem + 1.5vw) !important;
-}
+
+
 .leaderboard__name{ font-size: 14px !important;}
 .list-design-two .olcards li .content .text {
     
