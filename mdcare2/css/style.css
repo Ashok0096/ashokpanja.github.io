@@ -616,103 +616,103 @@ a.btn.btn-primary.btn-lg-square.back-to-top {
 .dropdown-item {
 	padding: 1rem;}
 .bg-breadcrumb-about {
-	background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/aboutus.jpg);
+	background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(0 0 0 / 0%)), url(../img/aboutus.jpg);
 	background-size: cover;     background-position: center top;
     background-repeat: no-repeat;
      }
 .bg-breadcrumb-contact {
-	background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/contact.jpg);
+	background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(0 0 0 / 0%)), url(../img/contact.jpg);
 	background-size: cover;  background-position: center top;
     background-repeat: no-repeat;
      }
 .bg-breadcrumb-ePrescribing {
-	background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/ePrescribing.png);
+	background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(0 0 0 / 0%)), url(../img/ePrescribing.png);
 	background-size: cover;  background-position: center top;
     background-repeat: no-repeat;
      }
 .bg-breadcrumb-bg {
-	background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/inner-p-bg.jpg);
+	background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(0 0 0 / 0%)), url(../img/inner-p-bg.jpg);
 	background-size: contain;  background-position: center top;
     background-repeat: no-repeat;
      }
 
 .bg-breadcrumb-schedule {
-	background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/schedule.jpg);     background-position-y: -310px;
+	background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(0 0 0 / 0%)), url(../img/schedule.jpg);     background-position-y: -310px;
 	background-size: cover;  background-position: center top;
     background-repeat: no-repeat;
      }
 	.bg-breadcrumb-Clinical-Documentation {
-	background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/Clinical-Documentation.jpg);
+	background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(0 0 0 / 0%)), url(../img/Clinical-Documentation.jpg);
 	background-size: cover;  background-position: center top;
     background-repeat: no-repeat;
      }
 .bg-breadcrumb-pos {
-	background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/pos.jpg); background-size: cover;
+	background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(0 0 0 / 0%)), url(../img/pos.jpg); background-size: cover;
 	  
     background-repeat: no-repeat;
      }
 	.bg-breadcrumb-EMCoding {
-	background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/EMCoding.jpg);
+	background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(0 0 0 / 0%)), url(../img/EMCoding.jpg);
 	background-size: cover;  background-position: center top;
     background-repeat: no-repeat;
         }
 	.bg-breadcrumb-Patient-Education-Forms {
-	background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/Patient-Education-Forms.jpg);
+	background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(0 0 0 / 0%)), url(../img/Patient-Education-Forms.jpg);
 	background-size: cover;  background-position: center top;
     background-repeat: no-repeat;
      }
 	.bg-breadcrumb-decisionmaking{
-			background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/decisionmaking.jpg);
+			background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(0 0 0 / 0%)), url(../img/decisionmaking.jpg);
 	background-size: cover;  background-position: center top;
     background-repeat: no-repeat;
      
 	}
 	.bg-breadcrumb-HL7-Interface{
-			background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/HL7Interface.jpg);
+			background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(0 0 0 / 0%)), url(../img/HL7Interface.jpg);
 	background-size: cover;  background-position: center top;
     background-repeat: no-repeat;
      
 	}
 	.bg-breadcrumb-integratedbillingmodule{
-			background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/integratedbillingmodule.jpg);
+			background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(0 0 0 / 0%)), url(../img/integratedbillingmodule.jpg);
 	background-size: cover;   background-position: center top;
     background-repeat: no-repeat;
      
 	}
 	.bg-breadcrumb-documentediting-management{
-		background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/documentediting-management.jpg);
+		background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(0 0 0 / 0%)), url(../img/documentediting-management.jpg);
 	background-size: cover;   background-position: center top;
     background-repeat: no-repeat;
      
 	}
 	.bg-breadcrumb-denialmanagementmodule{
-			background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/denialmanagementmodule.png);
+			background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(0 0 0 / 0%)), url(../img/denialmanagementmodule.png);
 	background-size: cover;   background-position: center top;
     background-repeat: no-repeat;
      
 	}
 	.bg-breadcrumb-hipaa{
-			background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/hipaa.png);
+			background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(0 0 0 / 0%)), url(../img/hipaa.png);
 	background-size: cover;   background-position: center top;
     background-repeat: no-repeat;
    
 	}
-	.bg-breadcrumb-Features{background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/Features-p.png);
+	.bg-breadcrumb-Features{background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(0 0 0 / 0%)), url(../img/Features-p.png);
 	background-size: cover;   background-position: center top;
     background-repeat: no-repeat;
 	}
-.bg-breadcrumb-roi{background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/roi.jpg);
+.bg-breadcrumb-roi{background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(0 0 0 / 0%)), url(../img/roi.jpg);
 	background-size: cover;   background-position: center top;
     background-repeat: no-repeat; }
 	.bg-Meaningful-use{
-		background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/Meaningful-use.jpg);
+		background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(0 0 0 / 0%)), url(../img/Meaningful-use.jpg);
     background-size: cover;
-    background-position: 0px -210px;
-    background-repeat: repeat-y;
+    background-position: center top;
+    background-repeat: no-repeat;
   
 	}
 	.bg-Healthcare-Services{
-		background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0 0 0 / 40%)), url(../img/Healthcare-Services.jpg);
+		background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(0 0 0 / 0%)), url(../img/Healthcare-Services.jpg);
 	background-size: cover;   background-position: center top;
     background-repeat: no-repeat;
     
@@ -1344,7 +1344,7 @@ background: #fff;
   
 }
 /*// Border Animation END//*/
-.breadcrumb .text-primary{ color: #fff !important;}
+
 .card-content p:first-of-type {
   min-height: 100px; margin-bottom: 0px;
 }
@@ -1377,9 +1377,18 @@ color: #00adef;
 	    background: #f8941e;
 }
 .fs-8{font-size:0.9rem !important}
+.bg-breadcrumb h3 {
+    /* border: 1px solid; */
+    text-shadow: 2px 2px #040404;
+}
 
-
-
+.breadcrumb-item+.breadcrumb-item::before {
+    text-shadow: none;
+}
+.bg-breadcrumb ol li {
+    text-shadow: 1px 1px #ffffff;
+    color: #000 !important;
+}
 
 
 
@@ -1647,11 +1656,43 @@ p{ font-size: 14px;}
     .dedcription-btn {
         overflow: hidden;
     }
+	    .counter-facts .counter {
+        margin-bottom: 40px;  
+    }
+	.owl-carousel .owl-item{ padding-right: 1px;}
+	.available-for-btn a {
+    padding: 1rem 0rem 1rem 0rem;
+    font-size: 15px;
+}
+.fs-1 {
+    font-size: calc(1.2rem + 1.5vw) !important;
+}
+.bg-Meaningful-use , .bg-breadcrumb-pos{
+background-position: center top;
+}
+
+
+
+
+
+
 }
 
 /*  Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-	
+
+.navbar-light .navbar-nav .nav-link{ 
+	    padding: 21px 10px;
+}
+}
+
+@media (min-width: 1400px) {
+.navbar-light .navbar-nav .nav-link{ 
+	    padding: 21px 20px;
+}
+	.bg-breadcrumb-pos {
+    background-position: 0px -60px;
+}
 }
 
 /* Responsive end */
