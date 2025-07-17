@@ -180,7 +180,7 @@ body{ text-transform: capitalize;  font-family: "Outfit", sans-serif;}
 	position: relative;
 	width: 100%;
 	/* height: 620px; */
-	margin-top: 70px;
+	margin-top: 69px;
 	display: block;
 	object-fit: cover;
 	transition: 0.5s;
@@ -1376,6 +1376,22 @@ color: #00adef;
 .table-main-cus-meaningful tr:last-child td{
 	    background: #f8941e;
 }
+.fs-8{font-size:0.9rem !important}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1456,6 +1472,9 @@ color: #00adef;
 	    .navbar-nav i {
         width: 30px !important;
         padding-right: 5px;
+		position: absolute;
+        right: 0;
+        top: 35%;
     }
 .table-main-cus-meaningful{
 overflow-x: scroll;
@@ -1469,6 +1488,10 @@ overflow-x: scroll;
     }
 	.header-carousel .header-carousel-item, .header-carousel .header-carousel-item img{ margin-top: 0px !important;}
 .sticky-top.navbar-light{ top: -1px;}
+    div#navbarCollapse a {
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -1476,6 +1499,9 @@ overflow-x: scroll;
 	    .navbar-nav i {
         width: 30px !important;
         padding-right: 5px;
+		position: absolute;
+        right: 0;
+        top: 35%;
     }
 	.bg-breadcrumb > div {
     margin-top:auto;
@@ -1571,6 +1597,9 @@ p{ font-size: 14px;}
 .navbar-nav i {
     width: 30px !important;
     padding-right: 5px;
+	position: absolute;
+        right: 0;
+        top: 35%;
 }
 .navbar-nav { height: 300px; overflow: scroll;}
 .features-list .box .content .icon{ 
@@ -1765,6 +1794,10 @@ p{ font-size: 14px;}
 	.bg-breadcrumb {
 		padding-top: 50px;
 	}
+	.nav-item.dropdown i {
+    position: relative;
+    top: -1px;
+}
 }
 
 @media screen and (min-width: 1200px) {
@@ -1772,7 +1805,10 @@ p{ font-size: 14px;}
 		margin-bottom: 40px;
 	}
 	p{ font-size: 18px;}
-
+.nav-item.dropdown i {
+    position: relative;
+    top: -1px;
+}
 
 }
 defs {
