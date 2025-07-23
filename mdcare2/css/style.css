@@ -1436,7 +1436,7 @@ color: #00adef;
     letter-spacing: 1px;
 }
 
-
+.navbar{ z-index: 99; width: 100%;}
 
 
 
@@ -1551,10 +1551,31 @@ overflow-x: scroll;
    
     padding: 0.5rem .5rem 0.5rem 0.5rem;
 }
+.class-carousel .owl-nav .owl-prev, .class-carousel .owl-nav .owl-next{ padding: 10px 15px;}
+.popup-content{ width: 70%; text-align: left;}
+div#navbarCollapse {
+    position: absolute;
+    width: 100%;
+    z-index: 999999;
+    background: #fff;
+    top: 80%;
+    left: 0;
+}
+
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+	div#navbarCollapse {
+    position: absolute;
+    width: 100%;
+    z-index: 999999;
+    background: #fff;
+    top: 80%;
+    left: 0;
+}
+	.popup-content{ width: 70%; text-align: left;}
+	.class-carousel .owl-nav .owl-prev, .class-carousel .owl-nav .owl-next{ padding: 10px 15px;}
 		.home-list{ padding: 0px !important;}
 	.available-for-btn a {
    
@@ -1575,7 +1596,7 @@ overflow-x: scroll;
     font-size: 16px;
 }
 	div#navbarCollapse {
-    height: 330px;
+    height: 280px;
     overflow-y: scroll;
 }
 	.dedcription-btn .btn-icon{ width: 60px;}
