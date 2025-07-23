@@ -1,7 +1,11 @@
 
  
 
-
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../font-awesome/fonts/fontawesome-webfont.woff') format('woff2'),
+       url('../font-awesome/fonts/fontawesome-webfont.woff') format('woff');
+}
     .contact-card .card {
       background: linear-gradient(145deg, #fff, #fff);
       padding: 1rem;
@@ -11,7 +15,7 @@
       opacity: 0;
       transform: scale(0.9) translateY(50px);
       box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-      transition: transform 0.4s ease;     min-height:330px;
+      transition: transform 0.4s ease;     min-height:330px; 
     }
 
     .contact-card .card:hover {
@@ -38,7 +42,7 @@
     .contact-card .card h3 {
       margin-top: 0;
       font-size: 1.6rem;
-      color: #292966;
+      color: #292966; font-weight: 600;
     }
 
 
