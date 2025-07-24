@@ -1561,11 +1561,14 @@ div#navbarCollapse {
     top: 80%;
     left: 0;
 }
-
+.bg-breadcrumb{ padding: 20px 0px;}
+.live-demo-btn-c{ top: 40%;}
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+	.bg-breadcrumb{ padding: 50px 0px;}
+	.live-demo-btn-c{ top: 40%;}
 	div#navbarCollapse {
     position: absolute;
     width: 100%;
