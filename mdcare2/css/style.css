@@ -1536,7 +1536,7 @@ overflow-x: scroll;
 }
     .navbar.navbar-expand-lg .navbar-toggler {
       
-        right: 25px;
+        right: 15px;
         position: fixed;
         top: 15px;
     }
