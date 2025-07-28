@@ -12,7 +12,7 @@ p {
 	color: #000;
 	    letter-spacing: 1px;
     
-    line-height: 30px;
+    /* line-height: 30px; */
 	 /* font-weight: 500; */
 	}
 	
@@ -1437,7 +1437,7 @@ color: #00adef;
 }
 
 .navbar{ z-index: 99; width: 100%;}
-
+.copyright a{ cursor: auto; }
 
 
 
@@ -1536,7 +1536,7 @@ overflow-x: scroll;
 }
     .navbar.navbar-expand-lg .navbar-toggler {
       
-        right: 0;
+        right: 25px;
         position: fixed;
         top: 15px;
     }
@@ -1931,6 +1931,26 @@ background-position: center top;
 }
 
 }
+
+/* //For Projectors or Higher Resolution Screens (Full HD) */
+/* @media screen and (min-width: 1920px) {
+
+    .container {
+        width: 1890px;
+		        max-width: 1890px;
+    }
+	
+}
+@media screen and (min-width: 3840px) {
+
+    .container {
+        width: 3810px;
+		max-width: 3810px;
+    }
+} */
+
+
+/* //For 4K Displays (Ultra HD) */
 defs {
     display: none;
 }
