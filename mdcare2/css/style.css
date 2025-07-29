@@ -1560,6 +1560,9 @@ div#navbarCollapse {
     background: #fff;
     top: 80%;
     left: 0;
+	height: 100vh;
+        overflow-y: scroll;
+        padding-bottom: 100px;
 }
 .bg-breadcrumb{ padding: 20px 0px;}
 .live-demo-btn-c{ top: 40%;}
@@ -1599,8 +1602,9 @@ div#navbarCollapse {
     font-size: 16px;
 }
 	div#navbarCollapse {
-    height: 280px;
-    overflow-y: scroll;
+  height: 100vh;
+        overflow-y: scroll;
+        padding-bottom: 100px;
 }
 	.dedcription-btn .btn-icon{ width: 60px;}
 .btn-icon::after{left: -1px; top: -1px;}
