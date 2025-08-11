@@ -25,10 +25,10 @@
   --bz-color-common-white: #ffffff;
   --bz-color-common-black: #000000;
   --bz-color-common-dark: #232323;
-  --bz-color-heading-primary: #191F29;
+  --bz-color-heading-primary: #5CC4AD;
   --bz-color-text-body: #74787C;
-  --bz-color-theme-primary: #4E9EFF;
-  --bz-color-theme-secondary: #191F29;
+  --bz-color-theme-primary: #303289;
+  --bz-color-theme-secondary: #5CC4AD;
   --bz-color-theme-red: #EC281C;
   --bz-color-bg-1: #191F30;
   --bz-color-grey-1: #F8F8F8;
@@ -3456,7 +3456,7 @@ START: Header CSS
   }
 }
 .header-4 .primary-header .primary-header-inner .header-right-wrap .header-right .sidebar-icon-2 .sidebar-trigger {
-  background-color:#4E9EFF;
+  background-color:#303289;
 }
 .header-4 .primary-header .primary-header-inner .header-right-wrap .header-right .sidebar-icon-2 .sidebar-trigger span {
   background-color: var(--bz-color-theme-primary);
@@ -4423,7 +4423,7 @@ START: Header CSS
 font-weight: 500;
 font-size: 20px;
 letter-spacing: -0.45px;
-color: #4E9EFF;
+color: #303289;
 padding-left: 10px;
 margin-top: 5px;
 
@@ -6286,7 +6286,7 @@ margin-top: 5px;
   transition: all 0.3s ease-in-out;
 }
 .project-item .project-img .overlay-2 {
-  background: #4E9EFF;
+  background: #303289;
   mix-blend-mode: multiply;
   opacity: 0.67;
   width: 100%;
@@ -7518,7 +7518,7 @@ START: Contact CSS
   height: 100%;
 }
 .request-section-2 .request-bg-img:before {
-  background: #4E9EFF;
+  background: #303289;
   content: "";
   mix-blend-mode: multiply;
   width: 100%;
