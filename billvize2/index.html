@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="" />
+
+        <!-- Site Title -->
+        <title>Billvize</title>
+
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="shortcut icon" type="image/x-icon" href="assets/img/fevicon.png" />
+
+        <!-- CSS here -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+        <link href="font/bootstrap-icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="font/bootstrap-icons.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="assets/css/animate.min.css" />
+        <link rel="stylesheet" href="assets/css/swiper.min.css" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/sliserclnts.css" />
+    </head>
+
+    <body>
+        <!-- header-area-start -->
+        <header class="header header-3 header-4 sticky-active">
+            <div class="primary-header">
+                <div class="container">
+                    <div class="primary-header-inner">
+                        <div class="header-logo">
+                            <a href="index.html">
+                                <img src="assets/img/logo.png" alt="logo" />
+                            </a>
+                        </div>
+                        <div class="inner-left">
+                            <div class="header-menu-wrap">
+                                <div class="mobile-menu-items">
+                                    <ul>
+                                        <li class="menu-item-has-children">
+                                            <a href="index.html">Home </a>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="#">About Us</a>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="pricing.html">services</a>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="Resources.html">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="header-right-wrap">
+                            <div class="header-right">
+                                <div class="sidebar-icon-2 p-3">
+                                    <button class="sidebar-trigger bz-primary-btn open" type="button">
+                                        Login
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- /.Main Header -->
+
+        <div id="popup-search-box">
+            <div class="box-inner-wrap d-flex align-items-center">
+                <form id="form" action="#" method="get" role="search">
+                    <input id="popup-search" type="text" name="s" placeholder="Type keywords here..." />
+                </form>
+                <div class="search-close"><i class="fa-sharp fa-regular fa-xmark"></i></div>
+            </div>
+        </div>
+        <!-- /#popup-search-box -->
+
+        <div id="sidebar-area" class="sidebar-area">
+            <button class="sidebar-trigger close">
+               <i class="bi bi-x-circle-fill"></i> 
+            </button>
+            <div class="side-menu-content">
+                <div class="side-menu-logo">
+                    <a href="index-2.html"><img src="assets/img/logo/logo-2.png" alt="logo" /></a>
+                </div>
+                <div class="side-menu-wrap"></div>
+
+                <div class="container my-5">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <h5 class="mb-3">Contact Us</h5>
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="your-name" class="form-label">Your Name</label>
+                                        <input type="text" class="form-control" id="your-name" name="your-name" required />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="your-surname" class="form-label">Your Surname</label>
+                                        <input type="text" class="form-control" id="your-surname" name="your-surname" required />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="your-email" class="form-label">Your Email</label>
+                                        <input type="email" class="form-control" id="your-email" name="your-email" required />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="your-subject" class="form-label">Your Subject</label>
+                                        <input type="text" class="form-control" id="your-subject" name="your-subject" />
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="your-message" class="form-label">Your Message</label>
+                                        <textarea class="form-control" id="your-message" name="your-message" rows="5" required></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <button data-res="<?php echo $sum; ?>" type="submit" class="btn btn-dark w-100 fw-bold">Send</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/.sidebar-area-->
+
+        <div id="preloader">
+            <div class="loading" data-loading-text="Billvize" style="font-size: 50px;"></div>
+        </div>
+        <!-- ./ preloader -->
+
+        <div class="slider-section">
+            <div class="bizan-slider swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slider-item">
+                            <div class="shapes">
+                                <div class="shape shape-1" data-animation="bizan-fadeInLeft" data-delay="1000ms" data-duration="1200ms">
+                                    <img src="assets/img/shapes/hero-bg-shape-1.png" alt="shape" />
+                                </div>
+                                <div class="shape shape-2" data-animation="bizan-fadeInUp" data-delay="1200ms" data-duration="1400ms">
+                                    <img src="assets/img/shapes/hero-shape-5.png" alt="shape" />
+                                </div>
+                                <div class="color-shape" data-animation="bizan-fadeInUp" data-delay="1200ms" data-duration="1400ms"></div>
+                                <div class="color-shape-2"></div>
+                            </div>
+                            <div class="slide-img-wrap">
+                                <img decoding="async" src="assets/img/slider.png" alt="Home One Business" class="slide-img kenburns kenburns-top" />
+                            </div>
+                            <div class="slider-content-wrap">
+                                <div class="container-2">
+                                    <div class="hero-content-2">
+                                        <div class="section-heading white-content mb-30">
+                                            <h4 class="sub-heading" data-animation="bizan-fadeInUp" data-delay="1000ms" data-duration="1200ms"><span class="left-shape"></span>welcome TO OUR Billvize</h4>
+                                            <h2 class="section-title text-start" data-animation="bizan-fadeInUp" data-delay="1200ms" data-duration="1400ms">
+                                                Maximize Growth with the best Online CRM
+                                            </h2>
+                                        </div>
+                                        <p data-animation="bizan-fadeInUp" data-delay="1400ms" data-duration="1600ms">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                                            type and scrambled it to make a type specimen book.
+                                        </p>
+                                        <a href="#" class="bz-primary-btn hero-btn" data-animation="bizan-fadeInUp" data-delay="1600ms" data-duration="1800ms">Hire an expert<i class="fa-regular fa-arrow-right"></i></a>
+                                        &nbsp;&nbsp;&nbsp;
+                                        <a href="#" style="color: white;" class="" data-animation="bizan-fadeInUp" data-delay="1600ms" data-duration="1800ms">
+                                            <i style="color: white;" class="fa-regular fa-arrow-right"></i>&nbsp;&nbsp;Explore Jobs
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bizan-swiper-pagination"></div>
+            </div>
+        </div>
+
+        <div class="bg-s">
+            <section class="faq-section pt-5 pb-5">
+                <div class="container my-5">
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="col-lg-6">
+                            <div class="faq-content">
+                                <div class="section-heading mb-30">
+                                    <h4 class="sub-heading" data-text-animation="fade-in" data-duration="1.5"><span class="left-shape"></span> Lorem Ipsum</h4>
+                                    <h2 class="section-title mb-0" data-text-animation data-split="word" data-duration="1">
+                                        Lorem Ipsum is simply dummy
+                                    </h2>
+                                    <p class="fade-top">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                                        and scrambled it to make a type specimen book.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="faq-img img-reveal">
+                                <div class="img-overlay"></div>
+                                <img src="assets/img/crm2.gif" alt="faq" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer class="footer-section overflow-hidden">
+            <div class="copyright-area">
+                <div class="container">
+                    <div class="row copyright-content">
+                        <div class="col-md-6">
+                            <p>2025 Billvize, All right reserved.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="copy-list">
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- ./ footer-section -->
+
+        <div id="scroll-percentage">
+            <span id="scroll-percentage-value"> <i class="bi bi-arrow-up"></i> </span>
+        </div>
+        <!--scrollup-->
+
+        <!-- JS here -->
+        <script src="assets/js/vendor/jquary-3.6.0.min.js"></script>
+        <script src="assets/js/vendor/bootstrap-bundle.js"></script>
+        <script src="assets/js/vendor/imagesloaded-pkgd.js"></script>
+        <script src="assets/js/vendor/waypoints.min.js"></script>
+        <script src="assets/js/vendor/venobox.min.js"></script>
+
+        <script src="assets/js/vendor/meanmenu.js"></script>
+        <script src="assets/js/vendor/smooth-scroll.js"></script>
+
+        <script src="assets/js/vendor/wow.min.js"></script>
+        <script src="assets/js/vendor/swiper.min.js"></script>
+
+        <script src="assets/js/vendor/split-type.min.js"></script>
+        <script src="assets/js/vendor/gsap.min.js"></script>
+        <script src="assets/js/vendor/scroll-trigger.min.js"></script>
+        <script src="assets/js/vendor/nice-select.js"></script>
+        <script src="assets/js/slider.js"></script>
+
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
