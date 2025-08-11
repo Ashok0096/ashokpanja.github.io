@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="" />
+
+        <!-- Site Title -->
+        <title>Billvize</title>
+
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="shortcut icon" type="image/x-icon" href="assets/img/fevicon.png" />
+
+        <!-- CSS here -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+        <link rel="stylesheet" href="assets/css/venobox.min.css" />
+        <link rel="stylesheet" href="assets/css/animate.min.css" />
+        <link rel="stylesheet" href="assets/css/keyframe-animation.css" />
+        <link rel="stylesheet" href="assets/css/daterangepicker.css" />
+        <link rel="stylesheet" href="assets/css/odometer.min.css" />
+        <link rel="stylesheet" href="assets/css/nice-select.css" />
+        <link rel="stylesheet" href="assets/css/swiper.min.css" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/sliserclnts.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        </head>
+
+    <body>
+        <!-- header-area-start -->
+        <header class="header header-3 header-4 sticky-active">
+            <div class="primary-header">
+                <div class="container">
+                    <div class="primary-header-inner">
+                        <div class="header-logo">
+                            <a href="index-2.html">
+                                <img src="assets/img/logo.png" alt="logo" />
+                            </a>
+                        </div>
+                        <div class="inner-left">
+                            <div class="header-menu-wrap">
+                                <div class="mobile-menu-items">
+                                    <ul>
+                                        <li class="menu-item-has-children">
+                                            <a href="#">Home 
+                                               </a>
+                                           
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="#">About Us</a>
+                                            
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="pricing.html">services</a>
+                                           
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="Resources.html">Contact</a>
+                                            
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="header-right-wrap">
+                            <div class="header-right">
+                                
+                                <div class="sidebar-icon-2 p-3">
+                                    <button class="sidebar-trigger bz-primary-btn open" type="button">
+                                        Login
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- /.Main Header -->
+
+        <div id="popup-search-box">
+            <div class="box-inner-wrap d-flex align-items-center">
+                <form id="form" action="#" method="get" role="search">
+                    <input id="popup-search" type="text" name="s" placeholder="Type keywords here..." />
+                </form>
+                <div class="search-close"><i class="fa-sharp fa-regular fa-xmark"></i></div>
+            </div>
+        </div>
+        <!-- /#popup-search-box -->
+
+        <div id="sidebar-area" class="sidebar-area">
+            <button class="sidebar-trigger close">
+                <svg
+                    class="sidebar-close"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    width="16px"
+                    height="12.7px"
+                    viewBox="0 0 16 12.7"
+                    style="enable-background: new 0 0 16 12.7;"
+                    xml:space="preserve"
+                >
+                    <g>
+                        <rect x="0" y="5.4" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -2.1569 7.5208)" width="16" height="2"></rect>
+                        <rect x="0" y="5.4" transform="matrix(0.7071 0.7071 -0.7071 0.7071 6.8431 -3.7929)" width="16" height="2"></rect>
+                    </g>
+                </svg>
+            </button>
+            <div class="side-menu-content">
+                <div class="side-menu-logo">
+                    <a href="index-2.html"><img src="assets/img/logo/logo-2.png" alt="logo" /></a>
+                </div>
+                <div class="side-menu-wrap"></div>
+              
+                <div class="container my-5">
+                    <div class="row justify-content-center">
+                      <div class="col-lg-12">
+                        <h5 class="mb-3">Contact Us</h5>
+                        <form>
+                          <div class="row g-3">
+                            <div class="col-md-6">
+                              <label for="your-name" class="form-label">Your Name</label>
+                              <input type="text" class="form-control" id="your-name" name="your-name" required>
+                            </div>
+                            <div class="col-md-6">
+                              <label for="your-surname" class="form-label">Your Surname</label>
+                              <input type="text" class="form-control" id="your-surname" name="your-surname" required>
+                            </div>
+                            <div class="col-md-6">
+                              <label for="your-email" class="form-label">Your Email</label>
+                              <input type="email" class="form-control" id="your-email" name="your-email" required>
+                            </div>
+                            <div class="col-md-6">
+                              <label for="your-subject" class="form-label">Your Subject</label>
+                              <input type="text" class="form-control" id="your-subject" name="your-subject">
+                            </div>
+                            <div class="col-12">
+                              <label for="your-message" class="form-label">Your Message</label>
+                              <textarea class="form-control" id="your-message" name="your-message" rows="5" required></textarea>
+                            </div>
+                            <div class="col-12">
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <button data-res="<?php echo $sum; ?>" type="submit" class="btn btn-dark w-100 fw-bold" >Send</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  
+                
+            </div>
+        </div>
+        <!--/.sidebar-area-->
+
+        <div id="preloader">
+            <div class="loading" data-loading-text="Billvize" style="font-size: 50px;"></div>
+        </div>
+        <!-- ./ preloader -->
+
+        <div class="slider-section">
+            <div class="bizan-slider swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slider-item">
+                            <div class="shapes">
+                                <div class="shape shape-1" data-animation="bizan-fadeInLeft" data-delay="1000ms" data-duration="1200ms"><img src="assets/img/shapes/hero-bg-shape-1.png" alt="shape" /></div>
+                                <div class="shape shape-2" data-animation="bizan-fadeInUp" data-delay="1200ms" data-duration="1400ms"><img src="assets/img/shapes/hero-shape-5.png" alt="shape" /></div>
+                                <div class="color-shape" data-animation="bizan-fadeInUp" data-delay="1200ms" data-duration="1400ms"></div>
+                                <div class="color-shape-2"></div>
+                            </div>
+                            <div class="slide-img-wrap">
+                                <img decoding="async" src="assets/img/slider.png" alt="Home One Business" class="slide-img kenburns kenburns-top" />
+                            </div>
+                            <div class="slider-content-wrap">
+                                <div class="container-2">
+                                    <div class="hero-content-2">
+                                        <div class="section-heading white-content mb-30">
+<h4 class="sub-heading" data-animation="bizan-fadeInUp" data-delay="1000ms" data-duration="1200ms">
+    <span class="left-shape"></span>welcome TO OUR COMPANY</h4>
+<h2 class="section-title text-start" data-animation="bizan-fadeInUp" data-delay="1200ms" data-duration="1400ms">
+    Maximize Growth with the best Online CRM 
+</h2>
+                                        </div>
+                                        <p data-animation="bizan-fadeInUp" data-delay="1400ms" data-duration="1600ms">
+                                            At DSolutions, we deliver innovative tech solutions to propel business growth. Our expert team excels in software development, IT consulting, and staffing, keeping you ahead in a
+                                            fast-evolving tech world.
+                                        </p>
+                                        <a href="#" class="bz-primary-btn hero-btn" data-animation="bizan-fadeInUp" data-delay="1600ms" data-duration="1800ms">Hire an expert<i class="fa-regular fa-arrow-right"></i></a>
+                                        &nbsp;&nbsp;&nbsp;
+                                        <a href="#" style="color: white;" class="" data-animation="bizan-fadeInUp" data-delay="1600ms" data-duration="1800ms">
+                                            <i style="color: white;" class="fa-regular fa-arrow-right"></i>&nbsp;&nbsp;Explore Jobs
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="bizan-swiper-pagination"></div>
+            </div>
+        </div>
+        <!-- ./ slider-section -->
+
+        <section class="service-section-2 pt-5 ">
+            <div class="container-2">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <div class="service-left-content sticky-widget fade-wrapper text-center">
+                            <div class="section-heading">
+                                <h4 class="sub-heading" data-text-animation="fade-in" data-duration="1.5">
+                                    <span class="left-shape"></span>OUR Clients</h4>
+                                <h3 class="section-title">
+                                    See why customers love DSolutions
+                                </h3>
+                              
+                            </div>
+                           
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="customers">
+                <div class="slider">
+                    <div class="slide-track">
+                        <div class="slide">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ./ service-section -->
+        <section class="about-section-2 ">
+            <div class="shapes">
+                <div class="shape shape-1"><img src="assets/img/shapes/about-shape-1.png" alt="shape" /></div>
+            </div>
+            <div class="about-wrap-2 pb-5">
+                <div class="shapes-2">
+                    <div class="shape shape-2"><img src="assets/img/shapes/about-shape-2.png" alt="shape" /></div>
+                </div>
+                <div class="container border-red p-3">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-12 col-md-12">
+                            <div class="about-content-2 fade-wrapper">
+                                <div class="section-heading ">
+                                    <h4 class="sub-heading" data-text-animation="fade-in" data-duration="1.5"><span class="left-shape"></span>Who are we</h4>
+                                    <h2 class="section-title" data-text-animation
+                                     data-split="word" data-duration="1">Why Choose DSolutions</h2>
+                                    <p class="fade-top">
+                                        DSolutions is an AI-powered customer platform with all the software, 
+                                        integrations, and resources you need to connect your marketing, sales,
+                                         and customer service. HubSpot's connected
+                                        platform enables you to grow your business faster by focusing on what matters most: your customers.
+                                    </p>
+                                    <p class="fade-top">
+                                        Get a demo to learn about our premium software, or get started with our full suite of free tools and upgrade as you grow.
+                                    </p>
+
+                                    <button class="sidebar-trigger float-start bz-primary-btn open" type="button">
+                                        Login
+                                    </button>
+                                    <a href="#" class="bz-primary-btn bg-wite text-primary ms-4 float-start border">Get started free</a>
+                                </div>
+                            
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-12 col-md-12 d-flex justify-content-center align-items-center">
+                            <div class="about-img-wrap-2">
+                           
+                                <div class="about-images">
+                                   <div class="about-img-overlay">
+                                        <img class="about-img img-3" src="assets/img/vi.png" alt="about" />
+                                        <div class="overlay"></div>
+                                        <div class="video-btn">
+                                            <a class="video-popup venobox" data-autoplay="true" data-vbtype="video" href="#">
+                                                <div class="play-btn">
+                                                    <img src="assets/img/Vector.png" alt="img" />
+                                                </div>
+                                               
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+     
+<div class="bg-s">
+        <section class="faq-section pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="faq-content">
+                            <div class="section-heading mb-30">
+                                <h4 class="sub-heading" data-text-animation="fade-in" data-duration="1.5">
+                                    <span class="left-shape fade-top"></span>DSolutions</h4>
+                                <h2 class="section-title mb-0 fade-top" data-text-animation data-split="word" data-duration="1">
+                                    CRM that's packed with sales, marketing, and analytics tools</h2>
+                                    <p class="fade-top">DSolutions brings your marketing, sales, and service teams together on the same AI-powered customer platform. It's easy to use, provides value fast, and gives all teams a unified view of the customer at every stage in their journey. Each product in the 
+                                        platform is powerful on its own, but the real magic happens when you use them together.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="faq-img img-reveal">
+                            <div class="img-overlay"></div>
+                            <img src="assets/img/crm.png" alt="faq" />
+                        </div>
+                    </div>
+                    <div class="text-center d-flex justify-content-center align-items-center mt-5">
+                    <button class="sidebar-trigger float-start bz-primary-btn open col-2 text-center" type="button">
+                        Get started
+                    </button>
+                    <a href="#" class="bz-primary-btn bg-wite text-primary ms-4 float-start border col-2 text-center "> Get Demo</a>
+                </div>
+                </div>
+            </div>
+            <div class="container my-5 ">
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-lg-6">
+                        <div class="faq-content">
+                            <div class="section-heading mb-30">
+                                <h4 class="sub-heading" data-text-animation="fade-in" data-duration="1.5">
+                                    <span class="left-shape"></span>Sales CRM</h4>
+                                <h2 class="section-title mb-0" data-text-animation data-split="word" data-duration="1">
+                                    CRM that's packed with sales, marketing, and analytics tools</h2>
+                                    <p class="fade-top">Deliver an outstanding sales experience for your potential customers
+                                         with advanced lead routing, segmentation, and integrations with tools
+                                          your sales teams already use. Build playbooks and track progress 
+                                          along the entire timeline with advanced automation and artificial 
+                                          intelligence driven insights.
+                                    </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="faq-img img-reveal">
+                            <div class="img-overlay"></div>
+                            <img src="assets/img/crm2.gif" alt="faq" />
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+            <div class="container my-5 ">
+                <div class="row d-flex justify-content-center align-items-center">
+
+                    <div class="col-lg-6">
+                        <div class="faq-img img-reveal">
+                            <div class="img-overlay"></div>
+                            <img src="assets/img/sal.gif" alt="faq" />
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ps-5">
+                        <div class="faq-content">
+                            <div class="section-heading mb-30">
+                                <h4 class="sub-heading" data-text-animation="fade-in" data-duration="1.5">
+                                    <span class="left-shape"></span> DSolutions</h4>
+                                <h2 class="section-title mb-0" data-text-animation data-split="word" data-duration="1">
+                                    Help Desk CRM</h2>
+                                    <p>Deliver exceptional support by engaging with your customers across multiple channels. With One View,
+                                         support teams get a complete view of all transactions the customer has had
+                                          with the organization. Empower your support team to drive customer delight and close tickets faster.
+                                    </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                  
+                    <div class="text-center d-flex justify-content-center align-items-center mt-5">
+                   
+                    <a href="#" class="bz-primary-btn bg-wite text-primary ms-4 float-start border col-2 text-center ">
+                        Explore All</a>
+                </div>
+                </div>
+            </div>
+        </section>
+    </div>
+       
+    <section class="service-section-2 py-5">
+        <div class="container-2">
+            <div class="col-lg-12 col-md-12 mb-20">
+                <div class="service-left-content sticky-widget fade-wrapper">
+                    <div class="section-heading">
+                        <h4 class="sub-heading" data-text-animation="fade-in" data-duration="1.5">
+                            <span class="left-shapefade-top"></span>
+                            DSolutions
+                        
+                        </h4>
+                        <h2 class="section-title fade-top" data-text-animation data-split="word" data-duration="1">
+                        <br>Work from where you are</h2>
+                        <p class="fade-top ">
+
+                            In addition to purely sales and marketing tools, DSolutions features everything your team needs to collaborate and communicate efficiently: chat, video calls and conferencing,
+                             file storage, calendar, online documents, mobile sales app, tasks, work time tracking, and more.
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 col-md-12">
+                    <div class="service-left-content sticky-widget fade-wrapper css-you-are">
+                        <ul class="side-menu-list">
+                            <li class="">
+                                <div class="custm-css-img-t">
+
+                                
+                                <img  src="assets/img/11.png">
+                                <h5>Help Desk CRM </h5>
+                            </div>
+                                <p class="">View meeting details and get navigation details from within the app.</p>
+                            </li>
+                            <li class="">
+                                <div class="custm-css-img-t">
+
+                                
+                                <img  src="assets/img/1.png">
+                                <h5>Take voice notes </h5>
+                            </div>
+                                <p class="">
+                                    Record calls and take notes for review and action at a later time.
+                                </p>
+                            </li>
+                            <li class="">
+                                <div class="custm-css-img-t">
+
+                                
+                                <img  src="assets/img/2.png">
+                                <h5>Scan business cards</h5>
+                            </div>
+                                <p class="">
+                                    Save time by quickly scanning business cards to capture information directly.
+                                </p>
+                            </li>
+                            <li class="">
+                                <div class="custm-css-img-t">
+
+                                
+                                <img  src="assets/img/3.png">
+                                <h5> Video calls and Chat </h5>
+                            </div>
+                                <p class="">
+                                    Lorem ipsum dolor sit amet consectetur. Dolor pharetra senectus rutrum ultricies sapien.
+                                </p>
+                            </li>
+
+                           
+                        </ul>
+                        <div class="service-btn-anim fade-top">
+                            <a href="#" class="bz-primary-btn">View our services</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-12">
+                    <img src="assets/img/Workimg.png" alt="icon">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="bg-s fade-top">
+    <section class="service-section-2 pt-5 ">
+        <div class="container-2">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="service-left-content sticky-widget fade-wrapper text-center">
+                        <div class="section-heading">
+                            <h4 class="sub-heading" data-text-animation="fade-in" data-duration="1.5">
+                                <span class="left-shape"></span>OUR Clients</h4>
+                            <h3 class="section-title">
+                                See why customers love DSolutions
+                            </h3>
+                          
+                        </div>
+                       
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        <div class="customers fade-top">
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide">
+                        <img src="assets/img/s1.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/img/s2.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/img/s1.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/img/s2.png" height="100" width="250" alt="" />
+                    </div> <div class="slide">
+                        <img src="assets/img/s1.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/img/s2.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/img/s1.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/img/s2.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/img/s1.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/img/s2.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/img/s1.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/img/s2.png" height="100" width="250" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+           <div class="testimonials">
+                
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="single-item">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="profile">
+                                        <div class="img-area">
+                                            <img src="assets/img/testm.png" alt="">
+                                        </div>
+                                      
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="content">
+                                        <p><span><i class="fa fa-quote-left"></i></span>
+                                          <h6>Large enterprise</h6>
+                                          <h5>
+                                              “By leveraging Jira and Confluence for automated reporting, we’re saving over 800 hours and $500k per year in management consulting costs.”
+                                          </h5>
+                                      </p>
+                                      <h6 class="mt-3">
+                                          Wais Mojaddidi
+                                      </h6>
+                                      <p>Director of Agile Delivery, Global E-commerce, Royal Caribbean</p>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    <div class="carousel-item ">
+                        <div class="single-item">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="profile">
+                                        <div class="img-area">
+                                            <img src="assets/img/testm.png" alt="">
+                                        </div>
+                                      
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="content">
+                                        <p><span><i class="fa fa-quote-left"></i></span>
+                                          <h6>Large enterprise</h6>
+                                          <h5>
+                                              “By leveraging Jira and Confluence for automated reporting, we’re saving over 800 hours and $500k per year in management consulting costs.”
+                                          </h5>
+                                      </p>
+                                      <h6 class="mt-3">
+                                          Wais Mojaddidi
+                                      </h6>
+                                      <p>Director of Agile Delivery, Global E-commerce, Royal Caribbean</p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                   
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+</div>
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+<section class="fade-top">
+    <div class="container text-center">
+
+        <h4 class="fade-wrapper">Great relationships start here</h4>
+
+<div class="col-lg-12 text-center d-flex justify-content-center align-items-center mt-5">
+  <div class="form-group" x-data="{ fileName: '' }">
+    <div class="input-group shadow">
+      <span class="input-group-text px-3 text-muted"><img src="assets/img/mail.png" > </span>
+      <input type="file" x-ref="file" @change="fileName = $refs.file.files[0].name" name="img[]" class="d-none">
+      <input type="text" class="form-control form-control-lg" placeholder="Your Working Email" x-model="fileName">
+      <button class="browse btn btn-primary px-4" type="button" x-on:click.prevent="$refs.file.click()">
+        Get started</button>
+    </div>
+  </div>
+  
+</div>
+
+
+<div class="col-lg-12 text-center d-flex justify-content-center align-items-center mt-5 mb-5 ">
+
+    <div class="col-3 float-start">
+<div class="col-12">
+    <img src="assets/img/f.png"/>
+</div>
+<h6>
+    Blazing fast UI
+</h6>
+    </div>
+    <div class="col-3 float-start">
+        <div class="col-12">
+            <img src="assets/img/22.png"/>
+        </div>
+        <h6>
+            One View
+        </h6>
+            </div>
+            <div class="col-3 float-start">
+                <div class="col-12">
+                    <img src="assets/img/33.png"/>
+                </div>
+                <h6>
+                    Integrations
+                </h6>
+                    </div>
+</div>
+    </div>
+    
+</section>
+
+
+     
+
+        <footer class="footer-section pt-10 overflow-hidden ">
+            <div class="container">
+                <div class="row footer-wrap">
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-widget widget-space">
+                            <div class="widget-header">
+                                <h3 class="widget-title fade-top" >Features</h3>
+                            </div>
+                            <ul class="footer-list f-s-low fade-top">
+                                <li class="fade-top"><a href="#">Online CRM</a></li>
+                                <li><a href="#"> Project Management</a></li>
+                                <li><a href="#">Task Management </a></li>
+                                <li><a href="#">Online CRM</a></li>
+                                <li><a href="#"> Project Management</a></li>
+                                <li><a href="#">Task Management </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-widget widget-space">
+                            <div class="widget-header">
+                                <h3 class="widget-title">Features</h3>
+                            </div>
+                            <ul class="footer-list f-s-low">
+                                <li><a href="#">Online CRM</a></li>
+                                <li><a href="#"> Project Management</a></li>
+                                <li><a href="#">Task Management </a></li>
+                                <li><a href="#">Online CRM</a></li>
+                                <li><a href="#"> Project Management</a></li>
+                                <li><a href="#">Task Management </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-widget widget-space">
+                            <div class="widget-header">
+                                <h3 class="widget-title">Resources</h3>
+                            </div>
+                            <ul class="footer-list f-s-low">
+                                <li><a href="#">Online CRM</a></li>
+                                <li><a href="#"> Project Management</a></li>
+                                <li><a href="#">Task Management </a></li>
+                                <li><a href="#">Online CRM</a></li>
+                                <li><a href="#"> Project Management</a></li>
+                                <li><a href="#">Task Management </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget widget-space">
+                            <div class="widget-header">
+                                <h3 class="widget-title">Pricing</h3>
+                            </div>
+                            <ul class="footer-list ">
+                                <li><a href="#">Online CRM</a></li>
+                                <li><a href="#"> Project Management</a></li>
+                                <li><a href="#">Task Management </a></li>
+                                <li><a href="#">Online CRM</a></li>
+                                <li><a href="#"> Project Management</a></li>
+                                <li><a href="#">Task Management </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget widget-space">
+                           
+                            <p>Stay up to date with platform news and event announcements</p>
+                            <div class="footer-form mb-20">
+                                <form action="#" class="rr-subscribe-form">
+                                    <div class="sidebar-icon-2 ">
+                                        <button class="sidebar-trigger bz-primary-btn open col-12" type="button">
+                                            Subscribe
+                                        </button>
+                                    </div>
+                                </form>
+                                <ul class="footer-social">
+                                    <li><a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#" ><i class="fa-brands fa-behance"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-area">
+                <div class="container">
+                    <div class="row copyright-content">
+                        <div class="col-md-6">
+                            <p>Copyright © 2025 -  2025All rights reserved..</p>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="copy-list">
+                               
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- ./ footer-section -->
+
+        <div id="scroll-percentage"><span id="scroll-percentage-value"></span></div>
+        <!--scrollup-->
+
+        <!-- JS here -->
+        <script src="assets/js/vendor/jquary-3.6.0.min.js"></script>
+        <script src="assets/js/vendor/bootstrap-bundle.js"></script>
+        <script src="assets/js/vendor/imagesloaded-pkgd.js"></script>
+        <script src="assets/js/vendor/waypoints.min.js"></script>
+        <script src="assets/js/vendor/venobox.min.js"></script>
+        <script src="assets/js/vendor/odometer.min.js"></script>
+        <script src="assets/js/vendor/meanmenu.js"></script>
+        <script src="assets/js/vendor/smooth-scroll.js"></script>
+        <script src="assets/js/vendor/jquery.isotope.js"></script>
+        <script src="assets/js/vendor/wow.min.js"></script>
+        <script src="assets/js/vendor/swiper.min.js"></script>
+        <script src="assets/js/vendor/moment.min.js"></script>
+        <script src="assets/js/vendor/daterangepicker.min.js"></script>
+        <script src="assets/js/vendor/split-type.min.js"></script>
+        <script src="assets/js/vendor/gsap.min.js"></script>
+        <script src="assets/js/vendor/scroll-trigger.min.js"></script>
+        <script src="assets/js/vendor/nice-select.js"></script>
+        <script src="assets/js/slider.js"></script>
+        <script src="assets/js/contact.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
