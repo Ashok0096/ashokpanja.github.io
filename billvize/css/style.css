@@ -156,7 +156,7 @@ body{ color: #000;}
     border-bottom-right-radius: 100%;
 }
 .navbar-light .navbar-nav .nav-link{ color: #000000;}
-
+.container-fluid.fixed-top.shadow.bg-white .container{max-width: 100%; }
 
 
 
