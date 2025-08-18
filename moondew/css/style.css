@@ -291,12 +291,12 @@ html{ overflow-x: hidden;}
 }
 
 /* footer section end */
-.tab-t {
+/* .tab-t {
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 .tab-t:hover {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
+} */
 .btn{ font-size: 16px;}
 .bg-organa{ background: #3a693f !important;}
 .bg-pula{ background: #75002a !important;}
