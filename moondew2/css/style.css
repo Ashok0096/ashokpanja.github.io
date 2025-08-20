@@ -189,6 +189,7 @@ button.navbar-toggler.me-0 {
 .navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link{
     padding: 10px;
 }
+html{ overflow-x: hidden;}
 }
 
 @media (min-width: 992px) {
