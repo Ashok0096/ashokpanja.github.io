@@ -180,7 +180,7 @@ h6,
 }
 button.navbar-toggler.me-0 {
     position: fixed;
-    right: 12%; background: #fff;
+    right: 5%; background: #fff;
 }
 .navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link.active {
     color: var(--secondary);
