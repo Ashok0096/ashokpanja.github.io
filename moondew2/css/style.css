@@ -167,7 +167,7 @@ h6,
         margin-right: 0;
         padding: 10px 0;
     }
-.shadow-sm img , .sticky-top{ width: 50% !important;}
+.shadow-sm img , .sticky-top img{ width: 50% !important;}
     .navbar .navbar-nav {
         border-top: 1px solid #EEEEEE;
     }
