@@ -167,6 +167,9 @@ h6,
         margin-right: 0;
         padding: 10px 0;
     }
+    .shadow-sm .py-5 {
+    padding: 0px !important;
+}
 .shadow-sm img , .sticky-top img{ width: 50% !important;}
     .navbar .navbar-nav {
         border-top: 1px solid #EEEEEE;
