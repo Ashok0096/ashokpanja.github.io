@@ -35,8 +35,8 @@
         loop: true,
         nav : true,
         navText : [
-            '<i class="fa fa-arrow-down"></i>',
-            '<i class="fa fa-arrow-down"></i>'
+            '<i class="fa fa-angle-double-down"></i>',
+            '<i class="fa fa-angle-double-down"></i>'
         ],
     });
 
