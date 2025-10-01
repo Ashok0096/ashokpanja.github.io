@@ -1120,7 +1120,7 @@ background: #fff;
 }
 
 nav.navbar.navbar-expand-lg{
-    box-shadow: 0 7px 10px rgba(0, 0, 0, .1) !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1) !important;
 }
 .Real-World-Testing-Results-btn .dropbtn {
   
@@ -1302,7 +1302,13 @@ linear;
     animation: section-title-run 5s infinite 
 linear;
 }
-
+.slider-dwone-s{
+	position: absolute;
+    width: 100%;
+    top: 80%;
+    max-width: 99%;
+    overflow: hidden;
+}
 
 
 
