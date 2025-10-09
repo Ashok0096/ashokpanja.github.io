@@ -744,7 +744,7 @@ a.btn.btn-primary.btn-lg-square.back-to-top {
 	position: absolute;
 	width: 100px;
 	height: 40px;
-	background: #cfd4db;
+	background: #ffffff;
 	bottom: 0px;
 	z-index: 9;}
 /* Download-s-css -start */
@@ -1301,7 +1301,10 @@ linear;
     align-items: center;
     justify-content: center;
 }
-
+.table > :not(:last-child) > :last-child > * {
+    border-bottom-color: currentColor;
+    font-weight: normal;
+}
 
 
 
