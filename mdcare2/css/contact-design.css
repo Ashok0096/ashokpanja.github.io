@@ -44,7 +44,9 @@
       font-size: 1.6rem;
       color: #292966; font-weight: 600; font-size: 22px;
     }
-
+.card-content h5 {
+    font-size: 15px;
+}
 
 
     /* canvas {
