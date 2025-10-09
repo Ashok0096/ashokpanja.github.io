@@ -16,8 +16,11 @@ p {
 	 font-weight: 500;  margin-bottom: 5px;
 	}
 	
-body{ text-transform: capitalize;  font-family: "Montserrat", sans-serif;}
-	/*** Spinner Start ***/
+body{ text-transform: capitalize;  font-family: "Montserrat", sans-serif;     font-size: 14px;
+    color: #222;
+    text-align: justify;
+    font-weight: 500;}
+	
 #spinner {
 	opacity: 0;
 	visibility: hidden;
@@ -1305,8 +1308,12 @@ linear;
     border-bottom-color: currentColor;
     font-weight: normal;
 }
-
-
+p.name-descripeion {
+    text-align: center; width: 95%; color: #292966; font-weight: 600;
+}
+.dedcription-btn:hover p.name-descripeion{ color: #00aeef ;}
+.resources-list-o a{ color: #008fdc;}
+.resources-list-o h5{ font-size: 16px;}
 
 
 
