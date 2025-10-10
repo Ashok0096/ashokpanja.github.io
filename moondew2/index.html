@@ -110,8 +110,12 @@
 
                     <a href="#mattress-guide" class="nav-item nav-link">Mattress Guide</a>
                 </div>
-                <a href="" class="btn btn-primary px-3 d-none d-lg-block">Get A Quote</a>
+                <a href="" class="btn btn-primary px-3 d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#exampleModal">Get A Quote</a>
             </div>
+        
+
+  <!-- Modal -->
+
         </nav>
         <!-- Navbar End -->
 
@@ -222,10 +226,10 @@
                         </div>
                     </div>
                     <p class="fs-5">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
-                        to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
-                        sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    </p>
+                      Whether you prefer a soft, medium, firm, dual, or ortho feel, we’ve thoughtfully designed and rigorously tested multiple models to cater to your unique comfort needs. Let our mattresses cradle you in natural serenity and unmatched relaxation.
+We understand sleep, we understand nature, and we blended them well, to give you Rest Healthie.
+
+we bring your sleeping much closer to nature through the perfect blend of natural materials to craft this innovative yet modern mattress range to give you a Nature's Lap experience</p>
                 </div>
             </div>
         </div>
@@ -236,7 +240,7 @@
             <div class="container-fluid my-5 px-0 pt-5" style="overflow: hidden;">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-12  shadow m-lg-0">
+                        <div class="col-lg-12   m-lg-0">
                             <div class="tabs-css">
                                 <p class="fw-medium text-uppercase text-primary text-center">MOONDEW</p>
                                 <h1 class="display-5 mb-4 text-primary text-center">Our Products</h1>
@@ -566,11 +570,11 @@
                 <div class="row g-5">
                     <div class="col-lg-3 col-md-6">
                         <img src="img/logotab.png" class="w-75 img-fluid" />
+                        
                         <p class="mt-3">
-                            All Natural Latex Mattress & Bedding Accessories.
-                        </p>
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                           Mattresses which are most often found in the market, are complete chemical products. In the world, 
+                           where every conscious individual is striving towards a greener environment.
+
                         </p>
                     </div>
                     <div class="col-lg-3 col-md-6">
@@ -624,6 +628,43 @@
 
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+        <!-- modalpopup get quote-->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="exampleModalLabel">Request a Quote</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="uname" class="form-label">Username</label>
+              <input type="text" id="uname" class="form-control" placeholder="">
+            </div>
+            
+            <div class="mb-3">
+              <label for="upwd" class="form-label">Phone Number</label>
+              <input type="Phone Number" id="upwd" class="form-control" placeholder="">
+            </div>
+             <div class="mb-3">
+              <label for="upwd" class="form-label">Comments</label>
+            <textarea class="form-control">
+
+            </textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success">Submit</button>
+      
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modalpopup get quote-->
         <script>
             document.addEventListener("DOMContentLoaded", function () {
                 const sections = document.querySelectorAll("section[id]");

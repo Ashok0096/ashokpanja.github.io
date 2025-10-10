@@ -16,7 +16,9 @@
 
 
 }
-
+.nav .modal-footer{ 
+  justify-content: center;
+}
 .tabs-css .tabs .tab {
   order: 99;
   flex-grow: 1;
