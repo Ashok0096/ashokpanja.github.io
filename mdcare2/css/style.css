@@ -1314,7 +1314,10 @@ p.name-descripeion {
 .dedcription-btn:hover p.name-descripeion{ color: #00aeef ;}
 .resources-list-o a{ color: #008fdc;}
 .resources-list-o h5{ font-size: 16px;}
-
+.fuchers-section .features-item .features-icon , .fuchers-section .features-item .features-info .title {
+    color: #00aeef;
+    border-color: #00aeef;
+}
 
 
 
