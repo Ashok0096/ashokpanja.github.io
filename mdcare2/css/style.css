@@ -627,7 +627,7 @@ a.btn.btn-primary.btn-lg-square.back-to-top {
 .dropdown-item {
 	padding: 1rem;}
 .bg-breadcrumb-about {
-	background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(0 0 0 / 0%)), url(../img/aboutbg.png);
+	background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(0 0 0 / 0%)), url(../img/aboutusbg-2.jpg);
 	background-size: cover;     background-position: center top;
     background-repeat: no-repeat;
      }
@@ -1098,9 +1098,9 @@ background: #fff;
   }
 }
 @media only screen and (max-width: 768px) {
-  .fuchers-section .section-common-space {
+  /* .fuchers-section .section-common-space {
     padding: 50px 0;
-  }
+  } */
   
   .fuchers-section .section-title {
     margin-bottom: 20px;
