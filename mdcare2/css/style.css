@@ -2547,7 +2547,12 @@ button.available-for-btn.active .dot {
 	.bg-Meaningful-use {
 		background-position: 0px -110px;
 	}
-
+.Reimagine-text {
+		position: absolute;
+		top: 310px;
+		width: 100%;
+		background: rgb(202, 222, 221, 0.4);
+	}
 
 }
 
@@ -2558,8 +2563,14 @@ button.available-for-btn.active .dot {
 	}
 
 	.navbar-light .navbar-brand img {
-		max-height: 40px;
+		max-height: 35px !important;
 	}
+	.Reimagine-text {
+        position: absolute;
+        top: 440px;
+        width: 100%;
+        background: rgb(202, 222, 221, 0.4);
+    }
 
 	.sub-title {
 		font-size: 18px;
@@ -2613,7 +2624,7 @@ button.available-for-btn.active .dot {
 @media (min-width: 1200px) {
 	.Reimagine-text {
 		position: absolute;
-		top: 570px;
+		top: 470px;
 		width: 100%;
 		background: rgb(202, 222, 221, 0.4);
 	}
@@ -2624,6 +2635,12 @@ button.available-for-btn.active .dot {
 }
 
 @media (min-width: 1400px) {
+	.Reimagine-text {
+		position: absolute;
+		top: 570px;
+		width: 100%;
+		background: rgb(202, 222, 221, 0.4);
+	}
 	.navbar-light .navbar-nav .nav-link {
 		padding: 21px 20px;
 	}
