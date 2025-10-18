@@ -1056,6 +1056,7 @@ background: #fff;
   position: relative;
   transition: 0.3s;
   border-radius: 2px;
+  min-height: 190px;
 }
 .fuchers-section .features-item:hover {
   box-shadow: 0 40px 70px 0 rgba(0, 0, 0, 0.22);
@@ -1095,6 +1096,9 @@ background: #fff;
 @media only screen and (max-width: 992px) {
 .fuchers-section  .clear-problem > div:nth-child(3n+1) {
     clear: none;
+  }
+  .fuchers-section .features-item {
+	min-height: 210px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -1319,8 +1323,10 @@ p.name-descripeion {
     border-color: #00aeef;
 }
 .m-t-90{ margin-top: 90px;}
-
-
+.testimonial-s .testimonial-item{
+	min-height: 320px;
+}
+.header-carousel h1{ font-family:"Figtree", sans-serif ;}
 
 
 
@@ -2008,7 +2014,10 @@ background-position: center top;
 
 /*  Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-
+.Reimagine-text{  position: absolute;
+    top: 570px;
+    width: 100%;
+    background: rgb(202, 222, 221, 0.4);}
 .navbar-light .navbar-nav .nav-link{ 
 	    padding: 21px 10px;
 }
