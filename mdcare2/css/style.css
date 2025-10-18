@@ -188,6 +188,9 @@ body {
 
 	border-bottom: 2px solid #f8941e;
 }
+.navbar-light .navbar-nav .nav-link.active {
+font-weight: 600;
+}
 
 .navbar-light .navbar-brand img {
 	max-height: 50px;
