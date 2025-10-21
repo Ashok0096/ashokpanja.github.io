@@ -1450,7 +1450,13 @@ a.btn.btn-primary.btn-lg-square.back-to-top {
 }
 
 
-
+.carousel-caption-content{
+	    align-items: start;
+    display: flex;
+    justify-content: start;
+    height: 100%;
+	padding-top: 150px;
+} 
 
 
 
