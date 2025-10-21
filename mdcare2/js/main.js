@@ -26,24 +26,22 @@
     });
 
     // Hero Header carousel
-    $(".header-carousel").owlCarousel({
-        animateOut: 'slideOutDown',
-        items: 1,
-        autoplay: true,
-        // smartSpeed: 1000,
-
-         autoplayTimeout: 5000,
-          autoplaySpeed: 600,    // Transition speed (ms)
-    smartSpeed: 600,
-
-        dots: true,
-        loop: true,
-        nav : true,
-        navText : [
-            '<i class="fa fa-angle-double-down"></i>',
-            '<i class="fa fa-angle-double-down"></i>'
-        ],
-    });
+// Hero Header carousel
+$(".header-carousel").owlCarousel({
+    animateOut: 'slideOutDown',
+    items: 1,
+    autoplay: true,
+    autoplayTimeout: 5000,   // 5 seconds per slide
+    autoplaySpeed: 60000,      // Transition speed (ms)
+    smartSpeed: 600,         // Controls animation speed
+    dots: true,
+    loop: true,
+    nav: true,
+    navText: [
+        '<i class="fa fa-angle-double-down"></i>',
+        '<i class="fa fa-angle-double-down"></i>'
+    ],
+});
 
 
     // Modal Video
@@ -64,7 +62,7 @@
     });
 
 
-    // Dance Class carousel
+    //  Class carousel
     $(".class-carousel").owlCarousel({
         autoplay: true,
         smartSpeed: 1500,
@@ -129,7 +127,7 @@
         }
     });
 
-    // Dance Training carousel
+    //  Training carousel
     $(".training-carousel").owlCarousel({
         autoplay: true,
         smartSpeed: 1000,
