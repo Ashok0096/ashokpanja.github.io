@@ -31,8 +31,8 @@ $(".header-carousel").owlCarousel({
     animateOut: 'slideOutDown',
     items: 1,
     autoplay: true,
-    autoplayTimeout: 5000,   // 5 seconds per slide
-    autoplaySpeed: 60000,      // Transition speed (ms)
+    autoplayTimeout: 15000,   // 5 seconds per slide
+    autoplaySpeed: 6000,      // Transition speed (ms)
     smartSpeed: 600,         // Controls animation speed
     dots: true,
     loop: true,

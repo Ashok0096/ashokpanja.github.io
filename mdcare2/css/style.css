@@ -1739,6 +1739,7 @@ p.name-descripeion {
 
 .resources-list-o a {
 	color: #008fdc;
+	    text-transform: initial;
 }
 
 .resources-list-o h5 {
