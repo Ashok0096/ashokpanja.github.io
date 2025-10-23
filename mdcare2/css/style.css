@@ -180,12 +180,16 @@ body {
 	font-size: 18px !important;
 }
 
-.navbar-light .navbar-nav .nav-link:hover,
+
 .navbar-light .navbar-nav .nav-link.active {
 
 
 	color: #292966 !important;
 
+	border-bottom: 2px solid #f8941e;
+}
+.navbar-nav .nav-link:hover{
+	color: #00aeef !important;
 	border-bottom: 2px solid #f8941e;
 }
 .navbar-light .navbar-nav .nav-link.active {
