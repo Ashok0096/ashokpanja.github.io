@@ -30,7 +30,7 @@ p {
 }
 
 body {
-	text-transform: capitalize;
+
 	font-family: "Montserrat", sans-serif;
 	font-size: 14px;
 	color: #222;
@@ -303,7 +303,7 @@ font-weight: 600;
 /*** Single Page Hero Header Start ***/
 .bg-breadcrumb {
 	position: relative;
-	padding: 70px 0px;
+	padding: 1px 0px;
 	background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, 0.7)), url(../img/breadcrumb.jpg);
 	background-position: center top;
 	background-repeat: no-repeat;
@@ -844,11 +844,11 @@ a.btn.btn-primary.btn-lg-square.back-to-top {
 	padding: 1rem;
 }
 
-.bg-breadcrumb-about {
-	background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(0 0 0 / 0%)), url(../img/aboutusbg-2.jpg);
-	background-size: cover;
-	background-position: center top;
-	background-repeat: no-repeat;
+.bg-breadcrumb-inner {
+	background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(0 0 0 / 0%)), url(../img/innerpage-bg-n.png);
+	    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .bg-breadcrumb-contact {
@@ -2868,10 +2868,7 @@ button.available-for-btn.active .dot {
 }
 
 @media (min-width: 992px) {
-	.bg-breadcrumb {
-		padding-top: 50px;
-	}
-
+	
 	.nav-item.dropdown i {
 		position: relative;
 		top: -1px;
