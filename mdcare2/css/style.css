@@ -276,7 +276,7 @@ font-weight: 600;
 	margin-top: 50px;
 	display: block;
 	object-fit: cover;
-	transition: 0.5s; padding-bottom: 30px;
+	transition: 0.5s; padding-bottom: 0px;
 }
 
 .header-carousel .header-carousel-item .carousel-caption {
