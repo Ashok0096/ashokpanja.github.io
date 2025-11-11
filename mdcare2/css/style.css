@@ -289,10 +289,10 @@ font-weight: 600;
 	position: absolute;
 	top: 0;
 	left: 0;
-	padding: 100px 0;
-	display: flex;
+	padding: 15% 0;
+	/* display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: center; */
 	/* background: rgba(0, 0, 0, .2); */
 }
 
@@ -307,7 +307,7 @@ font-weight: 600;
 /*** Single Page Hero Header Start ***/
 .bg-breadcrumb {
 	position: relative;
-	padding: 1px 0px;
+	padding: 70px 0px;
 	background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, 0.7)), url(../img/breadcrumb.jpg);
 	background-position: center top;
 	background-repeat: no-repeat;
@@ -840,7 +840,7 @@ a.btn.btn-primary.btn-lg-square.back-to-top {
 	color: #fff;
 }
 
-.header-carousel.owl-carousel.owl-loaded.owl-drag H1 {
+.fast-s  H1 {
 	padding-left: 20%;
 }
 
@@ -849,11 +849,11 @@ a.btn.btn-primary.btn-lg-square.back-to-top {
 }
 
 .bg-breadcrumb-inner {
-	background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(0 0 0 / 0%)), url(../img/innerpage-bg-n.png);
+	background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(0 0 0 / 0%)), url(../img/slider/innerbg2.png);
 	    background-size: cover;
-    background-position: 0px -280px;
-    background-repeat: no-repeat;
+   
 }
+
 
 .bg-breadcrumb-contact {
 	background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(0 0 0 / 0%)), url(../img/contact.jpg);
@@ -999,7 +999,8 @@ a.btn.btn-primary.btn-lg-square.back-to-top {
 }
 
 .bg-breadcrumb>div {
-	margin-top: 5%;
+	margin-top: 8%;
+	    padding-left: 30%;
 }
 
 #chartdiv {
@@ -1507,6 +1508,98 @@ a.btn.btn-primary.btn-lg-square.back-to-top {
     background-repeat: no-repeat;
     left: 45%; display: block;
 }
+.h-100px{ height: 100px;}
+.fda-overflow-hidden {
+    overflow: hidden;
+}
+.fda-inner-page-hero-section {
+    /* background-color: var(--black); */
+    padding-top: 13rem;
+    padding-bottom: 13rem;
+}
+.fda-position-relative {
+    position: relative;
+}
+.fda-inner-page-hero-background {
+    z-index: 2;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0%;
+	object-fit: cover;
+}
+.fda-inner-page-hero-background {
+    z-index: 2;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0%;
+}
+.fda-inner-page-hero-overlay {
+    pointer-events: none;
+}
+.fda-inner-page-hero-overlay-color {
+    background-color: #0000004d;
+    background-image: linear-gradient(90deg, #000c, #fff0 41%), linear-gradient(90deg, #fff0 46%, #000000bf), linear-gradient(#0000008c, #fff0 50%), linear-gradient(#fff0 45%, #000000a6);
+    position: absolute;
+    inset: 0%;
+}
+.fda-inne-page-hero-curtain-two {
+    z-index: 1;
+    pointer-events: none;
+    background-color: #070707;
+    position: absolute;
+    inset: 0%;
+}
+.fda-inner-page-hero-cartain {
+    z-index: 3;
+    pointer-events: none;
+    display: none;
+    position: absolute;
+    inset: 0%;
+}
+.fda-container {
+    width: 100%;
+    max-width: 82.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: .9375rem;
+    padding-right: .9375rem;
+}
+
+.fda-inner-page-hero-wrapper {
+    z-index: 4;
+    grid-column-gap: .6875rem;
+    grid-row-gap: .6875rem;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+.header-carousel .carousel-caption-content i{
+	    padding: 8px 13px;
+    background: #f8931e;
+    border-radius: 30px;
+    margin-right: 5px;
+    position: relative;
+    top: -3px;
+    color: #fff;
+}
+.slider-dwone-s .rounded-top {
+    border-top-left-radius: 30px !important;
+    border-top-right-radius: 30px !important;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1756,11 +1849,12 @@ nav.navbar.navbar-expand-lg {
 }
 
 .slider-dwone-s {
-	position: absolute;
-	width: 100%;
-	top: 80%;
-	max-width: 99%;
-	overflow: hidden;
+	    position: absolute;
+    width: 100%;
+    top:-78%;
+    max-width: 99%;
+    overflow: hidden;
+    z-index: 9;
 }
 
 .home-img-map {
@@ -2721,7 +2815,7 @@ button.available-for-btn.active .dot {
     display: flex;
     justify-content: start;
     height: 100%;
-	padding-top: 150px;
+	
 } 
 
 	.Reimagine-text {
