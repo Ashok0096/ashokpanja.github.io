@@ -1578,13 +1578,14 @@ a.btn.btn-primary.btn-lg-square.back-to-top {
     position: relative;
 }
 .header-carousel .carousel-caption-content i{
-	    padding: 8px 13px;
+	padding: 6px 8px;
     background: #f8931e;
     border-radius: 30px;
     margin-right: 5px;
     position: relative;
-    top: -3px;
+    top: -7px;
     color: #fff;
+    FONT-SIZE: 12px !important;
 }
 .slider-dwone-s .rounded-top {
     border-top-left-radius: 30px !important;
