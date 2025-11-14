@@ -4,53 +4,14 @@
 		url('../font-awesome/fonts/fontawesome-webfont.woff') format('woff');
 }
 
-h6,
-.h6,
-h5,
-.h5,
-h4,
-.h4,
-h3,
-.h3,
-h2,
-.h2,
-h1,
-.h1 {
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 	font-family: "Montserrat", sans-serif;
 }
 
-p {
-	font-size: 14px;
-	color: #222;
-	text-align: justify;
-
-	/* line-height: 30px; */
-	font-weight: 500;
-	margin-bottom: 5px;
-}
-
-body {
-
-	font-family: "Montserrat", sans-serif;
-	font-size: 14px;
-	color: #222;
-	text-align: justify;
-	font-weight: 500;
-}
-
-#spinner {
-	opacity: 0;
-	visibility: hidden;
-	transition: opacity .5s ease-out, visibility 0s linear .5s;
-	z-index: 99999;
-}
-
-#spinner.show {
-	transition: opacity .5s ease-out, visibility 0s linear 0s;
-	visibility: visible;
-	opacity: 1;
-}
-
+p { font-size: 14px;color: #222; text-align: justify; /* line-height: 30px; */ font-weight: 500; margin-bottom: 5px;}
+body {font-family: "Montserrat", sans-serif;font-size: 14px;color: #222;text-align: justify;font-weight: 500;}
+#spinner {opacity: 0;visibility: hidden;transition: opacity .5s ease-out, visibility 0s linear .5s;z-index: 99999;}
+#spinner.show { transition: opacity .5s ease-out, visibility 0s linear 0s; visibility: visible; opacity: 1;}
 /*** Spinner End ***/
 .back-to-top {
 	position: fixed;
@@ -458,13 +419,7 @@ font-weight: 600;
 	transition: 0.5s;
 }
 
-.class .class-item:hover .class-img img {
-	/* transform: scale(1.2); */
-}
-
 /*** Dance Class End ***/
-
-
 /*** Blog Start ***/
 .blog-carousel .owl-stage-outer {
 	margin-top: 30px;
@@ -850,6 +805,11 @@ a.btn.btn-primary.btn-lg-square.back-to-top {
 
 .bg-breadcrumb-inner {
 	background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(0 0 0 / 0%)), url(../img/slider/innerbg2.png);
+	    background-size: cover;
+   
+}
+.bg-breadcrumb-inner2 {
+	background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(0 0 0 / 0%)), url(../img/inner.jpg);
 	    background-size: cover;
    
 }
