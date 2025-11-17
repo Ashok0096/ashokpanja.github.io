@@ -1503,8 +1503,9 @@ a.btn.btn-primary.btn-lg-square.back-to-top {
 }
 .fda-inner-page-hero-overlay-color {
     background-color: #0000004d;
-    background-image: linear-gradient(90deg, #000c, #fff0 41%), linear-gradient(90deg, #fff0 46%, #000000bf), linear-gradient(#0000008c, #fff0 50%), linear-gradient(#fff0 45%, #000000a6);
-    position: absolute;
+     /* background-image: linear-gradient(90deg, #000c, #fff0 41%), linear-gradient(90deg, #fff0 46%, #000000bf), linear-gradient(#0000008c, #fff0 50%), linear-gradient(#fff0 45%, #000000a6);  */
+ background-image: linear-gradient(90deg, #6e6e6ecc, #fff0 50%), linear-gradient(90deg, #fff0 35%, #6e6e6ecc), linear-gradient(#0000008c, #fff0 30%), linear-gradient(#fff0 65%, #000000a6);
+	position: absolute;
     inset: 0%;
 }
 .fda-inne-page-hero-curtain-two {
@@ -1568,7 +1569,7 @@ a.btn.btn-primary.btn-lg-square.back-to-top {
   position: relative;
   width: 6px;
   margin: 0 auto;
-  padding-top: 50px;
+  padding-top: 15%;
   background: #f8941e;
 }
 
