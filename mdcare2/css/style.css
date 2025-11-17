@@ -1463,7 +1463,7 @@ a.btn.btn-primary.btn-lg-square.back-to-top {
     background: url(../img/uparrow.png);
     position: absolute;
     bottom: -15px;
-    width: 100%;
+    width: 20%;
     height: 20px;
     background-repeat: no-repeat;
     left: 45%; display: block;
@@ -1550,6 +1550,9 @@ a.btn.btn-primary.btn-lg-square.back-to-top {
 .slider-dwone-s .rounded-top {
     border-top-left-radius: 30px !important;
     border-top-right-radius: 30px !important;
+}
+.top-header {
+    border-bottom: solid 1px #f1f1f1;
 }
 
 
@@ -1860,7 +1863,7 @@ p.name-descripeion {
 }
 
 .testimonial-s .testimonial-item {
-	min-height: 320px;
+	min-height: 370px;
 }
 
 .header-carousel h1 {
@@ -2458,11 +2461,60 @@ button.available-for-btn.active .dot {
 	.live-demo-btn-c {
 		top: 40%;
 	}
-	.header-carousel .header-carousel-item .carousel-caption { padding: 0px;}
+	.header-carousel .header-carousel-item .carousel-caption { padding: 0px; text-align: right;}
+	.position-xs-relative{ position: relative;}
+	.h-100px{ height: auto;}
+	.header-carousel h1{ width: 95%;  font-size: 18px;}
+	.header-carousel .fs-2{
+		font-size: 16px !important;         text-align: left;
+        padding-left: 35%;
+	}
+	.header-carousel .carousel-caption-content i {
+    padding: 5px 5px 5px 6px !important;
+    background: #f8931e;
+    border-radius: 19px;
+    margin-right: 5px;
+    position: relative;
+    top: -4px;
+    color: #fff;
+    font-size: 7px !important;}
+	.slider-dwone-s .rounded-top{ 
+		    border: 1px solid #ccc;
+    border-radius: 15px !important;
+    margin-top: 10px;
+
+	}
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+	.slider-dwone-s .rounded-top{ 
+		    border: 1px solid #ccc;
+    border-radius: 15px !important;
+    margin-top: 10px;
+
+	}
+	.header-carousel .header-carousel-item .carousel-caption { padding: 0px; text-align: right;}
+	.position-xs-relative{ position: relative;}
+	.h-100px{ height: auto;}
+	.header-carousel h1{ width: 95%;  font-size: 18px;}
+	.header-carousel .fs-2{
+		font-size: 16px !important;         text-align: left;
+        padding-left: 65%;
+	}
+	.header-carousel .carousel-caption-content i {
+    padding: 5px 5px 5px 6px !important;
+    background: #f8931e;
+    border-radius: 19px;
+    margin-right: 5px;
+    position: relative;
+    top: -4px;
+    color: #fff;
+    font-size: 7px !important;}
+
+
+
+
 	.header-carousel .header-carousel-item .carousel-caption { padding: 0px;}
 
 	.bg-breadcrumb {
