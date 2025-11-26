@@ -1766,6 +1766,239 @@ time {
 
 
 
+.mdcare-ai-s-t .container
+{
+      position: relative;
+    display: flex;
+    padding: 70px 0px 30px 0px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 5px;
+	
+}
+
+.mdcare-ai-s-t .card
+{
+    position: relative;
+    width: 98%;
+    height: 180px;
+    background: #fff;
+    transition: 0.5s;
+}
+.mdcare-ai-s-t .card:hover
+{
+    /* height: 450px; */
+}
+.mdcare-ai-s-t .card .lines
+{
+    position: absolute;
+    inset: 0;
+    background: #292966;
+    overflow: hidden;
+}
+.mdcare-ai-s-t .card .lines
+{
+    position: absolute;
+    inset: 0;
+    background: #292966;
+    overflow: hidden;
+}
+.mdcare-ai-s-t .card .lines::before
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 120px;
+    background:linear-gradient(transparent, #f8931e, #45f3ff, #45f3ff, transparent);
+    animation: animate 4s linear infinite;
+    animation-play-state: paused;
+}
+.mdcare-ai-s-t .card:hover .lines::before
+{
+    animation-play-state: running;
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    100%
+    {
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+.mdcare-ai-s-t .card .lines::after
+{
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background: #ccdfe3;
+}
+.mdcare-ai-s-t .card .imgBx
+{
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    transform: translateX(-50%);
+    background: #000;
+    transition: 0.5s;
+    z-index: 10;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mdcare-ai-s-t .card .imgBx
+{border-radius: 80px;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    transform: translateX(-50%);
+    background: #f8941e;
+    transition: 0.5s;
+    z-index: 10;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .mdcare-ai-s-t .card:hover .imgBx
+{
+    top: 25px;
+    width: 200px;
+    height: 200px;
+} */
+.mdcare-ai-s-t .card .imgBx::before
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 150px;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(transparent,#292966 ,#292966 ,#292966 ,transparent);
+    animation: animate2 6s linear infinite;
+    animation-play-state: paused;
+}
+@keyframes animate2
+{
+    0%
+    {
+    transform: translate(-50%,-50%)rotate(360deg);
+    }
+    100%
+    {
+    transform: translate(-50%,-50%)rotate(360deg);
+    }
+}
+.mdcare-ai-s-t .card .imgBx::after
+{
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background: #292929;
+}
+.mdcare-ai-s-t .card .imgBx::after {
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background: #292966;
+}
+.mdcare-ai-s-t .card .imgBx img , .mdcare-ai-s-t .card .imgBx i
+{
+    position: absolute;
+    
+    z-index: 1;
+    /* filter: invert(1); */
+    opacity: 0.5s;
+    transition: 0.5s;
+	    font-size: 66px;
+}
+.mdcare-ai-s-t .card:hover .imgBx img
+{
+    opacity: 1;
+}
+.mdcare-ai-s-t .card .content
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+/* .card .content
+{
+    padding: 30px 20px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(145px);
+} */
+.mdcare-ai-s-t .card .content .details
+{
+    padding: 30px 20px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    /* transform: translateY(145px); */
+	
+}
+.mdcare-ai-s-t .card:hover .content .details
+{
+    transform: translateY(0px);
+}
+.mdcare-ai-s-t .card .content .details h2
+{
+    font-size:18px;
+    font-weight: 500;
+    color: #292966;
+    line-height: 1.2em; font-weight: 600;
+}
+.mdcare-ai-s-t .card .content .details p
+{
+    color: #fff;
+    opacity: 0;
+    transition: 0.5s;
+}
+.mdcare-ai-s-t .card:hover .content .details p,
+.mdcare-ai-s-t .card:hover .content .details a
+{
+    opacity: 1;
+}
+.mdcare-ai-s-t .card .content .details a
+{
+    display: inline-block;
+    padding: 8px 15px;
+    background: #45f3ff;
+    color: #292929;
+    margin-top: 10px;
+    font-weight: 500;
+    text-decoration: none;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2023,7 +2256,7 @@ p.name-descripeion {
 }
 
 .dedcription-btn:hover p.name-descripeion {
-	color: #00aeef;
+	color: #008fdc ;
 }
 
 .resources-list-o a {
@@ -3000,12 +3233,16 @@ button.available-for-btn.active .dot {
 	.bg-breadcrumb-pos {
 		background-position: center top;
 	}
-
+ .mdcare-ai-s-t .card .content .details {  min-height: 110px;
+    height: 110px;}
 
 }
 
 /*  Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+	 .mdcare-ai-s-t .card .content .details {  min-height: 110px;
+    height: 110px;}
+
 	.carousel-caption-content{
 	    align-items: start;
     display: flex;
