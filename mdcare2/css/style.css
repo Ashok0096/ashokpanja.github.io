@@ -3240,8 +3240,7 @@ button.available-for-btn.active .dot {
 
 /*  Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-	 .mdcare-ai-s-t .card .content .details {  min-height: 110px;
-    height: 110px;}
+	 .mdcare-ai-s-t .card .content .details {  min-height: 110px;}
 
 	.carousel-caption-content{
 	    align-items: start;
