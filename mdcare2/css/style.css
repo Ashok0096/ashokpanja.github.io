@@ -2026,10 +2026,128 @@ time {
   margin-left: -50px;
   background-color: #008fdc ;
 }
+.four-box-design .card-body{
+	position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+	min-height:345px;
+}
 
+.four-box-design .card {
+  background-color: white;
+  border: none;
+}
 
+.four-box-design .card-body i {
+  color: #008fdc ;
+  font-size: 50px;
+}
 
+.four-box-design .border-bottom {
+  width: 30%;
+  text-align: center !important;
+}
 
+.four-box-design .underline {
+  position: relative;
+}
+
+.four-box-design .underline:after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  bottom: -12px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 22%;
+  background: #aaaaac;
+}
+.four-box-design .card-text { text-align: justify; min-height: 183px;}
+.four-box-design a{    position: absolute;
+    right: 10px;
+    bottom: 10px;
+ }
+ .four-box-design  .btn.btn-primary {
+    box-shadow: inset 300px 0 0 0 var(--bs-light) !important;
+    color: var(--bs-primary) !important;
+}
+
+.four-box-design .btn:hover {
+    box-shadow: inset 0 0 0 0 var(--bs-primary) !important;
+	    background-color: #292966 !important;
+    border-color: #292966 !important;
+	color: #fff !important;
+}
+:root {
+  --primary-color: #ff0000;
+  --bg-grey: #f5f7f6;
+  --bg-black: #201f1d;
+  --bg-white: #ffffff;
+  --text-color: #212529;
+  --text-color-white: #ffffff;
+  --font-color: #676767;
+  --heading-color: #343a40;
+  --border-color: #dee2e6;
+}
+
+.services-mdcare-ai .card {
+  position: relative;
+  z-index: 1;
+  border-top: 3px solid #292966 ;
+  min-height: 300px;
+}
+
+.services-mdcare-ai i {
+  color: #292966 ;
+}
+
+.services-mdcare-ai .card > .anim-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #292966 ;
+  transition: height 0.3s ease;
+}
+
+.services-mdcare-ai .card:hover .anim-layer {
+  height: 100%;
+}
+
+.services-mdcare-ai .card:hover h2, .services-mdcare-ai .card:hover i {
+  position: relative;
+  z-index: 1;
+  color: var(--text-color-white);
+}
+.services-mdcare-ai .card:hover p {
+  position: relative;
+  z-index: 1;
+  color: var(--text-color-white);
+}
+.services-mdcare-ai .card i {
+ background-color: #00aeef;
+    width: 80px;
+    z-index: 99;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 55px;
+}
+
+.services-mdcare-ai .card:hover i {
+  color: #292966 ;
+}
+.services-mdcare-ai .card:hover h3{ color: #fff; z-index: 999; }
 
 
 
