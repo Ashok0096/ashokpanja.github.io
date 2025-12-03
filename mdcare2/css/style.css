@@ -2027,6 +2027,7 @@ time {
   background-color: #008fdc ;
 }
 .four-box-design .card-body{
+	padding: 5px;;
 	position: relative;
     display: flex;
     flex-direction: column;
