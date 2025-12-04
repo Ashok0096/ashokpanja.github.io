@@ -1766,15 +1766,9 @@ time {
 
 
 
-.mdcare-ai-s-t .container
+.mdcare-ai-s-t .main-mdcare-ai-s
 {
-      position: relative;
-    display: flex;
-    padding: 70px 0px 30px 0px;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    gap: 5px;
+   
 	
 }
 
@@ -3032,13 +3026,13 @@ button.available-for-btn.active .dot {
 	.live-demo-btn-c {
 		top: 40%;
 	}
-	.header-carousel .header-carousel-item .carousel-caption { padding: 0px; text-align: right;}
+	.header-carousel .header-carousel-item .carousel-caption { padding: 5% 0px 5% 5px; text-align: right;}
 	.position-xs-relative{ position: relative;}
 	.h-100px{ height: auto;}
 	.header-carousel h1{ width: 95%;  font-size: 14px;}
 	.header-carousel .fs-2{
 		font-size: 12px !important;         text-align: left;
-        padding-left: 35%;
+       
 	}
 	.header-carousel .carousel-caption-content i {
     padding: 2px 2px 2px 2px !important;
@@ -3061,7 +3055,7 @@ button.available-for-btn.active .dot {
     padding-top: 50px;
     padding-bottom: 50px;
 }
-.mdcare-ai-s-t .container {
+ .mdcare-ai-s-t .main-mdcare-ai-s {
    
     display: block; padding: 0px;}
 	.mdcare-ai-s-t .col-12 {
@@ -3075,7 +3069,9 @@ button.available-for-btn.active .dot {
 .testimonial-carousel .owl-nav .owl-prev {
     left: -50px !important;
 }
-
+.mdcare-ai-s-t .card .imgBx{     width: 120px;
+    height: 120px;}
+	.mdcare-ai-s-t .card .imgBx i{     font-size: 40px;}
 
 }
 
@@ -3091,7 +3087,7 @@ button.available-for-btn.active .dot {
 }
 .mdcare-ai-s-t .card{ top: 40px;;}
 .Download-s a{ font-size: 14px;}
-	.mdcare-ai-s-t .container {
+	 .mdcare-ai-s-t .main-mdcare-ai-s {
    
     display: block; padding: 0px;}
 	.mdcare-ai-s-t .col-12 {
@@ -3110,7 +3106,7 @@ button.available-for-btn.active .dot {
     margin-top: 10px;
 
 	}
-	.header-carousel .header-carousel-item .carousel-caption { padding: 0px; text-align: right;}
+	
 	.position-xs-relative{ position: relative;}
 	.h-100px{ height: auto;}
 	.header-carousel h1{ width: 95%;  font-size: 18px;}
@@ -3131,7 +3127,7 @@ button.available-for-btn.active .dot {
 
 
 
-	.header-carousel .header-carousel-item .carousel-caption { padding: 0px; display: flex; align-items: center; justify-content: center;}
+	.header-carousel .header-carousel-item .carousel-caption { padding: 5% 0px 5% 5px; display: flex; align-items: center; justify-content: center;}
 
 	.bg-breadcrumb {
 		padding: 50px 0px;
@@ -3370,7 +3366,44 @@ button.available-for-btn.active .dot {
 		width: 100%;
 		background: rgb(202, 222, 221, 0.4);
 	}
-
+    .h-100px {
+        height: auto;
+    }
+	    .position-xs-relative {
+        position: relative;
+    }
+	    .header-carousel h1 {
+        width: 95%;
+       
+		padding-left: 7%;
+    }
+	    .header-carousel .fs-2 {
+     
+        text-align: left;
+    }
+	    .header-carousel .carousel-caption-content i {
+        padding: 5px !important;
+        background: #f8931e;
+        border-radius: 19px;
+        margin-right: 0px;
+        position: relative;
+        top: -4px;
+        color: #fff;
+       
+    }
+	     .mdcare-ai-s-t .main-mdcare-ai-s {
+        display: block;
+        padding: 0px;
+    }
+	    .mdcare-ai-s-t .col-12 {
+        padding: 7% 10px;
+    }
+	    .mdcare-ai-s-t .card {
+        top: 40px;
+    }
+	.header-carousel h1:nth-child(1){
+		font-size: 40px;;
+	}
 }
 
 /* Large devices (desktops, 992px and up) */
