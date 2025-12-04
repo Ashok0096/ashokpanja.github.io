@@ -3056,10 +3056,20 @@ button.available-for-btn.active .dot {
 
 	}
 	.text-xs-right{ text-align: right !important;}
+	.fda-inner-page-hero-section {
+    /* background-color: var(--black); */
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+	.fda-inner-page-hero-section {
+    /* background-color: var(--black); */
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 	.text-xs-right{ text-align: right !important;}
 	.slider-dwone-s .rounded-top{ 
 		    border: 1px solid #ccc;
