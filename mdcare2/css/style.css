@@ -3061,16 +3061,49 @@ button.available-for-btn.active .dot {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+.mdcare-ai-s-t .container {
+   
+    display: block; padding: 0px;}
+	.mdcare-ai-s-t .col-12 {
+    padding: 10% 10px;
+}
+.mdcare-ai-s-t .card{ top: 40px;;}
+.Download-s a{ font-size: 14px;}
+.testimonial-carousel .owl-nav .owl-next {
+    right: -50px;
+}
+.testimonial-carousel .owl-nav .owl-prev {
+    left: -50px !important;
+}
+
+
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+	.testimonial-carousel .owl-nav .owl-prev {
+    left: -50px !important;
+}
+
+
+	.testimonial-carousel .owl-nav .owl-next {
+    right: -50px;
+}
+.mdcare-ai-s-t .card{ top: 40px;;}
+.Download-s a{ font-size: 14px;}
+	.mdcare-ai-s-t .container {
+   
+    display: block; padding: 0px;}
+	.mdcare-ai-s-t .col-12 {
+    padding: 7% 10px;
+}
+.mdcare-ai-s-t .card{ top: 40px;;}
 	.fda-inner-page-hero-section {
     /* background-color: var(--black); */
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
-	.text-xs-right{ text-align: right !important;}
+	.text-sm-right{ text-align: right !important;}
 	.slider-dwone-s .rounded-top{ 
 		    border: 1px solid #ccc;
     border-radius: 15px !important;
@@ -3083,7 +3116,7 @@ button.available-for-btn.active .dot {
 	.header-carousel h1{ width: 95%;  font-size: 18px;}
 	.header-carousel .fs-2{
 		font-size: 16px !important;         text-align: left;
-        padding-left: 65%;
+       
 	}
 	.header-carousel .carousel-caption-content i {
     padding: 5px 5px 5px 6px !important;
@@ -3098,7 +3131,7 @@ button.available-for-btn.active .dot {
 
 
 
-	.header-carousel .header-carousel-item .carousel-caption { padding: 0px;}
+	.header-carousel .header-carousel-item .carousel-caption { padding: 0px; display: flex; align-items: center; justify-content: center;}
 
 	.bg-breadcrumb {
 		padding: 50px 0px;
