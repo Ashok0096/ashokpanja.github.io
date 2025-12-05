@@ -2143,7 +2143,7 @@ time {
   color: #292966 ;
 }
 .services-mdcare-ai .card:hover h3{ color: #fff; z-index: 999; }
-.four-box-design img{ }
+
 
 
 
@@ -3075,13 +3075,16 @@ button.available-for-btn.active .dot {
 .mdcare-emr-core-modules .timeline ul li:nth-child(odd) div , .mdcare-emr-core-modules .timeline ul li:nth-child(even) div{ width: 100%; left: 0px;}
 .mdcare-emr-core-modules .timeline ul li{ margin: 0px; width: 100%; background: none; padding-top: 5px;}
 .mdcare-emr-core-modules .timeline ul li:nth-child(odd) div::before , .mdcare-emr-core-modules .timeline ul li:nth-child(even) div::before , .mdcare-emr-core-modules .timeline ul li.in-view::after{ display: none;}
-.list-design-two h2{ text-align: center;}
+.list-design-two h2 , .services-mdcare-ai h3{ text-align: center;}
+.Features-page-list p { text-align: left !important;}
+.four-box-design .card-body{     margin: 10px 0px;}
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-
-.list-design-two h2{ text-align: center;}
+	.four-box-design .card-body{     margin: 10px 0px;}
+.Features-page-list p { text-align: left !important;}
+.list-design-two h2 , .services-mdcare-ai h3{ text-align: center;}
 .mdcare-emr-core-modules .timeline ul li:nth-child(odd) div , .mdcare-emr-core-modules .timeline ul li:nth-child(even) div{ width: 100%; left: 0px;}
 .mdcare-emr-core-modules .timeline ul li{ margin: 0px; width: 100%; background: none; padding-top: 5px;}
 .mdcare-emr-core-modules .timeline ul li:nth-child(odd) div::before , .mdcare-emr-core-modules .timeline ul li:nth-child(even) div::before , .mdcare-emr-core-modules .timeline ul li.in-view::after{ display: none;}
