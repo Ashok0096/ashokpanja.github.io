@@ -142,7 +142,7 @@
         <div class="container-fluid pb-lg-5 pb-3 mdcare-emr-core-modules">
             <div class="container container-xl">
                 <div class="row">
-                    <div class="col-lg-12 float-start col-md-7 inner-p-md-14">
+                    <div class="col-lg-12 float-start col-md-12 inner-p-md-14 p-0">
                        
                     
 
@@ -302,7 +302,50 @@
       </div>
     </li>
   </ul>
+<script>
+(function () {
+  "use strict";
 
+  function initTimeline() {
+    // only run script on 992px and above
+    if (window.innerWidth < 992) return;
+
+    var items = document.querySelectorAll(".timeline li");
+
+    function isElementInViewport(el) {
+      var rect = el.getBoundingClientRect();
+      return (
+        rect.top < window.innerHeight &&
+        rect.bottom > 0
+      );
+    }
+
+    function callbackFunc() {
+      for (var i = 0; i < items.length; i++) {
+        if (isElementInViewport(items[i])) {
+          items[i].classList.add("in-view");
+        }
+      }
+    }
+
+    window.addEventListener("load", callbackFunc);
+    window.addEventListener("resize", callbackFunc);
+    window.addEventListener("scroll", callbackFunc, { passive: true });
+  }
+
+  // Initialize script
+  initTimeline();
+
+  // Re-run on resize (optional)
+  window.addEventListener("resize", function () {
+    initTimeline();
+  });
+
+})();
+</script>
+
+
+<!-- 
   <script>
     (function () {
   "use strict";
@@ -333,7 +376,35 @@
   window.addEventListener("resize", callbackFunc);
   window.addEventListener("scroll", callbackFunc);
 })();
-  </script>
+  </script> -->
+
+  <script>
+(function () {
+  "use strict";
+
+  function applyForSmallScreens() {
+
+    // Run only on screens BELOW 991px
+    if (window.innerWidth < 991) {
+      const items = document.querySelectorAll(
+        ".mdcare-emr-core-modules .timeline ul li"
+      );
+
+      items.forEach(function(item) {
+        item.classList.add("in-view");
+      });
+    }
+  }
+
+  // Run on load
+  window.addEventListener("load", applyForSmallScreens);
+
+  // Run on resize (optional)
+  window.addEventListener("resize", applyForSmallScreens);
+
+})();
+</script>
+
                     </div>
                 </div>
             </div>

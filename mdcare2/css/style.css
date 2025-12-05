@@ -3072,11 +3072,20 @@ button.available-for-btn.active .dot {
 .mdcare-ai-s-t .card .imgBx{     width: 120px;
     height: 120px;}
 	.mdcare-ai-s-t .card .imgBx i{     font-size: 40px;}
+.mdcare-emr-core-modules .timeline ul li:nth-child(odd) div , .mdcare-emr-core-modules .timeline ul li:nth-child(even) div{ width: 100%; left: 0px;}
+.mdcare-emr-core-modules .timeline ul li{ margin: 0px; width: 100%; background: none; padding-top: 5px;}
+.mdcare-emr-core-modules .timeline ul li:nth-child(odd) div::before , .mdcare-emr-core-modules .timeline ul li:nth-child(even) div::before , .mdcare-emr-core-modules .timeline ul li.in-view::after{ display: none;}
 
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+
+
+.mdcare-emr-core-modules .timeline ul li:nth-child(odd) div , .mdcare-emr-core-modules .timeline ul li:nth-child(even) div{ width: 100%; left: 0px;}
+.mdcare-emr-core-modules .timeline ul li{ margin: 0px; width: 100%; background: none; padding-top: 5px;}
+.mdcare-emr-core-modules .timeline ul li:nth-child(odd) div::before , .mdcare-emr-core-modules .timeline ul li:nth-child(even) div::before , .mdcare-emr-core-modules .timeline ul li.in-view::after{ display: none;}
+
 	.testimonial-carousel .owl-nav .owl-prev {
     left: -50px !important;
 }
@@ -3273,6 +3282,10 @@ button.available-for-btn.active .dot {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+	.mdcare-emr-core-modules .timeline ul li:nth-child(odd) div , .mdcare-emr-core-modules .timeline ul li:nth-child(even) div{ width: 100%; left: 0px;}
+.mdcare-emr-core-modules .timeline ul li{ margin: 0px; width: 100%; padding-top: 10px; background: none;}
+.mdcare-emr-core-modules .timeline ul li:nth-child(odd) div::before , .mdcare-emr-core-modules .timeline ul li:nth-child(even) div::before , .mdcare-emr-core-modules .timeline ul li.in-view::after{ display: none;}
+
 	.bg-breadcrumb>div {
 		margin-top: auto;
 		margin: 40px 0px;
@@ -3404,10 +3417,37 @@ button.available-for-btn.active .dot {
 	.header-carousel h1:nth-child(1){
 		font-size: 40px;;
 	}
+	  .header-carousel .fs-2 {
+        text-align: left; font-size: 24px !important;
+    }
+		.Download-s a , .Download-s .Real-World-Testing-Results-btn .btn-secondary{
+    min-height: 66px;
+}
+.fda-inner-page-hero-section {
+    /* background-color: var(--black); */
+          padding-top: 100px;
+        padding-bottom: 100px;
+}
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+	.mdcare-emr-core-modules .timeline ul li:nth-child(odd) div{     width: 455px;}
+	.mdcare-emr-core-modules .timeline ul li:nth-child(even) div{ width: 455px;    left: -492px;}
+	
+	.fda-inner-page-hero-section {
+    /* background-color: var(--black); */
+          padding-top: 180px;
+        padding-bottom: 180px;
+}
+
+	.slider-dwone-s{ top: 10%;}
+	    .header-carousel .fs-2 {
+        text-align: left; font-size: 24px !important;
+    }
+	    .header-carousel h1:nth-child(1) {
+        font-size: 40px;
+    }
 	.navbar-light .navbar-nav .nav-link {
 		padding: 21px 5px;
 	}
