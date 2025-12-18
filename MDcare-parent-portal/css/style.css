@@ -158,22 +158,22 @@
 }
 
 .slider-login .slideshow li:nth-child(1) { 
-    background-image: url(../img/baner1.png);
+    background-image: url(../img/baner1.png); z-index: 9;
 }
 .slider-login .slideshow li:nth-child(2) { 
-    background-image: url(../img/baner2.png);
+    background-image: url(../img/baner2.png); z-index: 9;
     animation-delay: 10s; 
 }
 .slider-login .slideshow li:nth-child(3) { 
-    background-image: url(../img/baner3.png);
+    background-image: url(../img/baner3.png); z-index: 9;
     animation-delay: 20s; 
 }
 .slider-login .slideshow li:nth-child(4) { 
-    background-image: url(../img/baner2.png);
+    background-image: url(../img/baner2.png); z-index: 9;
     animation-delay: 30s; 
 }
 .slider-login .slideshow li:nth-child(5) { 
-    background-image: url(../img/baner3.png);
+    background-image: url(../img/baner3.png);z-index: 9;
     animation-delay: 40s; 
 }
 
