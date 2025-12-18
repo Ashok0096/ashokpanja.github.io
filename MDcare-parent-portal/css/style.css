@@ -157,7 +157,25 @@
     animation: imageAnimation 50s linear infinite; 
 }
 
-
+.slider-login .slideshow li:nth-child(1) { 
+    background-image: url(../img/baner1.png);
+}
+.slider-login .slideshow li:nth-child(2) { 
+    background-image: url(../img/baner2.png);
+    animation-delay: 10s; 
+}
+.slider-login .slideshow li:nth-child(3) { 
+    background-image: url(../img/baner3.png);
+    animation-delay: 20s; 
+}
+.slider-login .slideshow li:nth-child(4) { 
+    background-image: url(../img/baner2.png);
+    animation-delay: 30s; 
+}
+.slider-login .slideshow li:nth-child(5) { 
+    background-image: url(../img/baner3.png);
+    animation-delay: 40s; 
+}
 
 @keyframes imageAnimation { 
     0% { 
