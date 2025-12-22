@@ -6100,7 +6100,7 @@ fieldset:disabled .btn {
   border-color: #01adef !important;
 }
 .border-secondary {
-  border-color: #1d2266 !important;
+  border-color: #214162!important;
 }
 .border-success {
   border-color: #198754 !important;
@@ -6842,7 +6842,7 @@ fieldset:disabled .btn {
   color: #01adef !important;
 }
 .text-secondary {
-  color: #1d2266 !important;
+  color: #214162!important;
 }
 .text-success {
   color: #198754 !important;
@@ -6866,7 +6866,7 @@ fieldset:disabled .btn {
   color: #fff !important;
 }
 .text-body {
-  color: #1d2266 !important;
+  color: #214162!important;
 }
 .text-muted {
   color: #6c757d !important;
@@ -6884,7 +6884,7 @@ fieldset:disabled .btn {
   background-color: #01adef !important;
 }
 .bg-secondary {
-  background-color: #1d2266 !important;
+  background-color: #214162!important;
 }
 .bg-success {
   background-color: #198754 !important;
