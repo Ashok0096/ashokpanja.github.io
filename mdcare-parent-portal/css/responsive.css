@@ -1,16 +1,4 @@
-/*------------------------------------------------------------------
-    File Name: responsive.css
-    Template Name: Pluto - Responsive HTML5 Template
-    Created By: html.design
-    Envato Profile: https://themeforest.net/user/htmldotdesign
-    Website: https://html.design
-    Version: 1.0
--------------------------------------------------------------------*/
 
-
-/*-----------------------------------
-  sidebar small only desktop
------------------------------------*/
 
 @media (min-width: 1200px) {
     /*-- small sidebar --*/
@@ -26,12 +14,12 @@
     #sidebar.active .sidebar-header strong {
         display: block;
     }
-    #sidebar.active ul li a {
+    /* #sidebar.active ul li a {
         padding: 10px 0;
         float: left;
         width: 100%;
         text-align: center;
-    }
+    } */
     #sidebar.active ul li a i {
         width: 100%;
         text-align: center;
@@ -53,7 +41,7 @@
     }
     #sidebar.active .logo_section {
         padding: 0;
-        margin-bottom: 10px;
+        /* margin-bottom: 10px; */
         background: #fff;
         width: 100%;
     }
@@ -235,9 +223,9 @@
         height: auto;
         transition: ease all 0.3s;
     }
-    .right_topbar .icon_info ul.user_profile_dd {
+    /* .right_topbar .icon_info ul.user_profile_dd {
         display: none;
-    }
+    } */
     .right_topbar {
         float: right;
         padding: 0;
