@@ -871,7 +871,7 @@ a[data-toggle="collapse"] {
     background: #fff;
     margin-top: 0;
     margin-bottom: 30px;
-    padding: 25px 35px 22px 38px;
+    padding: 0px 0px 0px 40px;
     box-shadow: 1px 0 5px rgba(0, 0, 0, 0.1);
     margin-left: -40px;
     margin-right: -40px;
@@ -997,7 +997,7 @@ a[data-toggle="collapse"] {
 #sidebar h4 {
     background: #15283c;
     margin: 0;
-    padding: 21px 25px 19px;
+    padding: 18px 25px 19px;
     font-weight: 500;
     font-size: 18px;
     color: #fff;
