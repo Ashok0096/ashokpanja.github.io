@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- mobile metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+        <!-- site metas -->
+        <title>Home :: Mdcare Patient Portal</title>
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <!-- site icon -->
+        <link rel="icon" href="img/favicon.png" type="image/png" />
+        <!-- bootstrap css -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <!-- site css -->
+        <link rel="stylesheet" href="style.css" />
+        <!-- responsive css -->
+        <link rel="stylesheet" href="css/responsive.css" />
+        <link rel="stylesheet" href="css/scheduling.css" />
+        <!-- color css -->
+    </head>
+    <body class="dashboard dashboard_1">
+        <div class="full_container">
+            <div class="inner_container">
+                <!-- Sidebar  -->
+                <nav id="sidebar">
+                    <div class="sidebar_blog_1">
+                        <!-- <div class="sidebar-header">
+                     <div class="logo_section">
+                        <a href="index.html"><img class="logo_icon img-responsive" src="images/layout_img/user_img.jpg" alt="#" /></a>
+                     </div>
+                  </div> -->
+                        <!-- <div class="sidebar_user_info">
+                     <div class="icon_setting"></div>
+                     <div class="user_profle_side">
+                        <div class="user_img"><img class="img-responsive" src="images/layout_img/user_img.jpg" alt="#" />
+                        </div>
+                        <div class="user_info">
+                           <h6>Ashok, PATIENT</h6>
+                           <p><span class="online_animation"></span> Online</p>
+                        </div>
+                     </div>
+                  </div> -->
+                    </div>
+                    <div class="sidebar_blog_2">
+                        <h4>Menu</h4>
+                        <ul class="list-unstyled components">
+                            <li>
+                                <a href="index.html"><i class="fa fa-home blue1_color"></i> <span>Home</span></a>
+                            </li>
+                            <li class="active">
+                                <a href="scheduling.html"
+                                    ><i class="fa fa-calendar-check-o blue1_color"></i> <span>Scheduling</span></a
+                                >
+                            </li>
+                            <li>
+                                <a href="questionnaire.html"
+                                    ><i class="fa fa-pencil-square blue1_color"></i> <span>Questionnaire</span></a
+                                >
+                            </li>
+                            <li>
+                                <a href="records.html"><i class="fa fa-book blue1_color"></i> <span>Records</span></a>
+                            </li>
+                            <li>
+                                <a href="demographics.html"
+                                    ><i class="fa fa-binoculars blue1_color"></i> <span>Demographics</span></a
+                                >
+                            </li>
+                            <li>
+                                <a href="widgets.html"
+                                    ><i class="fa fa-user-secret blue1_color"></i> <span>Secure Messaging</span></a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- end sidebar -->
+                <!-- right content -->
+                <div id="content">
+                    <!-- topbar -->
+                    <div class="topbar">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <div class="full">
+                                <button type="button" id="sidebarCollapse" class="sidebar_toggle">
+                                    <i class="fa fa-bars"></i>
+                                </button>
+                                <div class="logo_section">
+                                    <a href="login1.html"
+                                        ><img class="img-responsive" src="images/logo/logo.png" alt="#"
+                                    /></a>
+                                </div>
+                                <div class="right_topbar">
+                                    <div class="icon_info">
+                                        <!-- <ul>
+                                 <li><a href="#"><i class="fa fa-bell-o"></i><span class="badge">2</span></a></li>
+                                 <li><a href="#"><i class="fa fa-question-circle"></i></a></li>
+                                 <li><a href="#"><i class="fa fa-envelope-o"></i><span class="badge">3</span></a></li>
+                              </ul> -->
+                                        <ul class="user_profile_dd">
+                                            <li>
+                                                <a class="dropdown-toggle text-white display-4" data-toggle="dropdown">
+                                                    <img
+                                                        class="img-responsive rounded-circle"
+                                                        src="images/layout_img/user_img.jpg"
+                                                        alt="#"
+                                                    />
+                                                    <span class="online_animation"></span> Ashok yadav Panja</a
+                                                >
+
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item border-bottom" href="#">
+                                                        <i class="fa fa-clock-o blue1_color mr-2"></i> Recent Login
+                                                        Activities</a
+                                                    >
+                                                    <a class="dropdown-item border-bottom" href="#">
+                                                        <i class="fa fa-lock blue1_color mr-2" aria-hidden="true"></i>
+                                                        Change Password</a
+                                                    >
+                                                    <a class="dropdown-item border-bottom" href="login.html"
+                                                        ><i class="fa fa-sign-out blue1_color mr-2"></i
+                                                        ><span>Log Out</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <!-- end topbar -->
+                    <!-- dashboard inner -->
+                    <div class="midde_cont">
+                        <div class="container-fluid">
+                            <div class="row column_title">
+                                <div class="page_title">
+                                    <div class="col-md-12 col-lg-12 top-adr">
+                                        <div class="full counter_section margin_bottom_30">
+                                            <div class="counter_no">
+                                                <div>
+                                                    <p class="total_no text-left">Florida Heart Center</p>
+                                                    <p class="head_couter text-left">
+                                                        <i class="fa fa-map-marker blue1_color"></i> 1900 Nebraska Ave.,
+                                                        Ste.9 Fort Pierce, FL 34950
+                                                        <i class="fa fa-envelope mx-2 blue1_color"></i>
+                                                        flheartcenter@bellsouth.net
+                                                        <i class="fa fa-phone-square mx-2 blue1_color"></i>772-465-4499
+                                                        772-465-0578
+                                                        <i class="fa fa-fax mx-2 blue1_color"></i> 772-466-0832
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row column1">
+                                <div class="col-md-6 col-lg-6 col-12 col-xl-3 col-sm-12">
+                                    <div class="full counter_section margin_bottom_30">
+                                        <div class="couter_icon">
+                                            <div>
+                                                <i class="fa fa-user blue1_color"></i>
+                                            </div>
+                                        </div>
+                                        <div class="counter_no">
+                                            <div>
+                                                <p class="total_no">Welcome</p>
+                                                <p class="head_couter">Ashok, PATIENT</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6 col-12 col-xl-3 col-sm-12">
+                                    <div class="full counter_section margin_bottom_30">
+                                        <div class="couter_icon">
+                                            <div>
+                                                <i class="fa fa-clock-o blue1_color"></i>
+                                            </div>
+                                        </div>
+                                        <div class="counter_no">
+                                            <div>
+                                                <p class="total_no">Server Time</p>
+                                                <p class="head_couter">12:12:41 AM</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6 col-12 col-xl-3 col-sm-12">
+                                    <div
+                                        class="full counter_section margin_bottom_30 col-12 col-xl-12 col-lg-12 col-sm-12 colmd-12"
+                                    >
+                                        <div class="couter_icon">
+                                            <div>
+                                                <i class="fa fa-sign-in blue1_color"></i>
+                                            </div>
+                                        </div>
+                                        <div class="counter_no">
+                                            <div>
+                                                <p class="total_no">Last Login</p>
+                                                <p class="head_couter">Dec 18 2025 9:04PM</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="scheduling-s">
+                                 <div class="dash_head">
+                                    <h3><span><i class="fa fa-user-md"></i> Physician Details</span></h3>
+                                 </div>
+                                    <div class="global">
+                                        <header>
+                                            <counter>
+                                                <div class="box schedule">
+                                                    <b>Schedule</b> <span>appointments</span>
+                                                    <value>0</value>
+                                                </div>
+                                                <div class="box ok">
+                                                    <b>Confirmed</b> <span>appointments</span>
+                                                    <value>0</value>
+                                                </div>
+                                                <div class="box canceled">
+                                                    <b>Canceled</b> <span>appointments</span>
+                                                    <value>0</value>
+                                                </div>
+                                            </counter>
+
+                                            <performance>
+                                                <bar class="ok"></bar>
+                                                <bar class="canceled"></bar>
+                                                <status>Aguarde...</status>
+                                            </performance>
+
+                                            <actionLine>
+                                                <button class="add">Add Client</button>
+                                                <button class="filter">Filter</button>
+                                            </actionLine>
+
+                                            <filter>
+                                                <input
+                                                    type="text"
+                                                    name="lineFilter"
+                                                    id="lineFilter"
+                                                    placeholder="Type 3 letters or more"
+                                                />
+                                                <button class="close">x</button>
+                                            </filter>
+                                        </header>
+
+                                        <lineNavigator>
+                                            <top>Top</top>
+                                        </lineNavigator>
+
+                                        <line>
+                                            Loading...
+
+                                            <!--
+		<obj>
+			<O_pos>1º</O_pos>
+			<O_Name>Alan</O_Name>
+			<O_time>9/29/2021, 2:00:00 PM</O_time>
+			<O_CD><hour>00h</hour><min>00</min><sec>00</sec></O_CD>
+			<O_Act>
+				<button class="btnStart">Start</button>
+				<button class="btnExclude">Exclude</button>			
+			</O_Act>
+		</obj>
+	-->
+                                        </line>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- footer -->
+                        <div class="container-fluid">
+                            <div class="footer">
+                                <p>
+                                    © 2026. All rights reserved.
+                                    <!-- By: <a href="https://app.mdcare.com/mdcareportal/" class="text-primary">MDCare Patient Portal</a> -->
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end dashboard inner -->
+                </div>
+            </div>
+        </div>
+        <!-- jQuery -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <!-- wow animation -->
+        <script src="js/animate.js"></script>
+        <!-- select country -->
+        <script src="js/bootstrap-select.js"></script>
+        <!-- owl carousel -->
+        <script src="js/owl.carousel.js"></script>
+        <!-- chart js -->
+        <script src="js/Chart.min.js"></script>
+        <script src="js/Chart.bundle.min.js"></script>
+
+        <!-- nice scrollbar -->
+        <script src="js/perfect-scrollbar.min.js"></script>
+        <script>
+            var ps = new PerfectScrollbar("#sidebar");
+        </script>
+        <!-- custom js -->
+        <script src="js/custom.js"></script>
+        <script src="js/scheduling.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </body>
+</html>
