@@ -1,5 +1,7 @@
 
-
+.ps.active .active > a {
+    background: #ccc;
+}
 @media (min-width: 1200px) {
     /*-- small sidebar --*/
     #sidebar.active {
@@ -14,18 +16,19 @@
     #sidebar.active .sidebar-header strong {
         display: block;
     }
-    /* #sidebar.active ul li a {
+    #sidebar.active ul li a {
         padding: 10px 0;
         float: left;
         width: 100%;
         text-align: center;
-    } */
+    }
     #sidebar.active ul li a i {
         width: 100%;
         text-align: center;
         margin: 0 0 5px 0;
         font-size: 24px;
     }
+    
     #sidebar.active ul ul a {
         padding: 10px !important;
     }
@@ -41,7 +44,7 @@
     }
     #sidebar.active .logo_section {
         padding: 0;
-        /* margin-bottom: 10px; */
+        margin-bottom: 10px;
         background: #fff;
         width: 100%;
     }
