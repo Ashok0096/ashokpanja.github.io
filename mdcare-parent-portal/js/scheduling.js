@@ -2,11 +2,11 @@
 var appointments = new Array();
 var j = 0;
 appointments[j] = "Ashok"; j++;
-appointments[j] = "Joe"; j++;
-appointments[j] = "Tracy"; j++;
-appointments[j] = "Ross"; j++;
-appointments[j] = "Mary"; j++;
-appointments[j] = "Paul"; j++;
+appointments[j] = "Shannu"; j++;
+appointments[j] = "Gagan"; j++;
+appointments[j] = "Ramanna"; j++;
+appointments[j] = "balram"; j++;
+appointments[j] = "Ravi"; j++;
 appointments[j] = "Kate"; j++;
 appointments[j] = "Thomas"; j++;
 appointments[j] = "Mike"; j++;
