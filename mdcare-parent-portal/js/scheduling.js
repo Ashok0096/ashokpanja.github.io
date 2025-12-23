@@ -389,7 +389,7 @@ $( document ).ready(function()
 						+ "<O_pos>Nº</O_pos>"
 						+ "<O_Name>" + newClient + "</O_Name>"
 						+ "<O_CD><hour>00h</hour><min>00</min><sec>00</sec></O_CD>"
-					+ "<O_Act><button class=\"btnStart\"><span class=\"material-icons\">play_arrow</span></button><button class=\"btnExclude\"><span class=\"material-icons\">close</span></button></O_Act>"
+					+ "<O_Act><button class=\"btnStart\"><span class=\"fa fa-play-circle-o\"></span></button><button class=\"btnExclude\"><span class=\"fa fa-times\"></span></button></O_Act>"
 						+ "</obj>";
 
 			if(index % clientsLimit == 1)
@@ -505,6 +505,7 @@ $( document ).ready(function()
 		{
 			$('line .btnStart').eq(4).click();
 		}
+        
 		
 	});
 	
