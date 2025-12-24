@@ -18,10 +18,10 @@
 
     // Sticky Navbar
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 300) {
-            $('.sticky-top').addClass('shadow-sm').css('top', '0px');
+        if ($(this).scrollTop() > 90) {
+            $('.nav-bar').addClass('fixed-top').css('padding', '0');
         } else {
-            $('.sticky-top').removeClass('shadow-sm').css('top', '-100px');
+            $('.nav-bar').removeClass('fixed-top').css('padding', '0px 90px');
         }
     });
     
@@ -65,20 +65,38 @@
     });
 
 
-    // Date and time picker
-    $('.date').datetimepicker({
-        format: 'L'
-    });
-    $('.time').datetimepicker({
-        format: 'LT'
+    // Donation progress
+    $('.donation-item .donation-progress').waypoint(function () {
+        $('.donation-item .progress .progress-bar').each(function () {
+            $(this).css("height", $(this).attr("aria-valuenow") + '%');
+        });
+    }, {offset: '80%'});
+
+
+    // Header carousel
+    $(".header-carousel").owlCarousel({
+        animateOut: 'rotateOutUpRight',
+        animateIn: 'rotateInDownLeft',
+        items: 1,
+        autoplay: true,
+        smartSpeed: 1000,
+        dots: false,
+        loop: true,
+        nav : true,
+        navText : [
+            '<i class="bi bi-chevron-left"></i>',
+            '<i class="bi bi-chevron-right"></i>'
+        ]
     });
 
 
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
+        items: 1,
         autoplay: true,
         smartSpeed: 1000,
-        items: 1,
+        animateIn: 'fadeIn',
+        animateOut: 'fadeOut',
         dots: false,
         loop: true,
         nav: true,
