@@ -231,7 +231,7 @@
     float: left;
 }
 /* bg animation end */
-.h-footer{ width: 100%; padding: 10px; position: absolute; bottom: 0; z-index: 9; background: url(../img/bg-footer.jpg) ;}
+.h-footer{ width: 100%; padding: 10px; position: fixed; bottom: 0; z-index: 9; background: url(../img/bg-footer.jpg) ;}
 
 
 
