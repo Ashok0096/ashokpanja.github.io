@@ -232,6 +232,19 @@
 }
 /* bg animation end */
 .h-footer{ width: 100%; padding: 10px; position: fixed; bottom: 0; z-index: 9; background: url(../img/bg-footer.jpg) ;}
+.nav-item .active {  color: #fff !important;}
+
+@media (max-width: 575.98px) {  
+  
+ }
+
+@media (min-width: 576px) and (max-width: 767.98px) {   }
+
+@media (min-width: 768px) and (max-width: 991.98px) {   }
+
+@media (min-width: 992px) and (max-width: 1199.98px) {   }
+
+@media (min-width: 1200px) {   }
 
 
 
