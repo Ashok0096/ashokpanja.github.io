@@ -110,6 +110,7 @@
     font-weight: 600;
     outline: none;
     padding: 15px;
+        border-right: 1px solid #ccc;
 }
 
 .navbar .navbar-nav .nav-link:hover,

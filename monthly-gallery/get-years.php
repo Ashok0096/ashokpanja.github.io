@@ -1,0 +1,1 @@
+<?php echo json_encode(['years'=>[2025],'currentYear'=>2025,'currentMonth'=>date('F')]); ?>
