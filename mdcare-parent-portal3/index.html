@@ -50,10 +50,10 @@
 
            
 
-            <form id="loginForm">
+            <form id="loginForm" class="pt-3">
                <!-- Username input with icon -->
 <div class="mb-3">
-    <label class="form-label">Username</label>
+    
     <div class="input-group">
         <span class="input-group-text"><i class="fa fa-user"></i></span>
         <input type="text" id="username" class="form-control" placeholder="Enter Patient Username" required="">
@@ -62,21 +62,22 @@
 
 <!-- Password input with icon -->
 <div class="mb-3">
-    <label class="form-label">Password</label>
+   
     <div class="input-group">
         <span class="input-group-text"><i class="fa fa-lock"></i></span>
         <input type="password" id="password" class="form-control" placeholder="Enter Password" required="">
     </div>
 </div>
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <a href="#" class="text-decoration-none Register" id="openRegisterModal">Register</a>
-
-                    <a href="#" class="text-decoration-none Forgot-Password" id="openForgotPasswordModal">Forgot Password?</a>
-                </div>
+               
 
                 <button type="submit" class="btn btn-primary w-100 py-2">
                     Login 
                 </button>
+                 <div class="d-flex justify-content-between align-items-center my-3">
+                  <a href="#" class="text-decoration-none Register" id="openRegisterModal">Register</a>
+
+                    <a href="#" class="text-decoration-none Forgot-Password" id="openForgotPasswordModal">Forgot Password?</a>
+                </div>
             </form>
 
             

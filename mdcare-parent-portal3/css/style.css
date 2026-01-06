@@ -26,7 +26,7 @@ html, body {
 /* Login container */
 .login-container {
    position: absolute;
-   top: 50%;
+   top: 40%;
    left: 50%;
    transform: translate(-50%, -50%);
    z-index: 2;
@@ -70,4 +70,4 @@ footer {
    bottom: 0;
     background-color: rgba(0, 0, 0, 0.6);
 }
-#registerModal , #ForgotPasswordModal{ padding-top: 12%;}
+#registerModal , #ForgotPasswordModal{ padding-top: 8%;}
