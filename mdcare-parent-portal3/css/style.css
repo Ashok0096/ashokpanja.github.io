@@ -1,0 +1,73 @@
+html, body {
+   height: 100%;
+   margin: 0;
+   font-family: "Roboto", sans-serif;
+}
+
+/* Background carousel */
+.carousel,
+.carousel-item,
+.carousel-item img {
+   height: 100vh;
+}
+
+.carousel-item img {
+   object-fit: cover;
+}
+
+/* Overlay */
+.overlay {
+   position: absolute;
+   inset: 0;
+   background: rgba(0, 70, 90, 0.65);
+   z-index: 1;
+}
+
+/* Login container */
+.login-container {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 2;
+   width: 100%;
+   max-width: 420px;
+   padding: 15px;
+}
+
+.login-card {
+   border-radius: 14px;
+   box-shadow: 0 25px 45px rgba(0,0,0,0.35);
+}
+
+.portal-title {
+   font-weight: 600;
+   color: #0d6efd;
+}
+
+.form-control:focus {
+   box-shadow: none;
+   border-color: #0d6efd;
+}
+
+.btn-primary {
+   background: linear-gradient(135deg, #0d6efd, #0aa2c0);
+   border: none;
+}
+
+.btn-primary:hover {
+   opacity: 0.9;
+}
+
+.error-msg {
+   display: none;
+   font-size: 0.9rem;
+}
+footer {
+   width: 100%;
+   position: fixed;
+   z-index: 2;
+   bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+#registerModal , #ForgotPasswordModal{ padding-top: 12%;}

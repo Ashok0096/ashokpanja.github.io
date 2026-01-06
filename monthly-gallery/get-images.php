@@ -1,1 +1,0 @@
-<?php echo json_encode(['img1.jpg','img2.jpg']); ?>
