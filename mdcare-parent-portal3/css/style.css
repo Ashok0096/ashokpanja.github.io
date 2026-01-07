@@ -294,18 +294,26 @@ color: #00aeef !important;
    .table-main-s  table {
     width: 100%;
     border-collapse: collapse;
+    border: solid 1px #ccc;
+    border-top: 0;
+
     }
 
     .table-main-s thead {
     background: #f1f5f9;
     }
-
+ .table-main-s  td{
+     font-size: 13px;
+ }
     .table-main-s th, td {
     padding: 14px;
     border-bottom: 1px solid var(--border);
-    font-size: 14px;
+   
     }
-
+.table-main-s tbody td{border-left: 1px #ccc solid;
+    border-right: 1px #ccc solid; }
+    thead th{border-left: 1px #ccc solid;
+    border-right: 1px #ccc solid; border-top: 1px #ccc solid; font-size: 15px;}
     .table-main-s th {
     cursor: pointer;
     color: var(--muted);
@@ -374,7 +382,7 @@ color: #00aeef !important;
 
 .search-box i {
      position: absolute;
-    right: 13%;
+    right: -5%;
     top: 50%;
     transform: translateY(-50%);
     color: #6b7280;
@@ -448,7 +456,7 @@ color: #00aeef !important;
 }
 .health-section {
   background: #f4f9f9;
-  padding: 60px 20px;
+  
   font-family: "Segoe UI", sans-serif;
 }
 
