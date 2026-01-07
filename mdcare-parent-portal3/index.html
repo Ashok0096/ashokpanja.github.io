@@ -1,90 +1,449 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Patient Portal Login</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Bootstrap 5 CSS -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<!-- Font Awesome v4 -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
+    <head>
+        <meta charset="utf-8">
+        <title>LifeSure - Life Insurance Website Template</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link rel="stylesheet" href="lib/animate/animate.min.css"/>
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
 
-</head>
-<body>
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
 
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+        
+    </head>
 
-<!-- Background Slider -->
-<div id="bgSlider" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d"
-                 class="w-100" alt="Hospital Interior">
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
         </div>
+        <!-- Spinner End -->
 
-        <div class="carousel-item">
-            <img src="https://images.unsplash.com/photo-1584515933487-779824d29309"
-                 class="w-100" alt="Doctor with Patient">
-        </div>
+       
 
-        <div class="carousel-item">
-            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118"
-                 class="w-100" alt="Medical Technology">
-        </div>
-    </div>
-</div>
-
-
-<!-- Overlay -->
-<div class="overlay"></div>
-
-<!-- Login Form -->
-<div class="login-container">
-    <div class="card login-card p-4">
-        <div class="card-body">
-            <h4 class="text-center portal-title mb-2"><img src="img/logo.png" class="img-fluid w-75"/> </h4>
-           
-
-           
-
-            <form id="loginForm" class="pt-3">
-               <!-- Username input with icon -->
-<div class="mb-3">
-    
-    <div class="input-group">
-        <span class="input-group-text"><i class="fa fa-user"></i></span>
-        <input type="text" class="form-control" placeholder="   Username" required="">
-    </div>
-</div>
-
-<!-- Password input with icon -->
-<div class="mb-3">
-   
-    <div class="input-group">
-        <span class="input-group-text"><i class="fa fa-lock"></i></span>
-        <input type="password" id="password" class="form-control" placeholder="  Password" required="">
-    </div>
-</div>
-               
-
-                <button type="submit" class="btn btn-primary w-100 py-2">
-                    Login 
-                </button>
-                 <div class="d-flex justify-content-between align-items-center my-3">
-                  <a href="#" class="text-decoration-none Register" id="openRegisterModal">Register</a>
-
-                    <a href="#" class="text-decoration-none Forgot-Password" id="openForgotPasswordModal">Forgot Password?</a>
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid nav-bar px-0 px-lg-0 py-lg-0">
+            
+                 <!-- Topbar Start -->
+        <div class="container-fluid topbar px-0 px-lg-4 bg-light  d-none d-lg-block">
+            
+                <div class="row gx-0 align-items-center">
+                    <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+                        <div class="d-flex flex-wrap align-items-start justify-content-start">
+                            <div class="border-end border-primary pe-3 mt-2">
+                                <a href="#" class="text-muted small"><i class="bi bi-alarm-fill text-secondary me-2"></i>Last Login : Jan 5 2026 8:09PM</a>
+                            </div>
+                            <div class="ps-3 mt-2">
+                                <a href="mailto:example@gmail.com" class="text-muted small"><i class="bi bi-alarm-fill text-secondary me-2"></i>Server Time : 04:19:35 AM</a>
+                            </div>
+                                <div class="nav-btn px-3 my-1">
+                                <span class="btn btn-primary   flex-shrink-0" style="font-size: 12px;"> Welcome: DEMO, PATIENT d</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-center text-lg-end">
+                        <div class="d-flex justify-content-end">
+                         
+                            <div class="dropdown top-user-s ms-3">
+                                <a href="#" class="dropdown-toggle text-white" data-bs-toggle="dropdown">
+                                    <small><i class="fa fa-user text-white me-2"></i> User</small></a>
+                                <div class="dropdown-menu ">
+                                    <a href="#" class="dropdown-item">Recent Login Activities</a>
+                                    <a href="#" class="dropdown-item">Change Password</a>
+                                    <a href="login.html" class="dropdown-item">Logout</a>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </form>
-
             
         </div>
-    </div>
-    
+        <!-- Topbar End -->
+                <nav class="navbar navbar-expand-lg navbar-light px-lg-5"> 
+                    <a href="index.html" class="navbar-brand p-0">
+                       
+                        <img src="img/logo.png" alt="Logo"> 
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav mx-0 mx-lg-auto">
+                            <a href="index.html" class="nav-item nav-link active">Home</a>
+                            <a href="scheduling.html" class="nav-item nav-link">Scheduling</a>
+                            <a href="questionnaire.html" class="nav-item nav-link">Questionnaire</a>
+                            <!-- <div class="nav-item dropdown">
+                                <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                    <span class="dropdown-toggle">Pages</span>
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a href="blog.html" class="dropdown-item">Our Blog</a>
+                                    <a href="team.html" class="dropdown-item">Our team</a>
+                                </div>
+                            </div> -->
+                            <a href="records.html" class="nav-item nav-link">Records</a>
+                              <a href="records.html" class="nav-item nav-link">Demographics</a>
+                                <a href="records.html" class="nav-item nav-link">Secure Messaging</a>
+                                
+                        
+                        </div>
+                    </div>
+                    <div class=" d-xl-flex flex-shrink-0 ps-4">
+                        <a href="#" class="btn btn-light btn-lg-square rounded-circle position-relative wow tada hover-bg-c" data-wow-delay=".9s">
+                            <i class="fa fa-address-card fa-2x  text-secondary"></i>
+                            <div class="position-absolute" style="top: 7px; right: 12px;">
+                                <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                            </div>
+                        </a>
+                        <div class="d-flex flex-column ms-3">
+                            <span class=" text-muted">Florida Heart Center</span>
+                            <span class=" text-muted">1900 Nebraska Ave., Ste.9 Fort Pierce, FL 34950</span>
+                            <span class=" text-muted">E-Mail: flheartcenter@bellsouth.net</span>
+                            <span class=" text-muted">
+                                Phone: 772-465-4499 772-465-0578</span>
+<span class=" text-muted"> Fax: 772-466-0832
+                            </span>
+                        </div>
+                    </div>
+                </nav>
+           
+        </div>
+        <!-- Navbar & Hero End -->
+         <div class="pb-5 ">
+<div class="container-fluid table-main-s pb-5">
+    <div class="container">
+<div class="col-lg-6">
+    <h3 class="text-secondary">
+        	
+Todays Appointments
+    </h3>
+<div class="search-box">
+  <i class="fa fa-search"></i>
+  <input type="text" id="search" placeholder="Search users">
 </div>
+</div>
+
+
+<table id="table">
+  <thead>
+    <tr>
+      <th>
+ID</th>
+      <th>App Time</th>
+      <th>Resource</th>
+      <th>Questionnaire </th>
+    </tr>
+  </thead>
+  <tbody id="tableBody">
+          <tr>
+      <td>UPS5001</td>
+      <td>UPS</td>
+      <td>ASDF19211</td>
+      <td>07/1/2026</td>
+    </tr>
+    <tr>
+      <td>UPS5002</td>
+      <td>UPS</td>
+      <td>ASDF19212</td>
+      <td>07/1/2026</td>
+    </tr>
+    <tr>
+      <td>UPS5003</td>
+      <td>UPS</td>
+      <td>ASDF19213</td>
+      <td>07/1/2026</td>
+    </tr>
+    <tr>
+      <td>UPS5004</td>
+      <td>UPS</td>
+      <td>ASDF19214</td>
+      <td>07/1/2026</td>
+    </tr>
+    <tr>
+      <td>UPS5005</td>
+      <td>UPS</td>
+      <td>ASDF19215</td>
+      <td>07/1/2026</td>
+    </tr>
+    <tr>
+      <td>UPS5006</td>
+      <td>UPS</td>
+      <td>ASDF19216</td>
+      <td>07/1/2026</td>
+    </tr>
+    <tr>
+      <td>UPS5007</td>
+      <td>UPS</td>
+      <td>ASDF19217</td>
+      <td>07/1/2026</td>
+    </tr>
+    <tr>
+      <td>UPS5008</td>
+      <td>UPS</td>
+      <td>ASDF19218</td>
+      <td>07/1/2026</td>
+    </tr>
+    <tr>
+      <td>UPS5009</td>
+      <td>UPS</td>
+      <td>ASDF19219</td>
+      <td>07/1/2026</td>
+    </tr>
+
+    
+  </tbody>
+</table>
+
+<div class="pagination" id="pagination"></div>
+
+
+<script>
+const rowsPerPage = 5;
+const tableBody = document.getElementById("tableBody");
+const allRows = Array.from(tableBody.querySelectorAll("tr"));
+const pagination = document.getElementById("pagination");
+const searchInput = document.getElementById("search");
+
+let filteredRows = [...allRows];
+let currentPage = 1;
+
+function showPage(page) {
+  const pageCount = Math.ceil(filteredRows.length / rowsPerPage);
+  if (page < 1 || page > pageCount) return;
+
+  currentPage = page;
+  const start = (page - 1) * rowsPerPage;
+  const end = start + rowsPerPage;
+
+  filteredRows.forEach((row, index) => {
+    row.style.display = index >= start && index < end ? "" : "none";
+  });
+
+  renderPagination();
+}
+
+function renderPagination() {
+  pagination.innerHTML = "";
+  const pageCount = Math.ceil(filteredRows.length / rowsPerPage);
+
+  // Previous button
+  const prevBtn = document.createElement("button");
+  prevBtn.textContent = "Prev";
+  prevBtn.disabled = currentPage === 1;
+  prevBtn.onclick = () => showPage(currentPage - 1);
+  pagination.appendChild(prevBtn);
+
+  // Page numbers
+  for (let i = 1; i <= pageCount; i++) {
+    const btn = document.createElement("button");
+    btn.textContent = i;
+    btn.className = i === currentPage ? "active" : "";
+    btn.onclick = () => showPage(i);
+    pagination.appendChild(btn);
+  }
+
+  // Next button
+  const nextBtn = document.createElement("button");
+  nextBtn.textContent = "Next";
+  nextBtn.disabled = currentPage === pageCount;
+  nextBtn.onclick = () => showPage(currentPage + 1);
+  pagination.appendChild(nextBtn);
+}
+
+searchInput.addEventListener("input", () => {
+  const value = searchInput.value.toLowerCase();
+
+  filteredRows = allRows.filter(row =>
+    row.textContent.toLowerCase().includes(value)
+  );
+
+  allRows.forEach(row => (row.style.display = "none"));
+  showPage(1);
+});
+
+showPage(1);
+</script>
+
+
+
+</div>
+
+</div>
+
+      <div class="container-fluid table-main-s pb-5">
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+       
+          <h3 class="text-secondary">
+        	
+	
+Reminders & Notifications
+    </h3>
+        <div class="search-box">
+        <i class="fa fa-search"></i>
+        <input type="text" id="search1" placeholder="Search users">
+        </div>
+
+        <table id="table1">
+        <thead>
+            <tr>
+            <th>DR Name</th>
+            <th>Date </th>
+            <th>Time</th>
+            <th>Enc No</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody1">
+<tr>
+<td>Dr. CHALASANI (FP) </td>
+<td> 1/6/2026 10:49:00 AM</td>
+<td>ASDF19211</td>
+<td> 633925</td>
+</tr>
+<tr>
+<td>Dr. Ashok (FP) </td>
+<td> 1/6/2026 10:49:00 AM</td>
+<td>ASDF19211</td>
+<td> 633925</td>
+</tr>
+<tr>
+<td>Dr.balaRam (FP) </td>
+<td> 1/6/2026 10:49:00 AM</td>
+<td>ASDF19211</td>
+<td> 633925</td>
+</tr>
+<tr>
+<td>Dr. Ravi</td>
+<td> 1/6/2026 10:49:00 AM</td>
+<td>ASDF19211</td>
+<td> 633925</td>
+</tr>
+       
+        </tbody>
+        </table>
+
+        <div class="pagination" id="pagination1"></div>
+
+    </div>
+<div class="col-lg-6">
+<section class="insurance-reminders">
+    <h3>Insurance Reminders</h3>
+
+    <div class="reminder-card">
+      <h5>Your insurance </h5>
+      <p>VETERANS with policy number   <strong> 1000002  </strong></p>
+      <span class="status urgent">has been Expired</span>
+    </div>
+
+    
+
+    <div class="reminder-card">
+      <h5>Your insurance </h5>
+      <p>VETERANS with policy number   <strong> 1000002  </strong></p>
+      <span class="status normal">Normal</span>
+    </div>
+
+  </section>
+</div>
+<script>
+function setupTable(searchId, tableBodyId, paginationId, rowsPerPage = 5) {
+  const tableBody = document.getElementById(tableBodyId);
+  const allRows = Array.from(tableBody.querySelectorAll("tr"));
+  const pagination = document.getElementById(paginationId);
+  const searchInput = document.getElementById(searchId);
+
+  let filteredRows = [...allRows];
+  let currentPage = 1;
+
+  function showPage(page) {
+    const pageCount = Math.ceil(filteredRows.length / rowsPerPage);
+    if (page < 1 || page > pageCount) return;
+
+    currentPage = page;
+    const start = (page - 1) * rowsPerPage;
+    const end = start + rowsPerPage;
+
+    filteredRows.forEach((row, index) => {
+      row.style.display = index >= start && index < end ? "" : "none";
+    });
+
+    renderPagination();
+  }
+
+  function renderPagination() {
+    pagination.innerHTML = "";
+    const pageCount = Math.ceil(filteredRows.length / rowsPerPage);
+
+    // Previous button
+    const prevBtn = document.createElement("button");
+    prevBtn.textContent = "Prev";
+    prevBtn.disabled = currentPage === 1;
+    prevBtn.onclick = () => showPage(currentPage - 1);
+    pagination.appendChild(prevBtn);
+
+    // Page numbers
+    for (let i = 1; i <= pageCount; i++) {
+      const btn = document.createElement("button");
+      btn.textContent = i;
+      btn.className = i === currentPage ? "active" : "";
+      btn.onclick = () => showPage(i);
+      pagination.appendChild(btn);
+    }
+
+    // Next button
+    const nextBtn = document.createElement("button");
+    nextBtn.textContent = "Next";
+    nextBtn.disabled = currentPage === pageCount;
+    nextBtn.onclick = () => showPage(currentPage + 1);
+    pagination.appendChild(nextBtn);
+  }
+
+  searchInput.addEventListener("input", () => {
+    const value = searchInput.value.toLowerCase();
+
+    filteredRows = allRows.filter(row =>
+      row.textContent.toLowerCase().includes(value)
+    );
+
+    allRows.forEach(row => (row.style.display = "none"));
+    showPage(1);
+  });
+
+  showPage(1);
+}
+
+// Initialize both tables
+setupTable("search1", "tableBody1", "pagination1");
+setupTable("search2", "tableBody2", "pagination2");
+</script>
+ 
+    </div>
+
+  </div>
+</div>
+</div>
+
+ 
 <!-- Footer Section -->
 <footer class=" text-light pt-4 pb-3 mt-5">
     <div class="container text-center">
@@ -98,165 +457,23 @@ Vision Infonet Inc, <a href="mailto:support@vinfonet.com" class="text-info"> <i 
     </div>
 </footer>
 
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
 
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
 
-<!-- Registration-Patient Information Modal -->
-<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="registerModalLabel">
-Registration-Patient Information</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-         <div class="accordion pb-3" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        Clinical Ref Number
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-      <form>
-          <div class="mb-3">
-           
-            <input type="text" class="form-control" placeholder="  Clinical Ref Number">
-          </div>
-               <div class="mb-1">
-            <label for="username" class="form-label text-center w-100 "><a href="#"> Check & Proceed</a></label>
-         
-          </div>
-          
-     
-        </form>
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingTwo">
-      <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-       Login Information
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-     <form>
-      <div class="mb-3 col-lg-6 float-start text-end px-3">
-      <label><input type="radio" class="input-radio off" name="Patient"> Patient</label>
-       
-      </div>
-      <div class="mb-3 col-lg-6 float-start">
-        <label><input type="radio" class="input-radio off" name="Patient"> Pt. Representative
-</label>
-      </div>
-      <div class="mb-3">
-         
-            <input type="User-ID" class="form-control" id="User-ID" placeholder="  User ID" required="">
-          </div>
-               
-          <div class="mb-3">
-           
-            <input type="Password" class="form-control" id="Password" placeholder="  Password" required="">
-          </div>
-           <div class="mb-3">
-           
-            <input type="Confirm Password" class="form-control" id="onfirm-Password" placeholder="  Confirm Password" required="">
-          </div>
-        <div class="d-flex justify-content-center align-items-center gap-2">
-          <button type="submit" class="btn btn-primary ">submit1</button>
-          <button type="Clear" class="btn btn-primary ">Clear</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-  
-</div>
-       
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-<script>
-  // Get the modal element
-  const registerModal = new bootstrap.Modal(document.getElementById('registerModal'));
-
-  // Open modal on clicking the link
-  document.getElementById('openRegisterModal').addEventListener('click', function(e){
-    e.preventDefault();
-    registerModal.show();
-  });
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-
-
-
-<!-- ForgotPassword Modal -->
-<div class="modal fade" id="ForgotPasswordModal" tabindex="-1" aria-labelledby="ForgotPasswordModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content pb-3">
-      <div class="modal-header">
-        <h5 class="modal-title" id="ForgotPasswordModalLabel"> Forgot Password - Patient Information</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="mb-3">
-            <label  class="form-label">Clinical Ref Number</label>
-            <input type="text" class="form-control"  placeholder=" User ID" required="">
-          </div>
-               <div class="mb-1">
-            <label  class="form-label text-center w-100">(or)</label>
-         
-          </div>
-          <div class="mb-3">
-            
-            <input type="email" class="form-control"  placeholder="Clinical Ref Number" required>
-          </div>
-        <div class="d-flex justify-content-center align-items-center gap-2 pb-5">
-          <button type="submit" class="btn btn-primary ">submit</button>
-          <button type="Clear" class="btn btn-primary ">Clear</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-<script>
-  // Get the modal element
-  const ForgotPasswordModal = new bootstrap.Modal(document.getElementById('ForgotPasswordModal'));
-
-  // Open modal on clicking the link
-  document.getElementById('openForgotPasswordModal').addEventListener('click', function(e){
-    e.preventDefault();
-    ForgotPasswordModal.show();
-  });
-</script>
-<!-- JavaScript Validation -->
-<!-- <script>
-    document.getElementById("loginForm").addEventListener("submit", function(e) {
-        e.preventDefault();
-
-        const username = document.getElementById("username").value.trim();
-        const password = document.getElementById("password").value.trim();
-        const errorMsg = document.getElementById("errorMsg");
-
-        if (username === "" || password === "") {
-            errorMsg.style.display = "block";
-        } else {
-            errorMsg.style.display = "none";
-            alert("Login successful (demo only)");
-            // Redirect or backend call here
-        }
-    });
-</script> -->
-
-</body>
 </html>

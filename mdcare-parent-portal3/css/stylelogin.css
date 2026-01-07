@@ -1,0 +1,144 @@
+html, body {
+   height: 100%;
+   margin: 0;
+   font-family: "Roboto", sans-serif;
+}
+
+/* Background carousel */
+.carousel,
+.carousel-item,
+.carousel-item img {
+   height: 100vh;
+}
+
+.carousel-item img {
+   object-fit: cover;
+}
+
+/* Overlay */
+.overlay {
+   position: absolute;
+   inset: 0;
+   background: rgba(0, 70, 90, 0.65);
+   z-index: 1;
+}
+
+/* Login container */
+.login-container {
+   position: absolute;
+   top: 40%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 2;
+   width:  calc(100% - 75%);
+   
+   padding: 15px;
+}
+
+.login-card {
+   border-radius: 14px;
+   box-shadow: 0 25px 45px rgba(0,0,0,0.35);
+}
+
+.portal-title {
+   font-weight: 600;
+   color: #0d6efd;
+}
+
+.form-control:focus {
+   box-shadow: none;
+   border-color: #0d6efd;
+}
+
+.btn-primary {
+   background: linear-gradient(135deg, #0d6efd, #0aa2c0);
+   border: none;
+}
+
+.btn-primary:hover {
+   opacity: 0.9;
+}
+
+.error-msg {
+   display: none;
+   font-size: 0.9rem;
+}
+footer {
+   width: 100%;
+   position: fixed;
+   z-index: 2;
+   bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+#registerModal , #ForgotPasswordModal{ padding-top: 8%;}
+
+/* hoame page css start */
+
+.navbar .dropdown-toggle::after {
+  border: none;
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  margin-right: 30px;
+  padding: 25px 0;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  outline: none;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+  color: blue;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-light .navbar-nav .nav-link  {
+      margin-right: 0;
+      padding: 10px 0;
+  }
+
+  .navbar-light .navbar-nav {
+      border-top: 1px solid #EEEEEE;
+  }
+}
+
+.navbar-light .navbar-brand,
+.navbar-light a.btn {
+  height: 75px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+  font-weight: 500;
+}
+
+.navbar-light.sticky-top {
+  top: -100px;
+  transition: .5s;
+}
+
+@media (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+      display: block;
+      border: none;
+      margin-top: 0;
+      top: 150%;
+      opacity: 0;
+      visibility: hidden;
+      transition: .5s;
+  }
+
+  .navbar .nav-item:hover .dropdown-menu {
+      top: 100%;
+      visibility: visible;
+      transition: .5s;
+      opacity: 1;
+  }
+}
