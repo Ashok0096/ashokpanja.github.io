@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Questionnaire :: Mdcare Patient Portal</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link rel="stylesheet" href="lib/animate/animate.min.css"/>
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+          
+.content.c1 {
+    height: 900px;
+    overflow: auto;
+}
+        </style>
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+       
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid nav-bar px-0 px-lg-0 py-lg-0">
+            
+                 <!-- Topbar Start -->
+        <div class="container-fluid topbar px-0 px-lg-4 bg-light  d-none d-lg-block">
+            
+                <div class="row gx-0 align-items-center">
+                    <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+                        <div class="d-flex flex-wrap align-items-start justify-content-start">
+                            <div class="border-end border-primary pe-3 mt-2">
+                                <a href="#" class="text-muted small"><i class="bi bi-alarm-fill text-secondary me-2"></i>Last Login : Jan 5 2026 8:09PM</a>
+                            </div>
+                            <div class="ps-3 mt-2">
+                                <a href="mailto:example@gmail.com" class="text-muted small"><i class="bi bi-alarm-fill text-secondary me-2"></i>Server Time : 04:19:35 AM</a>
+                            </div>
+                                <div class="nav-btn px-3 my-1">
+                                <span class="btn btn-primary   flex-shrink-0" style="font-size: 12px;"> Welcome: DEMO, PATIENT d</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-center text-lg-end">
+                        <div class="d-flex justify-content-end">
+                         
+                            <div class="dropdown top-user-s ms-3">
+                                <a href="#" class="dropdown-toggle text-white" data-bs-toggle="dropdown">
+                                    <small><i class="fa fa-user text-white me-2"></i> User</small></a>
+                                <div class="dropdown-menu ">
+                                    <a href="#" class="dropdown-item">Recent Login Activities</a>
+                                    <a href="#" class="dropdown-item">Change Password</a>
+                                    <a href="login.html" class="dropdown-item">Logout</a>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
+        <!-- Topbar End -->
+                <nav class="navbar navbar-expand-lg navbar-light px-lg-5"> 
+                    <a href="index.html" class="navbar-brand p-0">
+                       
+                        <img src="img/logo.png" alt="Logo"> 
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav mx-0 mx-lg-auto">
+                            <a href="index.html" class="nav-item nav-link ">Home</a>
+                            <a href="scheduling.html" class="nav-item nav-link">Scheduling</a>
+                            <a href="questionnaire.html" class="nav-item nav-link active">Questionnaire</a>
+                            <!-- <div class="nav-item dropdown">
+                                <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                    <span class="dropdown-toggle">Pages</span>
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a href="blog.html" class="dropdown-item">Our Blog</a>
+                                    <a href="team.html" class="dropdown-item">Our team</a>
+                                </div>
+                            </div> -->
+                            <a href="records.html" class="nav-item nav-link">Records</a>
+                              <a href="records.html" class="nav-item nav-link">Demographics</a>
+                                <a href="records.html" class="nav-item nav-link">Secure Messaging</a>
+                                
+                        
+                        </div>
+                    </div>
+                    <div class=" d-xl-flex flex-shrink-0 ps-4">
+                        <a href="#" class="btn btn-light btn-lg-square rounded-circle position-relative wow tada hover-bg-c" data-wow-delay=".9s">
+                            <i class="fa fa-address-card fa-2x  text-secondary"></i>
+                            <div class="position-absolute" style="top: 7px; right: 12px;">
+                                <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                            </div>
+                        </a>
+                        <div class="d-flex flex-column ms-3">
+                            <span class=" text-muted">Florida Heart Center</span>
+                            <span class=" text-muted">1900 Nebraska Ave., Ste.9 Fort Pierce, FL 34950</span>
+                            <span class=" text-muted">E-Mail: flheartcenter@bellsouth.net</span>
+                            <span class=" text-muted">
+                                Phone: 772-465-4499 772-465-0578</span>
+<span class=" text-muted"> Fax: 772-466-0832
+                            </span>
+                        </div>
+                    </div>
+                </nav>
+           
+        </div>
+        <!-- Navbar & Hero End -->
+      <section class="medical-vertical-tabs"> 
+<div class="container-fluid table-main-s ">
+    <div class="container">
+<div class="row">
+    <div class="col-lg-12">
+        <h3 class="text-secondary text-center">
+        	
+Medical Questionnaire
+    </h3>
+   <hr class="mb-0">
+ 
+
+  <div class="tabs-container">
+    <!-- Radio Buttons -->
+    <input type="radio" name="vtab" id="vtab1" checked>
+    <input type="radio" name="vtab" id="vtab2">
+    <input type="radio" name="vtab" id="vtab3">
+    <input type="radio" name="vtab" id="vtab4">
+    <input type="radio" name="vtab" id="vtab5">
+    <input type="radio" name="vtab" id="vtab6">
+    <input type="radio" name="vtab" id="vtab7">
+    <input type="radio" name="vtab" id="vtab8">
+    <input type="radio" name="vtab" id="vtab9">
+    <input type="radio" name="vtab" id="vtab10">
+
+    <!-- Tab Menu -->
+    <div class="tab-menu">
+      <label for="vtab1">Previous Summary</label>
+      <label for="vtab2">Reason for visit</label>
+      <label for="vtab3">Surgical History</label>
+      <label for="vtab4">Past Medical History</label>
+      <label for="vtab5">Review of Systems</label>
+      <label for="vtab6">Current Medication</label>
+      <label for="vtab7">Allergies</label>
+      <label for="vtab8">Social History</label>
+      <label for="vtab9">Family History</label>
+      <label for="vtab10">Summary</label>
+    </div>
+
+    <!-- Tab Content -->
+    <div class="tab-content">
+      <div class="content c1">
+        <h3>Previous Summary</h3>
+            <p>FAMILY HISTORY:</p>
+    <p>Reviewed</p>
+   <p> Sister is Alive. </p> 
+    <p>Father is Alive.   His health status is Stable.   has h/o hypertension, asthma, angina pectoris and anemia.</p>  
+    <p>Sister is Alive.   Her health status is Stable.   has h/o asthma.  </p>
+    <p>Maternal uncle is Alive.   has h/o thalasemia.</p> 
+    <p>Father is Alive.</p>
+
+    <p>NON DRUG ALLERGIES:</p>
+   <p> Reviewed.</p>
+    <p>HISTORY ALLERGY TO PEANUTS.  HISTORY ALLERGY TO LATEX.  OTHER DRUG ALLERGY.  Other drug induced dystonia.  SNOMED RT Concept (special concept) causes   and lodine.  Hissing in ear (finding).  HISTORY ALLERGY TO OTH FOODS causes   and antioxidants.
+</p>
+    <p>DRUG ALLERGIES:</p>
+    <p>Reviewed</p>
+    <p>Sulfur containing products causes Rash, and antioxidants.  Codeine.  Iodine causes  and Urticaria.  Ibuprofen since 2024,  causes Stroke, Rash, and Vomitings.  LODINE CAPSULES.  DILANTIN TABLETS.  ARICEPT TABLETS.  Insulins and analogues for injection,  intermediate-acting combined with fast-acting.  Aspirin 81 MG Chewable Tablet.  PainZone 1 % / 12 % / 20 % Topical Stick causes  and antioxidants. test zantac
+</p>
+    <p>PAST MEDICAL HISTORY:</p>
+    <p>Reviewed</p>
+    <p>1. CHOLERA Status:  Active.</p>
+    <p>2. BRONCHITIS UNSPECIFIED Status:  Active.</p>
+    <p>3. ACUTE MYOCARDIAL INFARCTION Status:  Active.</p>
+    <p>4. ATRIAL FIBRILLATION Status:  Active.</p>
+    <p>5. ESSENTIAL HYPERTENSION Status:  Active.</p>
+    <p>6. Other chronic pain Status:  Active.</p>
+    <p>7. Other asthma Status:  Active.</p>
+    <p>8. Pain in left foot Status:  Active.</p>
+    <p>9. Diabetes mellitus due to underlying condition with hyperglycemia Status:  Active.</p>
+    <p>10. Other specified diabetes mellitus with diabetic peripheral angiopathy with gangrene Status:  Active.</p>
+    <p>11. BRAIN HEMORRHAGE INJURY Status:  Active.</p>
+    <p>12. HEMOPHILIA A CARRIER STATUS Status:  Active. test</p>
+
+    <p>SURGICAL HISTORY:</p>
+    <p>Reviewed</p>
+    <p>1. CHOLERA </p>
+    <p>2. CABG </p>
+   <p> 3. Right Unilateral Mastetomy</p> 
+    <p>4. bilatearal mastectomy </p>
+    <p>5. Adenoidectomy </p>
+    <p>6. OTHER PROTOZOAL INTESTINAL DISEASE in 2011.</p>
+    <p>7. BRIEF EST </p>
+    <p>8. Surgical repair (procedure) </p>
+    <p>9. Surgical procedure on lower extremity (procedure) </p>
+    <p>10. OFFICE CONSLTJ 15 MIN </p>
+    <p>11. OFFICE CONSLTJ 30 MIN </p>
+    <p>12. Adenovirus infection,  unspecified </p>
+    <p>13. Pain,  not elsewhere classified .</p>
+
+    <p>SOCIAL HISTORY:</p>
+    <p>Reviewed</p>
+    <p>Occupation: Student. Education: Some College. Birth Sex: Male. Marital Status: Married. The patient can speak and read English. The patient completed 12 years of schooling.The patient did take English classes in United States. Curent Smoking Status: Light tobacco Smoker. Start Date: 05/04/2015. Alcohol: Yes. Amount: 1 1/2 peg ml. Frequency: 1/4 pint. IllicitDrugs: Yes. Activity Level: High. Hobbies: TT,SWIMMING. Health Club Member: Never. Tobacco Use Screening :  Cigarette smoker. Start Date: 06/02/2014. End Date: 08/27/2019. Sexual Orientation:  Straight or heterosexual. Risk Factors: EXERCISE: 2-5 times a week.
+   </p> <p>Added.</p>
+
+    <p>CURRENT MEDICATION:</p>
+    <p>1. acetaminophen 160 MG Disintegrating Oral Tablet .  </p>
+    <p>2. ASPIRIN .  </p>
+   <p> 3. aspirin 81 MG Chewable Tablet   TAKE 1 TABLET ONCE A DAY.  </p>
+   <p> 4. ASTEPRO NASAL SPRAY .  </p>
+   <p> 5. Ceftin Oral Tablet Cefuroxime 125 MG   Quantity:  10 Tablet(s), Take 1 Tablet(s) ORALLY once a day,  for 10 days.  </p>
+   <p> 6. Ceftin Tablets 250 MG Oral Tablet   Quantity:  Qty. .  </p>
+   <p> 7. Cipro 250 MG Oral Tablet .  </p>
+   <p> 8. EDARBI TABLETS .  </p>
+   <p> 9. metroNIDAZOLE 500 MG Oral Tablet   Quantity:  2.5 Tablet(s), Take 0.5 Tablet(s) ORALLY once a day,  for 5 days.  </p>
+   <p> meds The demo pat 472843 details can speak and read English. The patient completed 12 years of schooling.The patient did take English classes in United States. 
+</p>
+      </div>
+
+      <div class="content c2">
+        <h3>Reason for visit</h3>
+         <form class="pt-2">
+        <input type="checkbox" id="task1" name="task1" value="Task 1" style="float: left;">
+        <label   class="chekbox-text">Chest pain</label><br>
+<input type="text" class="form-control my-2" placeholder=" Reason For visit" required="">
+    </form>
+       
+    
+            
+        
+      </div>
+
+      <div class="content c3">
+        <h3>Surgical History</h3>
+        <p class="text-danger"> Note : Check that all applicable</p>
+       <form class="pt-2">
+        <input type="checkbox" value="No significant surgical history" style="float: left;">
+        <label   class="chekbox-text">No significant surgical history</label><br>
+<input type="text" class="form-control my-2" placeholder=" Other" required="">
+    </form>
+      </div>
+
+      <div class="content c4">
+        <h3>Past Medical History</h3>
+                <p class="text-danger">Note : Check that all applicable</p>
+       <form class="pt-2 col-lg-4 float-start">
+        <input type="checkbox" id="ACUTE MYOCARDIAL INFARCTION" name="No significant surgical history" value="No significant surgical history" style="float: left;">
+        <label   style=" padding-left: 5px; float: left; line-height: 16px; font-size: 14px; font-size: 13px;">ACUTE MYOCARDIAL INFARCTION</label><br>
+
+    </form>
+     <form class="pt-2 col-lg-4 float-start">
+        <input type="checkbox" id="No significant surgical history" name="No significant surgical history" value="No significant surgical history" style="float: left;">
+        <label   class="chekbox-text">ASTHMA</label><br>
+
+    </form>
+     <form class="pt-2 col-lg-4 float-start">
+        <input type="checkbox" id="No significant surgical history" name="No significant surgical history" value="No significant surgical history" style="float: left;">
+        <label   class="chekbox-text">HYPERTENSION</label><br>
+
+    </form>
+    <input type="text" class="form-control my-5" placeholder=" Other" required="">
+      </div>
+
+      <div class="content c5">
+        <h3>Review of Systems</h3>
+         <p class="text-danger"> Note : Check that all applicable</p>
+       <div class="pt-2">
+         <div class="col-lg-4  float-start">
+            <div class="col-lg-2 float-start p-0">
+                <input type="radio" id="ACUTE MYOCARDIAL INFARCTION" style="float: left;">
+        <label   style=" padding-left: 5px; float: left; line-height: 16px; font-size: 14px; font-size: 13px;">Y</label><br>
+
+            </div>
+            <div class="col-lg-2 float-start p-0">
+                 <input type="radio" id="ACUTE MYOCARDIAL INFARCTION" style="float: left;">
+        <label   style=" padding-left: 5px; float: left; line-height: 16px; font-size: 14px; font-size: 13px;">N</label><br>
+
+            </div>
+         </div>
+            <div class="col-lg-4 float-start">
+            <div class="col-lg-2 float-start p-0">
+                <input type="radio" id="ACUTE MYOCARDIAL INFARCTION" style="float: left;">
+        <label   style=" padding-left: 5px; float: left; line-height: 16px; font-size: 14px; font-size: 13px;">Y</label><br>
+
+            </div>
+            <div class="col-lg-2 float-start p-0">
+                 <input type="radio" id="ACUTE MYOCARDIAL INFARCTION" style="float: left;">
+        <label   style=" padding-left: 5px; float: left; line-height: 16px; font-size: 14px; font-size: 13px;">N</label><br>
+
+            </div>
+         </div>
+            <div class="col-lg-4 float-start">
+            <div class="col-lg-2 float-start p-0">
+                <input type="radio" id="ACUTE MYOCARDIAL INFARCTION" style="float: left;">
+        <label   style=" padding-left: 5px; float: left; line-height: 16px; font-size: 14px; font-size: 13px;">Y</label><br>
+
+            </div>
+            <div class="col-lg-2 float-start p-0">
+                 <input type="radio" id="ACUTE MYOCARDIAL INFARCTION" style="float: left;">
+        <label   style=" padding-left: 5px; float: left; line-height: 16px; font-size: 14px; font-size: 13px;">N</label><br>
+
+            </div>
+         </div>
+         </div>
+      </div>
+
+      <div class="content c6">
+        <h3>Current Medication</h3>
+         <form class="pt-1">
+      
+       
+<input type="text" class="form-control my-2" placeholder=" Other" required="">
+    </form>
+      </div>
+
+         <div class="content c7">
+        <h3>Allergies </h3>
+                <p class="text-danger">Note : Check that all applicable</p>
+       <form class="pt-2 col-lg-4 float-start">
+        
+        <label   style=" padding-left: 5px; float: left; line-height: 16px; font-size: 14px; font-size: 13px;">Allergies</label>
+
+    </form>
+     <form class="pt-2 col-lg-4 float-start">
+   
+        <label   class="chekbox-text">Reactions</label>
+
+    </form>
+   
+    <input type="text" class="form-control my-5" placeholder=" Other" required="">
+      </div>
+      <div class="content c8">
+        <h3>Summary</h3>
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-12 d-flex align-items-center justify-content-start p-0">
+<div class="col-lg-2 float-start ">
+Marital Status
+        </div>
+        <div class="col-lg-3 float-start " >
+<select class="form-select" aria-label="Default select example">
+ 
+  <option value="Select" selected>Select</option>
+	<option value="Single">Single</option>
+	<option value="Married">Married</option>
+	<option value="Domestic Partner">Domestic Partner</option>
+	<option value="Divorced">Divorced</option>
+	<option value="Seperated">Seperated</option>
+	<option value="Widowed">Widowed</option>
+	<option value="Involved">Involved</option>
+	<option value="Other">Other</option>
+</select>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-2 float-start ">
+Education
+        </div>
+        <div class="col-lg-3 float-start">
+<select class="form-select" aria-label="Default select example">
+   <option value="Select" selected>Select</option>
+	<option value="Elementary School">Elementary School</option>
+	<option value="Middle School">Middle School</option>
+	<option value="High School">High School</option>
+	<option value="Some College">Some College</option>
+	<option value="College">College</option>
+	<option value="Graduate School">Graduate School</option>
+	<option value="Currently in School">Currently in School</option>
+	<option value="No Response">No Response</option>
+	<option value="Other">Other</option>
+</select>
+        </div>
+                </div>
+
+            </div>
+              <div class="row py-2">
+                <div class="col-lg-12 d-flex align-items-center justify-content-start mb-4 p-0">
+<div class="col-lg-2 float-start ">
+Occupation
+        </div>
+        <div class="col-lg-3 float-start " >
+<select class="form-select" aria-label="Default select example">
+ 
+ 	<option value="Select">Select</option>
+	<option value="Student">Student</option>
+	<option value="Employed">Employed</option>
+	<option value="Retired">Retired</option>
+	<option value="Home Maker">Home Maker</option>
+	<option value="UnEmployed">UnEmployed</option>
+	<option value="Disabled">Disabled</option>
+	<option value="No Response">No Response</option>
+	<option value="Other">Other</option>
+
+</select>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-2 float-start ">
+Smoking Status
+        </div>
+        <div class="col-lg-3 float-start">
+<select class="form-select" aria-label="Default select example">
+  <option value="SEL">--Select--</option>
+	<option value="Y">Current every day smoker</option>
+	<option value="D">Current some day smoker</option>
+	<option value="F">Former Smoker</option>
+	<option value="N">Never smoker</option>
+	<option value="U">Smoker, current status unknown</option>
+	<option value="E">Unknown if ever smoked</option>
+	<option value="R">Refused to answer</option>
+</select>
+        </div>
+                </div>
+                <div class="col-lg-6 p-0">
+                <h5>
+                    Alcohol
+                </h5>
+<div class="col-lg-12  float-start">
+            <div class="col-lg-2 float-start p-0">
+                <input type="radio" id="ACUTE MYOCARDIAL INFARCTION" style="float: left;">
+        <label style=" padding-left: 5px; float: left; line-height: 16px; font-size: 14px; font-size: 13px;">Yes</label><br>
+
+            </div>
+            <div class="col-lg-2 float-start p-0">
+                 <input type="radio" id="ACUTE MYOCARDIAL INFARCTION" style="float: left;">
+        <label style=" padding-left: 5px; float: left; line-height: 16px; font-size: 14px; font-size: 13px;">No</label><br>
+
+            </div>
+            <div class="col-lg-3 float-start p-0">
+                 <input type="radio" id="ACUTE MYOCARDIAL INFARCTION" style="float: left;">
+        <label style=" padding-left: 5px; float: left; line-height: 16px; font-size: 14px; font-size: 13px;">Former</label><br>
+
+            </div>
+            <div class="col-lg-4 float-start p-0">
+                 <input type="radio" id="ACUTE MYOCARDIAL INFARCTION" style="float: left;">
+        <label style=" padding-left: 5px; float: left; line-height: 16px; font-size: 14px; font-size: 13px;">Refused to Answer
+</label><br>
+
+            </div>
+            
+         </div>
+                  <h5>
+                    Illicit Drugs
+                </h5>
+<div class="col-lg-12  float-start">
+            <div class="col-lg-2 float-start p-0">
+                <input type="radio" id="ACUTE MYOCARDIAL INFARCTION" style="float: left;">
+        <label style=" padding-left: 5px; float: left; line-height: 16px; font-size: 14px; font-size: 13px;">Yes</label><br>
+
+            </div>
+            <div class="col-lg-2 float-start p-0">
+                 <input type="radio" id="ACUTE MYOCARDIAL INFARCTION" style="float: left;">
+        <label style=" padding-left: 5px; float: left; line-height: 16px; font-size: 14px; font-size: 13px;">No</label><br>
+
+            </div>
+            <div class="col-lg-3 float-start p-0">
+                 <input type="radio" id="ACUTE MYOCARDIAL INFARCTION" style="float: left;">
+        <label style=" padding-left: 5px; float: left; line-height: 16px; font-size: 14px; font-size: 13px;">Former</label><br>
+
+            </div>
+            <div class="col-lg-4 float-start p-0">
+                 <input type="radio" id="ACUTE MYOCARDIAL INFARCTION" style="float: left;">
+        <label style=" padding-left: 5px; float: left; line-height: 16px; font-size: 14px; font-size: 13px;">Refused to Answer
+</label><br>
+
+            </div>
+            
+         </div>
+
+</div>
+       
+
+          <div class="col-lg-6">
+                <h5>
+                    Caffeine
+                </h5>
+<div class="col-lg-12  float-start">
+            <div class="col-lg-2 float-start p-0">
+                <input type="radio" id="ACUTE MYOCARDIAL INFARCTION" style="float: left;">
+        <label style=" padding-left: 5px; float: left; line-height: 16px; font-size: 14px; font-size: 13px;">Yes</label><br>
+
+            </div>
+            <div class="col-lg-2 float-start p-0">
+                 <input type="radio" id="ACUTE MYOCARDIAL INFARCTION" style="float: left;">
+        <label style=" padding-left: 5px; float: left; line-height: 16px; font-size: 14px; font-size: 13px;">No</label><br>
+
+            </div>
+            <div class="col-lg-8 float-start p-0">
+                 <input type="radio" id="ACUTE MYOCARDIAL INFARCTION" style="float: left;">
+        <label style=" padding-left: 5px; float: left; line-height: 16px; font-size: 14px; font-size: 13px;">Refused to Answer	 </label><br>
+
+            </div>
+           
+            
+         </div>
+                
+
+
+</div>
+<input type="text" class="form-control my-1" placeholder=" Other" required="">
+</div>
+        </div>
+        
+  </div>
+      <div class="content c9">
+          <h3>Family History</h3>
+
+        <div class="container p-2">
+    <!-- Header Row -->
+    <div class="row pt-1 border-bottom fw-bold">
+        <div class="col-lg-3">
+            <h6 class="pb-3">Relation</h6>
+        </div>
+        <div class="col-lg-3">
+            <h6>IsExpired</h6>
+        </div>
+        <div class="col-lg-3">
+            <h6>Name</h6>
+        </div>
+        <div class="col-lg-3">
+            <h6>Comments</h6>
+        </div>
+    </div>
+
+    <!-- Data Row -->
+    <div class="row align-items-center py-2 border-bottom">
+        <div class="col-lg-3">
+            <input type="checkbox" class="float-start">
+            <label for="relationFather" class="ms-1 float-start lh-13p">Father</label>
+        </div>
+
+        <div class="col-lg-3">
+            <input type="checkbox" class="float-start">
+            <label for="isExpired" class="ms-1 float-start lh-13p">IsExpired</label>
+        </div>
+
+        <div class="col-lg-3">
+            <input type="text" class="form-control w-75" required>
+        </div>
+
+        <div class="col-lg-3">
+            <input type="text" class="form-control w-75" required>
+        </div>
+    </div>
+        <div class="row align-items-center py-2 border-bottom">
+        <div class="col-lg-3">
+            <input type="checkbox" class="float-start">
+            <label for="relationFather" class="ms-1 float-start lh-13p">Mother</label>
+        </div>
+
+        <div class="col-lg-3">
+            <input type="checkbox" class="float-start">
+            <label for="isExpired" class="ms-1 float-start lh-13p">IsExpired</label>
+        </div>
+
+        <div class="col-lg-3">
+            <input type="text" class="form-control w-75" required>
+        </div>
+
+        <div class="col-lg-3">
+            <input type="text" class="form-control w-75" required>
+        </div>
+    </div>
+        <div class="row align-items-center py-2 border-bottom">
+        <div class="col-lg-3">
+            <input type="checkbox" class="float-start">
+            <label for="relationFather" class="ms-1 float-start lh-13p">Sister</label>
+        </div>
+
+        <div class="col-lg-3">
+            <input type="checkbox" class="float-start">
+            <label for="isExpired" class="ms-1 float-start lh-13p">IsExpired</label>
+        </div>
+
+        <div class="col-lg-3">
+            <input type="text" class="form-control w-75" required>
+        </div>
+
+        <div class="col-lg-3">
+            <input type="text" class="form-control w-75" required>
+        </div>
+    </div>
+        <div class="row align-items-center py-2 border-bottom">
+        <div class="col-lg-3">
+            <input type="checkbox" class="float-start">
+            <label for="relationFather" class="ms-1 float-start lh-13p">Brother</label>
+        </div>
+
+        <div class="col-lg-3">
+            <input type="checkbox" class="float-start">
+            <label for="isExpired" class="ms-1 float-start lh-13p">IsExpired</label>
+        </div>
+
+        <div class="col-lg-3">
+            <input type="text" class="form-control w-75" required>
+        </div>
+
+        <div class="col-lg-3">
+            <input type="text" class="form-control w-75" required>
+        </div>
+    </div>
+</div>
+
+<input type="text" class="form-control my-3" placeholder=" Other" required="">
+
+    </div>
+     <div class="content c10">
+          <h3>Summary</h3>
+
+        <div class="container p-0">
+<h6 class="text-secondary">
+Surgical History
+</h6>
+<p>
+No significant surgical history
+</p> 
+<h6 class="text-secondary">
+Past Medical History
+</h6>
+<p>
+ACUTE MYOCARDIAL INFARCTION
+</p> 
+<h6 class="text-secondary">Social History</h6>
+<p> Education: Elementary School</p>
+<p> Occupation: Student</p>
+<p> Smoking Status: Current every day smoker</p>
+<p> Alcohol: Refused to Answer</p>
+<p> Caffiene: Refused to Answer</p>
+</div>
+
+
+    </div>
+</div>
+
+</div>
+
+</div>
+</section>
+   
+
+ 
+<!-- Footer Section -->
+<footer class="  text-light pt-4 pb-3 mt-5 ">
+    <div class="container text-center">
+       
+
+        <!-- Copyright -->
+        <p class="mb-0" style="font-size: 0.85rem;">
+            &copy; All rights reserved. Unauthorized Duplication or Distribution is Prohibited
+Vision Infonet Inc, <a href="mailto:support@vinfonet.com" class="text-info"> <i class="fa fa-envelope me-2" aria-hidden="true"></i>support@vinfonet.com</a> 
+        </p>
+    </div>
+</footer>
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
