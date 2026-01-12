@@ -645,7 +645,7 @@ p{ font-size: 14px;}
 .chekbox-text{padding-left: 5px; float: left; line-height: 16px; font-size: 14px; }
 /* Header styling */
 .container h6 {
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 0;
 }
 
@@ -684,6 +684,7 @@ label {
 }
 .lh-13p{ line-height: 13px;}
 
+
    .scheduling-table-s  .schedule-card{
         background:#fff;
         border-radius:14px;
@@ -701,7 +702,7 @@ label {
       background: #f1f5f9;
     color: #000 !important;
     text-align: center;
-    font-weight: 600;
+    font-weight: 400;
     vertical-align: middle;
     border: none;
     border-right: 1px solid #ccc;
@@ -712,9 +713,11 @@ label {
         text-align:center;
         vertical-align:top;
         background:#f8f9fc;
-        border:1px solid #e4e7ef;
+        border-left:1px solid #e4e7ef; font-size: 14px;
     }
-
+.scheduling-table-s .schedule-table tbody td:last-child{
+     border-right:1px solid #e4e7ef;
+}
     /* Doctor Column */
     .scheduling-table-s .doctor-info{
       color: #292966;
@@ -849,352 +852,153 @@ label {
     font-size: 18px;
     font-weight: 600;}
     .inner-td-bg-none td{ background: none !important;}
-    
+    table th , table td { text-align: left;}
 /* demographics page end*/
-.table-main .primary-t {
-  overflow: auto;
-  scroll-snap-type: both mandatory;
-  height: 80vh;
-}
-@media (min-width: 40em) {
 
- 
-  .table-main .primary-t {
-    order: 2;
-  }
-}
-.table-main table {
-  border-collapse: collapse;
-  border: 0;
-}
-.table-main th,
-.table-main td {
-  border: 1px solid #aaa;
-  background-clip: padding-box;
-  scroll-snap-align: start;
-}
-.table-main tbody tr:last-child th,
-.table-main tbody tr:last-child td {
-  border-bottom: 0;
-}
-.table-main thead {
-  z-index: 1000;
-  position: relative;
-}
-.table-main th,
-.table-main td {
-  padding: 0.6rem;
-  min-width: 6rem;
-  text-align: left;
-  margin: 0;
-}
-.table-main thead th {
-  position: sticky;
-  top: 0;
-  border-top: 0;
-  background-clip: padding-box;
-}
-.table-main thead th.pin {
-  left: 0;
-  z-index: 1001;
-  border-left: 0;
-}
-.table-main tbody th {
-  background-clip: padding-box;
-  border-left: 0;
-}
-.table-main tbody {
-  z-index: 10;
-  position: relative;
-}
-.table-main tbody th {
-  position: sticky;
-  left: 0;
-}
-.table-main thead th,
-.table-main tbody th {
-  background-color: #f8f8f8;
+.content.c1 {
+    border: 1px solid #ddd;
+    height: 450px;           /* container height */
+    position: relative;
+    background: #fff;
 }
 
+/* FIXED (STICKY) HEADER */
+.sticky-title {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #ffffff;
+    padding: 12px 15px;
+    margin: 0;
+    border-bottom: 1px solid #ddd;
+    font-weight: 600;
+}
 
+/* SCROLLABLE CONTENT */
+.scroll {
+    height: calc(100% - 50px); /* adjust based on h3 height */
+    overflow-y: auto;
+    padding: 15px;
+}
 
-/* secure-messaging page css start */
-
-/* Header */
-   .secure-messaging  .header__left img {
-    object-fit: contain;
-    height: 80px;
-    margin-left: 5px;
-    }
-
-    .secure-messaging .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid whitesmoke;
-    }
-
-    .secure-messaging .header__left {
-    display: flex;
-    align-items: center;
-    }
-
-    .secure-messaging .header__left span {
-    padding: 10px;
-    cursor: pointer;
-    }
-
-    .secure-messaging .header__middle {
-    display: flex;
-    flex: 0.7;
-    align-items: center;
-    background-color: whitesmoke;
-    padding: 10px;
+/* Optional scrollbar styling */
+.scroll::-webkit-scrollbar {
+    width: 6px;
+}
+.scroll::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
     border-radius: 5px;
-    }
-
-   .secure-messaging  .material-icons {
-    color: gray;
-    }
-
-    .secure-messaging .header__middle input {
-    border: none;
+}
+.schedule-table {
     width: 100%;
-    padding: 0px;
-    outline: none;
-    font-size: medium;
-    background-color: transparent;
-    }
+    border-collapse: collapse;
+}
 
-    .secure-messaging .header__right {
-    display: flex;
-    padding-right: 20px;
-    }
+/* Make header fixed */
+.schedule-table thead {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
 
-    .secure-messaging .header__right span {
+/* Make body scrollable */
+.schedule-table tbody {
+    display: block;
+    max-height: 500px;   /* adjust height */
+    overflow-y: auto;
+    width: 100%;
+}
+
+/* Keep rows aligned */
+.schedule-table tbody tr,
+.schedule-table thead tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+/* Optional: sticky look */
+.schedule-table thead th {
+    position: sticky;
+    top: 0;
+    background: #f8f9fa;
+    z-index: 2;
+}
+
+/* Optional styling */
+.schedule-table th,
+.schedule-table td {
     padding: 10px;
-    cursor: pointer;
+    vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* table line start csss start */
+    .table-new-line-design .table.table-condensed.table-striped {
+        margin-bottom: 0px;
+    }
+   .table-new-line-design  .BI_tablehead {
+       
+        color: #fff;
+    }
+    .table-new-line-design .table-condensed>thead.BI_tablehead>tr>th {
+        padding: 20px 10px 20px 20px;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .table-new-line-design .table-striped>tbody>tr:nth-of-type(odd) {
+        background-color: #f6f6f6;
+    }
+    .table-new-line-design .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+        border-top: none;
+        border-bottom: 2px solid #fff;
+    }
+    .table-new-line-design .table-condensed>tbody.BI_tablebody>tr>td {
+        padding: 15px 10px 15px 20px;
+        text-transform: capitalize;
+        font-weight: 400;
+        font-size: 14px;
+        color: #4d4d4f;
+    
     }
 
-    /* Sidebar */
-   .secure-messaging  .sidebar {
-    flex: 0.3;
-    max-width: 300px;
-    padding-right: 20px;
+   .table-new-line-design  .fixed_header{
+        table-layout: fixed;
+        border-collapse: collapse;
     }
 
-    .secure-messaging .sidebar__compose {
-    margin-top: 15px;
-    margin-left: 10px;
-    margin-bottom: 15px;
-    text-transform: capitalize;
-    color: gray;
-    padding: 15px;
-    border-radius: 30px;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    outline: none;
-    border: none;
-    box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.75);
+    .table-new-line-design .fixed_header tbody{
+    display:block;
+    width: 100%;
+    overflow: auto;
+    max-height: 400px;
+        overflow-x: hidden;
     }
 
-    .secure-messaging .sidebar__compose span {
-    margin-right: 5px;
+   .table-new-line-design  .fixed_header thead tr {
+    display: block;
     }
 
-    .sidebarOption {
-    display: flex;
-    align-items: center;
-    height: 40px;
-    padding: 0 10px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    cursor: pointer;
-    color: #818181;
-    }
-
-   .secure-messaging  .sidebarOption .material-icons {
+   .table-new-line-design  .fixed_header th, .fixed_header td {
     padding: 5px;
+    text-align: left;
+    width: 308px;
     }
 
-    .sidebarOption h3 {
-    flex: 1;
-    margin-left: 10px;
-    font-size: 14px;
-    font-weight: 400;
-    }
-
-    .secure-messaging .sidebarOption:hover,
-    .secure-messaging .sidebarOption:hover h3,
-    .secure-messaging .sidebarOption:hover .material-icons,
-    .secure-messaging .sidebarOption__active,
-    .secure-messaging .sidebarOption__active h3,
-    .secure-messaging .sidebarOption__active .material-icons {
-    background-color: #fcecec;
-    color: #c04b37;
-    font-weight: 800;
-    }
-
-    .secure-messaging .sidebar__footer {
-    display: flex;
-    justify-content: center;
-    }
-
-    .secure-messaging .sidebar__footerIcons .material-icons {
-    margin: 7px;
-    cursor: pointer;
-    }
-
-    /* main body */
-    .secure-messaging .main__body {
-    display: flex;
-    height: 100vh;
-    }
-
- 
-
-    /* email list */
-   .secure-messaging  .emailList {
-    flex: 1;
-    overflow-y: scroll;
-    z-index: 1;
-    }
-
-   .secure-messaging  .emailList__settings {
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid whitesmoke;
-    background-color: white;
-    z-index: 999;
-    padding: 8px;
-    }
-
-   .secure-messaging  .emailList__settingsLeft {
-    display: flex;
-    align-items: center;
-    }
-
-   .secure-messaging  .emailList__settings .material-icons {
-    margin: 5px;
-    cursor: pointer;
-    }
-
-    .secure-messaging .section {
-    display: flex;
-    align-items: center;
-    border-bottom-width: 2px;
-    padding: 15px;
-    min-width: 200px;
-    cursor: pointer;
-    color: grey;
-    border-width: 0;
-    }
-
-    .secure-messaging .emailList__sections {
-    position: sticky;
-    top: 0;
-    display: flex;
-    background-color: white;
-    border-bottom: 1px solid whitesmoke;
-    z-index: 999;
-    }
-
-    .secure-messaging .section__selected {
-    background-color: whitesmoke;
-    border-width: 3px;
-    color: red;
-    border-bottom: 3px solid red;
-    }
-
-    .secure-messaging .section__selected .material-icons {
-    color: red;
-    }
-
-    .secure-messaging .section:hover {
-    background-color: whitesmoke;
-    border-width: 3px;
-    }
-
-    .secure-messaging .section h4 {
-    font-size: 14px;
-    margin-left: 15px;
-    }
-
-    .secure-messaging .emailRow__options {
-    display: flex;
-    align-items: center;
-    }
-
-    .secure-messaging .emailRow__options .material-icons,
-    input {
-    margin: 5px;
-    }
-
-    .secure-messaging .emailRow {
-    display: flex;
-    align-items: center;
-    height: 50px;
-    border-bottom: 1px solid whitesmoke;
-    cursor: pointer;
-    z-index: 999;
-    }
-
-   .secure-messaging  .emailRow:hover {
-    border-top: 1px solid whitesmoke;
-    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.24);
-    }
-
-    .secure-messaging .emailRow__message {
-    display: flex;
-    flex: 0.8;
-    align-items: center;
-    font-size: 13px; margin: 0px;
-    }
-
-   .secure-messaging  .emailRow__message h4 {
-    width: 400px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    padding-left: 5px;
-    padding-right: 5px;
-    }
-
-   .secure-messaging  .emailRow__title {
-    font-size: 13px; margin: 0px;
-    flex: 0.3;
-    }
-
-   .secure-messaging  .emailRow__time {
-    padding-right: 15px;
-    font-size: 10px;
-    font-weight: bold;
-    }
-
-   .secure-messaging  .emailRow__description {
-    font-weight: 400;
-    color: gray;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-/* secure-messaging page css end */
-
-
-
+   .table-new-line-design  tbody.BI_tablebody td {
+        width: 310.9px;
+    }   
+/* table line start csss end */
 
 
 
@@ -1294,3 +1098,13 @@ label {
     }
 }
 
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+ .table-new-line-design tbody.BI_tablebody td {
+    width: 266px;
+}
+}
+@media screen and (min-width: 1024px) and (max-width: 1999px) {
+ .table-new-line-design tbody.BI_tablebody td {
+    width: 221px;
+}
+}
