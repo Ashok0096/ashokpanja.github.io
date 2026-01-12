@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Questionnaire :: Mdcare Patient Portal</title>
+      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      <meta content="" name="keywords">
+      <meta content="" name="description">
+      <!-- Icon Font Stylesheet -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+      <!-- Libraries Stylesheet -->
+      <link rel="stylesheet" href="lib/animate/animate.min.css"/>
+      <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+      <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+      <!-- Customized Bootstrap Stylesheet -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <!-- Template Stylesheet -->
+      <link href="css/style.css" rel="stylesheet">
+    
+   </head>
+   <body>
+      <!-- Spinner Start -->
+      <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+         </div>
+      </div>
+      <!-- Spinner End -->
+      <!-- Navbar & Hero Start -->
+      <div class="container-fluid nav-bar px-0 px-lg-0 py-lg-0">
+         <!-- Topbar Start -->
+         <div class="container-fluid topbar px-0 px-lg-4 bg-light  d-none d-lg-block">
+            <div class="row gx-0 align-items-center">
+               <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+                  <div class="d-flex flex-wrap align-items-start justify-content-start">
+                     <div class="border-end border-primary pe-3 mt-2">
+                        <a href="#" class="text-muted small"><i class="bi bi-alarm-fill text-secondary me-2"></i>Last Login : Jan 5 2026 8:09PM</a>
+                     </div>
+                     <div class="ps-3 mt-2">
+                        <a href="mailto:example@gmail.com" class="text-muted small"><i class="bi bi-alarm-fill text-secondary me-2"></i>Server Time : 04:19:35 AM</a>
+                     </div>
+                     <div class="nav-btn px-3 my-1">
+                        <span class="btn btn-primary   flex-shrink-0" style="font-size: 12px;"> Welcome: DEMO, PATIENT d</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 text-center text-lg-end">
+                  <div class="d-flex justify-content-end">
+                     <div class="dropdown top-user-s ms-3">
+                        <a href="#" class="dropdown-toggle text-white" data-bs-toggle="dropdown">
+                        <small><i class="fa fa-user text-white me-2"></i> User</small></a>
+                        <div class="dropdown-menu ">
+                           <a href="#" class="dropdown-item">Recent Login Activities</a>
+                           <a href="#" class="dropdown-item">Change Password</a>
+                           <a href="login.html" class="dropdown-item">Logout</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Topbar End -->
+         <nav class="navbar navbar-expand-lg navbar-light px-lg-5">
+            <a href="index.html" class="navbar-brand p-0">
+            <img src="img/logo.png" alt="Logo"> 
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+               <div class="navbar-nav mx-0 mx-lg-auto">
+                  <a href="index.html" class="nav-item nav-link ">Home</a>
+                  <a href="scheduling.html" class="nav-item nav-link ">Scheduling</a>
+                  <a href="questionnaire.html" class="nav-item nav-link ">Questionnaire</a>
+                  <!-- <div class="nav-item dropdown">
+                     <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                         <span class="dropdown-toggle">Pages</span>
+                     </a>
+                     <div class="dropdown-menu">
+                         <a href="blog.html" class="dropdown-item">Our Blog</a>
+                         <a href="team.html" class="dropdown-item">Our team</a>
+                     </div>
+                     </div> -->
+                  <a href="records.html" class="nav-item nav-link">Records</a>
+                  <a href="demographics.html" class="nav-item nav-link ">Demographics</a>
+                  <a href="secure-messaging.html" class="nav-item nav-link active">Secure Messaging</a>
+               </div>
+            </div>
+            <div class=" d-xl-flex flex-shrink-0 ps-4">
+               <a href="#" class="btn btn-light btn-lg-square rounded-circle position-relative wow tada hover-bg-c" data-wow-delay=".9s">
+                  <i class="fa fa-address-card fa-2x  text-secondary"></i>
+                  <div class="position-absolute" style="top: 7px; right: 12px;">
+                     <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                  </div>
+               </a>
+               <div class="d-flex flex-column ms-3">
+                  <span class=" text-muted">Florida Heart Center</span>
+                  <span class=" text-muted">1900 Nebraska Ave., Ste.9 Fort Pierce, FL 34950</span>
+                  <span class=" text-muted">E-Mail: flheartcenter@bellsouth.net</span>
+                  <span class=" text-muted">
+                  Phone: 772-465-4499 772-465-0578</span>
+                  <span class=" text-muted"> Fax: 772-466-0832
+                  </span>
+               </div>
+            </div>
+         </nav>
+      </div>
+      <!-- Navbar & Hero End -->
+      
+      <div class="container secure-messaging py-5">
+
+
+   
+
+  <div class="main__body">
+      <!-- Sidebar Starts -->
+      <div class="sidebar">
+        <button 
+  class="sidebar__compose w-100 m-0 mb-3"
+  data-bs-toggle="modal"
+  data-bs-target="#composeModal">
+  <span class="px-2">
+    <i class="fa fa-plus" aria-hidden="true"></i>
+  </span>
+  Compose
+</button>
+<div class="modal fade composeModal-w" id="composeModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Compose Message</h5>
+        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal"></button> -->
+      </div>
+
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label class="form-label">To</label>
+           <select class="form-select">
+            <option selected>Choose</option>
+            <option>Email</option>
+            <option>SMS</option>
+          </select>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Subject</label>
+            <input type="text" class="form-control" placeholder="Subject">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Message</label>
+            <textarea class="form-control" rows="4"></textarea>
+          </div>
+        </form>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary text-white" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+        <div class="sidebarOption sidebarOption__active sidebarOption sidebarOption-mail-s  mb-1">
+        <span class="fs-4">  <i class="fa fa-inbox" aria-hidden="true"></i>  </span>
+          <h3>Inbox <span class="rounded-circle bg-dark fs-10 p-1 float-end fw-normal">22</span> </h3>
+        </div>
+
+        <!-- <div class="sidebarOption">
+          <span class="material-icons"> star </span>
+          <h3>Starred</h3>
+        </div> -->
+<!-- 
+        <div class="sidebarOption">
+          <span class="material-icons"> access_time </span>
+          <h3>Snoozed</h3>
+        </div>
+
+        <div class="sidebarOption">
+          <span class="material-icons"> label_important </span>
+          <h3>Important</h3>
+        </div> -->
+
+        <div class="sidebarOption sidebarOption-sent-s">
+          <span class="fs-5"><i class="fa fa-paper-plane" aria-hidden="true"></i> </span>
+          <h3>Sent</h3>
+        </div>
+
+        <!-- <div class="sidebarOption">
+          <span class="material-icons"> note </span>
+          <h3>Drafts</h3>
+        </div> -->
+
+      
+  
+      </div>
+      <!-- Sidebar Ends -->
+
+      
+      <div class="emailList">
+       
+        <div class="emailList__settings bg-light">
+          <div class="emailList__settingsLeft">
+            <input type="checkbox" />
+           
+            <select class="form-select">
+    <option selected>Select </option>
+    <option value="1">All</option>
+    <option value="2">None</option>
+    <option value="3">New Three</option>
+  </select>
+         
+            <span class="mx-3"> <i class="fa fa-trash fs-6" aria-hidden="true"></i> </span>
+           
+ </span>
+          </div>
+           <div class="header__middle">
+        <span class="mx-2"> <i class="fa fa-search" aria-hidden="true"></i> </span>
+        <input type="text" placeholder="Search mail" />
+        
+      </div>
+        
+        </div>
+        <!-- Settings Ends -->
+
+      
+
+        <!-- Email List rows starts -->
+        <div class="emailList__list">
+            <div class="emailRow">
+            <div class="emailRow__options">
+              <input type="checkbox" name="" id="" />
+            
+            </div>
+
+            <h3 class="emailRow__title">Dr.Ashok   Panja</h3>
+
+            <div class="emailRow__message">
+              <p>
+                
+                <span class="emailRow__description"> - on Ashok Channel Future Coders </span>
+              </p>
+            </div>
+
+            <p class="emailRow__time">1/12/2026 5:24:00 AM</p>
+          </div>
+             <div class="emailRow">
+            <div class="emailRow__options">
+              <input type="checkbox" name="" id="" />
+            
+            </div>
+
+            <h3 class="emailRow__title">Dr.Ravi   Panja</h3>
+
+            <div class="emailRow__message">
+              <p>
+                
+                <span class="emailRow__description"> - on Ashok Channel Future Coders </span>
+              </p>
+            </div>
+
+            <p class="emailRow__time">1/12/2026 5:24:00 AM</p>
+          </div>
+
+        </div>
+        <!-- Email List rows Ends -->
+          
+
+        <!-- set list row start -->
+       
+        <div class="sentList">
+         
+          <div class="emailRow">
+            <div class="emailRow__options">
+              <input type="checkbox" name="" id="" />
+            
+            </div>
+
+            <h3 class="emailRow__title">Dr.Prasad   Panja</h3>
+
+            <div class="emailRow__message">
+              <p>
+                
+                <span class="emailRow__description"> - on Ashok Channel Future Coders </span>
+              </p>
+            </div>
+
+            <p class="emailRow__time">1/12/2026 5:24:00 AM</p>
+          </div>
+        
+          
+           <div class="emailRow">
+            <div class="emailRow__options">
+              <input type="checkbox" name="" id="" />
+              
+            </div>
+
+               <h3 class="emailRow__title">Dr.Prasad   Panja</h3>
+
+            <div class="emailRow__message">
+              <p>
+                
+                <span class="emailRow__description"> - on Ashok Channel Future Coders </span>
+              </p>
+            </div>
+
+            <p class="emailRow__time">1/12/2026 5:24:00 AM</p>
+          </div>
+
+        </div>
+        <!-- set List rows Ends -->
+<div class="emailList__settings pagenation bg-light text-end">
+    
+         
+         
+        </div>
+        <div class=" pagenation bg-light text-end">
+    
+         
+          <div class="emailList__settingsRight">
+            <span class="material-icons"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+            <span class="mx-1">1</span>
+                <span class="material-icons "><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+        
+          </div>
+        </div>
+      </div>
+      <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const inboxBtn = document.querySelector(".sidebarOption-mail-s");
+    const sentBtn = document.querySelector(".sidebarOption-sent-s");
+
+    const inboxList = document.querySelector(".emailList__list");
+    const sentList = document.querySelector(".sentList");
+
+    // Click Sent
+    sentBtn.addEventListener("click", function () {
+      inboxList.style.display = "none";
+      sentList.style.display = "block";
+
+      sentBtn.classList.add("sidebarOption__active");
+      inboxBtn.classList.remove("sidebarOption__active");
+    });
+
+    // Click Inbox
+    inboxBtn.addEventListener("click", function () {
+      sentList.style.display = "none";
+      inboxList.style.display = "block";
+
+      inboxBtn.classList.add("sidebarOption__active");
+      sentBtn.classList.remove("sidebarOption__active");
+    });
+  });
+</script>
+
+      <!-- Email List Ends -->
+    </div>
+</div>
+
+
+      <!-- Footer Section -->
+      <footer class="  text-light pt-4 pb-3 mt-5 ">
+         <div class="container text-center">
+            <!-- Copyright -->
+            <p class="mb-0" style="font-size: 0.85rem;">
+               &copy; All rights reserved. Unauthorized Duplication or Distribution is Prohibited
+               Vision Infonet Inc, <a href="mailto:support@vinfonet.com" class="text-info"> <i class="fa fa-envelope me-2" aria-hidden="true"></i>support@vinfonet.com</a> 
+            </p>
+         </div>
+      </footer>
+      <!-- Back to Top -->
+      <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+      <!-- JavaScript Libraries -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="lib/wow/wow.min.js"></script>
+      <script src="lib/easing/easing.min.js"></script>
+      <script src="lib/waypoints/waypoints.min.js"></script>
+      <script src="lib/counterup/counterup.min.js"></script>
+      <script src="lib/lightbox/js/lightbox.min.js"></script>
+      <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+      <!-- Template Javascript -->
+      <script src="js/main.js"></script>
+   </body>
+</html>
