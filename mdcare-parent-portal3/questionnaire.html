@@ -30,6 +30,12 @@
     height:500px;
     overflow: auto;
 }
+.tab-content {
+    
+    border: solid 1px #ccc;
+    border-left: 0;
+    padding-left: 10px;
+}
         </style>
     </head>
 
@@ -113,7 +119,7 @@
                         
                         </div>
                     </div>
-                    <div class=" d-xl-flex flex-shrink-0 ps-4">
+                    <div class="  d-xl-flex flex-shrink-0 ps-1 header-right-top">
                         <a href="#" class="btn btn-light btn-lg-square rounded-circle position-relative wow tada hover-bg-c" data-wow-delay=".9s">
                             <i class="fa fa-address-card fa-2x  text-secondary"></i>
                             <div class="position-absolute" style="top: 7px; right: 12px;">
@@ -134,16 +140,16 @@
            
         </div>
         <!-- Navbar & Hero End -->
-      <section class="medical-vertical-tabs vh-100"> 
+      <section class="medical-vertical-tabs h-100"> 
 <div class="container-fluid table-main-s ">
     <div class="container">
 <div class="row">
     <div class="col-lg-12">
-        <h3 class="text-secondary text-center">
+        <h3 class="text-secondary text-start page-title pt-5">
         	
 Medical Questionnaire
     </h3>
-   <hr class="mb-0">
+   <hr>
  
 
   <div class="tabs-container">
@@ -176,7 +182,7 @@ Medical Questionnaire
     <!-- Tab Content -->
     <div class="tab-content">
       <div class="content c1">
-        <h3 class="sticky-title">Previous Summary</h3>
+        <h3 class="page-title">Previous Summary</h3>
         <div class="scoll p-3">
             <p>FAMILY HISTORY:</p>
     <p>Reviewed</p>
@@ -246,7 +252,7 @@ Medical Questionnaire
       </div>
 
       <div class="content c2">
-        <h3>Reason for visit</h3>
+        <h3 class="page-title">Reason for visit</h3>
          <form class="pt-2">
         <input type="checkbox" id="task1" name="task1" value="Task 1" style="float: left;">
         <label   class="chekbox-text">Chest pain</label><br>
@@ -259,7 +265,7 @@ Medical Questionnaire
       </div>
 
       <div class="content c3">
-        <h3>Surgical History</h3>
+        <h3 class="page-title">Surgical History</h3>
         <p class="text-danger"> Note : Check that all applicable</p>
        <form class="pt-2">
         <input type="checkbox" value="No significant surgical history" style="float: left;">
@@ -269,7 +275,7 @@ Medical Questionnaire
       </div>
 
       <div class="content c4">
-        <h3>Past Medical History</h3>
+        <h3 class="page-title">Past Medical History</h3>
                 <p class="text-danger">Note : Check that all applicable</p>
        <form class="pt-2 col-lg-4 float-start">
         <input type="checkbox" id="ACUTE MYOCARDIAL INFARCTION" name="No significant surgical history" value="No significant surgical history" style="float: left;">
@@ -290,7 +296,7 @@ Medical Questionnaire
       </div>
 
       <div class="content c5">
-        <h3>Review of Systems</h3>
+        <h3 class="page-title">Review of Systems</h3>
          <p class="text-danger"> Note : Check that all applicable</p>
        <div class="pt-2">
          <div class="col-lg-4  float-start">
@@ -333,7 +339,7 @@ Medical Questionnaire
       </div>
 
       <div class="content c6">
-        <h3>Current Medication</h3>
+        <h3 class="page-title">Current Medication</h3>
          <form class="pt-1">
       
        
@@ -342,7 +348,7 @@ Medical Questionnaire
       </div>
 
          <div class="content c7">
-        <h3>Allergies </h3>
+        <h3 class="page-title">Allergies </h3>
                 <p class="text-danger">Note : Check that all applicable</p>
        <form class="pt-2 col-lg-4 float-start">
         
@@ -358,7 +364,7 @@ Medical Questionnaire
     <input type="text" class="form-control my-5" placeholder=" Other" required="">
       </div>
       <div class="content c8">
-        <h3>Summary</h3>
+        <h3 class="page-title">Summary</h3>
         <div class="container ">
             <div class="row ">
                 <div class="col-lg-12 d-flex align-items-center justify-content-start p-0">
@@ -529,7 +535,7 @@ Smoking Status
         
   </div>
       <div class="content c9">
-          <h3>Family History</h3>
+          <h3 class="page-title">Family History</h3>
 
         <div class="container p-2">
     <!-- Header Row -->
@@ -631,7 +637,7 @@ Smoking Status
 
     </div>
      <div class="content c10">
-          <h3>Summary</h3>
+          <h3 class="page-title">Summary</h3>
 
         <div class="container p-0">
 <h6 class="text-secondary">
@@ -640,7 +646,7 @@ Surgical History
 <p>
 No significant surgical history
 </p> 
-<h6 class="text-secondary">
+<h6 class="page-title">
 Past Medical History
 </h6>
 <p>

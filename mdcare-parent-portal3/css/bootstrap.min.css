@@ -691,7 +691,7 @@ progress {
 	.container-md,
 	.container-sm,
 	.container {
-		max-width: 1320px
+		max-width: 1400px
 	}
 }
 
@@ -3481,12 +3481,12 @@ fieldset:disabled .btn {
 }
 
 .btn-outline-secondary {
-	color: #292966;
+	color: #000;
 	border-color: #292966
 }
 
 .btn-outline-secondary:hover {
-	color: #000;
+	color: #fff;
 	background-color: #292966;
 	border-color: #292966
 }

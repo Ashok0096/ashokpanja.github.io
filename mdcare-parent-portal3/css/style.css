@@ -36,8 +36,8 @@ p{ margin-bottom: 5px;}
 
 /*** Button Start ***/
 .btn {
-    font-weight: 600;
-    transition: .5s;
+    font-weight: 500;
+    transition: .5s; font-size: 12px;
 }
 
 .btn-square {
@@ -56,8 +56,8 @@ p{ margin-bottom: 5px;}
 }
 
 .btn-lg-square {
-    width: 56px;
-    height: 56px;
+    width: 36px;
+    height: 36px;
 }
 
 .btn-xl-square {
@@ -112,7 +112,7 @@ p{ margin-bottom: 5px;}
 .topbar .dropdown-toggle::after {
    
     font-family: "Font Awesome 5 Free";
-    font-weight: 600;
+    font-weight: 500;
     vertical-align: middle;
     margin-left: 8px;
     color: var(--bs-white);
@@ -172,7 +172,7 @@ p{ margin-bottom: 5px;}
 .navbar .navbar-nav .nav-item {
     display: flex;
     align-items: center;
-    padding: 15px;
+    padding: 15px; font-size: 14px;
 }
 
 .navbar-light .navbar-nav .nav-item:hover,
@@ -224,7 +224,7 @@ p{ margin-bottom: 5px;}
     border: none;
     content: "\f107";
     font-family: "Font Awesome 5 Free";
-    font-weight: 600;
+    font-weight: 500;
     vertical-align: middle;
     margin-left: 8px;
 }
@@ -268,7 +268,8 @@ p{ margin-bottom: 5px;}
 }
 footer {
     width: 100%;
-   
+       position: sticky;
+    border: 0;
     z-index: 2;
    
     background-color: rgba(0, 0, 0, 0.7);
@@ -319,7 +320,7 @@ p{ font-size: 14px;}
     background: #f1f5f9;
     }
  .table-main-s  td{
-     font-size: 13px;
+     font-size: 12px;
  }
     .table-main-s th, td {
     padding: 5px;
@@ -329,8 +330,8 @@ p{ font-size: 14px;}
 
 .table-main-s tbody td{border-left: 1px #ccc solid;
     border-right: 1px #ccc solid; }
-    thead th{border-left: 1px #ccc solid;     color: #000 !important; font-weight: 400;
-    border-right: 1px #ccc solid; border-top: 1px #ccc solid; font-size: 15px;}
+    thead th{border-left: 1px #ccc solid;     color: #000 !important; font-weight: 500;
+    border-right: 1px #ccc solid; border-top: 1px #ccc solid; font-size: 13px;}
     .table-main-s th {
     cursor: pointer;
     color: var(--muted);
@@ -373,7 +374,7 @@ p{ font-size: 14px;}
     border-radius: 6px;
     border: 1px solid var(--border);
     background: #fff;
-    cursor: pointer;
+    cursor: pointer; font-size: 12px;
     }
 
     .table-main-s .pagination button.active {
@@ -443,7 +444,7 @@ p{ font-size: 14px;}
       .reminder-card p {
     margin: 0;
     color: #555;
-    font-size: 14px;
+font-size: 12px;
     }
       .status {
     position: absolute;
@@ -516,7 +517,7 @@ p{ font-size: 14px;}
       .date {
     display: block;
     margin-top: 15px;
-    font-size: 14px;
+font-size: 12px;
     color: #999;
     }
 
@@ -574,9 +575,9 @@ p{ font-size: 14px;}
 
 .tab-menu label {
   display: block;
-  padding: 15px 20px;
+  padding: 10px;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 500;
   color: #0b5ed7;
   border-left: 4px solid transparent;
   transition: all 0.3s ease;
@@ -599,8 +600,8 @@ p{ font-size: 14px;}
 #vtab8:checked ~ .tab-menu label[for="vtab8"],
 #vtab9:checked ~ .tab-menu label[for="vtab9"],
 #vtab10:checked ~ .tab-menu label[for="vtab10"] {
-  background: #ffffff;
-  color: #0a3d91;
+  background: #00aeef;
+    color: #fff;
   border-left: 4px solid #0b5ed7;
 }
 
@@ -634,7 +635,7 @@ p{ font-size: 14px;}
       padding: 5.5px;
       border-bottom: solid 1px #ccc;
       font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .content p {
@@ -645,7 +646,7 @@ p{ font-size: 14px;}
 .chekbox-text{padding-left: 5px; float: left; line-height: 16px; font-size: 14px; }
 /* Header styling */
 .container h6 {
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 0;
 }
 
@@ -663,14 +664,14 @@ input[type="checkbox"] {
 /* Checkbox label */
 .chekbox-text,
 label {
-    font-size: 14px;
+font-size: 12px;
     cursor: pointer;
 }
 
 /* Input fields */
 .form-control {
     height: 36px;
-    font-size: 14px;
+font-size: 12px;
 }
 
 /* Row spacing */
@@ -693,26 +694,30 @@ label {
 
     /* Table */
     .scheduling-table-s .schedule-table{
-        border-radius:12px;
+       
         overflow:hidden;
     }
-
+.scheduling-table-s .schedule-table thead th:first-child{ border-left: solid 1px #ccc;}
     .scheduling-table-s .schedule-table thead th{
       background: #f1f5f9;
     color: #000 !important;
     text-align: center;
-    font-weight: 600;
+    font-weight: 500;
     vertical-align: middle;
     border: none;
     border-right: 1px solid #ccc;
 
     }
-
+.horizontal-tabs-s.h-100 {
+    z-index: 1;
+    position: relative;
+}
     .scheduling-table-s .schedule-table tbody td{
         text-align:center;
         vertical-align:top;
-        background:#f8f9fc;
-        border:1px solid #e4e7ef;
+        background:#fff;
+        border:1px solid #e4e7ef; 
+            border-bottom: none;
     }
 
     /* Doctor Column */
@@ -733,29 +738,30 @@ label {
     }
 
    .scheduling-table-s  .slot-list a{
-          display: block;
+       display: block;
     margin-bottom: 6px;
     padding: 6px 10px;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     text-decoration: none;
     color: #787878;
-    font-weight: 600;
+    font-weight: 500;
     transition: .3s;
-    font-size: 13px;
+    font-size: 12px;
+    border-bottom: solid 1px #ccc;
     }
 
    .scheduling-table-s  .slot-list a:hover{
-        background:#2b7cff;
+        background:#00aeef;
         color:#fff;
         /* transform:scale(1.03); */
     }
 
     /* Scrollbar */
-    .scheduling-table-s .slot-list::-webkit-scrollbar{
+    .scheduling-table-s .slot-list::-webkit-scrollbar , .content.c1::-webkit-scrollbar , .table-main .primary-t::-webkit-scrollbar , .table-main .primary-t::-webkit-scrollbar{
         width:5px;
     }
-    .scheduling-table-s .slot-list::-webkit-scrollbar-thumb{
-        background:#00aeef;
+    .scheduling-table-s .slot-list::-webkit-scrollbar-thumb , .content.c1::-webkit-scrollbar-thumb , .table-main .primary-t::-webkit-scrollbar-thumb , .table-main .primary-t::-webkit-scrollbar-thumb {
+        background:#ccc;
         border-radius:10px;
     }
     .scheduling-table-s .search-icon{
@@ -784,14 +790,14 @@ label {
 
 .popup-scrool tbody {
     display: block;
-    max-height: 400px;
+    max-height: 300px;
     overflow-y: auto;
 }
 
 .popup-scrool thead {
     width: 100%;
 }
-.popup-scrool td{ font-size: 13px;}
+.popup-scrool td{ font-size: 12px;}
 
 /* demographics page start*/
  
@@ -814,9 +820,10 @@ label {
     border-radius: 6px 6px 0 0;
     background: #f8f9fa;
     color: #495057;
-    font-weight: 600;
+    font-weight: 500;
     padding: 10px 18px;
     transition: all 0.25s ease;
+    font-size: 12px;
 }
 
 
@@ -827,11 +834,11 @@ label {
 
 
 .horizontal-tabs-s .custom-tabs .nav-link.active {
-    background: #ffffff;
-    color: #2b7cff;
+      background: #00aeef;
+    color: #fff;
     border-color: #dcdcdc;
     border-bottom: 1px solid #ffffff;
-    font-size: 14px;
+font-size: 12px;
 }
 
 
@@ -847,7 +854,7 @@ label {
     padding: 5.5px;
     border-bottom: solid 1px #ccc;
     font-size: 18px;
-    font-weight: 600;}
+    font-weight: 500;}
     .inner-td-bg-none td{ background: none !important;}
     
 /* demographics page end*/
@@ -886,7 +893,7 @@ label {
   padding: 0.6rem;
   min-width: 6rem;
   text-align: left;
-  margin: 0;
+  margin: 0; font-size: 12px;
 }
 .table-main thead th {
   position: sticky;
@@ -1022,8 +1029,8 @@ label {
     .sidebarOption h3 {
     flex: 1;
     margin-left: 10px;
-    font-size: 14px;
-    font-weight: 400; 
+font-size: 12px;
+    font-weight: 500; 
     }
     span.rounded-circle{ color: #fff !important;}
 
@@ -1122,7 +1129,7 @@ label {
     }
 
     .secure-messaging .section h4 {
-    font-size: 14px;
+font-size: 12px;
     margin-left: 15px;
     }
 
@@ -1154,7 +1161,7 @@ label {
     display: flex;
     flex: 0.8;
     align-items: center;
-    font-size: 13px; margin: 0px;
+    font-size: 12px; margin: 0px;
     }
 
    .secure-messaging  .emailRow__message h4 {
@@ -1167,7 +1174,7 @@ label {
     }
 
    .secure-messaging  .emailRow__title {
-    font-size: 13px; margin: 0px;
+    font-size: 12px; margin: 0px;
     flex: 0.3;
     }
 
@@ -1178,7 +1185,7 @@ label {
     }
 
    .secure-messaging  .emailRow__description {
-    font-weight: 400;
+    font-weight: 500;
     color: gray;
     }
 .composeModal-w .modal-dialog {
@@ -1240,12 +1247,88 @@ label {
 #table tbody tr:nth-child(even) {
     background-color: #f8f9fa;
 }
-/* records page css end */
+.table>:not(caption)>*>* {
+    padding: 5px .5rem;}
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* records page css end */
+#printArea {
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 300px;
+}
+.horizontal-tabs-s {
+    position: relative;
+    z-index: 1;
+}
 thead tr {
     border-top: solid 1px #ccc;
 }
+.page-header {
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.page-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+.header-right-top span{ font-size: 12px;}
+.header-right-top .fa-2x{ font-size: 16px;}
+.sticky-top .header-right-top{ display: none !important;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Responsive fix */
+
 @media (max-width: 768px) {
     .form-control.w-75 {
         width: 100% !important;
@@ -1264,7 +1347,7 @@ thead tr {
     }
 
     .navbar .navbar-nav {
-        width:65%;
+      
         display: flex;
         justify-content: center;
         align-items: center;
