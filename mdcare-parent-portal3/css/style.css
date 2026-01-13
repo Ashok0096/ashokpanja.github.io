@@ -269,7 +269,7 @@ p{ margin-bottom: 5px;}
 footer {
     width: 100%;
        position: sticky;
-    border: 0;
+    bottom: 0;
     z-index: 2;
    
     background-color: rgba(0, 0, 0, 0.7);
@@ -1287,7 +1287,7 @@ thead tr {
 .header-right-top span{ font-size: 12px;}
 .header-right-top .fa-2x{ font-size: 16px;}
 .sticky-top .header-right-top{ display: none !important;}
-
+.table>:not(:last-child)>:last-child>*{ border-bottom: none;}
 
 
 
@@ -1331,11 +1331,12 @@ thead tr {
 
 @media (max-width: 768px) {
     .form-control.w-75 {
-        width: 100% !important;
+        min-width: 100% !important;
     }
 }
 
 @media (min-width: 992px) {
+     .mx-w-25{ max-width: 25% !important;}
     .navbar {
         padding: 5px 0;
     }
@@ -1422,4 +1423,27 @@ thead tr {
         margin-left: 45px;
     }
 }
+@media (max-width: 1200px) {
+.sticky-top .header-right-top {
+    display: block !important;
+    position: absolute;
+}
 
+.header-right-top span{ float: left;}
+.header-right-top .flex-column {
+    flex-direction: row !important;
+}
+.hover-bg-c{ display: none;}
+    .header-right-top {
+        display: flex;
+        position: absolute;
+        top: 60px;
+        background: #f2f5f9; padding: 10px;
+        /* text-align: center; */
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center !important; */
+    }
+    .header-right-top span:first-child{ padding-right: 10px;}
+}
+.header-right-top span:first-child{ color: var(--bs-primary) !important; font-weight: 500; }

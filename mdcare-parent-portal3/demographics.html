@@ -48,14 +48,19 @@
                <div class="col-lg-4 text-center text-lg-end">
                   <div class="d-flex justify-content-end">
                      <div class="dropdown top-user-s ms-3">
-                        <a href="#" class="dropdown-toggle text-white" data-bs-toggle="dropdown">
-                        <small><i class="fa fa-user text-white me-2"></i> User</small></a>
-                        <div class="dropdown-menu ">
-                           <a href="#" class="dropdown-item">Recent Login Activities</a>
-                           <a href="#" class="dropdown-item">Change Password</a>
-                           <a href="login.html" class="dropdown-item">Logout</a>
-                        </div>
-                     </div>
+                                <a href="#" class="dropdown-toggle text-white" data-bs-toggle="dropdown">
+                                    <small><i class="fa fa-user text-white me-2"></i> User</small></a>
+                              <div class="dropdown-menu">
+    <a href="#" class="dropdown-item Recent-Login-Activities" data-bs-toggle="modal" data-bs-target="#recentLoginModal"> Recent Login Activities
+    </a>
+
+   <a href="#" class="dropdown-item Change-Password" data-bs-toggle="modal" data-bs-target="#Change-PasswordModal"> Change-Password
+    </a>
+    <a href="login.html" class="dropdown-item">Logout</a>
+</div>
+
+
+                            </div>
                   </div>
                </div>
             </div>
@@ -775,6 +780,153 @@
       </footer>
       <!-- Back to Top -->
       <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+    
+    
+    
+         <div class="modal fade" id="recentLoginModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Activity Logs</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+    <div class="schedule-card ">
+
+     
+        <div class="table-responsive">
+            <table class="table schedule-table popup-scrool">
+                <thead>
+                    <tr>
+                       
+                        <th>Form	</th>
+                        <th>Action	</th>
+                        <th>	Date Time	</th>
+                        <th>	User </th>
+                        
+                    </tr>
+                </thead>
+
+          
+<tbody class="border">
+                                        
+                                         
+                                        
+                                            <tr class="slot-list">
+                                                <td>
+                                                  Medical Records - Problems
+                                                </td>
+                                                <td>
+                                                 	Print	
+                                                </td>
+                                                <td>
+                                                Jan 13 2026 1:47AM	
+                                                </td>
+                                                <td>
+                                                   fhcdemo (Patient)
+                                                </td>
+                                            </tr>
+                                        
+                                                  <tr class="slot-list">
+                                                <td>
+                                                  Medical Records - Problems
+                                                </td>
+                                                <td>
+                                                 	Print	
+                                                </td>
+                                                <td>
+                                                Jan 13 2026 1:47AM	
+                                                </td>
+                                                <td>
+                                                   fhcdemo (Patient)
+                                                </td>
+                                            </tr>
+                                                   <tr class="slot-list">
+                                                <td>
+                                                  Medical Records - Problems
+                                                </td>
+                                                <td>
+                                                 	Print	
+                                                </td>
+                                                <td>
+                                                Jan 13 2026 1:47AM	
+                                                </td>
+                                                <td>
+                                                   fhcdemo (Patient)
+                                                </td>
+                                            </tr>
+                                                   <tr class="slot-list">
+                                                <td>
+                                                  Medical Records - Problems
+                                                </td>
+                                                <td>
+                                                 	Print	
+                                                </td>
+                                                <td>
+                                                Jan 13 2026 1:47AM	
+                                                </td>
+                                                <td>
+                                                   fhcdemo (Patient)
+                                                </td>
+                                            </tr>
+
+                                        
+                                            </tbody>
+            </table>
+        </div>
+
+    </div>
+      </div>
+
+     
+
+    </div>
+  </div>
+</div>
+
+   <div class="modal fade" id="Change-PasswordModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered mx-w-25" >
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">  Change password</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+    
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Old Password</label>
+            <input type="text" class="form-control"  required="">
+          </div>
+             
+          <div class="mb-3">
+            <label class="form-label">New Password</label>
+            <input type="email" class="form-control" required="">
+          </div>
+            <div class="mb-3">
+            <label class="form-label">Confirm Password</label>
+            <input type="email" class="form-control" required="">
+          </div>
+        <div class="d-flex justify-content-center align-items-center gap-2 pb-5">
+          <button type="submit" class="btn btn-primary ">submit</button>
+          <button type="Clear" class="btn btn-primary ">Clear</button>
+          </div>
+        </form>
+      </div>
+
+    
+
+    </div>
+  </div>
+</div> 
+    
+    
+    
+    
       <!-- JavaScript Libraries -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
