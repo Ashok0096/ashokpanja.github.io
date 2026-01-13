@@ -268,9 +268,9 @@ p{ margin-bottom: 5px;}
 }
 footer {
     width: 100%;
-       position: sticky;
-    bottom: 0;
-    z-index: 2;
+       /* position: fixed;
+    bottom: 0; */
+    z-index: 9;
    
     background-color: rgba(0, 0, 0, 0.7);
 }
@@ -796,9 +796,10 @@ font-size: 12px;
 
 .popup-scrool thead {
     width: 100%;
+    background: #f1f5f9;
 }
-.popup-scrool td{ font-size: 12px;}
-
+.popup-scrool td{ font-size: 12px;     border-left: solid 1px #ccc;}
+.popup-scrool tr td:first-child{ border-left:none ;}
 /* demographics page start*/
  
 
