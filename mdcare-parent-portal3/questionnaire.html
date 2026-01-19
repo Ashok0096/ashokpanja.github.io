@@ -26,9 +26,13 @@
         <link href="css/style.css" rel="stylesheet">
         <style>
           
-.content.c1 {
+/* .content.c1 {
     height:500px;
     overflow: auto;
+} */
+ .table-main .table-scrool {
+    
+    overflow-x: hidden;
 }
 .tab-content {
     
@@ -184,10 +188,10 @@ Medical Questionnaire
     </div>
 
     <!-- Tab Content -->
-    <div class="tab-content">
-      <div class="content c1">
+    <div class="tab-content table-main">
+      <div class="content c1 table-scrool">
         <h3 class="page-title">Previous Summary</h3>
-        <div class="scoll p-3">
+        <div class="scoll p-1">
             <p>FAMILY HISTORY:</p>
     <p>Reviewed</p>
    <p> Sister is Alive. </p> 
@@ -255,7 +259,7 @@ Medical Questionnaire
       </div>
       </div>
 
-      <div class="content c2">
+      <div class="content c2 table-scrool">
         <h3 class="page-title">Reason for visit</h3>
          <form class="pt-2">
         <input type="checkbox" id="task1" name="task1" value="Task 1" style="float: left;">
@@ -268,73 +272,74 @@ Medical Questionnaire
         
       </div>
 
-      <div class="content c3">
+      <div class="content c3 table-scrool">
         <h3 class="page-title">Surgical History</h3>
-        <p class="text-danger"> Note : Check that all applicable</p>
+      <div class="p-1">  <p class="text-danger"> Note : Check that all applicable</p>
        <form class="pt-2">
         <input type="checkbox" value="No significant surgical history" style="float: left;">
         <label   class="chekbox-text">No significant surgical history</label><br>
-<input type="text" class="form-control my-2" placeholder=" Other" required="">
+<input type="text" class="form-control my-2 mx-0" placeholder=" Other" required="">
     </form>
+    </div>
       </div>
 
-      <div class="content c4">
+      <div class="content c4 table-scrool">
         <h3 class="page-title">Past Medical History</h3>
                 <p class="text-danger">Note : Check that all applicable</p>
        <form class="pt-2 col-lg-4 float-start">
-        <input type="checkbox" id="ACUTE MYOCARDIAL INFARCTION" name="No significant surgical history" value="No significant surgical history" style="float: left;">
-        <label   style=" padding-left: 5px; float: left; line-height:25px; font-size: 14px; font-size: 13px;">ACUTE MYOCARDIAL INFARCTION</label><br>
+        <input type="checkbox"  style="float: left;">
+        <label   style=" padding-left: 5px; float: left; line-height:15px; font-size: 14px; font-size: 13px;">ACUTE MYOCARDIAL INFARCTION</label><br>
 
     </form>
      <form class="pt-2 col-lg-4 float-start">
-        <input type="checkbox" id="No significant surgical history" name="No significant surgical history" value="No significant surgical history" style="float: left;">
+        <input type="checkbox"    style="float: left;">
         <label   class="chekbox-text">ASTHMA</label><br>
 
     </form>
      <form class="pt-2 col-lg-4 float-start">
-        <input type="checkbox" id="No significant surgical history" name="No significant surgical history" value="No significant surgical history" style="float: left;">
+        <input type="checkbox"  style="float: left;">
         <label   class="chekbox-text">HYPERTENSION</label><br>
 
     </form>
     <input type="text" class="form-control my-5" placeholder=" Other" required="">
       </div>
 
-      <div class="content c5">
+      <div class="content c5 table-scrool">
         <h3 class="page-title">Review of Systems</h3>
          <p class="text-danger"> Note : Check that all applicable</p>
        <div class="pt-2">
          <div class="col-lg-4  float-start">
             <div class="col-lg-2 float-start p-0">
-                <input type="radio" id="ACUTE MYOCARDIAL INFARCTION" style="float: left;">
+                <input type="radio"   style="float: left;">
         <label   style=" padding-left: 5px; float: left; line-height:25px; font-size: 14px; font-size: 13px;">Y</label><br>
 
             </div>
             <div class="col-lg-2 float-start p-0">
-                 <input type="radio" id="ACUTE MYOCARDIAL INFARCTION" style="float: left;">
+                 <input type="radio"   style="float: left;">
         <label   style=" padding-left: 5px; float: left; line-height:25px; font-size: 14px; font-size: 13px;">N</label><br>
 
             </div>
          </div>
             <div class="col-lg-4 float-start">
             <div class="col-lg-2 float-start p-0">
-                <input type="radio" id="ACUTE MYOCARDIAL INFARCTION" style="float: left;">
+                <input type="radio"   style="float: left;">
         <label   style=" padding-left: 5px; float: left; line-height:25px; font-size: 14px; font-size: 13px;">Y</label><br>
 
             </div>
             <div class="col-lg-2 float-start p-0">
-                 <input type="radio" id="ACUTE MYOCARDIAL INFARCTION" style="float: left;">
+                 <input type="radio"   style="float: left;">
         <label   style=" padding-left: 5px; float: left; line-height:25px; font-size: 14px; font-size: 13px;">N</label><br>
 
             </div>
          </div>
             <div class="col-lg-4 float-start">
             <div class="col-lg-2 float-start p-0">
-                <input type="radio" id="ACUTE MYOCARDIAL INFARCTION" style="float: left;">
+                <input type="radio"   style="float: left;">
         <label   style=" padding-left: 5px; float: left; line-height:25px; font-size: 14px; font-size: 13px;">Y</label><br>
 
             </div>
             <div class="col-lg-2 float-start p-0">
-                 <input type="radio" id="ACUTE MYOCARDIAL INFARCTION" style="float: left;">
+                 <input type="radio"   style="float: left;">
         <label   style=" padding-left: 5px; float: left; line-height:25px; font-size: 14px; font-size: 13px;">N</label><br>
 
             </div>
@@ -342,7 +347,7 @@ Medical Questionnaire
          </div>
       </div>
 
-      <div class="content c6">
+      <div class="content c6 table-scrool">
         <h3 class="page-title">Current Medication</h3>
          <form class="pt-1">
       
@@ -351,12 +356,12 @@ Medical Questionnaire
     </form>
       </div>
 
-         <div class="content c7">
+         <div class="content c7 table-scrool">
         <h3 class="page-title">Allergies </h3>
                 <p class="text-danger">Note : Check that all applicable</p>
        <form class="pt-2 col-lg-4 float-start">
         
-        <label   style=" padding-left: 5px; float: left; line-height:25px; font-size: 14px; font-size: 13px;">Allergies</label>
+        <label   style=" padding-left: 5px; float: left; line-height:15px; font-size: 14px; font-size: 13px;">Allergies</label>
 
     </form>
      <form class="pt-2 col-lg-4 float-start">
@@ -367,7 +372,7 @@ Medical Questionnaire
    
     <input type="text" class="form-control my-5" placeholder=" Other" required="">
       </div>
-      <div class="content c8">
+      <div class="content c8 table-scrool">
         <h3 class="page-title">Summary</h3>
         <div class="container ">
             <div class="row ">
@@ -453,23 +458,23 @@ Smoking Status
                 </h6>
 <div class="col-lg-12  float-start">
             <div class="col-lg-2 float-start p-0">
-                <input type="radio" id="ACUTE MYOCARDIAL INFARCTION" style="float: left;">
-        <label style=" padding-left: 5px; float: left; line-height:25px; font-size: 14px; font-size: 13px;">Yes</label><br>
+                <input type="radio"   style="float: left;">
+        <label style=" padding-left: 5px; float: left; line-height:15px; font-size: 14px; font-size: 13px;">Yes</label><br>
 
             </div>
             <div class="col-lg-2 float-start p-0">
-                 <input type="radio" id="ACUTE MYOCARDIAL INFARCTION" style="float: left;">
-        <label style=" padding-left: 5px; float: left; line-height:25px; font-size: 14px; font-size: 13px;">No</label><br>
+                 <input type="radio"   style="float: left;">
+        <label style=" padding-left: 5px; float: left; line-height:15px; font-size: 14px; font-size: 13px;">No</label><br>
 
             </div>
             <div class="col-lg-3 float-start p-0">
-                 <input type="radio" id="ACUTE MYOCARDIAL INFARCTION" style="float: left;">
-        <label style=" padding-left: 5px; float: left; line-height:25px; font-size: 14px; font-size: 13px;">Former</label><br>
+                 <input type="radio"   style="float: left;">
+        <label style=" padding-left: 5px; float: left; line-height:15px; font-size: 14px; font-size: 13px;">Former</label><br>
 
             </div>
             <div class="col-lg-4 float-start p-0">
-                 <input type="radio" id="ACUTE MYOCARDIAL INFARCTION" style="float: left;">
-        <label style=" padding-left: 5px; float: left; line-height:25px; font-size: 14px; font-size: 13px;">Refused to Answer
+                 <input type="radio"   style="float: left;">
+        <label style=" padding-left: 5px; float: left; line-height:15px; font-size: 14px; font-size: 13px;">Refused to Answer
 </label><br>
 
             </div>
@@ -480,23 +485,23 @@ Smoking Status
                 </h6>
 <div class="col-lg-12  float-start">
             <div class="col-lg-2 float-start p-0">
-                <input type="radio" id="ACUTE MYOCARDIAL INFARCTION" style="float: left;">
-        <label style=" padding-left: 5px; float: left; line-height:25px; font-size: 14px; font-size: 13px;">Yes</label><br>
+                <input type="radio"   style="float: left;">
+        <label style=" padding-left: 5px; float: left; line-height:15px; font-size: 14px; font-size: 13px;">Yes</label><br>
 
             </div>
             <div class="col-lg-2 float-start p-0">
-                 <input type="radio" id="ACUTE MYOCARDIAL INFARCTION" style="float: left;">
-        <label style=" padding-left: 5px; float: left; line-height:25px; font-size: 14px; font-size: 13px;">No</label><br>
+                 <input type="radio"   style="float: left;">
+        <label style=" padding-left: 5px; float: left; line-height:15px; font-size: 14px; font-size: 13px;">No</label><br>
 
             </div>
             <div class="col-lg-3 float-start p-0">
-                 <input type="radio" id="ACUTE MYOCARDIAL INFARCTION" style="float: left;">
-        <label style=" padding-left: 5px; float: left; line-height:25px; font-size: 14px; font-size: 13px;">Former</label><br>
+                 <input type="radio"   style="float: left;">
+        <label style=" padding-left: 5px; float: left; line-height:15px; font-size: 14px; font-size: 13px;">Former</label><br>
 
             </div>
             <div class="col-lg-4 float-start p-0">
-                 <input type="radio" id="ACUTE MYOCARDIAL INFARCTION" style="float: left;">
-        <label style=" padding-left: 5px; float: left; line-height:25px; font-size: 14px; font-size: 13px;">Refused to Answer
+                 <input type="radio"   style="float: left;">
+        <label style=" padding-left: 5px; float: left; line-height:15px; font-size: 14px; font-size: 13px;">Refused to Answer
 </label><br>
 
             </div>
@@ -512,18 +517,18 @@ Smoking Status
                 </h5>
 <div class="col-lg-12  float-start">
             <div class="col-lg-2 float-start p-0">
-                <input type="radio" id="ACUTE MYOCARDIAL INFARCTION" style="float: left;">
-        <label style=" padding-left: 5px; float: left; line-height:25px; font-size: 14px; font-size: 13px;">Yes</label><br>
+                <input type="radio"   style="float: left;">
+        <label style=" padding-left: 5px; float: left; line-height:15px; font-size: 14px; font-size: 13px;">Yes</label><br>
 
             </div>
             <div class="col-lg-2 float-start p-0">
-                 <input type="radio" id="ACUTE MYOCARDIAL INFARCTION" style="float: left;">
-        <label style=" padding-left: 5px; float: left; line-height:25px; font-size: 14px; font-size: 13px;">No</label><br>
+                 <input type="radio"   style="float: left;">
+        <label style=" padding-left: 5px; float: left; line-height:15px; font-size: 14px; font-size: 13px;">No</label><br>
 
             </div>
             <div class="col-lg-8 float-start p-0">
-                 <input type="radio" id="ACUTE MYOCARDIAL INFARCTION" style="float: left;">
-        <label style=" padding-left: 5px; float: left; line-height:25px; font-size: 14px; font-size: 13px;">Refused to Answer	 </label><br>
+                 <input type="radio"   style="float: left;">
+        <label style=" padding-left: 5px; float: left; line-height:15px; font-size: 14px; font-size: 13px;">Refused to Answer	 </label><br>
 
             </div>
            
@@ -538,7 +543,7 @@ Smoking Status
         </div>
         
   </div>
-      <div class="content c9">
+      <div class="content c9 table-scrool">
           <h3 class="page-title">Family History</h3>
 
         <div class="container p-2">
@@ -640,7 +645,7 @@ Smoking Status
 <input type="text" class="form-control my-3" placeholder=" Other" required="">
 
     </div>
-     <div class="content c10">
+     <div class="content c10 table-scrool">
           <h3 class="page-title">Summary</h3>
 
         <div class="container p-0">
