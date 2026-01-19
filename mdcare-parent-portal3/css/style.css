@@ -1281,6 +1281,7 @@ border-left: solid 1px #ccc;
 
 
 /* records page css end */
+.fs-15{ font-size: 15px !important;}
 #printArea {
 border: 1px solid #ccc;
 padding: 15px;
@@ -1306,7 +1307,7 @@ font-weight: 600;
 .header-right-top .fa-2x{ font-size: 16px;}
 .sticky-top .header-right-top{ display: none !important;}
 .table>:not(:last-child)>:last-child>*{ border-bottom: none;}
-
+.form-select{ font-size: 14px !important;}
 
 
 
