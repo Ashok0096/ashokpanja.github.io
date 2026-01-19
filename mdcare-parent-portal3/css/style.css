@@ -1265,6 +1265,19 @@ border-left: solid 1px #ccc;
     display: none;
 }
 
+.results-popup-main  tr td:first-child{
+    border-left: 1px solid #dee2e6;
+}
+.results-popup-main  .tag {
+ border-radius: 0px;
+    margin-bottom: 3px !important;
+}
+.results-popup-main .card{ padding:5px; }
+.results-popup-main .schedule-card{ box-shadow: none;}
+
+
+
+
 
 
 /* records page css end */
@@ -1293,6 +1306,52 @@ font-weight: 600;
 .header-right-top .fa-2x{ font-size: 16px;}
 .sticky-top .header-right-top{ display: none !important;}
 .table>:not(:last-child)>:last-child>*{ border-bottom: none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
