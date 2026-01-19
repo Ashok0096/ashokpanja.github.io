@@ -1274,7 +1274,7 @@ border-left: solid 1px #ccc;
 }
 .results-popup-main .card{ padding:5px; }
 .results-popup-main .schedule-card{ box-shadow: none;}
-
+.f-td-border-left td{ border-left: solid 1px #ccc !important;}
 
 
 
