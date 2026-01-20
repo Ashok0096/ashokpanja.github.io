@@ -1759,39 +1759,12 @@ time {
 	color: #fff !important;
 }
 
-
-
-
-
-
-
-
-
-
-.mdcare-ai-s-t .main-mdcare-ai-s
-{
-   
-	
-}
-
-.mdcare-ai-s-t .card
-{
+.mdcare-ai-s-t .card{
     position: relative;
     width: 98%;
     height: 180px;
     background: #fff;
     transition: 0.5s;
-}
-.mdcare-ai-s-t .card:hover
-{
-    /* height: 450px; */
-}
-.mdcare-ai-s-t .card .lines
-{
-    position: absolute;
-    inset: 0;
-    background: #292966;
-    overflow: hidden;
 }
 .mdcare-ai-s-t .card .lines
 {
@@ -1812,12 +1785,10 @@ time {
     animation: animate 4s linear infinite;
     animation-play-state: paused;
 }
-.mdcare-ai-s-t .card:hover .lines::before
-{
+.mdcare-ai-s-t .card:hover .lines::before{
     animation-play-state: running;
 }
-@keyframes animate
-{
+@keyframes animate{
     0%
     {
         transform: translate(-50%,-50%) rotate(0deg);
@@ -1827,8 +1798,7 @@ time {
         transform: translate(-50%,-50%) rotate(360deg);
     }
 }
-.mdcare-ai-s-t .card .lines::after
-{
+.mdcare-ai-s-t .card .lines::after{
     content: '';
     position: absolute;
     inset: 3px;
@@ -1851,12 +1821,12 @@ time {
     align-items: center;
 }
 .mdcare-ai-s-t .card .imgBx
-{border-radius: 80px;
+{    border-radius: 80px;
     position: absolute;
-    top: -60px;
+    top: -50px;
     left: 50%;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     transform: translateX(-50%);
     background: #f8941e;
     transition: 0.5s;
@@ -1917,7 +1887,7 @@ time {
     /* filter: invert(1); */
     opacity: 0.5s;
     transition: 0.5s;
-	    font-size: 66px;
+	    font-size: 46px;
 }
 .mdcare-ai-s-t .card:hover .imgBx img
 {
@@ -2724,7 +2694,7 @@ p.name-descripeion {
 /*// Border Animation END//*/
 
 .card-content p:first-of-type {
-	min-height: 60px;
+	min-height: 70px;
 	margin-bottom: 0px;
 }
 
