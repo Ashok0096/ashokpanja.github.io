@@ -1552,8 +1552,8 @@ a.btn.btn-primary.btn-lg-square.back-to-top {
     FONT-SIZE: 12px !important;
 }
 .slider-dwone-s .rounded-top {
-    border-top-left-radius: 30px !important;
-    border-top-right-radius: 30px !important;
+    /* border-top-left-radius: 30px !important;
+    border-top-right-radius: 30px !important; */
 }
 .top-header {
     border-bottom: solid 1px #f1f1f1;
@@ -1755,7 +1755,9 @@ time {
     font-size: 0.8rem !important;
 }
 
-
+.breadcrumb-item + .breadcrumb-item::before{ 
+	color: #fff !important;
+}
 
 
 
