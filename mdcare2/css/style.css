@@ -2118,7 +2118,12 @@ time {
 .home-card-s .w-50 {
     width: 46% !important;
 }
-
+.home-card-s   .shadow{
+	 transition: transform .3s; /* Animation */
+}
+.home-card-s   .shadow:hover {
+  transform: scale(1.04); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
 
 
 
