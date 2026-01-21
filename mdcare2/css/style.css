@@ -8,7 +8,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 	font-family: "Montserrat", sans-serif;
 }
 
-p { font-size: 14px;color: #222; text-align: justify; /* line-height: 30px; */ font-weight: 500; margin-bottom: 5px;}
+p { font-size: 14px;color: #222; text-align: justify;  line-height: 30px;  font-weight: 500; margin-bottom: 5px;}
 body {font-family: "Montserrat", sans-serif;font-size: 14px;color: #222;text-align: justify;font-weight: 500;}
 #spinner {opacity: 0;visibility: hidden;transition: opacity .5s ease-out, visibility 0s linear .5s;z-index: 99999;}
 #spinner.show { transition: opacity .5s ease-out, visibility 0s linear 0s; visibility: visible; opacity: 1;}
@@ -1990,7 +1990,7 @@ time {
   background-color: #008fdc ;
 }
 .four-box-design .card-body{
-	padding: 5px;;
+	padding: 5px 10px;
 	position: relative;
     display: flex;
     flex-direction: column;
@@ -2000,7 +2000,7 @@ time {
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, .125);
     border-radius: .25rem;
-	min-height:345px;
+	
 }
 
 .four-box-design .card {
@@ -2019,14 +2019,14 @@ time {
 }
 
 .four-box-design .underline {
-  position: relative;
+  position: relative;     padding-top: 5px;
 }
 
 .four-box-design .underline:after {
   position: absolute;
   content: "";
   height: 2px;
-  bottom: -12px;
+  bottom: 0px;
   margin: 0 auto;
   left: 0;
   right: 0;
@@ -2040,7 +2040,7 @@ time {
  }
  .four-box-design  .btn.btn-primary {
     box-shadow: inset 300px 0 0 0 var(--bs-light) !important;
-    color: var(--bs-primary) !important;
+    color: var(--bs-primary) !important;     font-size: 12px;
 }
 
 .four-box-design .btn:hover {
@@ -2112,8 +2112,12 @@ time {
   color: #292966 ;
 }
 .services-mdcare-ai .card:hover h3{ color: #fff; z-index: 999; }
-
-
+.shadow {
+    box-shadow: 0 0.5px 20px rgba(0, 0, 0, 0.1) !important;
+}
+.home-card-s .w-50 {
+    width: 46% !important;
+}
 
 
 
@@ -2316,7 +2320,7 @@ nav.navbar.navbar-expand-lg {
 
 .Features-page-list p i {
 	position: absolute;
-	top: 14%;
+	top: 8px;
 	left: 0;
 }
 
