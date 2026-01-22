@@ -3,13 +3,14 @@
 	src: url('../font-awesome/fonts/fontawesome-webfont.woff') format('woff2'),
 		url('../font-awesome/fonts/fontawesome-webfont.woff') format('woff');
 }
+@import url('https://fonts.googleapis.com/css2?family=TASA+Orbiter:wght@400..800&display=swap');
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
-	font-family: "Montserrat", sans-serif;
+	font-family: "TASA Orbiter", sans-serif;
 }
 
-p { font-size: 14px;color: #222; text-align: justify;  line-height: 30px;  font-weight: 500; margin-bottom: 5px;}
-body {font-family: "Montserrat", sans-serif;font-size: 14px;color: #222;text-align: justify;font-weight: 500;}
+p { font-size: 18px;color: #222; text-align: justify;  line-height: 30px;  font-weight: 400; margin-bottom: 5px;}
+body {font-family: "TASA Orbiter", sans-serif;font-size: 14px;color: #222;text-align: justify;font-weight: 500;  }
 #spinner {opacity: 0;visibility: hidden;transition: opacity .5s ease-out, visibility 0s linear .5s;z-index: 99999;}
 #spinner.show { transition: opacity .5s ease-out, visibility 0s linear 0s; visibility: visible; opacity: 1;}
 /*** Spinner End ***/
@@ -123,7 +124,7 @@ body {font-family: "Montserrat", sans-serif;font-size: 14px;color: #222;text-ali
 
 /*** Navbar ***/
 .navbar-light .navbar-nav .nav-link {
-	font-family: "Montserrat", sans-serif;
+	font-family: "TASA Orbiter", sans-serif;
 	position: relative;
 	margin-right: 1px;
 	/* padding: 35px 20px; */
@@ -988,7 +989,7 @@ a.btn.btn-primary.btn-lg-square.back-to-top {
 }
 
 .Download-s .available-for-btn {
-	font-family: "Montserrat", sans-serif;
+	font-family: "TASA Orbiter", sans-serif;
 	--animation: 2s ease-in-out infinite;
 	display: flex;
 	align-items: center;
@@ -1142,7 +1143,7 @@ a.btn.btn-primary.btn-lg-square.back-to-top {
 .list-design-two .olcards {
 	list-style: none;
 	counter-reset: cardCount;
-	font-family: "Montserrat", sans-serif;
+	font-family: "TASA Orbiter", sans-serif;
 	display: flex;
 	flex-direction: column;
 	--cardsGap: 1rem;
@@ -1568,7 +1569,7 @@ a.btn.btn-primary.btn-lg-square.back-to-top {
   position: relative;
   width: 6px;
   margin: 0 auto;
-  padding-top: 15%;
+  padding-top: 0%;
   background: #f8941e;
 }
 
@@ -2033,7 +2034,7 @@ time {
   width: 22%;
   background: #aaaaac;
 }
-.four-box-design .card-text { text-align: justify; min-height: 183px;}
+.four-box-design .card-text { text-align: justify; min-height: 250px;}
 .four-box-design a{    position: absolute;
     right: 10px;
     bottom: 10px;
@@ -2072,30 +2073,14 @@ time {
   color: #292966 ;
 }
 
-.services-mdcare-ai .card > .anim-layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 0;
-  background-color: #292966 ;
-  transition: height 0.3s ease;
-}
 
-.services-mdcare-ai .card:hover .anim-layer {
-  height: 100%;
-}
 
 .services-mdcare-ai .card:hover h2, .services-mdcare-ai .card:hover i {
   position: relative;
   z-index: 1;
   color: var(--text-color-white);
 }
-.services-mdcare-ai .card:hover p {
-  position: relative;
-  z-index: 1;
-  color: var(--text-color-white);
-}
+
 .services-mdcare-ai .card i {
  background-color: #00aeef;
     width: 80px;
@@ -2111,7 +2096,7 @@ time {
 .services-mdcare-ai .card:hover i {
   color: #292966 ;
 }
-.services-mdcare-ai .card:hover h3{ color: #fff; z-index: 999; }
+
 .shadow {
     box-shadow: 0 0.5px 20px rgba(0, 0, 0, 0.1) !important;
 }
@@ -2124,6 +2109,95 @@ time {
 .home-card-s   .shadow:hover {
   transform: scale(1.04); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
+.services-mdcare-ai .card{ min-height: 335px;}
+
+/* slide dwone section css start  */
+.top-service-area {
+  
+    padding: 0 0 60px; position: relative; z-index: 99;
+} 
+.top-service {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 9px 8px 15px -1px rgba(0, 0, 0, 0.25);
+    margin-top: -53px;
+}
+.single-top-service {
+    padding: 0 0 41px;
+    position: relative;
+    text-align: center;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.single-top-service::before {
+    background: #008fdc  none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 3px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    width: 31px;
+}
+.sts-img {
+    margin-bottom: 7px;
+}
+.sts-img-box {
+    border: 15px solid transparent;
+    border-radius: 100px;
+    height: 95px;
+    line-height: 68px;
+    margin: auto;
+    position: relative;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    width: 95px;
+}
+.single-top-service:hover {
+    background: #e8e8e8 none repeat scroll 0 0;
+    border-radius: 5px;
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transform: scale(1.15);
+}
+.single-top-service:hover .sts-img-box {
+    background: #fff none repeat scroll 0 0;
+    border: 15px solid #e8e8e8;
+    box-shadow: 1px 2px 5px -1px rgba(0, 0, 0, 0.15);
+    -webkit-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -o-transform: translateY(-30px);
+    transform: translateY(-30px);
+}
+
+.sts-img-box {
+    border: 15px solid transparent;
+    border-radius: 100px;
+    height: 95px;
+    line-height: 68px;
+    margin: auto;
+    position: relative;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    width: 95px;
+}
+
+
+/* slide dwone section css End  */
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2323,15 +2397,19 @@ nav.navbar.navbar-expand-lg {
 	padding-left: 10px;
 }
 
-.Features-page-list p i {
+.Features-page-list p i , .meaningful-use p i {
 	position: absolute;
 	top: 8px;
-	left: 0;
+	left: 0;     display: none;
 }
 
-.Features-page-list p {
-	padding-left: 22px;
+.Features-page-list p , .meaningful-use p {
+    transition: transform .3s;
+    box-shadow: 0 0.5px 20px rgba(0, 0, 0, 0.1) !important;
+    padding: 10px;
+     
 }
+.meaningful-use p { float: left; width: 100%;}
 
 .section-title::before {
 	position: absolute;
@@ -2410,7 +2488,7 @@ p.name-descripeion {
 }
 
 .header-carousel h1 {
-	font-family: "Figtree", sans-serif;
+	font-family: "TASA Orbiter", sans-serif;
 }
 
 
@@ -2471,7 +2549,7 @@ p.name-descripeion {
 	margin: 0;
 	text-align: center;
 	margin-top: 30px;
-	font-family: "Montserrat", sans-serif;
+	font-family: "TASA Orbiter", sans-serif;
 	color: white;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -2488,7 +2566,7 @@ p.name-descripeion {
 	text-align: justify;
 	margin-top: 20px;
 	color: white;
-	font-family: "Montserrat", sans-serif;
+	font-family: "TASA Orbiter", sans-serif;
 	letter-spacing: 2px;
 	opacity: 0;
 	max-height: 0;
@@ -3719,3 +3797,5 @@ button.available-for-btn.active .dot {
 defs {
 	display: none;
 }
+.shadow-none{ box-shadow: none !important;}
+
