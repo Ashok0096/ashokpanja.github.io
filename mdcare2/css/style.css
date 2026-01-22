@@ -2050,7 +2050,7 @@ time {
     border-color: #292966 !important;
 	color: #fff !important;
 }
-:root {
+/* :root {
   --primary-color: #ff0000;
   --bg-grey: #f5f7f6;
   --bg-black: #201f1d;
@@ -2060,7 +2060,7 @@ time {
   --font-color: #676767;
   --heading-color: #343a40;
   --border-color: #dee2e6;
-}
+} */
 
 .services-mdcare-ai .card {
   position: relative;
