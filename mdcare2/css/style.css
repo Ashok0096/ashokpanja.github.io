@@ -1549,10 +1549,6 @@ a.btn.btn-primary.btn-lg-square.back-to-top {
     color: #fff;
     FONT-SIZE: 12px !important;
 }
-.slider-dwone-s .rounded-top {
-    /* border-top-left-radius: 30px !important;
-    border-top-right-radius: 30px !important; */
-}
 .top-header {
     border-bottom: solid 1px #f1f1f1;
 }
@@ -1610,7 +1606,7 @@ a.btn.btn-primary.btn-lg-square.back-to-top {
 .mdcare-emr-core-modules .timeline ul li:nth-child(odd) div::before {
   left: -15px;
   border-width: 8px 16px 8px 0;
-  border-color: transparent #00aeef transparent transparent;
+  border-color: transparent #f3f3f3 transparent transparent;
 }
 
 .mdcare-emr-core-modules .timeline ul li:nth-child(even) div {
@@ -1620,7 +1616,7 @@ a.btn.btn-primary.btn-lg-square.back-to-top {
 .mdcare-emr-core-modules .timeline ul li:nth-child(even) div::before {
   right: -15px;
   border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent #292966;;
+  border-color: transparent transparent transparent #f3f3f3;
 }
 
 time {
@@ -1644,11 +1640,11 @@ time {
 }
 
 .mdcare-emr-core-modules .timeline ul li:nth-child(odd) div {
-  transform: translate3d(200px, 0, 0); background: #00aeef; color: #fff; width: 605px;
+  transform: translate3d(200px, 0, 0); background: #f3f3f3; color: #fff; width: 605px;
 }
 
 .mdcare-emr-core-modules .timeline ul li:nth-child(even) div {
-  transform: translate3d(-200px, 0, 0); background: #292966; color: #fff; width: 605px;
+  transform: translate3d(-200px, 0, 0); background: #f3f3f3; color: #fff; width: 605px;
 }
 
 .mdcare-emr-core-modules .timeline ul li.in-view div {
@@ -1763,16 +1759,18 @@ time {
     height: 180px;
     background: #fff;
     transition: 0.5s;
+	    border: none !important;
 }
+
 .mdcare-ai-s-t .card .lines
 {
     position: absolute;
     inset: 0;
-    background: #292966;
-    overflow: hidden;
+    background: #fff;
+    /* overflow: hidden; */
 }
-.mdcare-ai-s-t .card .lines::before
-{
+
+/* .mdcare-ai-s-t .card .lines::before{
     content: '';
     position: absolute;
     top: 50%;
@@ -1782,11 +1780,11 @@ time {
     background:linear-gradient(transparent, #f8931e, #45f3ff, #45f3ff, transparent);
     animation: animate 4s linear infinite;
     animation-play-state: paused;
-}
+} */
 .mdcare-ai-s-t .card:hover .lines::before{
     animation-play-state: running;
 }
-@keyframes animate{
+/* @keyframes animate{
     0%
     {
         transform: translate(-50%,-50%) rotate(0deg);
@@ -1795,29 +1793,14 @@ time {
     {
         transform: translate(-50%,-50%) rotate(360deg);
     }
-}
-.mdcare-ai-s-t .card .lines::after{
+} */
+/* .mdcare-ai-s-t .card .lines::after{
     content: '';
     position: absolute;
     inset: 3px;
     background: #ccdfe3;
-}
-.mdcare-ai-s-t .card .imgBx
-{
-    position: absolute;
-    top: -60px;
-    left: 50%;
-    width: 150px;
-    height: 150px;
-    transform: translateX(-50%);
-    background: #000;
-    transition: 0.5s;
-    z-index: 10;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+} */
+
 .mdcare-ai-s-t .card .imgBx
 {    border-radius: 80px;
     position: absolute;
@@ -1826,7 +1809,7 @@ time {
     width: 100px;
     height: 100px;
     transform: translateX(-50%);
-    background: #f8941e;
+    background: #292966;
     transition: 0.5s;
     z-index: 10;
     overflow: hidden;
@@ -1840,7 +1823,7 @@ time {
     width: 200px;
     height: 200px;
 } */
-.mdcare-ai-s-t .card .imgBx::before
+/* .mdcare-ai-s-t .card .imgBx::before
 {
     content: '';
     position: absolute;
@@ -1852,8 +1835,8 @@ time {
     background: linear-gradient(transparent,#292966 ,#292966 ,#292966 ,transparent);
     animation: animate2 6s linear infinite;
     animation-play-state: paused;
-}
-@keyframes animate2
+} */
+/* @keyframes animate2
 {
     0%
     {
@@ -1863,8 +1846,8 @@ time {
     {
     transform: translate(-50%,-50%)rotate(360deg);
     }
-}
-.mdcare-ai-s-t .card .imgBx::after
+} */
+/* .mdcare-ai-s-t .card .imgBx::after
 {
     content: '';
     position: absolute;
@@ -1876,7 +1859,7 @@ time {
     position: absolute;
     inset: 3px;
     background: #008fdc ;
-}
+} */
 .mdcare-ai-s-t .card .imgBx img , .mdcare-ai-s-t .card .imgBx i
 {
     position: absolute;
@@ -1899,7 +1882,8 @@ time {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    overflow: hidden;
+	border: solid 1px #ccc;
+    /* overflow: hidden; */
 }
 /* .card .content
 {
@@ -1915,7 +1899,7 @@ time {
     text-align: center;
     width: 100%;
     transition: 0.5s;
-    /* transform: translateY(145px); */
+    transform: translateY(20px); 
 	
 }
 .mdcare-ai-s-t .card:hover .content .details
@@ -2188,7 +2172,10 @@ time {
 
 
 /* slide dwone section css End  */
-
+.testimonial-content {
+    height: 180px;
+    overflow-y: auto;
+}
 
 
 
