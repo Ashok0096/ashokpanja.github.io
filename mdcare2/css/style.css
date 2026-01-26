@@ -2082,7 +2082,7 @@ time {
 .home-card-s   .shadow:hover {
   transform: scale(1.04); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
-.services-mdcare-ai .card{ min-height: 335px;}
+.services-mdcare-ai .card{ min-height: 345px;}
 
 /* slide dwone section css start  */
 .top-service-area {
@@ -3110,6 +3110,8 @@ button.available-for-btn.active .dot {
 .list-design-two h2 , .services-mdcare-ai h3{ text-align: center;}
 .Features-page-list p { text-align: left !important;}
 .four-box-design .card-body{     margin: 10px 0px;}
+.top-service{ margin-top: 15px;}
+.top-service-area{z-index: -1;}
 }
 
 /* Small devices (landscape phones, 576px and up) */
