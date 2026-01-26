@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=TASA+Orbiter:wght@400..800&display=swap');
 @font-face {
 	font-family: 'FontAwesome';
 	src: url('../font-awesome/fonts/fontawesome-webfont.woff') format('woff2'),
 		url('../font-awesome/fonts/fontawesome-webfont.woff') format('woff');
 }
-@import url('https://fonts.googleapis.com/css2?family=TASA+Orbiter:wght@400..800&display=swap');
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 	font-family: "TASA Orbiter", sans-serif;
@@ -1552,14 +1552,11 @@ a.btn.btn-primary.btn-lg-square.back-to-top {
 .top-header {
     border-bottom: solid 1px #f1f1f1;
 }
-
 /* MDCARE EMR Core Modules start –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
 .mdcare-emr-core-modules .timeline ul {
   background: #fff; padding: 0px;
   
 }
-
 .mdcare-emr-core-modules .timeline ul li {
   list-style-type: none;
   position: relative;
@@ -1568,7 +1565,6 @@ a.btn.btn-primary.btn-lg-square.back-to-top {
   padding-top: 0%;
   background: #f8941e;
 }
-
 .mdcare-emr-core-modules .timeline ul li::after {
   content: "";
   position: absolute;
@@ -1581,7 +1577,6 @@ a.btn.btn-primary.btn-lg-square.back-to-top {
   background: inherit;
   z-index: 1;
 }
-
 .mdcare-emr-core-modules .timeline ul li div {
   position: relative;
   bottom: 0;
@@ -1589,7 +1584,6 @@ a.btn.btn-primary.btn-lg-square.back-to-top {
   padding: 15px;
   background: #292966;
 }
-
 .mdcare-emr-core-modules .timeline ul li div::before {
   content: "";
   position: absolute;
@@ -1598,30 +1592,25 @@ a.btn.btn-primary.btn-lg-square.back-to-top {
   height: 0;
   border-style: solid;
 }
-
 .mdcare-emr-core-modules .timeline ul li:nth-child(odd) div {
   left: 45px;
 }
-
 .mdcare-emr-core-modules .timeline ul li:nth-child(odd) div::before {
   left: -15px;
   border-width: 8px 16px 8px 0;
   border-color: transparent #f3f3f3 transparent transparent;
 }
-
 .mdcare-emr-core-modules .timeline ul li:nth-child(even) div {
   left: -645px;
 }
-
 .mdcare-emr-core-modules .timeline ul li:nth-child(even) div::before {
   right: -15px;
   border-width: 8px 0 8px 16px;
   border-color: transparent transparent transparent #f3f3f3;
 }
-
 time {
   display: block;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
   margin-bottom: 8px;
 }
