@@ -2226,6 +2226,7 @@ time {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  display: none;
 }
 
 .way-mdcare-section .icon-circle i {
