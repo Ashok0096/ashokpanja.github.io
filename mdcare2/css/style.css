@@ -9,7 +9,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 	font-family: "TASA Orbiter", sans-serif;
 }
 
-p { font-size: 18px;color: #222; text-align: justify;  line-height: 30px;  font-weight: 400; margin-bottom: 5px;}
+p { font-size: 18px;color: #5c5c5c; text-align: justify;  line-height: 30px;  font-weight: 400; margin-bottom: 5px;}
 body {font-family: "TASA Orbiter", sans-serif;font-size: 14px;color: #222;text-align: justify;font-weight: 500;  }
 #spinner {opacity: 0;visibility: hidden;transition: opacity .5s ease-out, visibility 0s linear .5s;z-index: 99999;}
 #spinner.show { transition: opacity .5s ease-out, visibility 0s linear 0s; visibility: visible; opacity: 1;}
@@ -2165,30 +2165,14 @@ time {
     height: 180px;
     overflow-y: auto;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.service-item {
+.Take-advantage-with-m .service-item {
     position: relative;
     height: 300px;
     padding: 0 30px;
     transition: .5s; 
 	box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
 }
-.service-item .service-icon {
+.Take-advantage-with-m .service-item .service-icon {
     margin-bottom: 30px;
     width: 60px;
     height: 60px;
@@ -2199,17 +2183,77 @@ time {
     border-radius: 2px;
     transform: rotate(-45deg);
 }
-.service-item .service-icon i {
+.Take-advantage-with-m .service-item .service-icon i {
     transform: rotate(45deg);
 	font-size: 24px;
 }
-.service-item a {
+.Take-advantage-with-m .service-item a {
    position: absolute;
     bottom: 10px;
 }
-.service-item h4 {
+.Take-advantage-with-m .service-item h4 {
     min-height: 35%;
 }
+
+
+.way-mdcare-section .features-section {
+  background-color: transparent;
+}
+
+.way-mdcare-section .feature-box {
+  background: #ffffff;
+  border-left: 4px solid #008fdc ;
+  border-radius: 10px;
+  padding: 20px 24px;
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.way-mdcare-section .feature-box:hover {
+  transform: translateX(5px);
+  box-shadow: 0 10px 25px rgba(13, 110, 253, 0.12);
+}
+
+.way-mdcare-section .icon-circle {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(13, 110, 253, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.way-mdcare-section .icon-circle i {
+  color: #008fdc ;
+  font-size: 20px;
+}
+
+.way-mdcare-section .feature-box h5 {
+  margin: 0 0 6px;
+  font-weight: 600;
+}
+
+.way-mdcare-section .feature-box p {
+  margin: 0;
+ 
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3216,7 +3260,7 @@ button.available-for-btn.active .dot {
 .Features-page-list p { text-align: left !important;}
 .four-box-design .card-body{     margin: 10px 0px;}
 .top-service{ margin-top: 15px;}
-.top-service-area{z-index: -1;}
+.top-service-area{z-index: 1;}
 .header-carousel .fs-3 { font-size: 12px !important; margin: 0px !important;}
 
 
