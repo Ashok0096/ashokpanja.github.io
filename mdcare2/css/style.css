@@ -2014,7 +2014,7 @@ time {
  }
  .four-box-design  .btn.btn-primary {
     box-shadow: inset 300px 0 0 0 var(--bs-light) !important;
-    color: var(--bs-primary) !important;     font-size: 14px;
+    color: var(--bs-primary) !important;     font-size: 14px; border-radius: 0px;
 }
 
 .four-box-design .btn:hover {
