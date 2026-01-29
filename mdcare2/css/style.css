@@ -1871,7 +1871,7 @@ time {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-	border: solid 1px #ccc;
+	border: solid 1px #dee2e6;
     /* overflow: hidden; */
 }
 /* .card .content
@@ -2779,7 +2779,7 @@ p.name-descripeion {
 	border-radius: 5px;
 	font-size: 18px;
 	font-weight: normal;
-	border: 1px solid #ccc;
+	border: 1px solid #dee2e6;
 	border-collapse: collapse;
 	width: 100%;
 	max-width: 100%;
@@ -2789,7 +2789,7 @@ p.name-descripeion {
 
 .table-main-cus .fl-table tbody tr td {
 
-	border-right: 1px solid #ccc;
+	border-right: 1px solid #dee2e6;
 	/* Add right border */
 }
 
@@ -2801,7 +2801,7 @@ p.name-descripeion {
 }
 
 .table-main-cus tr {
-	border-bottom: 1px #ccc solid;
+	border-bottom: 1px #dee2e6 solid;
 }
 
 .table-main-cus .fl-table td {
@@ -3167,7 +3167,7 @@ button.available-for-btn.active .dot {
 
 	div#navbarCollapse a {
 		padding: 10px;
-		border-bottom: 1px solid #ccc;
+		border-bottom: 1px solid #dee2e6;
 	}
 
 	.home-list {
@@ -3222,11 +3222,11 @@ button.available-for-btn.active .dot {
     border-radius: 19px;
     margin-right: 0px;
     position: relative;
-    top: -4px;
+    top: -2px;
     color: #fff;
     font-size: 5px !important;}
 	.slider-dwone-s .rounded-top{ 
-		    border: 1px solid #ccc;
+		    border: 1px solid #dee2e6;
     border-radius: 15px !important;
     margin-top: 10px;
 
@@ -3263,10 +3263,12 @@ button.available-for-btn.active .dot {
 .top-service{ margin-top: 15px;}
 .top-service-area{z-index: 1;}
 .header-carousel .fs-3 { font-size: 12px !important; margin: 0px !important;}
-
-
-
-
+.w-xs-50 { width: 50% !important;}
+.single-top-service::before{ width: 100%;}
+p{ text-align: left;}
+.Take-advantage-with-m .service-item h4{     min-height: 20%; margin: 0px;}
+.single-top-service:hover{ transform: scale(1);}
+.fs-3 { font-size: calc(1.2rem + 0.6vw) !important;}
 
 
 
@@ -3274,9 +3276,25 @@ button.available-for-btn.active .dot {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+.fs-3 {font-size: calc(1.2rem + 0.6vw) !important;}
+.w-sm-100{ width: 100% !important;}
+.single-top-service img {   height: 73px;}
+.single-top-service h3 { min-height: 80px;}
+.top-service{ box-shadow: none; }
+.border-l-sm{ border-left: solid 1px #dee2e6 ;}
+.way-mdcare-section .feature-box {
+   
+    box-shadow: 0 10px 25px rgba(13, 110, 253, 0.12);
+}
+
+
+.single-top-service::before{ width: 100%;}
+p{ text-align: left;}
+.Take-advantage-with-m .service-item h4{     min-height: 20%; margin: 0px;}
+.single-top-service:hover{ transform: scale(1);}
 .header-carousel .fs-3 {font-size: 12px !important;margin: 0px !important;}
 .top-service{ margin-top: 15px;}
-.top-service-area{z-index: -1;}
+.top-service-area{z-index: 1;}
 .four-box-design .card-body{     margin: 10px 0px;}
 .Features-page-list p { text-align: left !important;}
 .list-design-two h2 , .services-mdcare-ai h3{ text-align: center;}
@@ -3308,7 +3326,7 @@ button.available-for-btn.active .dot {
 }
 	.text-sm-right{ text-align: right !important;}
 	.slider-dwone-s .rounded-top{ 
-		    border: 1px solid #ccc;
+		    border: 1px solid #dee2e6;
     border-radius: 15px !important;
     margin-top: 10px;
 
@@ -3430,7 +3448,7 @@ button.available-for-btn.active .dot {
 
 	div#navbarCollapse a {
 		padding: 10px;
-		border-bottom: 1px solid #ccc;
+		border-bottom: 1px solid #dee2e6;
 	}
 
 	.header-carousel .owl-nav .owl-prev,
@@ -3480,6 +3498,24 @@ button.available-for-btn.active .dot {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+	    .top-service {
+        margin-top: 15px;
+    }
+	    .top-service-area {
+        z-index: 1;
+    }
+	    .single-top-service::before {
+        width: 100%;
+    }
+.w-md-80{ width: 80% !important;}
+.single-top-service h3 { min-height: 80px;}
+.top-service{ box-shadow: none; }
+.border-l-sm{ border-left: solid 1px #dee2e6 ;}
+.way-mdcare-section .feature-box {
+   
+    box-shadow: 0 10px 25px rgba(13, 110, 253, 0.12);
+}
+
 	.mdcare-emr-core-modules .timeline ul li:nth-child(odd) div , .mdcare-emr-core-modules .timeline ul li:nth-child(even) div{ width: 100%; left: 0px;}
 .mdcare-emr-core-modules .timeline ul li{ margin: 0px; width: 100%; padding-top: 10px; background: none;}
 .mdcare-emr-core-modules .timeline ul li:nth-child(odd) div::before , .mdcare-emr-core-modules .timeline ul li:nth-child(even) div::before , .mdcare-emr-core-modules .timeline ul li.in-view::after{ display: none;}
@@ -3506,7 +3542,7 @@ button.available-for-btn.active .dot {
 
 	div#navbarCollapse a {
 		padding: 10px;
-		border-bottom: 1px solid #ccc;
+		border-bottom: 1px solid #dee2e6;
 	}
 
 	.Download-s .available-for-btn {
