@@ -3269,13 +3269,14 @@ p{ text-align: left;}
 .Take-advantage-with-m .service-item h4{     min-height: 20%; margin: 0px;}
 .single-top-service:hover{ transform: scale(1);}
 .fs-3 { font-size: calc(1.2rem + 0.6vw) !important;}
-
+body{ text-align: left;}
 
 
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+	body{ text-align: left;}
 .fs-3 {font-size: calc(1.2rem + 0.6vw) !important;}
 .w-sm-100{ width: 100% !important;}
 .single-top-service img {   height: 73px;}
