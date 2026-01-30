@@ -9,8 +9,8 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 	font-family: "TASA Orbiter", sans-serif;
 }
 
-p { font-size: 18px;color: #5c5c5c; text-align: justify;  line-height: 30px;  font-weight: 400; margin-bottom: 5px;}
-body {font-family: "TASA Orbiter", sans-serif;font-size: 14px;color: #222;text-align: justify;font-weight: 500;  }
+p { font-size: 16px;color: #5c5c5c; text-align: justify;  line-height: 30px;  font-weight: 400; margin-bottom: 5px;}
+body {font-family: "TASA Orbiter", sans-serif;font-size: 16px;color: #222;text-align: justify;font-weight: 400;  }
 #spinner {opacity: 0;visibility: hidden;transition: opacity .5s ease-out, visibility 0s linear .5s;z-index: 99999;}
 #spinner.show { transition: opacity .5s ease-out, visibility 0s linear 0s; visibility: visible; opacity: 1;}
 /*** Spinner End ***/
@@ -778,7 +778,7 @@ font-weight: 600;
 
 /*** copyright end ***/
 .testimonial p {
-	font-size: 14px;
+	font-size: 16px;
 }
 
 .top-header .border-end {
@@ -2014,7 +2014,7 @@ time {
  }
  .four-box-design  .btn.btn-primary {
     box-shadow: inset 300px 0 0 0 var(--bs-light) !important;
-    color: var(--bs-primary) !important;     font-size: 14px; border-radius: 0px;
+    color: var(--bs-primary) !important;     font-size: 16px; border-radius: 0px;
 }
 
 .four-box-design .btn:hover {
@@ -2719,7 +2719,7 @@ p.name-descripeion {
 	bottom: 5%;
 	font-weight: bold;
 	margin: 0 auto;
-	font-size: 14px;
+	font-size: 16px;
 	text-align: justify;
 	margin-top: 20px;
 	color: white;
@@ -2756,7 +2756,7 @@ p.name-descripeion {
 	width: 100%;
 	text-align: left;
 	padding: 5px;
-	font-size: 14px;
+	font-size: 16px;
 }
 
 
@@ -3242,7 +3242,7 @@ button.available-for-btn.active .dot {
 	.header-carousel .header-carousel-item .carousel-caption { padding: 5% 0px 5% 5px; text-align: right;}
 	.position-xs-relative{ position: relative;}
 	.h-100px{ height: auto;}
-	.header-carousel h1{ width: 95%;  font-size: 14px;}
+	.header-carousel h1{ width: 95%;  font-size: 16px;}
 	.header-carousel .fs-2{
 		font-size: 12px !important;         text-align: left;
        
@@ -3275,7 +3275,7 @@ button.available-for-btn.active .dot {
     padding: 10% 10px;
 }
 .mdcare-ai-s-t .card{ top: 40px;;}
-.Download-s a{ font-size: 14px;}
+.Download-s a{ font-size: 16px;}
 .testimonial-carousel .owl-nav .owl-next {
     right: -50px;
 }
@@ -3291,23 +3291,23 @@ button.available-for-btn.active .dot {
 .list-design-two h2 , .services-mdcare-ai h3{ text-align: center;}
 .Features-page-list p { text-align: left !important;}
 .four-box-design .card-body{     margin: 10px 0px;}
-.top-service{ margin-top: 15px;}
+.top-service{ margin-top: 0px;}
 .top-service-area{z-index: 1;}
 .header-carousel .fs-3 { font-size: 12px !important; margin: 0px !important;}
 .w-xs-50 { width: 50% !important;}
 .single-top-service::before{ width: 100%;}
 p{ text-align: left;}
-.Take-advantage-with-m .service-item h4{     min-height: 20%; margin: 0px;}
+.Take-advantage-with-m .service-item h4{     min-height: 0px; margin: 0px;}
 .single-top-service:hover{ transform: scale(1);}
 .fs-3 { font-size: calc(1.2rem + 0.6vw) !important;}
 body{ text-align: left;}
-
-
+.dropdown-menu {padding:0px; border:none;border-radius: 0px; }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-	body{ text-align: left;}
+.dropdown-menu {padding:0px; border:none;border-radius: 0px; }
+body{ text-align: left;}
 .fs-3 {font-size: calc(1.2rem + 0.6vw) !important;}
 .w-sm-100{ width: 100% !important;}
 .single-top-service img {   height: 73px;}
@@ -3322,10 +3322,10 @@ body{ text-align: left;}
 
 .single-top-service::before{ width: 100%;}
 p{ text-align: left;}
-.Take-advantage-with-m .service-item h4{     min-height: 20%; margin: 0px;}
+.Take-advantage-with-m .service-item h4{     min-height: 0px; margin: 0px;}
 .single-top-service:hover{ transform: scale(1);}
 .header-carousel .fs-3 {font-size: 12px !important;margin: 0px !important;}
-.top-service{ margin-top: 15px;}
+.top-service{ margin-top: 0px;}
 .top-service-area{z-index: 1;}
 .four-box-design .card-body{     margin: 10px 0px;}
 .Features-page-list p { text-align: left !important;}
@@ -3343,7 +3343,7 @@ p{ text-align: left;}
     right: -50px;
 }
 .mdcare-ai-s-t .card{ top: 40px;;}
-.Download-s a{ font-size: 14px;}
+.Download-s a{ font-size: 16px;}
 	 .mdcare-ai-s-t .main-mdcare-ai-s {
    
     display: block; padding: 0px;}
@@ -3530,8 +3530,16 @@ p{ text-align: left;}
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+	    .header-carousel .fs-3 {
+        font-size: 16px !important;
+        margin: 0px !important;
+    }
+	    .header-carousel h1 {
+        width: 95%;
+        font-size: 18px;
+    }
 	    .top-service {
-        margin-top: 15px;
+        margin-top: 0px;
     }
 	    .top-service-area {
         z-index: 1;
@@ -3583,7 +3591,7 @@ p{ text-align: left;}
 
 		border-radius: 15px;
 
-		font-size: 14px;
+		font-size: 16px;
 	}
 
 	.available-for-btn a {
@@ -3593,7 +3601,7 @@ p{ text-align: left;}
 	}
 
 	p {
-		font-size: 14px;
+		font-size: 16px;
 	}
 
 	.navbar-nav i {
@@ -3624,12 +3632,12 @@ p{ text-align: left;}
 
 
 	.leaderboard__name {
-		font-size: 14px !important;
+		font-size: 16px !important;
 	}
 
 	.list-design-two .olcards li .content .text {
 
-		font-size: 14px !important;
+		font-size: 16px !important;
 	}
 
 	.dedcription-btn {
@@ -3651,11 +3659,7 @@ p{ text-align: left;}
 	    .position-xs-relative {
         position: relative;
     }
-	    .header-carousel h1 {
-        width: 95%;
-       
-		padding-left: 7%;
-    }
+	
 	    .header-carousel .fs-2 {
      
         text-align: left;
@@ -3668,6 +3672,7 @@ p{ text-align: left;}
         position: relative;
         top: -4px;
         color: #fff;
+		font-size: 7px !important;
        
     }
 	     .mdcare-ai-s-t .main-mdcare-ai-s {
@@ -3680,9 +3685,7 @@ p{ text-align: left;}
 	    .mdcare-ai-s-t .card {
         top: 40px;
     }
-	.header-carousel h1:nth-child(1){
-		font-size: 40px;;
-	}
+
 	  .header-carousel .fs-2 {
         text-align: left; font-size: 24px !important;
     }
@@ -3698,6 +3701,18 @@ p{ text-align: left;}
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+	.header-carousel .carousel-caption-content i {
+   top: -3px;
+   font-size: 8px !important;
+}
+	    .header-carousel .fs-3 {
+        font-size: 18px !important;
+        margin: 0px !important;
+    }
+	.header-carousel h1 {
+        width: 95%;
+        font-size: 20px;
+    }
 	.mdcare-emr-core-modules .timeline ul li:nth-child(odd) div{     width: 455px;}
 	.mdcare-emr-core-modules .timeline ul li:nth-child(even) div{ width: 455px;    left: -492px;}
 	
@@ -3711,9 +3726,7 @@ p{ text-align: left;}
 	    .header-carousel .fs-2 {
         text-align: left; font-size: 24px !important;
     }
-	    .header-carousel h1:nth-child(1) {
-        font-size: 40px;
-    }
+	    
 	.navbar-light .navbar-nav .nav-link {
 		padding: 21px 5px;
 	}
@@ -3802,6 +3815,7 @@ p{ text-align: left;}
 }
 
 @media (min-width: 1400px) {
+	p{ font-size: 18px;}
 	.Reimagine-text {
 		position: absolute;
 		top: 634px;
@@ -3967,7 +3981,7 @@ p{ text-align: left;}
 
 	.header-carousel .header-carousel-item,
 	.header-carousel .header-carousel-item img {
-		margin-top: 0;
+		margin-top: 65px;
 		transition: 0.5s;
 	}
 }
