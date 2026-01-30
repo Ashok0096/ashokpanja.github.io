@@ -2101,6 +2101,7 @@ time {
     -webkit-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
+	min-height: 100%;
 }
 .single-top-service::before {
     background: #008fdc  none repeat scroll 0 0;
