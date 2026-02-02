@@ -47,10 +47,11 @@
             margin: 15px 0 15px 30px;
         }
 
-       .fhir-page-s  li {
-            margin-bottom: 10px;
-            line-height: 1.7;
-        }
+.fhir-page-s li {
+    margin-bottom: 10px;
+    line-height: 1.7;
+    list-style: disc;
+}
 
        .fhir-page-s  .info-box {
             background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
