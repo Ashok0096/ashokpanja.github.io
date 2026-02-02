@@ -150,7 +150,7 @@
             <ul>
                  <li><a href="#Product-Name-and-Version">Product Name and Version </a></li>
                 <li><a href="#introduction">Introduction</a></li>
-                <li><a href="#endpoints">FHIR Endpoints
+                <li><a href="#fher-endpoints">FHIR Endpoints
                     <ul>
                         <li><a href="#Production-Endpoint">Production Endpoint</a></li>
                         <li><a href="#Test-Server-Endpoint">Test Server Endpoint</a></li>
@@ -217,8 +217,8 @@ URL. This document describes OAuth 2.0 for client applications to authorize, aut
         </section>
         
 
-        <!-- Endpoints -->
-        <section id="endpoints">
+        <!-- FHIR Endpoints -->
+        <section id="fher-endpoints">
             <h2>FHIR Endpoints</h2>
             
             <div class="warning-box">
@@ -228,7 +228,7 @@ URL. This document describes OAuth 2.0 for client applications to authorize, aut
             <div id="Production-Endpoint">
             <h3>Production Endpoint</h3>
             <div class="endpoint">
-                <div><strong>FHIR Server:</strong> <a href="https://fhirserver.justtest.in:9443/fhir-server/api/v4/">  https://fhir.mdcare.com:9443/fhir-server/api/v4/</a></div>
+                <div><strong>FHIR Server:</strong> <a href="https://fhir.mdcare.com:9443/fhir-server/api/v4/">  https://fhir.mdcare.com:9443/fhir-server/api/v4/</a></div>
                 <div><strong>Authentication Server:  </strong> <a href="https://oauth.mdcare.com/"></a> https://oauth.mdcare.com/</div>
             </div>
         
@@ -237,14 +237,14 @@ URL. This document describes OAuth 2.0 for client applications to authorize, aut
   <div id="Test-Server-Endpoint">
              <h3>Test Server Endpoint</h3>
             <div class="endpoint">
-                <div><strong>FHIR Server:</strong><a href="https://testfhir.mdcare.com:9443/fhir-server/api/v4/">  https://testfhir.mdcare.com:9443/fhir-server/api/v4/</a></div>
-                <div><strong>Authentication Server: </strong> <a href="https://testoauth.mdcare.com/"> https://testoauth.mdcare.com/</a> </div>
+                <div><strong>FHIR :</strong><a href="https://testfhir.mdcare.com:9443/fhir-server/api/v4/"> https://testfhir.mdcare.com:9443/fhir-server/api/v4/</a></div>
+                <div><strong>Authentication Server: </strong> <a href="https://testoauth.mdcare.com/">https://testoauth.mdcare.com/</a> </div>
             </div>
         
         </div>
 
            
-        </section>
+        </section> -
 
 
 
@@ -256,7 +256,7 @@ URL. This document describes OAuth 2.0 for client applications to authorize, aut
 
 
         <!-- Application Types -->
-        <section id="app-types">
+        <!-- <section id="app-types">
             <h2>Types of Smart-On-FHIR Applications</h2>
 
             <div class="resource-card">
@@ -273,10 +273,10 @@ URL. This document describes OAuth 2.0 for client applications to authorize, aut
                 <h4>Smart Backend Services App</h4>
                 <p>Multi-patient authorization and API for server-to-server backend applications (e.g., Export clinical data for multiple patients in a group). This is a system-level app without any UI.</p>
             </div>
-        </section>
+        </section> -->
 
         <!-- Authentication Types -->
-        <section id="auth-types">
+        <!-- <section id="auth-types">
             <h2>Types of Authentication Supported</h2>
 
             <ul>
@@ -288,10 +288,10 @@ URL. This document describes OAuth 2.0 for client applications to authorize, aut
             <div class="info-box">
                 <p>Reference: HL7.FHIR.UV.SMART-APP-LAUNCH - FHIR v4.0.1</p>
             </div>
-        </section>
+        </section> -->
 
         <!-- Launch Steps -->
-        <section id="launch-steps">
+        <!-- <section id="launch-steps">
             <h2>Steps for Smart App Launch</h2>
 
             <ol>
@@ -302,10 +302,10 @@ URL. This document describes OAuth 2.0 for client applications to authorize, aut
                 <li><a href="#fhir-api">Access FHIR API</a></li>
                 <li>Refresh Token to obtain new access token</li>
             </ol>
-        </section>
+        </section> -->
 
         <!-- Client Registration -->
-        <section id="client-registration">
+        <!-- <section id="client-registration">
             <h2>Client App Registration</h2>
 
             <p>Before a SMART app can run against an EHR, the app must be registered with that EHR's authorization service. We use OAuth 2.0 Client Registration.</p>
@@ -347,10 +347,10 @@ URL. This document describes OAuth 2.0 for client applications to authorize, aut
                 <li>FHIR APIs (of any supported version) listed within the USCDI v1 core data set</li>
                 <li>Read-only access to FHIR server resources</li>
             </ul>
-        </section>
+        </section> -->
 
         <!-- Well-Known Configuration -->
-        <section id="well-known">
+        <!-- <section id="well-known">
             <h2>Retrieve .well-known/smart-configuration</h2>
 
             <p>In order to obtain launch context and request authorization to access FHIR resources, the app discovers the EHR FHIR server's SMART configuration metadata, including OAuth <code>authorization_endpoint</code> and <code>token_endpoint</code> URLs.</p>
@@ -411,10 +411,10 @@ URL. This document describes OAuth 2.0 for client applications to authorize, aut
                     </tr>
                 </tbody>
             </table>
-        </section>
+        </section> -->
 
         <!-- Authorization -->
-        <section id="authorization">
+        <!-- <section id="authorization">
             <h2>Obtain Authorization Code</h2>
 
             <p>The app supplies the following parameters to the EHR's "authorize" endpoint.</p>
@@ -518,10 +518,10 @@ URL. This document describes OAuth 2.0 for client applications to authorize, aut
             <pre><code>https://inferno.healthit.gov/inferno/oauth2/static/redirect?
   code=SAMPLE_CODE.bGF1bmNoL3BhdGllbnQgb3BlbmlkIGZoaXJVc2VyIG9mZmxpbmVfYWNjZXNz...&
   state=26a45e37-7445-4e4a-b8fb-24144eccbdc4</code></pre>
-        </section>
+        </section> -->
 
         <!-- Access Token -->
-        <section id="access-token">
+        <!-- <section id="access-token">
             <h2>Obtain Access Token</h2>
 
             <p>After receiving the authorization code, your application trades the code for a JSON object containing an access token and contextual information by sending an HTTP POST to the token endpoint using a Content-Type header with value of "application/x-www-form-urlencoded".</p>
@@ -636,10 +636,10 @@ redirect_uri=https%3A%2F%2Finferno.healthit.gov%2Finferno%2Foauth2%2Fstatic%2Fre
             <div class="success-box">
                 <p><strong>Success!</strong> At this point, the authorization flow is complete.</p>
             </div>
-        </section>
+        </section> -->
 
         <!-- Access FHIR API -->
-        <section id="fhir-api">
+        <!-- <section id="fhir-api">
             <h2>Access FHIR API</h2>
 
             <p>With a valid access token, the app can access protected EHR data by issuing a FHIR API call to the FHIR endpoint on the EHR's resource server.</p>
@@ -723,16 +723,16 @@ redirect_uri=https%3A%2F%2Finferno.healthit.gov%2Finferno%2Foauth2%2Fstatic%2Fre
                     </tr>
                 </tbody>
             </table>
-        </section>
+        </section> -->
 
         <!-- FHIR Resources -->
-        <section id="resources">
+        <!-- <section id="resources">
             <h2>FHIR Resources</h2>
             <p>This section provides detailed information about accessing specific FHIR resources through the MDCare API.</p>
-        </section>
+        </section> -->
 
         <!-- Patient Resource -->
-        <section id="patient">
+        <!-- <section id="patient">
             <h2>Patient</h2>
 
             <h3>Search Parameters</h3>
@@ -809,10 +809,10 @@ redirect_uri=https%3A%2F%2Finferno.healthit.gov%2Finferno%2Foauth2%2Fstatic%2Fre
     }
   ]
 }</code></pre>
-        </section>
+        </section> -->
 
         <!-- AllergyIntolerance Resource -->
-        <section id="allergy">
+        <!-- <section id="allergy">
             <h2>AllergyIntolerance</h2>
 
             <h3>Search Parameters</h3>
@@ -854,10 +854,10 @@ redirect_uri=https%3A%2F%2Finferno.healthit.gov%2Finferno%2Foauth2%2Fstatic%2Fre
   },
   "recordedDate": "1941-10-14T18:33:18-05:00"
 }</code></pre>
-        </section>
+        </section> -->
 
         <!-- CarePlan Resource -->
-        <section id="careplan">
+        <!-- <section id="careplan">
             <h2>CarePlan</h2>
 
             <h3>Search Parameters</h3>
@@ -872,10 +872,10 @@ redirect_uri=https%3A%2F%2Finferno.healthit.gov%2Finferno%2Foauth2%2Fstatic%2Fre
             <h3>Response</h3>
             <p>Each resource conforms to the US Core CarePlan Profile.</p>
             <p><span class="status-code status-200">200</span> Success</p>
-        </section>
+        </section> -->
 
         <!-- CareTeam Resource -->
-        <section id="careteam">
+        <!-- <section id="careteam">
             <h2>CareTeam</h2>
 
             <h3>Search Parameters</h3>
@@ -890,10 +890,10 @@ redirect_uri=https%3A%2F%2Finferno.healthit.gov%2Finferno%2Foauth2%2Fstatic%2Fre
             <h3>Response</h3>
             <p>Each resource conforms to the US Core CareTeam Profile.</p>
             <p><span class="status-code status-200">200</span> Success</p>
-        </section>
+        </section> -->
 
         <!-- Condition Resource -->
-        <section id="condition">
+        <!-- <section id="condition">
             <h2>Condition (Problems / Health Concerns)</h2>
 
             <h3>Search Parameters</h3>
@@ -923,10 +923,10 @@ redirect_uri=https%3A%2F%2Finferno.healthit.gov%2Finferno%2Foauth2%2Fstatic%2Fre
             <h3>Response</h3>
             <p>Each resource conforms to the US Core Condition Profile.</p>
             <p><span class="status-code status-200">200</span> Success</p>
-        </section>
+        </section> -->
 
         <!-- Device Resource -->
-        <section id="device">
+        <!-- <section id="device">
             <h2>Implantable Device</h2>
 
             <h3>Search Parameters</h3>
@@ -967,10 +967,10 @@ redirect_uri=https%3A%2F%2Finferno.healthit.gov%2Finferno%2Foauth2%2Fstatic%2Fre
     ]
   }
 }</code></pre>
-        </section>
+        </section> -->
 
         <!-- DiagnosticReport Resource -->
-        <section id="diagnostic">
+        <!-- <section id="diagnostic">
             <h2>DiagnosticReport / Clinical Notes / DocumentReference</h2>
 
             <h3>Search Parameters</h3>
@@ -1010,10 +1010,10 @@ https://[Base_URL]/DocumentReference?patient=17e77411359-8837d878-ea1e-45b5-bb89
             <h3>Response</h3>
             <p>Each resource conforms to the US Core DiagnosticReport Profile for Report and Note Exchange.</p>
             <p><span class="status-code status-200">200</span> Success</p>
-        </section>
+        </section> -->
 
         <!-- Observation Resource -->
-        <section id="observation">
+        <!-- <section id="observation">
             <h2>Laboratory Result Observation</h2>
 
             <h3>Search Parameters</h3>
@@ -1048,10 +1048,10 @@ https://[Base_URL]/DiagnosticReport?category=LAB&patient=Patient/17e77411359-883
             <h3>Response</h3>
             <p>Each resource conforms to the US Core DiagnosticReport Profile for Laboratory Results Reporting.</p>
             <p><span class="status-code status-200">200</span> Success</p>
-        </section>
+        </section> -->
 
         <!-- Goal Resource -->
-        <section id="goal">
+        <!-- <section id="goal">
             <h2>Goal</h2>
 
             <h3>Search Parameters</h3>
@@ -1066,10 +1066,10 @@ https://[Base_URL]/DiagnosticReport?category=LAB&patient=Patient/17e77411359-883
             <h3>Response</h3>
             <p>Each resource conforms to the US Core Goal Profile.</p>
             <p><span class="status-code status-200">200</span> Success</p>
-        </section>
+        </section> -->
 
         <!-- Immunization Resource -->
-        <section id="immunization">
+        <!-- <section id="immunization">
             <h2>Immunization</h2>
 
             <h3>Search Parameters</h3>
@@ -1084,10 +1084,10 @@ https://[Base_URL]/DiagnosticReport?category=LAB&patient=Patient/17e77411359-883
             <h3>Response</h3>
             <p>Each resource conforms to the US Core Immunization Profile.</p>
             <p><span class="status-code status-200">200</span> Success</p>
-        </section>
+        </section> -->
 
         <!-- Medication Resource -->
-        <section id="medication">
+        <!-- <section id="medication">
             <h2>Medication</h2>
 
             <h3>Search Parameters</h3>
@@ -1102,10 +1102,10 @@ https://[Base_URL]/DiagnosticReport?category=LAB&patient=Patient/17e77411359-883
             <h3>Response</h3>
             <p>Each resource conforms to the US Core Medication Profile and US Core MedicationRequest Profile.</p>
             <p><span class="status-code status-200">200</span> Success</p>
-        </section>
+        </section> -->
 
         <!-- Smoking Status Resource -->
-        <section id="smoking">
+        <!-- <section id="smoking">
             <h2>Smoking Status</h2>
 
             <h3>Search Parameters</h3>
@@ -1120,10 +1120,10 @@ https://[Base_URL]/DiagnosticReport?category=LAB&patient=Patient/17e77411359-883
             <h3>Response</h3>
             <p>Each resource conforms to the US Core Smoking Status Observation Profile.</p>
             <p><span class="status-code status-200">200</span> Success</p>
-        </section>
+        </section> -->
 
         <!-- Procedure Resource -->
-        <section id="procedure">
+        <!-- <section id="procedure">
             <h2>Procedure</h2>
 
             <h3>Search Parameters</h3>
@@ -1138,10 +1138,10 @@ https://[Base_URL]/DiagnosticReport?category=LAB&patient=Patient/17e77411359-883
             <h3>Response</h3>
             <p>Each resource conforms to the US Core Procedure Profile.</p>
             <p><span class="status-code status-200">200</span> Success</p>
-        </section>
+        </section> -->
 
         <!-- Provenance Resource -->
-        <section id="provenance">
+        <!-- <section id="provenance">
             <h2>Provenance</h2>
 
             <h3>Search Parameters</h3>
@@ -1156,10 +1156,10 @@ https://[Base_URL]/DiagnosticReport?category=LAB&patient=Patient/17e77411359-883
             <h3>Response</h3>
             <p>Each resource conforms to the US Core Provenance Profile.</p>
             <p><span class="status-code status-200">200</span> Success</p>
-        </section>
+        </section> -->
 
         <!-- Vital Signs Resource -->
-        <section id="vitals">
+        <!-- <section id="vitals">
             <h2>Vital Signs</h2>
 
             <h3>Search Parameters</h3>
@@ -1190,10 +1190,10 @@ https://[Base_URL]/Observation?category=vital-signs&date=gt1994-05-18T19:33:18-0
             <h3>Response</h3>
             <p>Each resource conforms to the FHIR Core VitalSigns Profile.</p>
             <p><span class="status-code status-200">200</span> Success</p>
-        </section>
+        </section> -->
 
         <!-- Error Handling -->
-        <section id="error-handling">
+        <!-- <section id="error-handling">
             <h2>Error Handling</h2>
 
             <p>JSON responses are returned from the FHIR Server along with appropriate HTTP status codes.</p>
@@ -1232,10 +1232,10 @@ https://[Base_URL]/Observation?category=vital-signs&date=gt1994-05-18T19:33:18-0
             <div class="info-box">
                 <p><strong>Note:</strong> OperationOutcome explains the error reported in detail.</p>
             </div>
-        </section>
+        </section> -->
 
         <!-- Security -->
-        <section id="security">
+        <!-- <section id="security">
             <h2>Security and Privacy Considerations</h2>
 
             <h3>Profile Audience and Scope</h3>
@@ -1264,10 +1264,10 @@ https://[Base_URL]/Observation?category=vital-signs&date=gt1994-05-18T19:33:18-0
             <div class="info-box">
                 <p>For comprehensive security information, see the OAuth 2.0 Threat Model and Security Considerations.</p>
             </div>
-        </section>
+        </section> -->
 
         <!-- Terms of Use -->
-        <section id="terms">
+        <!-- <section id="terms">
             <h2>Terms of Use</h2>
 
             <h3>1. Terms Acceptance and Representation</h3>
@@ -1331,7 +1331,7 @@ https://[Base_URL]/Observation?category=vital-signs&date=gt1994-05-18T19:33:18-0
 
             <h3>4. Application Developer Affirmations</h3>
             <p>Application developer affirmations to Certified API Developers regarding the ability of their applications to secure a refresh token, a client secret, or both, must be treated in a good faith manner.</p>
-        </section>
+        </section> -->
     </main>
 
 

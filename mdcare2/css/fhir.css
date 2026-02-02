@@ -47,11 +47,10 @@
             margin: 15px 0 15px 30px;
         }
 
-.fhir-page-s li {
-    margin-bottom: 10px;
-    line-height: 1.7;
-    list-style: disc;
-}
+       .fhir-page-s  li {
+            margin-bottom: 10px;
+            line-height: 1.7;
+        }
 
        .fhir-page-s  .info-box {
             background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
@@ -385,3 +384,5 @@
             color: #008fdc;
         }
         .sticky-top.navbar-light{ position: relative;}
+.fhir-page-s .toc li ul li{ list-style: disc;}
+.fhir-page-s .toc li{ list-style: decimal;}
