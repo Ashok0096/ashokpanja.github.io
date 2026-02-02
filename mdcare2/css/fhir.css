@@ -1,0 +1,386 @@
+
+
+   
+
+      
+
+      .fhir-page-s   section {
+            background: white;
+            margin: 30px 0;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            border-left: 4px solid #008fdc;
+        }
+
+      .fhir-page-s   h2 {
+            color: var(--primary-color);
+            font-size: 2rem;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #008fdc;
+            font-weight: 700;
+        }
+
+      .fhir-page-s   h3 {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+      .fhir-page-s   h4 {
+            color: #008fdc;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+       .fhir-page-s  p {
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+      .fhir-page-s   ul, ol {
+            margin: 15px 0 15px 30px;
+        }
+
+       .fhir-page-s  li {
+            margin-bottom: 10px;
+            line-height: 1.7;
+        }
+
+       .fhir-page-s  .info-box {
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            border-left: 5px solid #008fdc;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+       .fhir-page-s  .warning-box {
+            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+            border-left: 5px solid var(--warning-color);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .fhir-page-s .success-box {
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+            border-left: 5px solid var(--success-color);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+       .fhir-page-s  .error-box {
+            background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%);
+            border-left: 5px solid var(--accent-color);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+       .fhir-page-s  code {
+            background: var(--code-bg);
+            padding: 3px 8px;
+            border-radius: 4px;
+            
+            font-size: 0.9em;
+            color: #c7254e;
+            border: 1px solid #e1e1e1;
+        }
+
+       .fhir-page-s  pre {
+            background: #282c34;
+            color: #abb2bf;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+            border: 1px solid #3e4451;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+       .fhir-page-s  pre code {
+            background: none;
+            padding: 0;
+            border: none;
+            color: inherit;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+
+       .fhir-page-s  table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+      .fhir-page-s   th {
+            background: linear-gradient(135deg, #008fdc 0%, #2980b9 100%);
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+        }
+
+      .fhir-page-s   td {
+            padding: 15px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+       .fhir-page-s  tr:hover {
+            background: #f8f9fa;
+        }
+
+        .fhir-page-s tr:last-child td {
+            border-bottom: none;
+        }
+
+        .fhir-page-s .endpoint {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 4px solid var(--success-color);
+            
+            font-weight: 600;
+            color: var(--success-color);
+        }
+
+        .fhir-page-s .http-method {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 5px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            margin-right: 10px;
+            text-transform: uppercase;
+        }
+
+        .fhir-page-s .get {
+            background: #27ae60;
+            color: white;
+        }
+
+       .fhir-page-s  .post {
+            background: #3498db;
+            color: white;
+        }
+
+        .fhir-page-s .put {
+            background: #f39c12;
+            color: white;
+        }
+
+        .fhir-page-s .delete {
+            background: #e74c3c;
+            color: white;
+        }
+
+       .fhir-page-s  .status-code {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 5px;
+            font-weight: 700;
+            margin-right: 10px;
+            font-size: 0.9rem;
+        }
+
+       .fhir-page-s  .status-200 {
+            background: #d4edda;
+            color: #155724;
+        }
+
+       .fhir-page-s  .status-400 {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .fhir-page-s .status-401 {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        .fhir-page-s .status-500 {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+       .fhir-page-s  .parameter-list {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        .fhir-page-s .parameter-item {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+       .fhir-page-s  .parameter-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .fhir-page-s .parameter-name {
+            font-weight: 700;
+            color: #008fdc;
+            
+        }
+
+        .fhir-page-s .parameter-required {
+            background: #e74c3c;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-size: 0.75rem;
+            margin-left: 8px;
+            font-weight: 600;
+        }
+
+       .fhir-page-s  .parameter-optional {
+            background: #95a5a6;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-size: 0.75rem;
+            margin-left: 8px;
+            font-weight: 600;
+        }
+
+       .fhir-page-s  footer {
+            background: var(--header-bg);
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+            margin-top: 60px;
+        }
+
+       .fhir-page-s  .toc {
+            background: #f4f7fc !important;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px 0;
+        }
+
+       .fhir-page-s  .toc h3 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+
+      .fhir-page-s   .toc ul {
+            list-style: none;
+            margin: 0;
+        }
+
+       .fhir-page-s  .toc li {
+            margin: 8px 0;
+        }
+
+      .fhir-page-s   .toc a {
+            color: #008fdc;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+       .fhir-page-s  .toc a:hover {
+            color: var(--primary-color);
+            padding-left: 10px;
+        }
+
+       .fhir-page-s  .scope-table {
+            margin: 20px 0;
+        }
+
+       .fhir-page-s  .scope-table td:first-child {
+            
+            color: #008fdc;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+.fhir-page-s       header h1 {
+                font-size: 1.8rem;
+            }
+
+.fhir-page-s       section {
+                padding: 20px;
+            }
+
+ .fhir-page-s      nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+ .fhir-page-s      table {
+                font-size: 0.9rem;
+            }
+
+ .fhir-page-s      th, td {
+                padding: 10px;
+            }
+        }
+
+ .fhir-page-s  .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #008fdc;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            font-size: 1.5rem;
+        }
+
+ .fhir-page-s  .back-to-top:hover {
+            background: var(--primary-color);
+            transform: translateY(-5px);
+        }
+
+.fhir-page-s   .resource-card {
+            background: white;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px 0;
+            transition: all 0.3s ease;
+        }
+
+  .fhir-page-s .resource-card:hover {
+            border-color: #008fdc;
+            box-shadow: 0 4px 12px rgba(52, 152, 219, 0.2);
+            transform: translateY(-3px);
+        }
+
+.fhir-page-s   .resource-card h4 {
+            margin-top: 0;
+            color: #008fdc;
+        }
+        .sticky-top.navbar-light{ position: relative;}
