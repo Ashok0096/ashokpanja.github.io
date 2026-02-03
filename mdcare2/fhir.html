@@ -139,11 +139,11 @@
 
         <!-- Features Start features-list-->
 
-        <div class="container-fluid fhir-page-s  py-lg-4 py-3">
+        <div class="container-fluid fhir-page-s  py-lg-4 py-3 fhir-s">
             <div class="container">
             <div class="row">
              
-    <main class="container">
+   
         <!-- Table of Contents -->
         <section id="toc" class="toc">
            
@@ -156,7 +156,7 @@
                         <li><a href="#Test-Server-Endpoint">Test Server Endpoint</a></li>
                         </ul>
                 </a></li>
-                <li><a href="#app-types">Types of Smart-On-FHIR Applications</a></li>
+                <li><a href="#Types-of-Smart-On-FHIR-applications">Types of Smart-On-FHIR Applications</a></li>
                 <li><a href="#auth-types">Types of Authentication Supported</a></li>
                 <li><a href="#launch-steps">Steps for Smart App Launch</a></li>
                 <li><a href="#client-registration">Client App Registration</a></li>
@@ -190,13 +190,13 @@
         </section>
 
         <section id="Product-Name-and-Version">
-            <h2> Product Name and Version </h2>
+            <h2 class="fs-3"> Product Name and Version </h2>
           <strong> MDCare EMR/PMS Version; V6.0</strong>
         </section>
         <!-- Introduction -->
         
         <section id="introduction">
-            <h2>Introduction</h2>
+            <h2 class="fs-3">Introduction</h2>
             <p>
                In this documentation we will list all the steps required to access protected health information based on the documentation of an open API. The
 API makes health information broadly available using FHIR®, a set of clinical interoperability resources under the umbrella of the HL7 standards
@@ -219,23 +219,23 @@ URL. This document describes OAuth 2.0 for client applications to authorize, aut
 
         <!-- FHIR Endpoints -->
         <section id="fher-endpoints">
-            <h2>FHIR Endpoints</h2>
+            <h2 class="fs-3">FHIR Endpoints</h2>
             
             <div class="warning-box">
                 <strong>Note:</strong> Production and Test Server endpoints are subject to change. Please check for updates regularly.
             </div>
 
             <div id="Production-Endpoint">
-            <h3>Production Endpoint</h3>
+            <h4 class="sub-hd-inner">Production Endpoint</h4>
             <div class="endpoint">
                 <div><strong>FHIR Server:</strong> <a href="https://fhir.mdcare.com:9443/fhir-server/api/v4/">  https://fhir.mdcare.com:9443/fhir-server/api/v4/</a></div>
-                <div><strong>Authentication Server:  </strong> <a href="https://oauth.mdcare.com/"></a> https://oauth.mdcare.com/</div>
+                <div><strong>Authentication Server:  </strong> <a href="https://oauthserver.justtest.in/"></a> https://oauth.mdcare.com/</div>
             </div>
         
         </div>
 
   <div id="Test-Server-Endpoint">
-             <h3>Test Server Endpoint</h3>
+             <h4 class="sub-hd-inner">Test Server Endpoint</h4>
             <div class="endpoint">
                 <div><strong>FHIR :</strong><a href="https://testfhir.mdcare.com:9443/fhir-server/api/v4/"> https://testfhir.mdcare.com:9443/fhir-server/api/v4/</a></div>
                 <div><strong>Authentication Server: </strong> <a href="https://testoauth.mdcare.com/">https://testoauth.mdcare.com/</a> </div>
@@ -244,7 +244,7 @@ URL. This document describes OAuth 2.0 for client applications to authorize, aut
         </div>
 
            
-        </section> -
+        </section> 
 
 
 
@@ -255,25 +255,27 @@ URL. This document describes OAuth 2.0 for client applications to authorize, aut
 
 
 
-        <!-- Application Types -->
-        <!-- <section id="app-types">
-            <h2>Types of Smart-On-FHIR Applications</h2>
+        <!-- Types-of-Smart-On-FHIR-applications -->
+        <section id="Types-of-Smart-On-FHIR-applications">
+            <h2 class="fs-3">Types of Smart-On-FHIR applications</h2>
 
             <div class="resource-card">
-                <h4>Standalone App</h4>
-                <p>SMART on FHIR confidential client with a patient context, refresh token, and OpenID Connect (OIDC) identity token.</p>
+                <h4>Standalone App </h4>
+                <p> SMART on FHIR confidential client with a patient context, refresh token, and OpenID Connect (OIDC) identity
+token.</p>
             </div>
 
             <div class="resource-card">
-                <h4>EHR Embedded App</h4>
-                <p>Demonstrates the ability to perform an EHR launch to a SMART on FHIR application directly from within the EHR system.</p>
+                <h4>EHR Embedded app</h4>
+                <p> Demonstrate the ability to perform an EHR launch to a SMART on FHIR</p>
             </div>
 
             <div class="resource-card">
-                <h4>Smart Backend Services App</h4>
-                <p>Multi-patient authorization and API for server-to-server backend applications (e.g., Export clinical data for multiple patients in a group). This is a system-level app without any UI.</p>
+                <h4> Smart Backend Services App (Multi-patient authorization and API) </h4>
+                <p>These are server-to-server backend applications e.g. Export
+clinical data for multiple patients in a group. This app is system level app without any UI.</p>
             </div>
-        </section> -->
+        </section>
 
         <!-- Authentication Types -->
         <!-- <section id="auth-types">
@@ -1332,7 +1334,7 @@ https://[Base_URL]/Observation?category=vital-signs&date=gt1994-05-18T19:33:18-0
             <h3>4. Application Developer Affirmations</h3>
             <p>Application developer affirmations to Certified API Developers regarding the ability of their applications to secure a refresh token, a client secret, or both, must be treated in a good faith manner.</p>
         </section> -->
-    </main>
+    
 
 
 

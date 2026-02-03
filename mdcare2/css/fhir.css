@@ -1,46 +1,37 @@
 
 
    
-
-      
+.sub-hd-inner{
+        margin: 0;
+    color: #008fdc;
+}
+      .fhir-s p{ padding: 5px;}
 
       .fhir-page-s   section {
             background: white;
-            margin: 30px 0;
-            padding: 40px;
+            margin: 5px 0;
+            padding: 10px;
             border-radius: 12px;
             box-shadow: 0 2px 12px rgba(0,0,0,0.08);
             border-left: 4px solid #008fdc;
         }
 
       .fhir-page-s   h2 {
-            color: var(--primary-color);
-            font-size: 2rem;
+            color: #292966 ;
+           
             margin-bottom: 25px;
             padding-bottom: 15px;
             border-bottom: 3px solid #008fdc;
-            font-weight: 700;
+           
         }
 
-      .fhir-page-s   h3 {
-            color: var(--primary-color);
-            font-size: 1.5rem;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            font-weight: 600;
-        }
+      
 
-      .fhir-page-s   h4 {
-            color: #008fdc;
-            font-size: 1.2rem;
-            margin-top: 20px;
-            margin-bottom: 12px;
-            font-weight: 600;
-        }
+    
 
        .fhir-page-s  p {
-            margin-bottom: 15px;
-            line-height: 1.8;
+            margin-bottom: 5px;
+           
         }
 
       .fhir-page-s   ul, ol {
@@ -49,7 +40,7 @@
 
        .fhir-page-s  li {
             margin-bottom: 10px;
-            line-height: 1.7;
+           
         }
 
        .fhir-page-s  .info-box {
@@ -93,7 +84,7 @@
             padding: 3px 8px;
             border-radius: 4px;
             
-            font-size: 0.9em;
+           
             color: #c7254e;
             border: 1px solid #e1e1e1;
         }
@@ -114,8 +105,8 @@
             padding: 0;
             border: none;
             color: inherit;
-            font-size: 0.95em;
-            line-height: 1.6;
+           
+           
         }
 
        .fhir-page-s  table {
@@ -368,8 +359,8 @@
             background: white;
             border: 2px solid var(--border-color);
             border-radius: 8px;
-            padding: 20px;
-            margin: 15px 0;
+            padding: 5px;
+            margin: 5px 0;
             transition: all 0.3s ease;
         }
 
@@ -380,7 +371,7 @@
         }
 
 .fhir-page-s   .resource-card h4 {
-            margin-top: 0;
+            margin: 0;
             color: #008fdc;
         }
         .sticky-top.navbar-light{ position: relative;}
