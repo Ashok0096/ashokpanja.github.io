@@ -46,8 +46,9 @@
        .fhir-page-s  .info-box {
             background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
             border-left: 5px solid #008fdc;
-            padding: 20px;
-            margin: 20px 0;
+               padding: 5px;
+    margin: 5px 0px;
+
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.05);
         }
@@ -55,8 +56,9 @@
        .fhir-page-s  .warning-box {
             background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
             border-left: 5px solid var(--warning-color);
-            padding: 20px;
-            margin: 20px 0;
+              padding: 10px;
+    margin: 5px 0px;
+
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.05);
         }
