@@ -226,11 +226,11 @@ $(".header-carousel").owlCarousel({
     });
 
 
-    // Facts counter
-    $('[data-toggle="counter-up"]').counterUp({
-        delay: 5,
-        time: 20
-    });
+    // // Facts counter
+    // $('[data-toggle="counter-up"]').counterUp({
+    //     delay: 5,
+    //     time: 20
+    // });
 
 
     

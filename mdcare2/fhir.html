@@ -21,8 +21,6 @@
         <!-- Libraries Stylesheet -->
         <link href="lib/animate/animate.min.css" rel="stylesheet" />
         <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
-
         <!-- Customized Bootstrap Stylesheet -->
         <link href="css/bootstrap.min.css" rel="stylesheet" />
 
@@ -86,11 +84,13 @@
                     <div class="navbar-nav ms-auto py-0">
                         <a href="index.html" class="nav-item nav-link">Home</a>
                         <a href="about.html" class="nav-item nav-link">About Us</a>
-                        <a href="features.html" class="nav-item nav-link ">Features
-                             <span class="arrow">
-
-                            </span>
-                        </a>
+                              <div class="nav-item dropdown">
+                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Features <i class="fa fa-chevron-down fs-8 ms-2"></i></a>
+                     <div class="dropdown-menu m-0">
+                     <a href="advantage.html" class="dropdown-item">Advantage</a>
+                        <a href="mdcare-emr-core-modules.html" class="dropdown-item">Core Modules</a>
+                     </div>
+                     </div>
                              <a href="mdcare-ai.html" class="nav-item nav-link">Mdcare AI</a>
                       
                          <a href="mips.html" class="nav-item nav-link">MIPS</a>
@@ -157,11 +157,19 @@
                         </ul>
                 </a></li>
                 <li><a href="#Types-of-Smart-On-FHIR-applications">Types of Smart-On-FHIR Applications</a></li>
-                <li><a href="#auth-types">Types of Authentication Supported</a></li>
-                <li><a href="#launch-steps">Steps for Smart App Launch</a></li>
+                <li><a href="#Types-of-Authentications-supported">Types of Authentication Supported</a></li>
+                <li><a href="#Steps-for-Smart-App-Launch">Steps for Smart App Launch
+
+                 <ul>
+                        <li><a href="#Client-APP-Registration">Client APP Registration</a></li>
+                        <li><a href="#Obtain-authorization-code">Obtain authorization code</a></li>
+                                <li><a href="#Obtain-access-token">Obtain access token</a></li>
+                        <li><a href="#Symmetric-Authentication-Request ">Obtain authorization code</a></li>
+                        </ul>
+                </a></li>
                 <li><a href="#client-registration">Client App Registration</a></li>
                 <li><a href="#well-known">Retrieve .well-known/smart-configuration</a></li>
-                <li><a href="#authorization">Obtain Authorization Code</a></li>
+                <li><a href="#Obtain-authorization-code">Obtain Authorization Code</a></li>
                 <li><a href="#access-token">Obtain Access Token</a></li>
                 <li><a href="#fhir-api">Access FHIR API</a></li>
                 <li><a href="#resources">FHIR Resources</a>
@@ -194,7 +202,6 @@
           <strong> MDCare EMR/PMS Version; V6.0</strong>
         </section>
         <!-- Introduction -->
-        
         <section id="introduction">
             <h2 class="fs-3">Introduction</h2>
             <p>
@@ -209,14 +216,12 @@ URL. This document describes OAuth 2.0 for client applications to authorize, aut
             <div class="info-box">
                 
                 <p>
-                    We follow Smart-On-FHIR authentication (OAuth2) and authorization<a href="https://hl7.org/fhir/smart-app-launch/toc.html"> (Ref. http://hl7.org/fhir/smart-app-launch/toc.html )</a>
+                    We follow Smart-On-FHIR authentication (OAuth2) and authorization<a target="_blank" href="https://hl7.org/fhir/smart-app-launch/toc.html"> (Ref. http://hl7.org/fhir/smart-app-launch/toc.html )</a>
                 </p>
             </div>
 
          
         </section>
-        
-
         <!-- FHIR Endpoints -->
         <section id="fher-endpoints">
             <h2 class="fs-3">FHIR Endpoints</h2>
@@ -228,8 +233,8 @@ URL. This document describes OAuth 2.0 for client applications to authorize, aut
             <div id="Production-Endpoint">
             <h4 class="sub-hd-inner">Production Endpoint</h4>
             <div class="endpoint">
-                <div><strong>FHIR Server:</strong> <a href="https://fhir.mdcare.com:9443/fhir-server/api/v4/">  https://fhir.mdcare.com:9443/fhir-server/api/v4/</a></div>
-                <div><strong>Authentication Server:  </strong> <a href="https://oauthserver.justtest.in/"></a> https://oauth.mdcare.com/</div>
+                <strong>FHIR Server:</strong> <a target="_blank" href="https://fhir.mdcare.com:9443/fhir-server/api/v4/">  https://fhir.mdcare.com:9443/fhir-server/api/v4/</a>
+                <strong>Authentication Server:  </strong> <a target="_blank" href="https://oauthserver.justtest.in/">https://oauth.mdcare.com/</a> 
             </div>
         
         </div>
@@ -237,24 +242,14 @@ URL. This document describes OAuth 2.0 for client applications to authorize, aut
   <div id="Test-Server-Endpoint">
              <h4 class="sub-hd-inner">Test Server Endpoint</h4>
             <div class="endpoint">
-                <div><strong>FHIR :</strong><a href="https://testfhir.mdcare.com:9443/fhir-server/api/v4/"> https://testfhir.mdcare.com:9443/fhir-server/api/v4/</a></div>
-                <div><strong>Authentication Server: </strong> <a href="https://testoauth.mdcare.com/">https://testoauth.mdcare.com/</a> </div>
+                <div><strong>FHIR :</strong><a target="_blank" href="https://testfhir.mdcare.com:9443/fhir-server/api/v4/"> https://testfhir.mdcare.com:9443/fhir-server/api/v4/</a>
+                <div><strong>Authentication Server: </strong> <a target="_blank" href="https://testoauth.mdcare.com/">https://testoauth.mdcare.com/</a> 
             </div>
         
         </div>
 
            
         </section> 
-
-
-
-
-        
-
-
-
-
-
         <!-- Types-of-Smart-On-FHIR-applications -->
         <section id="Types-of-Smart-On-FHIR-applications">
             <h2 class="fs-3">Types of Smart-On-FHIR applications</h2>
@@ -277,79 +272,421 @@ clinical data for multiple patients in a group. This app is system level app wit
             </div>
         </section>
 
-        <!-- Authentication Types -->
-        <!-- <section id="auth-types">
-            <h2>Types of Authentication Supported</h2>
+        <!-- Types-of-Authentications-supported -->
+         <section id="Types-of-Authentications-supported">
+            <h2 class="fs-3">Types of Authentications supported</h2>
 
-            <ul>
-                <li><strong>Symmetric ("client secret") authentication</strong> - Standard OAuth 2.0 client credentials flow</li>
-                <li><strong>Asymmetric ("private key JWT") authentication</strong> - JWT-based authentication using public/private key pairs</li>
-                <li><strong>Public Clients</strong> - For applications that cannot securely store client secrets (e.g., mobile apps, single-page applications)</li>
-            </ul>
+           
+                
+<div class="endpoint">
+    <div>
+<strong>Symmetric (“client secret”) authentication </strong> <a href="https://hl7.org/fhir/smart-app-launch/example-app-launch-symmetric-auth.html">
+(HL7.FHIR.UV.SMART-APP-LAUNCH\Example App Launch for Symmetric Client Auth - FHIR
+v4.0.1)
+</a></div>
+<div>
+<strong>Asymmetric (“private key JWT”) authentication  </strong> <a target="_blank" href="https://hl7.org/fhir/smart-app-launch/example-app-launch-asymmetric-auth.html">   (HL7.FHIR.UV.SMART-APP-LAUNCH\Example App Launch for Asymmetric Client Auth
+- FHIR v4.0.1)</a></div>
 
-            <div class="info-box">
-                <p>Reference: HL7.FHIR.UV.SMART-APP-LAUNCH - FHIR v4.0.1</p>
-            </div>
-        </section> -->
+<div>
+<strong>Public Clients </strong> <a target="_blank" href="https://hl7.org/fhir/smart-app-launch/example-app-launch-public.html">  
+(HL7.FHIR.UV.SMART-APP-LAUNCH\Example App Launch for Public Client - FHIR v4.0.1)</a>
+</div>
+</div>
+            
 
-        <!-- Launch Steps -->
-        <!-- <section id="launch-steps">
+         
+        </section> 
+
+        <!--  Steps for Smart App Launch -->
+        <section id="Steps-for-Smart-App-Launch">
             <h2>Steps for Smart App Launch</h2>
 
             <ol>
-                <li><a href="#client-registration">Client App Registration</a></li>
-                <li><a href="#well-known">Retrieve .well-known/smart-configuration</a></li>
-                <li><a href="#authorization">Obtain authorization code</a></li>
-                <li><a href="#access-token">Obtain access token</a></li>
-                <li><a href="#fhir-api">Access FHIR API</a></li>
-                <li>Refresh Token to obtain new access token</li>
+                <li>
+Client App Registration</li>
+                <li>
+ Retrieve .well-known/smart-configuration</li>
+                <li>
+ Obtain authorization code</li>
+                <li>
+Obtain access token</li>
+                <li>
+ Access FHIR API</li>
+                <li>
+ Refresh Token to obtain new access token</li>
             </ol>
-        </section> -->
+        </section> 
 
-        <!-- Client Registration -->
-        <!-- <section id="client-registration">
+        <!-- Client-APP-Registration -->
+         <section id="Client-APP-Registration">
             <h2>Client App Registration</h2>
 
-            <p>Before a SMART app can run against an EHR, the app must be registered with that EHR's authorization service. We use OAuth 2.0 Client Registration.</p>
+            <p>Before a SMART app can run against an EHR, the app must be registered with that EHR’s authorization service. We are using OAuth 2.0 Client
+Registration.
+</p>
+<h4>
+    Client App Request process
+</h4>
+<p>
+    Third-party application must sign the API Subscription Agreement with following details
+</p>
+           <ol>
+                <li>The app name</li>
+                <li>
+ The necessary APIs / Scopes</li>
+                <li>
 
-            <h3>Client App Request Process</h3>
+ Any redirect URIs</li>
+                <li>
 
+ Launch_URL (optional)</li>
+                <li>
+ URL to JWK Set (Only for apps supporting asymmetric client authentication).</li>
+            </ol>
+
+            <p>
+   The application is created by the EHR admin after confirming the app’s registration parameters and communicates a client_id to the
+app.
+</p>
+           <ol>
+                <li>FHIR APIs (of any supported version) listed within the USCDI v1 core data set will be supported
+</li>
+                <li>
+  Only reads data from FHIR server
+</li>
+            </ol>
+
+            <h4>Retrieve .well-known/smart-configuration</h4>
+
+            <p>
+                In order to obtain launch context and request authorization to access FHIR resources, the app discovers the EHR FHIR server’s SMART
+configuration metadata, including OAuth authorization_endpoint and token_endpoint URLs.
+
+            </p>
+            <p>FHIR server makes SMART configuration available from well-known endpoint. You can get Authorization end point and token endpoint.</p>
+
+            <h4>Request</h4>
+            <div class="endpoint p-0">
+                <span class="http-method get">GET</span>
+               <a href="https://yourfhirserver.com/r4/.well-known/smart-configuration"> https://fhir.mdcare.com/r4/.well-known/smart-configuration</a> 
+
+            <h4 class="mt-3">Response</h4>
+            <pre><code>
+  {
+ "capabilities": [
+ "launch-ehr",
+ "launch-standalone",
+ "client-public",
+ "client-confidential-symmetric",
+ "sso-openid-connect",
+ "context-banner",
+ "context-style",
+ "context-ehr-patient",
+ "context-ehr-encounter",
+ "context-standalone-patient",
+ "context-standalone-encounter",
+ "permission-offline",
+ "permission-patient",
+ "permission-user"
+ ],
+ "revocation_endpoint": "https://oauth.mdcare.com/outh/token/revoke-token",
+ "authorization_endpoint": "https://oauth.mdcare.com/outh/authorization",
+ "token_endpoint": "https://oauth.mdcare.com/outh/token"
+}</code></pre>
+
+            <h4>Error Codes</h4>
+           <ul>
+            <li>
+                JSON response is returned from the FHIR Server along with the code
+
+            </li>
+            <li>
+                200: Ok
+            </li>
+            <li>
+                
+401: Unauthorized
+            </li>
+          
+        <li>
+            
+400: Bad Request
+        </li>
+        <li>
+            
+500: Internal Server Error
+        </li>
+        </ul>
+        </section>
+
+<!-- Obtain authorization code -->
+
+            <section id="Obtain-authorization-code">
+            <h2>Obtain authorization code</h2>
+
+            <p>The app supplies the following parameters to the EHR’s “authorize” endpoint.</p>
+
+            <h4>Parameters</h4>
             <div class="parameter-list">
-                <h4>Required Information:</h4>
                 <div class="parameter-item">
-                    <span class="parameter-name">App Name</span>
-                    <p>The name of your application</p>
+                    <span class="parameter-name">response_type</span>
+                    <span class="parameter-required">REQUIRED</span>
+                    <span>Fixed value: <code class="fw-bold fs-6">code</code></span>
                 </div>
                 <div class="parameter-item">
-                    <span class="parameter-name">APIs / Scopes</span>
-                    <p>The necessary APIs and scopes your application requires</p>
+                    <span class="parameter-name">client_id</span>
+                    <span class="parameter-required">REQUIRED</span>
+                     <span>The client's identifier</span>
                 </div>
                 <div class="parameter-item">
-                    <span class="parameter-name">Redirect URIs</span>
-                    <p>Valid redirect URIs for your application</p>
+                    <span class="parameter-name">redirect_uri</span>
+                    <span class="parameter-required">REQUIRED</span>
+                     <span>Must match one of the client's pre-registered redirect URIs </span>
                 </div>
                 <div class="parameter-item">
-                    <span class="parameter-name">Launch URL</span>
-                    <span class="parameter-optional">OPTIONAL</span>
-                    <p>URL to launch your application</p>
+                    <span class="parameter-name">launch</span>
+                    <span class="parameter-optional">CONDITIONAL</span>
+                    <span>When using the <code class="bg-gray fw-bold mx-1 text-white"> EHR Launch </code>flow, this must match the launch value received from the EHR. Omitted when using the <code class="bg-gray fw-bold mx-1 text-white"> Standalone Launch</code></span>
                 </div>
-                <div class="parameter-item">
-                    <span class="parameter-name">JWK Set URL</span>
-                    <span class="parameter-optional">OPTIONAL</span>
-                    <p>Only for apps supporting asymmetric client authentication</p>
+                <div class="parameter-item border-0">
+                    <span class="parameter-name" >scope</span>
+                    <span class="parameter-required">REQUIRED</span>
+                    <span>Must describe the access that the app needs, including scopes like <code>patient/*.rs</code>, <code>openid</code> and <code>fhirUser</code></span>
                 </div>
-            </div>
+                   <div class="parameter-item border-0">
+                    <span class="parameter-name">&nbsp;</span>
+                    <span class="">&nbsp;</span>
+                    <span>a launch value indicating that the app wants to receive already-established launch context details from the EHR</span>
+                </div>
+                 <div class="parameter-item">
+                    <span class="parameter-name">&nbsp;</span>
+                    <span class="">&nbsp;</span>
+                    <span>a set of launch context requirements in the form launch/patient, which asks the EHR to establish context on your behalf.
+Please refer to the scopes supported in the table below </span>
+                </div>
 
-            <div class="success-box">
-                <p>The application is created by the EHR admin after confirming the app's registration parameters and communicates a <code>client_id</code> to the app.</p>
-            </div>
 
-            <h3>Supported APIs</h3>
+                <div class="parameter-item">
+                    <span class="parameter-name">state</span>
+                    <span class="parameter-required">REQUIRED</span>
+                    <span>An opaque value used by the client to maintain state between the request and callback. The authorization server
+                         includes this value when redirecting the user-agent back to the client. The parameter SHALL be used for preventing cross-site 
+                         request forgery or session fixation attacks.
+                         The app SHALL use an unpredictable value for the state parameter with at least 122 bits of entropy (e.g., a properly configured random uuid is suitable).
+              
+            </div>
+  <div class="parameter-item">
+                    <span class="parameter-name">aud</span>
+                    <span class="parameter-required">REQUIRED</span>
+                    <span>
+                        URL of the EHR resource server from which the app wishes to retrieve FHIR data. This parameter prevents leaking a genuine bearer token to a
+                         counterfeit resource server. (Note that in the case of an EHR launch flow, this aud value is the same as the launch's iss value.) Note that 
+                         the aud parameter is semantically equivalent to the resource parameter defined in RFC8707. SMART's aud parameter predates RFC8707 and we have
+                          decided not to rename it for reasons of backwards compatibility. We might consider renaming SMART's aud parameter in the future if implementer 
+                          feedback indicates that alignment would be valuable. For the current release,
+                         servers SHALL support the aud parameter and MAY support a resource parameter as a synonym for aud.
+                    </span>
+                </div>
+            <h3>Scopes Supported</h3>
+            <table class="scope-table">
+                <thead>
+                    <tr>
+                        <th>Scope</th>
+                        <th>Grants</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>patient/*.read </td>
+                        <td>Permission to read and search any resource for the current patient (see notes on wildcard scopes below).</td>
+                    </tr>
+                    <tr>
+                        <td>user/*.read </td>
+                        <td>Permission to read and write all resources that the current user can access (see notes on wildcard scopes below). </td>
+                    </tr>
+                    <tr>
+                        <td>openid</td>
+                        <td>Permission to retrieve information about the current logged-in user.</td>
+                    </tr>
+                    <tr>
+                        <td>fhirUser</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>launch</td>
+                        <td> Permission to obtain launch context when app is launched from an EHR.</td>
+                    </tr>
+                    <tr>
+                        <td>launch/patient </td>
+                        <td>When launching outside the EHR, ask for a patient to be selected at launch time.</td>
+                    </tr>
+                    <tr>
+                        <td>offline_access </td>
+                        <td>Request a refresh_token that can be used to obtain a new access token to replace an expired one, even after the end-user no longer is online after the access token expires.</td>
+                    </tr>
+                </tbody>
+            </table>
+<p>
+    Here's an example of an authorization request using HTTP GET. You will replace the [redirect_uri], [client_id], [launch_token], [state], [code_challenge], and [audience] placeholders with your own values.
+</p>
+            <h3>Request</h3>
+            <pre><code>https://ehr/authorize?
+response_type=code&
+client_id=app-client-id&
+redirect_uri=https%3A%2F%2Fapp%2Fafter-auth&
+launch=xyz123&
+scope=launch+patient%2FObservation.rs+patient%2FPatient.rs+openid+fhirUser&
+state=98wrghuwuogerg97&
+aud=https://ehr/fhir
+e.g.</code></pre>
+<a style="    word-wrap: break-word;" href="https://inferno.healthit.gov/reference-server/oauth/patient-picker?client_id=SAMPLE_CONFIDENTIAL_CLIENT_ID&redirect_uri=https%3A%2F%2Finferno.healthit.gov%2Freference-server%2Foauth%2Fauthorization%3Fresponse_type%3Dcode%26client_id%3DSAMPLE_CONFIDENTIAL_CLIENT_ID%26redirect_uri%3Dhttps%253A%252F%252Finferno.healthit.gov%252Finferno%252Foauth2%252Fstatic%252Fredirect%26scope%3Dlaunch%252Fpatient%2Bopenid%2BfhirUser%2Boffline_access%2Bpatient%252FMedication.read%2Bpatient%252FAllergyIntolerance.read%2Bpatient%252FCarePlan.read%2Bpatient%252FCareTeam.read%2Bpatient%252FCondition.read%2Bpatient%252FDevice.read%2Bpatient%252FDiagnosticReport.read%2Bpatient%252FDocumentReference.read%2Bpatient%252FEncounter.read%2Bpatient%252FGoal.read%2Bpatient%252FImmunization.read%2Bpatient%252FLocation.read%2Bpatient%252FMedicationRequest.read%2Bpatient%252FObservation.read%2Bpatient%252FOrganization.read%2Bpatient%252FPatient.read%2Bpatient%252FPractitioner.read%2Bpatient%252FProcedure.read%2Bpatient%252FProvenance.read%2Bpatient%252FPractitionerRole.read%26state%3D26a45e37-7445-4e4a-b8fb-24144eccbdc4%26aud%3Dhttps%253A%252F%252Finferno.healthit.gov%252Freference-server%252Fr4">
+    
+https://oauth.mdcare.com/outh/authorization?response_type=code&client_id=SAMPLE_CONFIDENTIAL_CLIENT_ID&redirect_uri=https%3A%2F%2Finferno.healthit.gov%2Finferno%2Foauth2%2Fstatic%2Fredirect&scope=launch%2Fpatient+openid+fhirUser+offline_access+patient%2FMedication.read+patient%2FAllergyIntolerance.read+patient%2FCarePlan.read+patient%2FCareTeam.read+patient%2FCondition.read+patient%2FDevice.read+patient%2FDiagnosticReport.read+patient%2FDocumentReference.read+patient%2FEncounter.read+patient%2FGoal.read+patient%2FImmunization.read+patient%2FLocation.read+patient%2FMedicationRequest.read+patient%2FObservation.read+patient%2FOrganization.read+patient%2FPatient.read+patient%2FPractitioner.read+patient%2FProcedure.read+patient%2FProvenance.read+patient%2FPractitionerRole.read&state=26a45e37-7445-4e4a-b8fb-24144eccbdc4&aud=https%3A%2F%2Finferno.healthit.gov%2Freference-server%2Fr4
+Response
+</a>
+
+            <h3>Response</h3>
+            <p>
+                The EHR's authorization server reviews the request from your application. If approved, the authorization server redirects the browser to the redirect URL supplied in the initial request and appends the following querystring parameter.
+            </p>
+
             <ul>
-                <li>FHIR APIs (of any supported version) listed within the USCDI v1 core data set</li>
-                <li>Read-only access to FHIR server resources</li>
+                <li><strong>code:</strong> This parameter contains the authorization code generated by EHR, which will be exchanged for the access token in the next step</li>
+                <li><strong>state:</strong> The exact value received from the client. </li>
             </ul>
-        </section> -->
+<p>
+    Here is how redirect URL will look like 
+</p>
+
+Location: https://app/after-auth?code=123abc&state=98wrghuwuogerg97
+
+
+
+<div class="endpoint">
+
+<div>
+<strong>Location:  </strong> <a target="_blank" href="https://app/after-auth?code=123abc&state=98wrghuwuogerg97">  https://app/after-auth?code=123abc&state=98wrghuwuogerg97
+- FHIR v4.0.1)</a></div>
+
+
+</div>
+<a target="_blank" href="https://inferno.healthit.gov/test-kits/onc-certification-g10/?code=SAMPLE_CODE.bGF1bmNoL3BhdGllbnQgb3BlbmlkIGZoaXJVc2VyIG9mZmxpbmVfYWNjZXNzIHBhdGllbnQvTWVkaWNhdGlvbi5yZWFkIHBhdGllbnQvQWxsZXJneUludG9sZXJhbmNlLnJlYWQgcGF0aWVudC9DYXJlUGxhbi5yZWFkIHBhdGllbnQvQ2FyZVRlYW0ucmVhZCBwYXRpZW50L0NvbmRpdGlvbi5yZWFkIHBhdGllbnQvRGV2aWNlLnJlYWQgcGF0aWVudC9EaWFnbm9zdGljUmVwb3J0LnJlYWQgcGF0aWVudC9Eb2N1bWVudFJlZmVyZW5jZS5yZWFkIHBhdGllbnQvRW5jb3VudGVyLnJlYWQgcGF0aWVudC9Hb2FsLnJlYWQgcGF0aWVudC9JbW11bml6YXRpb24ucmVhZCBwYXRpZW50L0xvY2F0aW9uLnJlYWQgcGF0aWVudC9NZWRpY2F0aW9uUmVxdWVzdC5yZWFkIHBhdGllbnQvT2JzZXJ2YXRpb24ucmVhZCBwYXRpZW50L09yZ2FuaXphdGlvbi5yZWFkIHBhdGllbnQvUGF0aWVudC5yZWFkIHBhdGllbnQvUHJhY3RpdGlvbmVyLnJlYWQgcGF0aWVudC9Qcm9jZWR1cmUucmVhZCBwYXRpZW50L1Byb3ZlbmFuY2UucmVhZCBwYXRpZW50L1ByYWN0aXRpb25lclJvbGUucmVhZCA=.ODU=&state=26a45e37-7445-4e4a-b8fb-24144eccbdc4">
+    https://inferno.healthit.gov/inferno/oauth2/static/redirect?code=SAMPLE_CODE.bGF1bmNoL3BhdGllbnQgb3BlbmlkIGZoaXJVc2VyIG9mZmxpbmVfYWNjZXNzIHBhdGllbnQvTWVkaWNhdGlvbi5yZWFkIHBhdGllbnQvQWxsZXJneUludG9sZXJhbmNlLnJlYWQgcGF0aWVudC9DYXJlUGxhbi5yZWFkIHBhdGllbnQvQ2FyZVRlYW0ucmVhZCBwYXRpZW50L0NvbmRpdGlvbi5yZWFkIHBhdGllbnQvRGV2aWNlLnJlYWQgcGF0aWVudC9EaWFnbm9zdGljUmVwb3J0LnJlYWQgcGF0aWVudC9Eb2N1bWVudFJlZmVyZW5jZS5yZWFkIHBhdGllbnQvRW5jb3VudGVyLnJlYWQgcGF0aWVudC9Hb2FsLnJlYWQgcGF0aWVudC9JbW11bml6YXRpb24ucmVhZCBwYXRpZW50L0xvY2F0aW9uLnJlYWQgcGF0aWVudC9NZWRpY2F0aW9uUmVxdWVzdC5yZWFkIHBhdGllbnQvT2JzZXJ2YXRpb24ucmVhZCBwYXRpZW50L09yZ2FuaXphdGlvbi5yZWFkIHBhdGllbnQvUGF0aWVudC5yZWFkIHBhdGllbnQvUHJhY3RpdGlvbmVyLnJlYWQgcGF0aWVudC9Qcm9jZWR1cmUucmVhZCBwYXRpZW50L1Byb3ZlbmFuY2UucmVhZCBwYXRpZW50L1ByYWN0aXRpb25lclJvbGUucmVhZCA=.ODU=&state=26a45e37-7445-4e4a-b8fb-24144eccbdc4
+</a>
+<p>
+    After receiving the authorization code, your application trades the code for a JSON object containing an access token and contextual information by sending an HTTP POST to the token endpoint using a Content-Type header with value of "application/x-www-form-urlencoded".
+</p>
+<h4>Error Codes</h4>
+<ul>
+            <li>
+                JSON response is returned from the FHIR Server along with the code
+
+            </li>
+            <li>
+                200: Ok
+            </li>
+            <li>
+                
+401: Unauthorized
+            </li>
+          
+        <li>
+            
+400: Bad Request
+        </li>
+        <li>
+            
+500: Internal Server Error
+        </li>
+        </ul>
+        </section> 
+
+        <!-- Obtain access token -->
+<section id="Obtain-access-token">
+            <h2>Obtain-access-token</h2>
+
+            <p>For<code class="bg-gray fw-bold mx-1 text-white">  public apps,</code> authentication not required because a client with no secret cannot prove its identity when it issues a call. (The end-to-end system can still be secure because the client comes from a known, https protected endpoint specified and enforced by the redirect uri.) 
+                
+              For <code class="bg-gray fw-bold mx-1 text-white"> confidential apps,</code> 
+                 authentication is required. Confidential clients SHOULD use <a target="_blank" href="https://hl7.org/fhir/smart-app-launch/client-confidential-asymmetric.html">
+                     Asymmetric Authentication </a> if available, and MAY use Symmetric Authentication.</p>
+<p>
+    There are two different requests to get access token based on authentication type. In case of Symmetric (“client secret”) authentication app issues an HTTP POST to the EHR authorization server’s token endpoint URL using content-type application/x-www-form-urlencoded.
+In case of Asymmetric authentication app, generate a client authentication assertion and prepare arguments for POST to token API:
+</p>
+            <h4>Parameters</h4>
+            <div class="parameter-list">
+                <div class="parameter-item">
+                    <span class="parameter-name">response_type</span>
+                    <span class="parameter-required">REQUIRED</span>
+                    <span>Fixed value: <code class="fw-bold fs-6">code</code></span>
+                </div>
+                <div class="parameter-item">
+                    <span class="parameter-name">client_id</span>
+                    <span class="parameter-required">REQUIRED</span>
+                     <span>The client's identifier</span>
+                </div>
+                <div class="parameter-item">
+                    <span class="parameter-name">redirect_uri</span>
+                    <span class="parameter-required">REQUIRED</span>
+                     <span>Must match one of the client's pre-registered redirect URIs </span>
+                </div>
+                <div class="parameter-item">
+                    <span class="parameter-name">launch</span>
+                    <span class="parameter-optional">CONDITIONAL</span>
+                    <span>When using the <code class="bg-gray fw-bold mx-1 text-white"> EHR Launch </code>flow, this must match the launch value received from the EHR. Omitted when using the <code class="bg-gray fw-bold mx-1 text-white"> Standalone Launch</code></span>
+                </div>
+                <div class="parameter-item border-0">
+                    <span class="parameter-name" >scope</span>
+                    <span class="parameter-required">REQUIRED</span>
+                    <span>Must describe the access that the app needs, including scopes like <code>patient/*.rs</code>, <code>openid</code> and <code>fhirUser</code></span>
+                </div>
+                   <div class="parameter-item border-0">
+                    <span class="parameter-name">&nbsp;</span>
+                    <span class="">&nbsp;</span>
+                    <span>a launch value indicating that the app wants to receive already-established launch context details from the EHR</span>
+                </div>
+                 <div class="parameter-item">
+                    <span class="parameter-name">&nbsp;</span>
+                    <span class="">&nbsp;</span>
+                    <span>a set of launch context requirements in the form launch/patient, which asks the EHR to establish context on your behalf.
+Please refer to the scopes supported in the table below </span>
+                </div>
+
+
+                <div class="parameter-item">
+                    <span class="parameter-name">state</span>
+                    <span class="parameter-required">REQUIRED</span>
+                    <span>An opaque value used by the client to maintain state between the request and callback. The authorization server
+                         includes this value when redirecting the user-agent back to the client. The parameter SHALL be used for preventing cross-site 
+                         request forgery or session fixation attacks.
+                         The app SHALL use an unpredictable value for the state parameter with at least 122 bits of entropy (e.g., a properly configured random uuid is suitable).
+              
+            </div>
+  <div class="parameter-item">
+                    <span class="parameter-name">aud</span>
+                    <span class="parameter-required">REQUIRED</span>
+                    <span>
+                        URL of the EHR resource server from which the app wishes to retrieve FHIR data. This parameter prevents leaking a genuine bearer token to a
+                         counterfeit resource server. (Note that in the case of an EHR launch flow, this aud value is the same as the launch's iss value.) Note that 
+                         the aud parameter is semantically equivalent to the resource parameter defined in RFC8707. SMART's aud parameter predates RFC8707 and we have
+                          decided not to rename it for reasons of backwards compatibility. We might consider renaming SMART's aud parameter in the future if implementer 
+                          feedback indicates that alignment would be valuable. For the current release,
+                         servers SHALL support the aud parameter and MAY support a resource parameter as a synonym for aud.
+                    </span>
+                </div>
+         
+        </section> 
+
+
+
+
+
+
+
+
+
 
         <!-- Well-Known Configuration -->
         <!-- <section id="well-known">
@@ -416,7 +753,7 @@ clinical data for multiple patients in a group. This app is system level app wit
         </section> -->
 
         <!-- Authorization -->
-        <!-- <section id="authorization">
+         <!-- <section id="authorization">
             <h2>Obtain Authorization Code</h2>
 
             <p>The app supplies the following parameters to the EHR's "authorize" endpoint.</p>
@@ -1379,16 +1716,10 @@ https://[Base_URL]/Observation?category=vital-signs&date=gt1994-05-18T19:33:18-0
         <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
 
         <!-- JavaScript Libraries -->
-        <script src="js/main-jsmin.js"></script>
+      <script src="js/main-jsmin.js"></script>
         <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/counterup/counterup.min.js"></script>
         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-         
         <script src="js/main.js"></script>
     </body>
 </html>

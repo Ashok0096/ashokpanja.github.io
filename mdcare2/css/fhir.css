@@ -1,9 +1,12 @@
 
+a {
+    color: #008fdc;
 
+}
    
 .sub-hd-inner{
         margin: 0;
-    color: #008fdc;
+    color: #222;
 }
       .fhir-s p{ padding: 5px;}
 
@@ -19,8 +22,8 @@
       .fhir-page-s   h2 {
             color: #292966 ;
            
-            margin-bottom: 25px;
-            padding-bottom: 15px;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
             border-bottom: 3px solid #008fdc;
            
         }
@@ -35,7 +38,7 @@
         }
 
       .fhir-page-s   ul, ol {
-            margin: 15px 0 15px 30px;
+            margin: 0px 0 0px 0px;
         }
 
        .fhir-page-s  li {
@@ -87,7 +90,7 @@
             border-radius: 4px;
             
            
-            color: #c7254e;
+            color: #479f2b;
             border: 1px solid #e1e1e1;
         }
 
@@ -220,12 +223,14 @@
             padding: 20px;
             border-radius: 8px;
             margin: 15px 0;
+            float: left; width: 100%;
         }
 
         .fhir-page-s .parameter-item {
             margin-bottom: 15px;
             padding-bottom: 15px;
             border-bottom: 1px solid #dee2e6;
+            float: left; width: 100%;
         }
 
        .fhir-page-s  .parameter-item:last-child {
@@ -241,23 +246,23 @@
         }
 
         .fhir-page-s .parameter-required {
-            background: #e74c3c;
+            background: #479f2b;
             color: white;
             padding: 2px 8px;
             border-radius: 3px;
-            font-size: 0.75rem;
+            font-size: 12px;
             margin-left: 8px;
-            font-weight: 600;
+           
         }
 
        .fhir-page-s  .parameter-optional {
-            background: #95a5a6;
+            background: #2aa6e9;
             color: white;
             padding: 2px 8px;
             border-radius: 3px;
-            font-size: 0.75rem;
+           font-size: 12px;
             margin-left: 8px;
-            font-weight: 600;
+           
         }
 
        .fhir-page-s  footer {
@@ -374,8 +379,29 @@
 
 .fhir-page-s   .resource-card h4 {
             margin: 0;
-            color: #008fdc;
+            
         }
         .sticky-top.navbar-light{ position: relative;}
 .fhir-page-s .toc li ul li{ list-style: disc;}
 .fhir-page-s .toc li{ list-style: decimal;}
+.parameter-item span:nth-child(1){ width: 10%; float: left; margin-right: 20px;}
+.parameter-item span:nth-child(2){ width: 10%; float: left; text-align: center; margin-right: 20px;}
+.parameter-item span:nth-child(3){ width: 70%; float: left; text-align: left;}
+.bg-gray{ background: #858585 !important;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
