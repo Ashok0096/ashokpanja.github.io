@@ -2310,7 +2310,9 @@ time {
     color: #f8941e;
     transform: rotate(186deg);
 }
-
+.navbar-nav.ms-auto{ 
+	overflow-x: hidden;
+}
 
 
 
