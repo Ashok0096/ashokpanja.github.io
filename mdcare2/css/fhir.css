@@ -1,7 +1,7 @@
 
 a {
     color: #0064ff;
-
+    word-break: break-all;
 }
    
 .sub-hd-inner{
