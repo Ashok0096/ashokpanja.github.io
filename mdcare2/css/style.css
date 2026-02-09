@@ -2310,8 +2310,9 @@ time {
     color: #f8941e;
     transform: rotate(186deg);
 }
+.dropdown-item{ text-align: center;}
 
-
+.left-66p{ left: 66%;}
 
 
 
