@@ -139,7 +139,7 @@
                      <a tabindex="block"  href="#" class="dropdown-item dropdown-toggle">
                    Real World Testing <i class="fa fa-chevron-down fs-8 ms-2 float-end"></i>
                      </a>
-                     <ul class="dropdown-menu m-0">
+                     <ul class="dropdown-menu m-0 inner-s-m">
                         <li>
                            <a tabindex="block" href="pdf/MDCARERWTPLAN2026.pdf" class="dropdown-item">
                             Real World Testing Plan 2026
@@ -1000,7 +1000,47 @@ function topFunction() {
       <script src="lib/owlcarousel/owl.carousel.js"></script>
         
       <script src="js/main.js"></script>
-      
-    
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  document.querySelectorAll(".dropdown-submenu > a").forEach(function (toggle) {
+
+    toggle.addEventListener("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+
+      this.parentElement.classList.toggle("show");
+    });
+
+  });
+
+});
+</script>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  document.querySelectorAll(".dropdown-submenu > a").forEach(function (trigger) {
+
+    trigger.addEventListener("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+
+      const submenu = this.nextElementSibling;
+
+      document.querySelectorAll(".inner-s-m.show").forEach(function (open) {
+        if (open !== submenu) {
+          open.classList.remove("show");
+        }
+      });
+
+      submenu.classList.toggle("show");
+    });
+
+  });
+
+});
+</script>
+
    </body>
 </html>

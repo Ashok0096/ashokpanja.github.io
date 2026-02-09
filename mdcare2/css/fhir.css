@@ -150,9 +150,9 @@ a {
 
         .fhir-page-s .endpoint {
             background: #f8f9fa;
-            padding: 15px;
+            padding: 5px;
             border-radius: 8px;
-            margin: 15px 0;
+            margin:  0px;
             border-left: 4px solid var(--success-color);
             
             font-weight: 600;
@@ -366,8 +366,8 @@ a {
             background: white;
             border: 2px solid var(--border-color);
             border-radius: 8px;
-            padding: 5px;
-            margin: 5px 0;
+            padding: 0px;
+            margin: 0px 0;
             transition: all 0.3s ease;
         }
 
