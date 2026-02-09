@@ -978,5 +978,46 @@ function topFunction() {
 
          
         <script src="js/main.js"></script>
+        <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  document.querySelectorAll(".dropdown-submenu > a").forEach(function (toggle) {
+
+    toggle.addEventListener("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+
+      this.parentElement.classList.toggle("show");
+    });
+
+  });
+
+});
+</script>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  document.querySelectorAll(".dropdown-submenu > a").forEach(function (trigger) {
+
+    trigger.addEventListener("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+
+      const submenu = this.nextElementSibling;
+
+      document.querySelectorAll(".inner-s-m.show").forEach(function (open) {
+        if (open !== submenu) {
+          open.classList.remove("show");
+        }
+      });
+
+      submenu.classList.toggle("show");
+    });
+
+  });
+
+});
+</script>
     </body>
 </html>
