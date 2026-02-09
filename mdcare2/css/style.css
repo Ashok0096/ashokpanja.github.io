@@ -2310,9 +2310,7 @@ time {
     color: #f8941e;
     transform: rotate(186deg);
 }
-.navbar-nav.ms-auto{ 
-	overflow-x: hidden;
-}
+
 
 
 
@@ -3327,10 +3325,16 @@ p{ text-align: left;}
 .fs-3 { font-size: calc(1.2rem + 0.6vw) !important;}
 body{ text-align: left;}
 .dropdown-menu {padding:0px; border:none;border-radius: 0px; }
+.navbar-nav.ms-auto{ 
+	overflow-x: hidden;
+}
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+	.navbar-nav.ms-auto{ 
+	overflow-x: hidden;
+}
 .dropdown-menu {padding:0px; border:none;border-radius: 0px; }
 body{ text-align: left;}
 .fs-3 {font-size: calc(1.2rem + 0.6vw) !important;}
